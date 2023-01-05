@@ -4,12 +4,14 @@ import {FC, useState, useContext} from 'react'
 import Link from 'next/link'
 import { CgClose } from "react-icons/cg";
 import { TiThMenu } from "react-icons/ti";
-import ThemeButton from '../ThemeButton'
 
-import {IrregularVerbs, OxfordB1, OxfordB2, OxfordC1, LukesPhrasal, VerbenData, Goethe} from '../../myData'
+
+import {IrregularVerbs, OxfordB1, OxfordB2, OxfordC1, LukesPhrasal, VerbenData, Goethe} from '../myData'
+import DarkModeBtn from '../app/DarkModeBtn';
 
 const Navbar:FC = () => {
 const [nav, setNav] = useState(false);
+
 
 const handleNav = () => {
     setNav(!nav);
@@ -24,9 +26,6 @@ const handleNav = () => {
           <aside className="logo sm:w-1/3">
           <Link href="/">Learn <strong>languages</strong></Link>
           </aside>
-          <span className="hidden md:flex absolute bottom-2 right-4 text-3xl">
-            <ThemeButton />
-          </span>
           <ul className="justify-around items-start w-full h-full hidden md:flex">
             <Link href="/">Home</Link>
             <details className="cursor-pointer">
@@ -54,9 +53,15 @@ const handleNav = () => {
               </ul>
             </details>
           </ul>
+
+            <span className="hidden md:flex  bottom-2 right-4 text-3xl">
+            <DarkModeBtn />
+          </span>
+
           <div className="text-4xl md:hidden">
             <TiThMenu onClick={handleNav} />
           </div>
+          
         </div>
   
         <div
@@ -95,7 +100,7 @@ const handleNav = () => {
                   Home
                 </Link>
                 <span className="bottom-2 right-4 text-3xl">
-                  <ThemeButton />
+                  <DarkModeBtn />
                 </span>
                </div>
   

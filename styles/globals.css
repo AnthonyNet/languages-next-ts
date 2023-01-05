@@ -35,14 +35,21 @@
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
-
+  --background-color: white;
 
 }
+ 
 
+/*if browser´s theme is dark */
 @media (prefers-color-scheme: dark) {
   :root {
     
   }
+}
+
+/* Theme button light/dark switch */
+[data-theme='dark'] {
+  --background-color: black;
 }
 
 * {
@@ -54,6 +61,20 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+  overflow-x: hidden; 
+  background-color: var(--background-color);
 }
+
+
+nav{
+  background-color: var(--background-color);
+}
+.main-bg{
+  background-color: var(--background-color);
+}
+
+
+
+
+
 
