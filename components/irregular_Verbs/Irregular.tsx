@@ -54,9 +54,7 @@ const IrregularVerbs = ({ dataJSON }) => {
     <section className="flex justify-center items-center w-full h-[91vh] responsiveSection"
    
     >
-      <div className="max-w-sm card my-8 sm:my-0"
-      
-      >
+      <div className="max-w-sm card my-8 sm:my-0">
         <div className="py-3 px-6 border-b border-gray-300">
           Celkové skóre: <span>{totalScore > 0 ? totalScore : 0}</span>
         </div>

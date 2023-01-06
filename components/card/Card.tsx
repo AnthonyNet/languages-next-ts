@@ -11,6 +11,12 @@ import { CgClose } from "react-icons/cg";
   */
 }
 
+const styles = {
+  section : 'flex justify-center items-center w-full h-[100vh] p-2 sm:p-0 responsiveSection',
+  section_div: 'w-[600px]  border-4 border-double border-blue-300 rounded-lg shadow-xl shadow-slate-600',
+  ul: 'flex flex-col justify-around w-full text-center p-8 font-semibold italic',
+}
+
 const Card = ({ dataJSON }) => {
   const [data, setData] = useState(dataJSON);
   const [rand, setRand] = useState(0);
@@ -23,16 +29,16 @@ const Card = ({ dataJSON }) => {
    
       return (
         <>
-          <li  className="cardListItems">{data[rand].wordTranslated}</li>
+          <li  className= "p-8 border-b-2 border-slate-300">{data[rand].wordTranslated}</li>
 
           {data[rand].sentenceTranslated?(
-            <li  className="cardListItems">{data[rand].sentenceTranslated}</li>
+            <li >{data[rand].sentenceTranslated}</li>
           ):null}
 
           {/* if hidden is true, answers are hidden */}
 
           <li
-              className={hidden?"hidden":"visible flex items-center cardListItems"}
+              className={hidden?"hidden":"visible flex items-center p-8 border-b-2 border-slate-300"}
               onClick={() => setHidden(!hidden)}
             >
               <strong className="m-auto mr-auto">
@@ -49,12 +55,10 @@ const Card = ({ dataJSON }) => {
   const CardFalse = () =>{
     return (
       <>
-        <li  className="cardListItems">{data[rand].czWord}</li>
+        <li  className="p-8 border-b-2 border-slate-300">{data[rand].czWord}</li>
 
-        <li
-            className={hidden?"hidden":"visible flex items-center cardListItems"}
-            onClick={() => setHidden(!hidden)}
-          >
+        <li className={hidden?"hidden":"visible flex items-center p-8 border-b-2 border-slate-300"}
+            onClick={() => setHidden(!hidden)}>
             <strong className="m-auto mr-auto">
               {data[rand].wordTranslated}
             </strong>
@@ -63,7 +67,7 @@ const Card = ({ dataJSON }) => {
             </div>
           </li>
           {data[rand].sentenceTranslated?(
-          <li  className={hidden?"hidden":"visible  items-center  cardListItems  w-full"}
+          <li  className={hidden?"hidden":"visible  items-center w-full border-b-2 border-slate-300"}
           onClick={() => setHidden(!hidden)}
           >{data[rand].sentenceTranslated}</li>
         ):null}
@@ -77,17 +81,15 @@ const Card = ({ dataJSON }) => {
   };
 
   return (
-    <section className="flex justify-center items-center w-full h-[100vh] p-2 sm:p-0 responsiveSection"
-    >
-      <div className="w-full sm:w-[30rem]  pb-8 card"
-       >
-        <ul className="flex flex-col justify-around text-center font-semibold italic">
+    <section className={styles.section}>
+      <div className={styles.section_div}>
+        <ul className={styles.ul}>
         {/* true = Foreign language to Czech false = Czech to Foeign language */}
           {switchLanguage? <CardTrue />: <CardFalse />}
 
           {hidden ? (
             <li
-              className="cardListItems text-cyan-500"
+              className=" text-cyan-500 border-b-2 border-slate-300 p-8"
               onClick={() => setHidden(!hidden)}
             >
               show answer

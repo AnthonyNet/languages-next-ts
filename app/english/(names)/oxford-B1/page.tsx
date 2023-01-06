@@ -3,7 +3,7 @@
 import { FC } from 'react'
 import Navbar from '../../../../sections/Navbar'
 import { OxfordB1 } from '../../../../myData'
-import Oxford from '../../../../components/card/Card'
+import Card from '../../../../components/card/Card'
 
 
 
@@ -12,7 +12,7 @@ const page:FC = () => {
   return (
     <div>
       <Navbar />
-      <Oxford dataJSON={OxfordB1}/>
+      <Card dataJSON={OxfordB1}/>
     </div>
   )
 }
