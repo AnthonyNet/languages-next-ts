@@ -10,7 +10,13 @@ import CardHint from "../components/card/CardHint";
 import getLocalStorage from "../components/localStorage/init_LS";
 import Score from "../components/card/Score";
 
-
+const styles = {
+  section :'flex justify-center items-center w-full h-[91vh] responsiveSection',
+  section_div: 'max-w-sm card my-8 sm:my-0 border-4 border-double border-blue-700 rounded-lg shadow-xl shadow-slate-600 text-center',
+  score_div: 'py-3 px-6 border-b border-gray-300',
+  btn_div: 'border-t border-gray-300 text-gray-600',
+ 
+}
 
 const IrregularVerbs: FC = ({ dataJSON }) => {
   const [totalScore, setTotalScore] = useState(getLocalStorage());
@@ -54,40 +60,33 @@ const IrregularVerbs: FC = ({ dataJSON }) => {
   }
 
   return (
-    <section className= "flex justify-center items-center w-full h-[91vh] responsiveSection"
-   
-    >
-      <div className="max-w-sm card my-8 sm:my-0 border-4 border-double border-blue-700 rounded-lg shadow-xl shadow-slate-600 text-center"
-      
-      >
-        <div className="py-3 px-6 border-b border-gray-300">
+    <section className= {styles.section}>
+      <div className={styles.section_div}>
+        <div className={styles.score_div}>
           Celkové skóre: <span>{totalScore > 0 ? totalScore : 0}</span>
         </div>
-        <div className="py-3 px-6 border-b border-gray-300">
+        <div className={styles.score_div}>
           Momentální skóre: <span>{score > 0 ? score : 0}</span>
         </div>
 
         <Score score={stars} />
 
-        <div className="px-6 inputs"
-        >
+        <div className="px-6 inputs">
           <CardInputs
             myData={dataJSON[rand]}
             setTotalScore={setTotalScore}
             setScore={setScore}
             setStars={setStars}
-           
-           
-           
           />
+
         </div>
 
         {/*the function gives new random word & set up styles to default */}
-        <div className="border-t border-gray-300 text-gray-600">
+        <div className={styles.btn_div}>
           <CardButton onClick={randomWord} text="next word" />
         </div>
 
-        <div className="border-t border-gray-300 text-gray-600">
+        <div className={styles.btn_div}>
           {/* button toggle hint !hint */}
           <CardButton onClick={() => setHint((hint) => !hint)} text="hint" />
 

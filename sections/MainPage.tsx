@@ -7,6 +7,16 @@ import '../components/mainPage/Main.css'
 //This is an simple API for BitCoin currency
 const url = "https://api.coindesk.com/v1/bpi/currentprice.json";
 
+const styles = {
+  section: 'responsiveSection flex flex-col justify-center items-center w-full min-h-[88vh] h-auto sm:h-[90%] border-red-300  border-t-2',
+  card__div: 'mainCard w-[300px] h-[420px] bg-transparent cursor-pointer group perspective',
+  card__div__div: 'preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000',
+  card__div__div__div: 'border-2 w-full h-full',
+  cardBack: 'mainCardBack my-rotate-y-180 backface-hidden w-full h-full bg-gray-100 mt-[-420px] overflow-hidden shadow-lg shadow-gray-400',
+  cardBack__div: 'text-center flex flex-col items-center h-full text-gray-800 px-2 pb-24 ',
+  cardBack__div__btn: 'bg-teal-500 px-6 py-2 mt-[8rem] mb-8 font-semibold text-white rounded-full delay-500 duration-1000 scale-0 group-hover:scale-125'
+}
+
 const MainPage:FC = () => {
   const [myData, setMyData] = useState(null);
 
@@ -22,11 +32,7 @@ const MainPage:FC = () => {
 
   return (
     <section
-    className={
-      "responsiveSection flex flex-col justify-center items-center w-full min-h-[88vh] h-auto sm:h-[90%] border-red-300  border-t-2"
-    }
-   
-  >
+    className={styles.section}>
     <h1
       className="ml-[-50px] mt-2 sm:mt-0"
     
@@ -36,9 +42,9 @@ const MainPage:FC = () => {
     <h1 className="ml-[50px]">
       <strong>humans...</strong>
     </h1>
-    <div className="mainCard w-[300px] h-[420px] bg-transparent cursor-pointer group perspective">
-      <div className="preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
-        <div className="border-2 w-full h-full">
+    <div className={styles.card__div}>
+      <div className={styles.card__div__div}>
+        <div className={styles.card__div__div__div}>
           <img
             src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimg4.wikia.nocookie.net%2F__cb20081229142345%2Ffallout%2Fimages%2F2%2F2a%2FFallout2front.jpg&f=1&nofb=1"
             className="w-full h-full"
@@ -46,15 +52,13 @@ const MainPage:FC = () => {
           />
         </div>
         <div
-          className="mainCardBack my-rotate-y-180 backface-hidden w-full h-full bg-gray-100 mt-[-420px] overflow-hidden shadow-lg shadow-gray-400"
-          
-        >
-          <div className="text-center flex flex-col items-center h-full text-gray-800 px-2 pb-24 ">
+          className={styles.cardBack}>
+          <div className={styles.cardBack__div}>
             <h1 className="my-4 text-3xl font-semibold self-center">
               {myData && myData.chartName}
             </h1>
             {myData && <Table data={myData} />}
-            <button className="bg-teal-500 px-6 py-2 mt-[8rem] mb-8 font-semibold text-white rounded-full delay-500 duration-1000 scale-0 group-hover:scale-125">
+            <button className={styles.cardBack__div__btn}>
               Last update:
             </button>
             <h1 className="text-sm font-semibold ">
