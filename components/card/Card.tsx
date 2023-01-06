@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import CardButton from "./CardButton";
 import { CgClose } from "react-icons/cg";
-import { ThemeContext } from "../../ThemeContext";
+
 
 {
   /* 
@@ -16,7 +16,7 @@ const Card = ({ dataJSON }) => {
   const [rand, setRand] = useState(0);
   const [switchLanguage, setSwitchLanguage] = useState(true);
   const [hidden, setHidden] = useState(true);
-  const {darkMode, stylesSwitch} = useContext(ThemeContext);
+
 
 
   const CardTrue = () => {
@@ -78,11 +78,9 @@ const Card = ({ dataJSON }) => {
 
   return (
     <section className="flex justify-center items-center w-full h-[100vh] p-2 sm:p-0 responsiveSection"
-     style={darkMode?stylesSwitch.dark.slate:stylesSwitch.hidden}
     >
       <div className="w-full sm:w-[30rem]  pb-8 card"
-       style={darkMode?stylesSwitch.dark.basic:stylesSwitch.hidden}
-      >
+       >
         <ul className="flex flex-col justify-around text-center font-semibold italic">
         {/* true = Foreign language to Czech false = Czech to Foeign language */}
           {switchLanguage? <CardTrue />: <CardFalse />}
