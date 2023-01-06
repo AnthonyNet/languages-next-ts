@@ -1,11 +1,23 @@
-
+"use client"
+import {useEffect} from 'react'
 import {Navbar, MainPage} from '../sections'
-import LocalST from '../components/localStorage/init_LS'
+
 const Page = () => {
- 
+  //Better put it into InitLocalStorage component
+  
+ //Set totalScore from localStorage
+ useEffect(() => {
+  let totalScore = localStorage.getItem('totalScore');
+  if(totalScore){
+    return 
+}else{
+    return localStorage.setItem("totalScore", JSON.stringify(''));
+}
+}, []);
+
   return (
     <div>
-       <LocalST />
+    
         <Navbar />
         <MainPage />
     </div>
