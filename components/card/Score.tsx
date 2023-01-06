@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { BsFillStarFill } from "react-icons/bs";
 
 const Score = ({score}) => {
@@ -16,7 +16,7 @@ const Score = ({score}) => {
         break;
       case 2:
         return (
-          <span>
+          <span className="flex flex-row">
             <BsFillStarFill />
             <BsFillStarFill />
           </span>
@@ -24,7 +24,7 @@ const Score = ({score}) => {
         break;
       case 3:
         return (
-          <span>
+          <span className="flex flex-row">
             <BsFillStarFill />
             <BsFillStarFill />
             <BsFillStarFill />
@@ -33,7 +33,7 @@ const Score = ({score}) => {
         break;
       case 4:
         return (
-          <span>
+          <span className="flex flex-row">
             <BsFillStarFill />
             <BsFillStarFill />
             <BsFillStarFill />
@@ -43,7 +43,7 @@ const Score = ({score}) => {
         break;
       case 5:
         return (
-          <span>
+          <span className="flex flex-row">
             <BsFillStarFill />
             <BsFillStarFill />
             <BsFillStarFill />
@@ -58,7 +58,7 @@ const Score = ({score}) => {
   };
 
   return (
-    <div  className="scoreDiv py-3 px-6 border-b border-gray-300">
+    <div  className=" flex  justify-center py-3 px-6 border-b border-gray-300 text-yellow-400">
           {runMe(score)}
          
         </div>

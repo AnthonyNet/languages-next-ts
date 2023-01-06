@@ -28,9 +28,9 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "myData/Goethe.js",
+    "myData/Goethe.ts",
     ".next/types/**/*.ts"
-, "sections/index.ts", "myData/IrregularVerbsTS.ts", "sections/Irregular copy", "sections/Irregular copy", "myData/IrregularVerbs.js"  ],
+, "sections/index.ts", "myData/IrregularVerbsTS.ts", "sections/Irregular copy", "sections/Irregular copy", "myData/IrregularVerbs.js", "myData/VerbenData.ts", "myData/OxfordC1.ts"  ],
   "exclude": [
     "node_modules"
   ]

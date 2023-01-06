@@ -1,12 +1,12 @@
 
     
- export  const dataJSON:{
+ export const dataJSON:{
     cz: string;
     base: string;
     pastSimple: string;
-    // pastSimple2: null | string;
+     pastSimple2?: string;
     pastParticiple: string;
-    //// pastParticiple2: undefined | string;
+     pastParticiple2?: string;
   }[] = [
     {  
     cz: "vzniknout",  
@@ -24,7 +24,7 @@
 {   cz: "být", 
     base: "be", 		
     pastSimple:	"was",
-    // pastSimple2:	"were",
+     pastSimple2:	"were",
    pastParticiple: "been"
 
 },
@@ -115,9 +115,9 @@
 {   cz: "hořet", 
     base: "burn", 		
     pastSimple:	"burnt",
-    // pastSimple2:	"burned",
+     pastSimple2:	"burned",
    pastParticiple: "burnt",
-    // pastParticiple2: "burned"
+     pastParticiple2: "burned"
 
 },
 {   cz: "prasknout", 
@@ -207,9 +207,9 @@
 {   cz: "snít", 
     base: "dream", 		
     pastSimple:	"dreamt",
-    // pastSimple2:	"dreamed",
+     pastSimple2:	"dreamed",
    pastParticiple: "dreamt",
-    // pastParticiple2: "dreamed"
+     pastParticiple2: "dreamed"
 
 },
 {   cz: "pít", 
@@ -395,17 +395,17 @@
 {   cz: "opírat se", 
     base: "lean", 		
     pastSimple:	"leant",
-    // pastSimple2:	"leaned",
+     pastSimple2:	"leaned",
    pastParticiple: "leant",
-    // pastParticiple2: "leaned"
+     pastParticiple2: "leaned"
 
 },
 {   cz: "učit", 
     base: "learn", 		
     pastSimple:	"learnt",
-    // pastSimple2:	"learned",
+     pastSimple2:	"learned",
    pastParticiple: "learnt",
-    // pastParticiple2: "learned"
+     pastParticiple2: "learned"
 
 },
 {   cz: "odejít", 
@@ -839,7 +839,8 @@
     pastSimple:	"wrote",
    pastParticiple: "written"
 
-}]
+}
+]
 
 
 

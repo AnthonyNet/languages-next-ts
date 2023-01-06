@@ -40,7 +40,7 @@ const IrregularVerbs: FC = ({ dataJSON }) => {
 
     const myInputs = e.target.parentElement.previousSibling.querySelectorAll('input');
 
-    myInputs.forEach((input) => {
+    myInputs.forEach((input:any) => {
      
       input.parentElement.style.backgroundColor = "transparent";
       input.style.color = "gray";
@@ -54,10 +54,10 @@ const IrregularVerbs: FC = ({ dataJSON }) => {
   }
 
   return (
-    <section className="flex justify-center items-center w-full h-[91vh] responsiveSection"
+    <section className= "flex justify-center items-center w-full h-[91vh] responsiveSection"
    
     >
-      <div className="max-w-sm card my-8 sm:my-0"
+      <div className="max-w-sm card my-8 sm:my-0 border-4 border-double border-blue-700 rounded-lg shadow-xl shadow-slate-600 text-center"
       
       >
         <div className="py-3 px-6 border-b border-gray-300">

@@ -2,17 +2,18 @@
 
 import { FC } from 'react'
 import Navbar from '../../../../sections/Navbar'
-import { OxfordB1 } from '../../../../myData'
-import Oxford from '../../../../components/card/Card'
 
+import { VerbenData }  from '../../../../myData'
+import Irregular from '../../../../sections/Irregular'
 
 
 const page:FC = () => {
 
+  
   return (
     <div>
       <Navbar />
-      <Oxford dataJSON={OxfordB1}/>
+      <Irregular dataJSON={VerbenData}/>
     </div>
   )
 }

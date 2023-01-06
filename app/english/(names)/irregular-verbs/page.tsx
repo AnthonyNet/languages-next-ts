@@ -2,16 +2,17 @@
 
 import { FC } from 'react'
 import Navbar from '../../../../sections/Navbar'
-import { dataJSON } from '../../../../myData/IrregularVerbsTS'
+import { IrregularVerbs } from '../../../../myData'
 import Irregular from '../../../../sections/Irregular'
-const page:FC = () => {
-console.log(dataJSON);
 
-  
+
+
+const page:FC = () => {
+
   return (
     <div>
       <Navbar />
-      <Irregular dataJSON={dataJSON}/>
+      <Irregular dataJSON={IrregularVerbs}/>
     </div>
   )
 }

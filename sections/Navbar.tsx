@@ -6,7 +6,8 @@ import { CgClose } from "react-icons/cg";
 import { TiThMenu } from "react-icons/ti";
 
 
-import {IrregularVerbs, OxfordB1, OxfordB2, OxfordC1, LukesPhrasal, VerbenData, Goethe} from '../myData'
+import {IrregularVerbs, OxfordB1, OxfordB2, OxfordC1, LukesPhrasal, VerbenData, Goethe} from '../myData/'
+
 import DarkModeBtn from '../app/DarkModeBtn';
 
 const Navbar:FC = () => {
@@ -34,12 +35,12 @@ const handleNav = () => {
               </summary>
               <ul className="flex flex-col border-solid border-t-4 border-sky-400 navDetails">
                 <Link href="/english/irregular-verbs">{`Irregular Verbs (${IrregularVerbs.length})`}</Link>
-                <Link href="/irregularSearch">{`Irregular List (${IrregularVerbs.length})`}</Link>
-                <Link href="/oxford-B1">{`Oxford B1 (${OxfordB1.length})`}</Link>
-                <Link href="/oxford-B2">{`Oxford B2 (${OxfordB2.length})`}</Link>
-                <Link href="/oxford-C1">{`Oxford C1 (${OxfordC1.length})`}</Link>
-                <Link href="/phrasal-1">{`Phrasal Verbs (${LukesPhrasal.length})`}</Link>
-                <Link href="/pagination">Pagination</Link>
+                <Link href="/english/irregularSearch">{`Irregular List (${IrregularVerbs.length})`}</Link>
+                <Link href="/english/oxford-B1">{`Oxford B1 (${OxfordB1.length})`}</Link>
+                <Link href="/engish/oxford-B2">{`Oxford B2 (${OxfordB2.length})`}</Link>
+                <Link href="/english/oxford-C1">{`Oxford C1 (${OxfordC1.length})`}</Link>
+                <Link href="/english/phrasal-1">{`Phrasal Verbs (${LukesPhrasal.length})`}</Link>
+                <Link href="/english/pagination">Pagination</Link>
               </ul>
             </details>
   
@@ -48,7 +49,7 @@ const handleNav = () => {
                 <strong className="hover:text-sky-700">Deutsch</strong>
               </summary>
               <ul className="flex flex-col border-solid border-t-4 border-sky-400 navDetails">
-                <Link href="/german">{`Unregelmäßige Verben (${VerbenData.length})`}</Link>
+                <Link href="/german/irregular-verbs">{`Unregelmäßige Verben (${VerbenData.length})`}</Link>
                 <Link href="/goethe">{`Goethe (${Goethe.length})`}</Link>
               </ul>
             </details>

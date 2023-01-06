@@ -1,4 +1,12 @@
-export default [
+export  const VerbenData:{
+  cz: string;
+  cz2?: string;
+  base: string;
+  pastSimple: string;
+  pastSimple2?: string;
+  pastParticiple: string;
+  pastParticiple2?: string;
+}[]=[
   {
     cz: "péct",
     base: "backen",
@@ -10,7 +18,7 @@ export default [
     cz: "přikázat",
     base: "befehlen",
     pastSimple: "befahl",
-    pastParticiple2: "befohlen",
+    pastParticiple: "befohlen",
   },
   {
     cz: "začít",
@@ -957,7 +965,7 @@ export default [
     cz: "klamat",
     base: "trügen",
     pastSimple: "trug",
-    ",pr{esentPerfect": "getrogen",
+    pastParticiple: "getrogen",
   },
   {
     cz: "dělat",
