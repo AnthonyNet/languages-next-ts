@@ -37,9 +37,9 @@ const handleNav = () => {
                 <Link href="/english/irregular-verbs">{`Irregular Verbs (${IrregularVerbs.length})`}</Link>
                 <Link href="/english/irregularSearch">{`Irregular List (${IrregularVerbs.length})`}</Link>
                 <Link href="/english/oxford-B1">{`Oxford B1 (${OxfordB1.length})`}</Link>
-                <Link href="/engish/oxford-B2">{`Oxford B2 (${OxfordB2.length})`}</Link>
+                <Link href="/english/oxford-B2">{`Oxford B2 (${OxfordB2.length})`}</Link>
                 <Link href="/english/oxford-C1">{`Oxford C1 (${OxfordC1.length})`}</Link>
-                <Link href="/english/phrasal-1">{`Phrasal Verbs (${LukesPhrasal.length})`}</Link>
+                <Link href="/english/phrasal-verbs">{`Phrasal Verbs (${LukesPhrasal.length})`}</Link>
                 <Link href="/english/pagination">Pagination</Link>
               </ul>
             </details>
@@ -50,7 +50,7 @@ const handleNav = () => {
               </summary>
               <ul className="flex flex-col border-solid border-t-4 border-sky-400 navDetails">
                 <Link href="/german/irregular-verbs">{`Unregelmäßige Verben (${VerbenData.length})`}</Link>
-                <Link href="/goethe">{`Goethe (${Goethe.length})`}</Link>
+                <Link href="/german/goethe">{`Goethe (${Goethe.length})`}</Link>
               </ul>
             </details>
           </ul>
