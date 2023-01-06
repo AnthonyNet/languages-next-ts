@@ -1,6 +1,13 @@
 
     
- export default [
+ export  const dataJSON:{
+    cz: string;
+    base: string;
+    pastSimple: string;
+    // pastSimple2: null | string;
+    pastParticiple: string;
+    //// pastParticiple2: undefined | string;
+  }[] = [
     {  
     cz: "vzniknout",  
     base: "arise", 		

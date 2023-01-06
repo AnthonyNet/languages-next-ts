@@ -14,6 +14,8 @@ import {useState,  useEffect } from "react";
 
 const initLocalStorage = () =>{
 
+
+    /*
     const [phraseArr, setPhraseArr] = useState();
 
     useEffect(() => {
@@ -21,22 +23,16 @@ const initLocalStorage = () =>{
 
         const phrases = JSON.parse(localStorage.getItem("totalScore") || "[]");
         setPhraseArr(phrases);
-       
-
     });
-  
-      
-    /* useEffect(() => {
-        localStorage.setItem('items', JSON.stringify(items));'
-      }, [items]);
+    
+    */
 
-
-    let totalScore = localStorage.getItem('totalScore');
+     let totalScore = localStorage.getItem('totalScore');
     if(totalScore){
         return JSON.parse(localStorage.getItem('totalScore'))
     }else{
-        return [];
-    }*/
+        return[]
+    }
 
    return (<div></div>)
 }

@@ -33,7 +33,7 @@ const handleNav = () => {
                 <strong className="hover:text-sky-700">English</strong>
               </summary>
               <ul className="flex flex-col border-solid border-t-4 border-sky-400 navDetails">
-                <Link href="/english">{`Irregular Verbs (${IrregularVerbs.length})`}</Link>
+                <Link href="/english/irregular-verbs">{`Irregular Verbs (${IrregularVerbs.length})`}</Link>
                 <Link href="/irregularSearch">{`Irregular List (${IrregularVerbs.length})`}</Link>
                 <Link href="/oxford-B1">{`Oxford B1 (${OxfordB1.length})`}</Link>
                 <Link href="/oxford-B2">{`Oxford B2 (${OxfordB2.length})`}</Link>

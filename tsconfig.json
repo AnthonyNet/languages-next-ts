@@ -30,7 +30,7 @@
     "**/*.tsx",
     "myData/Goethe.js",
     ".next/types/**/*.ts"
-, "sections/index.ts"  ],
+, "sections/index.ts", "myData/IrregularVerbsTS.ts", "sections/Irregular copy", "sections/Irregular copy", "myData/IrregularVerbs.js"  ],
   "exclude": [
     "node_modules"
   ]

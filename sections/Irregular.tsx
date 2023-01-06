@@ -1,3 +1,5 @@
+"use client"
+
 import { FC, useEffect, useState } from "react";
 
 import CardInputs from "../components/card/Card_Inputs";
@@ -7,6 +9,7 @@ import CardHint from "../components/card/CardHint";
 // import functions
 import getLocalStorage from "../components/localStorage/init_LS";
 import Score from "../components/card/Score";
+
 
 
 const IrregularVerbs: FC = ({ dataJSON }) => {
