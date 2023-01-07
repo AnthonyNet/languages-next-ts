@@ -1,13 +1,12 @@
 "use client"
 
-import { FC } from 'react'
-import Navbar from '../../../../components/navbar/Navbar'
 
+import Navbar from '../../../../components/navbar/Navbar'
 import { Goethe }  from '../../../../myData'
 import Card from '../../../../components/card/Card'
 
 
-const page:FC = () => {
+function page(){
 
   
   return (

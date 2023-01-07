@@ -1,18 +1,18 @@
 "use client"
 
 
-import {FC, useState , useEffect } from "react";
+import {useState , useEffect } from "react";
 
 import {OxfordB1, OxfordB2, OxfordC1, Goethe} from "../myData/";
 
 
-const Pagination:FC = () => {
+function Pagination(){
   //add id to all myData items
-  useEffect(() => {
+  /*useEffect(() => {
     myData.forEach((item, index) => {
       item.id = index + 1;
     });
-  });
+  });*/
 
   const [myData, setMyData] = useState(OxfordB1);
   const [currentPage, setCurrentPage] = useState(1);

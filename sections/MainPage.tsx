@@ -17,7 +17,7 @@ const styles = {
   cardBack__div__btn: 'bg-teal-500 px-6 py-2 mt-[8rem] mb-8 font-semibold text-white rounded-full delay-500 duration-1000 scale-0 group-hover:scale-125'
 }
 
-const MainPage:FC = () => {
+function MainPage(){
   const [myData, setMyData] = useState(null);
 
   
@@ -55,14 +55,14 @@ const MainPage:FC = () => {
           className={styles.cardBack}>
           <div className={styles.cardBack__div}>
             <h1 className="my-4 text-3xl font-semibold self-center">
-              {myData && myData.chartName}
+              {/*myData && myData.chartName*/}
             </h1>
             {myData && <Table data={myData} />}
             <button className={styles.cardBack__div__btn}>
               Last update:
             </button>
             <h1 className="text-sm font-semibold ">
-              {myData && myData.time.updated}
+              {/*myData && myData.time.updated*/}
             </h1>
           </div>
         </div>

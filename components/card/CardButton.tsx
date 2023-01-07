@@ -1,6 +1,11 @@
 import React from 'react'
 
-const CardButton = ({onClick, text}) => {
+interface Button{
+  onClick: () => void;
+  text: string;
+}
+
+const CardButton = ({onClick, text}:Button ) => {
   return (
    
          <button

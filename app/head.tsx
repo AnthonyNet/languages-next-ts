@@ -1,6 +1,6 @@
 
 
-const Head = () => {
+function Head(){
   return (
    <>
      <title>Learn</title>

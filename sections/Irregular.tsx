@@ -17,7 +17,9 @@ const styles = {
  
 }
 
-const IrregularVerbs: FC = ({ dataTS }) => {
+ function IrregularVerbs({ dataTS }:any) {
+
+//const IrregularVerbs: FC = ({ dataTS }:any) => {
   const [totalScore, setTotalScore] = useState(getLocalStorage());
   const [score, setScore] = useState(0);
   const [stars, setStars] = useState(0);
@@ -36,7 +38,7 @@ const IrregularVerbs: FC = ({ dataTS }) => {
 */
   }
   
-  function randomWord(e) {
+  function randomWord(e: any) {
     setRand(Math.floor(Math.random() * dataTS.length));
   
     setStars(0);
@@ -81,7 +83,7 @@ const IrregularVerbs: FC = ({ dataTS }) => {
 
         {/*the function gives new random word & set up styles to default */}
         <div className={styles.btn_div}>
-          <CardButton onClick={randomWord} text="next word" />
+          <CardButton onClick={()=> randomWord} text="next word" />
         </div>
 
         <div className={styles.btn_div}>

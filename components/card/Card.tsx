@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import {  useState } from "react";
 import CardButton from "./CardButton";
 import { CgClose } from "react-icons/cg";
 
@@ -17,7 +17,7 @@ const styles = {
   ul: 'flex flex-col justify-around w-full text-center p-8 font-semibold italic',
 }
 
-const Card = ({ dataJSON }) => {
+const Card = ({ dataJSON }:any) => {
   const [data, setData] = useState(dataJSON);
   const [rand, setRand] = useState(0);
   const [switchLanguage, setSwitchLanguage] = useState(true);

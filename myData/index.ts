@@ -6,6 +6,7 @@ import {LukesPhrasal} from './LukesPhrasal'
 import {VerbenData} from './VerbenData'
 import {Goethe} from './Goethe'
 
+
 export {
     IrregularVerbs,
     OxfordB1,

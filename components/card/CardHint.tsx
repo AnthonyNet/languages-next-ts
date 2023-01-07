@@ -1,7 +1,15 @@
 import React from 'react'
 
+interface CardHint {
+  base: string;
+  pastSimple: string;
+  pastSimple2?: string;
+  pastParticiple: string;
+  pastParticiple2?: string;
 
-const CardHint = ({base, pastSimple, pastSimple2, pastParticiple, pastParticiple2}) => {
+}
+
+const CardHint = ({base, pastSimple, pastSimple2, pastParticiple, pastParticiple2}:CardHint) => {
   return (
     <ul className="flex justify-between flex-wrap">
     <li>{base} - </li>

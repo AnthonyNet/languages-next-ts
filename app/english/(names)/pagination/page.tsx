@@ -1,13 +1,12 @@
 "use client"
 
-import { FC } from 'react'
-import Navbar from '../../../../components/navbar/Navbar'
 
+import Navbar from '../../../../components/navbar/Navbar'
 import {Pagination} from '../../../../sections/'
 
 
 
-const page:FC = () => {
+function page(){
 
   return (
     <div>

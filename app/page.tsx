@@ -2,7 +2,7 @@
 import {useEffect} from 'react'
 import {Navbar, MainPage} from '../sections'
 
-const Page = () => {
+function Page(){
   //Better put it into InitLocalStorage component
   
  //Set totalScore from localStorage

@@ -1,6 +1,6 @@
 "use client";
 
-import { FC, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { CgClose } from "react-icons/cg";
 import { TiThMenu } from "react-icons/ti";
@@ -17,7 +17,7 @@ import {
 
 import DarkModeBtn from "../../app/DarkModeBtn";
 
-const Navbar: FC = () => {
+function Navbar(){
   const [nav, setNav] = useState(false);
 
   const handleNav = () => {

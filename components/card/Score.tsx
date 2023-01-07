@@ -1,11 +1,14 @@
 
 import { BsFillStarFill } from "react-icons/bs";
+interface Score{
+  score:number;
+}
 
-const Score = ({score}) => {
+const Score = ({score}:Score) => {
 
 
     {/*the function gives stars depends on score number */}
-  const runMe = (score) => {
+  const runMe = (score: number) => {
     switch (score) {
       case 1:
         return (

@@ -1,11 +1,31 @@
+'use client'
+
 import React from "react";
 
-const Card_Inputs = ({ myData, setTotalScore, setScore, setStars }) => {
+interface JOJO{
+ myData:{
+  cz: string;
+  base: string;
+  pastSimple: string;
+  pastSimple2?: string;
+  pastParticiple: string;
+  pastParticiple2?: string;
+ },
+  setTotalScore: React.Dispatch<React.SetStateAction<number>>,
+  setScore: React.Dispatch<React.SetStateAction<number>>,
+  setStars: React.Dispatch<React.SetStateAction<number>>
+}
+
+
+const Card_Inputs = ({ myData, setTotalScore, setScore, setStars }:JOJO) => {
+  console.log(myData);
+  
   {
     /*check inputs values and change font, border or background */
   }
 
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
+    // const value = e.currentTarget.value;
     const value = e.target.value;
     const data = e.target.attributes.data.value;
 
@@ -37,9 +57,9 @@ const Card_Inputs = ({ myData, setTotalScore, setScore, setStars }) => {
       inputElement.parentElement.style.backgroundColor = "MediumSeaGreen";
       inputElement.readOnly = true;
 
-      setTotalScore((count) => +count + 1);
-      setScore((count) => count + 1);
-      setStars((count) => count + 1);
+      setTotalScore((count:number) => +count + 1);
+      setScore((count:number) => count + 1);
+      setStars((count:number) => count + 1);
     }
     if (data.startsWith(value)) {
       inputElement.style.color = "green";
@@ -61,7 +81,7 @@ const Card_Inputs = ({ myData, setTotalScore, setScore, setStars }) => {
             type="text"
             className="quizInput text-center border border-gray-300"
             placeholder="Přítomný čas"
-            data={myData.base}
+            //data={myData.base}
             onChange={handleChange}
           />
         </li>
@@ -70,7 +90,7 @@ const Card_Inputs = ({ myData, setTotalScore, setScore, setStars }) => {
             type="text"
             className="quizInput text-center border border-gray-300"
             placeholder="Minulý čas prostý"
-            data={myData.pastSimple}
+           // data={myData.pastSimple}
             onChange={handleChange}
           />
         </li>
@@ -80,7 +100,7 @@ const Card_Inputs = ({ myData, setTotalScore, setScore, setStars }) => {
               type="text"
               className="quizInput text-center border border-gray-300"
               placeholder="Minulý čas prostý 2"
-              data={myData.pastSimple2}
+             // data={myData.pastSimple2}
               onChange={handleChange}
             />
           </li>
@@ -90,7 +110,7 @@ const Card_Inputs = ({ myData, setTotalScore, setScore, setStars }) => {
             type="text"
             className="quizInput text-center border border-gray-300"
             placeholder="Minulé příčestí"
-            data={myData.pastParticiple}
+           // data={myData.pastParticiple}
             onChange={handleChange}
           />
         </li>
@@ -100,7 +120,7 @@ const Card_Inputs = ({ myData, setTotalScore, setScore, setStars }) => {
               type="text"
               className="quizInput text-center border border-gray-300"
               placeholder="Minulé příčestí 2"
-              data={myData.pastParticiple2}
+            //  data={myData.pastParticiple2}
               onChange={handleChange}
             />
           </li>

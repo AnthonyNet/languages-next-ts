@@ -1,6 +1,6 @@
 "use cient"
 
-import{FC, useState} from "react";
+import{ useState} from "react";
 
 import { IrregularVerbs } from "../myData";
 
@@ -14,7 +14,7 @@ const style={
     th: 'text-sm font-medium p-2 sm:p-4'
 }          
 
-const SearchIrregular:FC = () => {
+function SearchIrregular(){
   const [search, setSearch] = useState("");
   
 

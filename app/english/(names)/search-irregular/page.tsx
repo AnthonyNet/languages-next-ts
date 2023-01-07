@@ -1,12 +1,11 @@
 "use client"
 
-import { FC } from 'react'
 import Navbar from '../../../../components/navbar/Navbar'
 import { SearchIrregular } from '../../../../sections'
 
 
 
-const page:FC = () => {
+function page(){
 
   return (
     <div>
