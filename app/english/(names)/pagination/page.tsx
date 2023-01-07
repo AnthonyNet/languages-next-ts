@@ -2,8 +2,8 @@
 
 import { FC } from 'react'
 import Navbar from '../../../../sections/Navbar'
-import { OxfordC1 } from '../../../../myData'
-import Card from '../../../../components/card/Card'
+
+import Pagination from '../../../../sections/Pagination'
 
 
 
@@ -12,7 +12,7 @@ const page:FC = () => {
   return (
     <div>
       <Navbar />
-      <Card dataJSON={OxfordC1}/>
+      <Pagination />
     </div>
   )
 }
