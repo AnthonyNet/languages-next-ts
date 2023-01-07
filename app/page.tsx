@@ -7,12 +7,7 @@ const Page = () => {
   
  //Set totalScore from localStorage
  useEffect(() => {
-  let totalScore = localStorage.getItem('totalScore');
-  if(totalScore){
-    return 
-}else{
-    return localStorage.setItem("totalScore", JSON.stringify(''));
-}
+  localStorage.setItem("totalScore", JSON.stringify([]));
 }, []);
 
   return (

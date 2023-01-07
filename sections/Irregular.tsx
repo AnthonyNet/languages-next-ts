@@ -1,13 +1,13 @@
 "use client"
 
-import { FC, useEffect, useState } from "react";
-// import  getLocalStorage  from "../utils/get_Local_Storage";
+import { FC, useEffect, useState } from "react"; 
 
 import CardInputs from "../components/card/Card_Inputs";
 import CardButton from "../components/card/CardButton";
 import CardHint from "../components/card/CardHint";
 
 import Score from "../components/card/Score";
+import {getLocalStorage} from "../utils/get_Local_Storage";
 
 const styles = {
   section :'flex justify-center items-center w-full h-[91vh] responsiveSection',
@@ -18,16 +18,15 @@ const styles = {
 }
 
 const IrregularVerbs: FC = ({ dataTS }) => {
-  const [totalScore, setTotalScore] = useState([]);
+  const [totalScore, setTotalScore] = useState(getLocalStorage());
   const [score, setScore] = useState(0);
   const [stars, setStars] = useState(0);
   const [hint, setHint] = useState(false);
   const [rand, setRand] = useState(0);
 
 
-
 //Set totalScore from localStorage
-  useEffect(() => {
+  useEffect(() => {  
     localStorage.setItem("totalScore", JSON.stringify(totalScore));
   }, [totalScore]);
 

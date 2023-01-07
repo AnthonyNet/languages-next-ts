@@ -1,11 +1,11 @@
 export  const VerbenData:{
   cz: string;
-  cz2?: string;
+  cz2?: undefined | string | (string | undefined | null)[];
   base: string;
   pastSimple: string;
-  pastSimple2?: string;
+  pastSimple2?: undefined | string | (string | undefined | null)[];
   pastParticiple: string;
-  pastParticiple2?: string;
+  pastParticiple2?: undefined | string | (string | undefined | null)[];
 }[]=[
   {
     cz: "péct",

@@ -1,14 +1,10 @@
 
-const getLocalStorage = () =>{
+export const getLocalStorage = () =>{
    
     let totalScore = localStorage.getItem('totalScore');
     if(totalScore){
-        return JSON.parse(localStorage.getItem('totalScore'))
+        return JSON.parse(localStorage.getItem('totalScore') || "")
     }else{
         return[]
     }
-
-   
 }
-
-export default getLocalStorage; 
