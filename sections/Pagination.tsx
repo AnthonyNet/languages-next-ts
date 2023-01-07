@@ -4,7 +4,17 @@
 import {useState , useEffect } from "react";
 
 import {OxfordB1, OxfordB2, OxfordC1, Goethe} from "../myData/";
+import {LeftArrow, RightArrow} from '../components/pagination/Arrows';
 
+const styles = {
+  section: 'min-h-screen flex flex-column justify-center items-baseline flex-wrap',
+  nav: ' w-full h-auto border-4',
+  ul: 'flex flex-row justify-around sm:w-[60%] m-auto flex-wrap',
+  table: 'table-fixed min-w-[50vw] m-auto',
+  thead__tr: 'flex justify-around',
+  tbody__td: 'w-[50%] border-red-400 border-r-4',
+  li__active: 'border-b-4 border-red-600',
+};
 
 function Pagination(){
   //add id to all myData items
@@ -36,10 +46,6 @@ function Pagination(){
 
   const style = {
     display: currentPage < currentPage - 1 ? "none" : "",
-  };
-
-  const dataMenuStyle = {
-    borderBottom: "border-b-4 border-red-600",
   };
 
   const prevPage = () => {
@@ -76,29 +82,29 @@ function Pagination(){
 
 
   return (
-    <section className="min-h-screen flex flex-column justify-center items-baseline flex-wrap" >
-      <nav className=" w-full h-auto border-4">
-        <ul className="flex flex-row justify-around sm:w-[60%] m-auto flex-wrap">
+    <section className={styles.section}>
+      <nav className={styles.nav}>
+        <ul className={styles.ul}>
           <li 
-            className={myNumb === 0 ? dataMenuStyle.borderBottom : null}
+            className={myNumb === 0 ? styles.li__active : ''}
             onClick={() => setMyNumb(0)}
           >
             Oxford B1
           </li>
           <li
-            className={myNumb === 1 ? dataMenuStyle.borderBottom : null}
+            className={myNumb === 1 ? styles.li__active : ''}
             onClick={() => setMyNumb(1)}
           >
             Oxford B2
           </li>
           <li
-            className={myNumb === 2 ? dataMenuStyle.borderBottom : null}
+            className={myNumb === 2 ? styles.li__active : ''}
             onClick={() => setMyNumb(2)}
           >
             Oxford C1
           </li>
           <li
-            className={myNumb === 3 ? dataMenuStyle.borderBottom : null}
+            className={myNumb === 3 ? styles.li__active : ''}
             onClick={() => setMyNumb(3)}
           >
             Goethe De
@@ -108,9 +114,9 @@ function Pagination(){
 
       <main className="w-full">
         <h2 className="text-center">Pagination</h2>
-        <table className="table-fixed min-w-[50vw] m-auto">
+        <table className={styles.table}>
           <thead>
-            <tr className="flex justify-around">
+            <tr className={styles.thead__tr}>
               <th>CZ</th>
               <th>ENG</th>
             </tr>
@@ -122,11 +128,11 @@ function Pagination(){
                   key={index}
                   className="border-b-2 border-red-300 flex  flex-nowrap"
                 >
-                  <td className="w-[50%] border-red-400 border-r-4">
+                  <td className={styles.tbody__td}>
                     {item.czWord}
                   </td>
                   {item.sentenceTranslated ? (
-                    <td className="w-[50%] text-right">
+                    <td className="w-[50%] text-right"> 
                       {item.sentenceTranslated}
                     </td>
                   ) : (
@@ -149,23 +155,7 @@ function Pagination(){
           */}
 
           <li className="sm:w-[50px] px-4 -mb-2" onClick={prevPage}>
-            <div>
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                data-prefix="far"
-                data-icon="arrow-alt-circle-left"
-                className="w-7 h-7"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-              >
-                <path
-                  fill="currentColor"
-                  d="M8 256c0 137 111 248 248 248s248-111 248-248S393 8 256 8 8 119 8 256zm448 0c0 110.5-89.5 200-200 200S56 366.5 56 256 145.5 56 256 56s200 89.5 200 200zm-72-20v40c0 6.6-5.4 12-12 12H256v67c0 10.7-12.9 16-20.5 8.5l-99-99c-4.7-4.7-4.7-12.3 0-17l99-99c7.6-7.6 20.5-2.2 20.5 8.5v67h116c6.6 0 12 5.4 12 12z"
-                ></path>
-              </svg>
-            </div>
+            <LeftArrow />
           </li>
 
             {/* 
@@ -199,23 +189,7 @@ function Pagination(){
           */}
 
           <li onClick={nextPage} className="sm:w-[50px] p-4 -mb-2">
-            <div>
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                data-prefix="far"
-                data-icon="arrow-alt-circle-right"
-                className="w-7 h-7"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-              >
-                <path
-                  fill="currentColor"
-                  d="M504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256zm72 20v-40c0-6.6 5.4-12 12-12h116v-67c0-10.7 12.9-16 20.5-8.5l99 99c4.7 4.7 4.7 12.3 0 17l-99 99c-7.6 7.6-20.5 2.2-20.5-8.5v-67H140c-6.6 0-12-5.4-12-12z"
-                ></path>
-              </svg>{" "}
-            </div>
+            <RightArrow />
           </li>
         </ul>
       </article>
