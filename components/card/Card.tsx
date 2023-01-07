@@ -17,8 +17,8 @@ const styles = {
   ul: 'flex flex-col justify-around w-full text-center p-8 font-semibold italic',
 }
 
-const Card = ({ dataJSON }:any) => {
-  const [data, setData] = useState(dataJSON);
+const Card = ({ dataTS }:any) => {
+  const [data, setData] = useState(dataTS);
   const [rand, setRand] = useState(0);
   const [switchLanguage, setSwitchLanguage] = useState(true);
   const [hidden, setHidden] = useState(true);

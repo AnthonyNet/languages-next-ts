@@ -18,8 +18,7 @@ interface JOJO{
 
 
 const Card_Inputs = ({ myData, setTotalScore, setScore, setStars }:JOJO) => {
-  console.log(myData);
-  
+ 
   {
     /*check inputs values and change font, border or background */
   }
@@ -81,7 +80,7 @@ const Card_Inputs = ({ myData, setTotalScore, setScore, setStars }:JOJO) => {
             type="text"
             className="quizInput text-center border border-gray-300"
             placeholder="Přítomný čas"
-            //data={myData.base}
+            data={myData.base}
             onChange={handleChange}
           />
         </li>
@@ -90,7 +89,7 @@ const Card_Inputs = ({ myData, setTotalScore, setScore, setStars }:JOJO) => {
             type="text"
             className="quizInput text-center border border-gray-300"
             placeholder="Minulý čas prostý"
-           // data={myData.pastSimple}
+            data={myData.pastSimple}
             onChange={handleChange}
           />
         </li>
@@ -100,7 +99,7 @@ const Card_Inputs = ({ myData, setTotalScore, setScore, setStars }:JOJO) => {
               type="text"
               className="quizInput text-center border border-gray-300"
               placeholder="Minulý čas prostý 2"
-             // data={myData.pastSimple2}
+             data={myData.pastSimple2}
               onChange={handleChange}
             />
           </li>
@@ -110,7 +109,7 @@ const Card_Inputs = ({ myData, setTotalScore, setScore, setStars }:JOJO) => {
             type="text"
             className="quizInput text-center border border-gray-300"
             placeholder="Minulé příčestí"
-           // data={myData.pastParticiple}
+           data={myData.pastParticiple}
             onChange={handleChange}
           />
         </li>
@@ -120,7 +119,7 @@ const Card_Inputs = ({ myData, setTotalScore, setScore, setStars }:JOJO) => {
               type="text"
               className="quizInput text-center border border-gray-300"
               placeholder="Minulé příčestí 2"
-            //  data={myData.pastParticiple2}
+            data={myData.pastParticiple2}
               onChange={handleChange}
             />
           </li>

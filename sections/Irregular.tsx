@@ -1,6 +1,6 @@
 "use client"
 
-import { FC, useEffect, useState } from "react"; 
+import { useEffect, useState } from "react"; 
 
 import CardInputs from "../components/card/Card_Inputs";
 import CardButton from "../components/card/CardButton";
