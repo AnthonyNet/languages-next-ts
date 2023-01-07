@@ -12,7 +12,7 @@ const page:FC = () => {
   return (
     <div>
       <Navbar />
-      <Irregular dataJSON={IrregularVerbs}/>
+      <Irregular dataTS={IrregularVerbs}/>
     </div>
   )
 }

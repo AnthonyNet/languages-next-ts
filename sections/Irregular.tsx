@@ -17,7 +17,7 @@ const styles = {
  
 }
 
-const IrregularVerbs: FC = ({ dataJSON }) => {
+const IrregularVerbs: FC = ({ dataTS }) => {
   const [totalScore, setTotalScore] = useState([]);
   const [score, setScore] = useState(0);
   const [stars, setStars] = useState(0);
@@ -38,7 +38,7 @@ const IrregularVerbs: FC = ({ dataJSON }) => {
   }
   
   function randomWord(e) {
-    setRand(Math.floor(Math.random() * dataJSON.length));
+    setRand(Math.floor(Math.random() * dataTS.length));
   
     setStars(0);
     setHint(false);
@@ -72,7 +72,7 @@ const IrregularVerbs: FC = ({ dataJSON }) => {
 
         <div className="px-6 inputs">
           <CardInputs
-            myData={dataJSON[rand]}
+            myData={dataTS[rand]}
             setTotalScore={setTotalScore}
             setScore={setScore}
             setStars={setStars}
@@ -92,11 +92,11 @@ const IrregularVerbs: FC = ({ dataJSON }) => {
           {/* if hint is true show answers */}
           {hint ? (
             <CardHint
-              base={dataJSON[rand].base}
-              pastSimple={dataJSON[rand].pastSimple}
-              pastSimple2={dataJSON[rand].pastSimple2}
-              pastParticiple={dataJSON[rand].pastParticiple}
-              pastParticiple2={dataJSON[rand].pastParticiple2}
+              base={dataTS[rand].base}
+              pastSimple={dataTS[rand].pastSimple}
+              pastSimple2={dataTS[rand].pastSimple2}
+              pastParticiple={dataTS[rand].pastParticiple}
+              pastParticiple2={dataTS[rand].pastParticiple2}
             />
           ) : null}
         </div>

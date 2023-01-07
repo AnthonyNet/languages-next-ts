@@ -13,7 +13,7 @@ const page:FC = () => {
   return (
     <div>
       <Navbar />
-      <Card dataJSON={Goethe}/>
+      <Card dataTS={Goethe}/>
     </div>
   )
 }

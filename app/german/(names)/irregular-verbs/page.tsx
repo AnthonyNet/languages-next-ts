@@ -13,7 +13,7 @@ const page:FC = () => {
   return (
     <div>
       <Navbar />
-      <Irregular dataJSON={VerbenData}/>
+      <Irregular dataTS={VerbenData}/>
     </div>
   )
 }
