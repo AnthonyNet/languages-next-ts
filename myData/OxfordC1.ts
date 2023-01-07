@@ -1,4 +1,7 @@
-export default [
+export const OxfordC1:{
+  wordTranslated: string;
+  czWord: string;
+}[] = [
   {
     wordTranslated: "	abolish v. the tax was abolished in 1977	",
     czWord: "	zrušit   daň byla zrušena v roce 1977	",

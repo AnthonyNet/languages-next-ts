@@ -1,6 +1,6 @@
 "use client";
 
-import { FC, useState, useContext } from "react";
+import { FC, useState } from "react";
 import Link from "next/link";
 import { CgClose } from "react-icons/cg";
 import { TiThMenu } from "react-icons/ti";
@@ -13,9 +13,9 @@ import {
   LukesPhrasal,
   VerbenData,
   Goethe,
-} from "../myData/";
+} from "../../myData";
 
-import DarkModeBtn from "../app/DarkModeBtn";
+import DarkModeBtn from "../../app/DarkModeBtn";
 
 const Navbar: FC = () => {
   const [nav, setNav] = useState(false);

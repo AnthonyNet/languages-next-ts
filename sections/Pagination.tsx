@@ -1,13 +1,10 @@
 "use client"
 
 
-import {FC, useState , useEffect, useContext } from "react";
+import {FC, useState , useEffect } from "react";
 
-import dataOxfordB1 from "../myData/OxfordB1";
-import dataOxfordB2 from "../myData/OxfordB2";
-import dataOxfordC1 from "../myData/OxfordC1";
+import {OxfordB1, OxfordB2, OxfordC1, Goethe} from "../myData/";
 
-import Goethe from "../myData/Goethe";
 
 const Pagination:FC = () => {
   //add id to all myData items
@@ -17,7 +14,7 @@ const Pagination:FC = () => {
     });
   });
 
-  const [myData, setMyData] = useState(dataOxfordB1);
+  const [myData, setMyData] = useState(OxfordB1);
   const [currentPage, setCurrentPage] = useState(1);
   const [wordsPerPage, setPostsPerPage] = useState(25);
   const [menuPosts, setMenuPosts] = useState();
@@ -67,11 +64,11 @@ const Pagination:FC = () => {
 
   useEffect(() => {
     if (myNumb == 0) {
-      setMyData(dataOxfordB1);
+      setMyData(OxfordB1);
     } else if (myNumb == 1) {
-      setMyData(dataOxfordB2);
+      setMyData(OxfordB2);
     } else if (myNumb == 2) {
-      setMyData(dataOxfordC1);
+      setMyData(OxfordC1);
     } else {
       setMyData(Goethe);
     }

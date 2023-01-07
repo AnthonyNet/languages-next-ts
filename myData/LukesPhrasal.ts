@@ -1,4 +1,9 @@
-export default [
+
+
+export const LukesPhrasal:{
+   wordTranslated: string;
+   czWord: string;
+  }[] = [
     {wordTranslated: "	Be about to", czWord: "	 chystat se"},
 {wordTranslated: "	Be back", czWord: "	 vrátit se, být zpátky"},
 {wordTranslated: "	Be into", czWord: "	 zajímat se o něco (více než obvykle)"},

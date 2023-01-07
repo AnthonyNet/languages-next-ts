@@ -1,7 +1,7 @@
 "use client"
 
 import { FC } from 'react'
-import Navbar from '../../../../sections/Navbar'
+import Navbar from '../../../../components/navbar/Navbar'
 import { IrregularVerbs } from '../../../../myData'
 import Irregular from '../../../../sections/Irregular'
 

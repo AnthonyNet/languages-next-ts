@@ -1,4 +1,8 @@
-export default [
+export const Goethe:{
+  czWord: string;
+  sentenceTranslated: string;
+  wordTranslated: string;
+}[] = [
   {
     czWord: "	Cesta stojí 200 eur z Hamburku.	",
     sentenceTranslated: "	Die Fahrt kostet ab Hamburg 200 Euro.	",

@@ -1,13 +1,12 @@
 "use client"
 
 import { FC, useEffect, useState } from "react";
+import  getLocalStorage  from "../utils/get_Local_Storage";
 
 import CardInputs from "../components/card/Card_Inputs";
 import CardButton from "../components/card/CardButton";
 import CardHint from "../components/card/CardHint";
 
-// import functions
-import getLocalStorage from "../components/localStorage/init_LS";
 import Score from "../components/card/Score";
 
 const styles = {
@@ -25,7 +24,7 @@ const IrregularVerbs: FC = ({ dataJSON }) => {
   const [hint, setHint] = useState(false);
   const [rand, setRand] = useState(0);
 
- 
+
 
 //Set totalScore from localStorage
   useEffect(() => {

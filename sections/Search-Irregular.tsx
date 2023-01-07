@@ -1,6 +1,18 @@
-import{FC, useState, useContext } from "react";
+"use cient"
+
+import{FC, useState} from "react";
 
 import { IrregularVerbs } from "../myData";
+
+const style={
+    input__Container: 'w-full min-h-[90vh]',
+    form: 'shadow-md rounded px-8 pt-6 pb-8 mb-4',
+    input: 'shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"',
+    table: 'min-w-full text-center',
+    thead: 'border-b bg-gray-800 text-white',
+    tr: 'border-b-2 border-blue-200',
+    th: 'text-sm font-medium p-2 sm:p-4'
+}          
 
 const SearchIrregular:FC = () => {
   const [search, setSearch] = useState("");
@@ -9,11 +21,11 @@ const SearchIrregular:FC = () => {
   return (
     <>
       <div
-        className="w-full min-h-[90vh]" >
-        <form className=" shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        className={style.input__Container} >
+        <form className={style.form}>
           <div>
             <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className={style.input}
               id="username"
               type="text"
               placeholder="Hledej slovo"
@@ -26,36 +38,36 @@ const SearchIrregular:FC = () => {
           <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
             <div className="inline-block min-w-full sm:px-6 lg:px-8">
               <div className="overflow-hidden">
-                <table className="min-w-full text-center">
-                  <thead className="border-b bg-gray-800">
+                <table className={style.table}>
+                  <thead className={style.thead}>
                     <tr>
                       <th
                         scope="col"
-                        className="text-sm font-medium text-white p-2 sm:p-4"
+                        className={style.th}
                       >
                         #
                       </th>
                       <th
                         scope="col"
-                        className="text-sm font-medium text-white p-2 sm:p-4"
+                         className={style.th}
                       >
                         CZ
                       </th>
                       <th
                         scope="col"
-                        className="text-sm font-medium text-white p-2 sm:p-4"
+                         className={style.th}
                       >
                         ENG
                       </th>
                       <th
                         scope="col"
-                        className="text-sm font-medium text-white p-2 sm:p-4"
+                         className={style.th}
                       >
                         Past Simple
                       </th>
                       <th
                         scope="col"
-                        className="text-sm font-medium text-white p-2 sm:p-4"
+                         className={style.th}
                       >
                         Past Perfect
                       </th>
@@ -78,34 +90,34 @@ const SearchIrregular:FC = () => {
                                 .startsWith(search);
                       })
                       .map((item, index) => (
-                        <tr key={index} className="border-b-2 border-blue-200">
+                        <tr key={index} className={style.tr}>
                           <th
                             scope="col"
-                            className="text-sm font-medium  p-2 sm:p-4"
+                            className={style.th}
                           >
                             {index + 1}
                           </th>
                           <th
                             scope="col"
-                            className="text-sm font-medium  p-2 sm:p-4"
+                            className={style.th}
                           >
                             {item.cz}
                           </th>
                           <th
                             scope="col"
-                            className="text-sm font-medium  p-2 sm:p-4"
+                            className={style.th}
                           >
                             {item.base}
                           </th>
                           <th
                             scope="col"
-                            className="text-sm font-medium  p-2 sm:p-4"
+                            className={style.th}
                           >
                             {item.pastSimple}
                           </th>
                           <th
                             scope="col"
-                            className="text-sm font-medium p-2 sm:p-4"
+                            className={style.th}
                           >
                             {item.pastParticiple}
                           </th>
