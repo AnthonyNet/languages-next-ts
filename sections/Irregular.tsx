@@ -38,7 +38,7 @@ function IrregularVerbs({ dataTS }: any) {
 */
   }
 
-  function randomWord(e: any) {
+  function randomWord() {
     setRand(Math.floor(Math.random() * dataTS.length));
     setStars(0);
     setHint(false);
@@ -79,6 +79,8 @@ function IrregularVerbs({ dataTS }: any) {
               setScore={setScore}
               setStars={setStars}
               placeholder="Past Simple"
+              defaultInput={defaultInput}
+              setDefaultInput={setDefaultInput}
               
             />
             {dataTS[rand].pastSimple2 && (
@@ -88,6 +90,8 @@ function IrregularVerbs({ dataTS }: any) {
                 setScore={setScore}
                 setStars={setStars}
                 placeholder="Past Simple 2"
+                defaultInput={defaultInput}
+                setDefaultInput={setDefaultInput}
               />
             )}
             <Input
@@ -96,6 +100,8 @@ function IrregularVerbs({ dataTS }: any) {
               setScore={setScore}
               setStars={setStars}
               placeholder="Past Participle"
+              defaultInput={defaultInput}
+              setDefaultInput={setDefaultInput}
               
             />
             {dataTS[rand].pastParticiple2 && (
@@ -105,6 +111,8 @@ function IrregularVerbs({ dataTS }: any) {
                 setScore={setScore}
                 setStars={setStars}
                 placeholder="Past Participle 2"
+                defaultInput={defaultInput}
+                setDefaultInput={setDefaultInput}
               
               />
             )}
