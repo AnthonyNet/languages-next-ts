@@ -26,6 +26,8 @@ const styles = {
   const [hint, setHint] = useState(false);
   const [rand, setRand] = useState(0);
 
+  console.log(dataTS.lengt);
+  
 
 //Set totalScore from localStorage
   useEffect(() => {  
@@ -83,7 +85,7 @@ const styles = {
 
         {/*the function gives new random word & set up styles to default */}
         <div className={styles.btn_div}>
-          <CardButton onClick={()=> randomWord} text="next word" />
+          <CardButton onClick={randomWord} text="next word" />
         </div>
 
         <div className={styles.btn_div}>

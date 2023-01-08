@@ -6,6 +6,22 @@ import {useState , useEffect } from "react";
 import {OxfordB1, OxfordB2, OxfordC1, Goethe} from "../myData/";
 import {LeftArrow, RightArrow} from '../components/pagination/Arrows';
 
+interface items {
+  cz?: string;
+  base?: string;
+  pastSimple?: string;
+  pastSimple2?: string;
+  pastParticiple?: string;
+  pastParticiple2?: string;
+  czWord?: string;
+  sentenceTranslated?: string;
+  wordTranslated?: string;
+
+}
+interface myProps {
+  items: string;
+  index: number;
+}
 const styles = {
   section: 'min-h-screen flex flex-column justify-center items-baseline flex-wrap',
   nav: ' w-full h-auto border-4',
@@ -38,7 +54,7 @@ function Pagination(){
   //                                0                  25
   const currentPosts = myData.slice(firstWordIndex, lastWordIndex);
 
-  let pages = [];
+  let pages= [];
 
   for (let i = 1; i <= Math.ceil(myData.length / wordsPerPage); i++) {
     pages.push(i);
@@ -79,6 +95,30 @@ function Pagination(){
       setMyData(Goethe);
     }
   }, [myNumb]);
+
+  const MyPosts = () => {
+    {currentPosts.map((item, index) => {
+      return (
+        <tr
+          key={index}
+          className="border-b-2 border-red-300 flex  flex-nowrap"
+        >
+          <td className={styles.tbody__td}>
+            {item.czWord}
+          </td>
+          {item.sentenceTranslated ? (
+            <td className="w-[50%] text-right"> 
+              {item.sentenceTranslated}
+            </td>
+          ) : (
+            <td className="w-[50%] text-right">
+              {item.wordTranslated}
+            </td>
+          )}
+        </tr>
+      );
+    })}
+  }
 
 
   return (
@@ -122,7 +162,7 @@ function Pagination(){
             </tr>
           </thead>
           <tbody>
-            {currentPosts.map((item, index) => {
+          {currentPosts.map((item, index) => {
               return (
                 <tr
                   key={index}

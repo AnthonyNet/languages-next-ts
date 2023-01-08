@@ -1,6 +1,7 @@
 'use client'
 
 import React from "react";
+import Input from './Card_Input';
 
 interface JOJO{
  myData:{
@@ -75,55 +76,21 @@ const Card_Inputs = ({ myData, setTotalScore, setScore, setStars }:JOJO) => {
         {myData.cz}
       </h5>
       <ul className="flex flex-col justify-around text-center mb-2">
-        <li className="p-2">
+       
+          <Input myData={myData.base} setTotalScore={setTotalScore} setScore={setScore} setStars={setStars}  />
+          {/* }
           <input
             type="text"
             className="quizInput text-center border border-gray-300"
             placeholder="Přítomný čas"
             data={myData.base}
             onChange={handleChange}
-          />
-        </li>
-        <li className="p-2">
-          <input
-            type="text"
-            className="quizInput text-center border border-gray-300"
-            placeholder="Minulý čas prostý"
-            data={myData.pastSimple}
-            onChange={handleChange}
-          />
-        </li>
-        {myData.pastSimple2 ? (
-          <li className="p-2">
-            <input
-              type="text"
-              className="quizInput text-center border border-gray-300"
-              placeholder="Minulý čas prostý 2"
-             data={myData.pastSimple2}
-              onChange={handleChange}
-            />
-          </li>
-        ) : null}
-        <li className="p-2">
-          <input
-            type="text"
-            className="quizInput text-center border border-gray-300"
-            placeholder="Minulé příčestí"
-           data={myData.pastParticiple}
-            onChange={handleChange}
-          />
-        </li>
-        {myData.pastParticiple2 ? (
-          <li className="p-2">
-            <input
-              type="text"
-              className="quizInput text-center border border-gray-300"
-              placeholder="Minulé příčestí 2"
-            data={myData.pastParticiple2}
-              onChange={handleChange}
-            />
-          </li>
-        ) : null}
+  /> */}
+       <Input myData={myData.pastSimple} setTotalScore={setTotalScore} setScore={setScore} setStars={setStars}  />
+       {myData.pastSimple2&&<Input myData={myData.pastSimple2} setTotalScore={setTotalScore} setScore={setScore} setStars={setStars} />}
+       <Input myData={myData.pastParticiple}  setTotalScore={setTotalScore} setScore={setScore} setStars={setStars}/>
+       {myData.pastParticiple2&&<Input myData={myData.pastParticiple2} setTotalScore={setTotalScore} setScore={setScore} setStars={setStars} />}
+
       </ul>
     </>
   );
