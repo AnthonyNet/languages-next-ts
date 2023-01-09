@@ -20,8 +20,10 @@ const styles = {
 function MainPage(){
   const [myData, setMyData] = useState(null);
 
+ 
   
   //Save API data into myData variable
+  
   useEffect(() => {
     fetch(url)
       .then((resp) => resp.json())

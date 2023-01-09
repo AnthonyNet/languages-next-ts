@@ -1,6 +1,9 @@
 
-export const getLocalStorage = () =>{
-   
+// This function is used to get the data from the local storage
+
+
+
+export function getLocalStorage(){
     let totalScore = localStorage.getItem('totalScore');
     if(totalScore){
         return JSON.parse(localStorage.getItem('totalScore') || "")
@@ -8,3 +11,17 @@ export const getLocalStorage = () =>{
         return[]
     }
 }
+
+/*
+export const getLocalStorage = (key: string) => {
+    const data = localStorage.getItem(key);
+    if (data) {
+        return JSON.parse(data);
+    } else {
+        return [];
+    }
+}*/
+
+
+
+

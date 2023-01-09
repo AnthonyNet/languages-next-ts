@@ -33,32 +33,41 @@ const Input = ({ myData, setTotalScore, setScore, setStars, placeholder, setDefa
   };
 
   // Watch INPUT variable for changes
+
  useEffect(()=>{
-    if (myData === input) {
-        // True === green border
-        setCheckStyles(true);
-       
-        setReadOnly(true);
-        setInput('');
-
-        //Props
-        setTotalScore((count:number) => +count + 1);
-        setScore((count:number) => count + 1);
-        setStars((count:number) => count + 1);
-      }
-
-    if(myData.startsWith(input)) {
-        //True === green text
-        setCheckMistake('text-green-500');
-    } else {
-        setCheckMistake('text-red-500');
-    }
-
+  runIT()
+ //eslint-disable-next-line
  },[input])
+
+
+ const runIT = () => {
+  if (myData === input) {
+    // True === green border
+    setCheckStyles(true);
+   
+    setReadOnly(true);
+    setInput('');
+
+    //Props
+    setTotalScore((count:number) => +count + 1);
+    setScore((count:number) => count + 1);
+    setStars((count:number) => count + 1);
+  }
+
+if(myData.startsWith(input)) {
+    //True === green text
+    setCheckMistake('text-green-500');
+} else {
+    setCheckMistake('text-red-500');
+}
+ }
+
+
+
 
 useEffect(()=>{
   setCheckStyles(false);
-  
+
 },[defaultInput])
 
 

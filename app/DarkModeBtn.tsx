@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 
 function DarkModeBtn(){
-  const [mounted, setMounted] = useState(false);
+  const [mounted, setMounted] = useState(true);
   const { theme, setTheme, systemTheme } = useTheme();
 
   // useEffect only runs on the client, so now we can safely show the UI
