@@ -3,7 +3,7 @@
 import Navbar from '../../../../components/navbar/Navbar'
 
 import { VerbenData }  from '../../../../myData'
-import Irregular from '../../../../sections/Irregular'
+
 
 
 function page(){
@@ -12,7 +12,7 @@ function page(){
   return (
     <div>
       <Navbar />
-      <Irregular dataTS={VerbenData}/>
+   
     </div>
   )
 }
