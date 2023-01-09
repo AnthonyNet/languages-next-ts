@@ -21,9 +21,10 @@ function IrregularVerbs({ dataTS }: any) {
   //const IrregularVerbs: FC = ({ dataTS }:any) => {
   const [totalScore, setTotalScore] = useState(0);
 
+  /*
   useEffect(() => {
     setTotalScore(localStorage.getItem("totalScore") || null)
-  }, [])
+  }, [])*/
 
   const [score, setScore] = useState(0);
   const [stars, setStars] = useState(0);
