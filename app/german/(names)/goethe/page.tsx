@@ -5,7 +5,6 @@ import Navbar from '../../../../components/navbar/Navbar'
 import { Goethe }  from '../../../../myData'
 import Card from '../../../../components/card/Card'
 
-
 function page(){
 
   
