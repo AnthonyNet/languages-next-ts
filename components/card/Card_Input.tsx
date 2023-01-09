@@ -29,11 +29,11 @@ const Input = ({ myData, setTotalScore, setScore, setStars, placeholder, setDefa
   //Save Input value into INPUT variable
   const handleChange = (e: any) => {
     setInput(e.target.value);
-    setCheckStyles(false)
   };
 
-  // Watch INPUT variable for changes
 
+
+// Watch INPUT variable for changes
  useEffect(()=>{
   runIT()
  //eslint-disable-next-line
@@ -46,7 +46,6 @@ const Input = ({ myData, setTotalScore, setScore, setStars, placeholder, setDefa
     setCheckStyles(true);
    
     setReadOnly(true);
-    setInput('');
 
     //Props
     setTotalScore((count:number) => +count + 1);
@@ -60,14 +59,14 @@ if(myData.startsWith(input)) {
 } else {
     setCheckMistake('text-red-500');
 }
+
  }
 
-
-
-
+ //Check if defaultInput TRUE/FALSE 
 useEffect(()=>{
   setCheckStyles(false);
-
+  setReadOnly(false);
+  setInput('');
 },[defaultInput])
 
 
@@ -75,7 +74,8 @@ useEffect(()=>{
     <li className={checkStyles?styles.li_green:styles.li}>
       <input
         type="text"
-        className={styles.input +' ' + checkMistake + ' myInputs' }
+        value={input}
+        className={styles.input +'text-gray-500 ' + checkMistake }
         onChange={handleChange}
         readOnly={readOnly}
         placeholder={placeholder}

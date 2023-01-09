@@ -18,25 +18,24 @@ const styles = {
 };
 
 function IrregularVerbs({ dataTS }: any) {
-  //const IrregularVerbs: FC = ({ dataTS }:any) => {
-  const [totalScore, setTotalScore] = useState(0);
-
+    const [score, setScore] = useState(0);
+    const [stars, setStars] = useState(0);
+    const [hint, setHint] = useState(false);
+    const [rand, setRand] = useState(0);
+    const [defaultInput, setDefaultInput] = useState(false);
+    const [totalScore, setTotalScore] = useState(0);
+   
+// Local Storage
+console.log('Local Storage doesnt work!!!!')
   /*
   useEffect(() => {
     setTotalScore(localStorage.getItem("totalScore") || null)
   }, [])*/
 
-  const [score, setScore] = useState(0);
-  const [stars, setStars] = useState(0);
-  const [hint, setHint] = useState(false);
-  const [rand, setRand] = useState(0);
-
-  const [defaultInput, setDefaultInput] = useState(false);
-  
-  //Set totalScore from localStorage
-  useEffect(() => {
-    localStorage.setItem("totalScore", JSON.stringify(totalScore));
-  }, [totalScore]);
+    //Set totalScore from localStorage
+  /*  useEffect(() => {
+        localStorage.setItem("totalScore", JSON.stringify(totalScore));
+      }, [totalScore]);*/
 
   {
     /* Gives a random number -> word from a list
@@ -71,7 +70,9 @@ function IrregularVerbs({ dataTS }: any) {
           <h5 className={"text-xl font-medium mb-2 border-b border-gray-300"}>
             {dataTS[rand].cz}
           </h5>
+        
           <ul className="flex flex-col justify-around text-center mb-2">
+       
           <Input
               myData={dataTS[rand].base}
               setTotalScore={setTotalScore}
@@ -94,6 +95,7 @@ function IrregularVerbs({ dataTS }: any) {
             />
             {dataTS[rand].pastSimple2 && (
               <Input
+
                 myData={dataTS[rand].pastSimple2}
                 setTotalScore={setTotalScore}
                 setScore={setScore}
@@ -115,6 +117,7 @@ function IrregularVerbs({ dataTS }: any) {
             />
             {dataTS[rand].pastParticiple2 && (
               <Input
+
                 myData={dataTS[rand].pastParticiple2}
                 setTotalScore={setTotalScore}
                 setScore={setScore}
@@ -126,12 +129,14 @@ function IrregularVerbs({ dataTS }: any) {
               />
             )}
           </ul>
-        </div>
-
-        {/*the function gives new random word & set up styles to default */}
+           {/*the function gives new random word & set up styles to default */}
         <div className={styles.btn_div}>
           <CardButton onClick={randomWord} text="next word" />
         </div>
+  
+        </div>
+
+       
 
         <div className={styles.btn_div}>
           {/* button toggle hint !hint */}
