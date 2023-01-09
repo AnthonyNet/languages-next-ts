@@ -15,6 +15,7 @@ const styles = {
   section : 'flex justify-center items-center w-full h-[100vh] p-2 sm:p-0 responsiveSection',
   section_div: 'w-[600px]  border-4 border-double border-blue-300 rounded-lg shadow-xl shadow-slate-600',
   ul: 'flex flex-col justify-around w-full text-center p-8 font-semibold italic',
+  li: 'p-8 border-b-2 border-slate-300',
 }
 
 const Card = ({ dataTS }:any) => {
@@ -23,22 +24,20 @@ const Card = ({ dataTS }:any) => {
   const [switchLanguage, setSwitchLanguage] = useState(true);
   const [hidden, setHidden] = useState(true);
 
-
-
   const CardTrue = () => {
    
       return (
         <>
-          <li  className= "p-8 border-b-2 border-slate-300">{data[rand].wordTranslated}</li>
+          <li  className={styles.li}>{data[rand].wordTranslated}</li>
 
           {data[rand].sentenceTranslated?(
-            <li >{data[rand].sentenceTranslated}</li>
+            <li className={styles.li} >{data[rand].sentenceTranslated}</li>
           ):null}
 
           {/* if hidden is true, answers are hidden */}
 
           <li
-              className={hidden?"hidden":"visible flex items-center p-8 border-b-2 border-slate-300"}
+              className={hidden?"hidden":`visible flex items-center ${styles.li}`}
               onClick={() => setHidden(!hidden)}
             >
               <strong className="m-auto mr-auto">
@@ -55,9 +54,9 @@ const Card = ({ dataTS }:any) => {
   const CardFalse = () =>{
     return (
       <>
-        <li  className="p-8 border-b-2 border-slate-300">{data[rand].czWord}</li>
+        <li  className={styles.li}>{data[rand].czWord}</li>
 
-        <li className={hidden?"hidden":"visible flex items-center p-8 border-b-2 border-slate-300"}
+        <li className={hidden?"hidden":`visible flex items-center ${styles.li}`}
             onClick={() => setHidden(!hidden)}>
             <strong className="m-auto mr-auto">
               {data[rand].wordTranslated}
@@ -67,7 +66,7 @@ const Card = ({ dataTS }:any) => {
             </div>
           </li>
           {data[rand].sentenceTranslated?(
-          <li  className={hidden?"hidden":"visible  items-center w-full border-b-2 border-slate-300"}
+          <li  className={hidden?"hidden":`visible flex items-center ${styles.li}`}
           onClick={() => setHidden(!hidden)}
           >{data[rand].sentenceTranslated}</li>
         ):null}
@@ -89,7 +88,7 @@ const Card = ({ dataTS }:any) => {
 
           {hidden ? (
             <li
-              className=" text-cyan-500 border-b-2 border-slate-300 p-8"
+              className={"text-cyan-500 " + styles.li}
               onClick={() => setHidden(!hidden)}
             >
               show answer
