@@ -8,6 +8,7 @@ import CardHint from "../components/card/CardHint";
 
 import Score from "../components/card/Score";
 
+import {getLocalStorage} from "../utils/get_Local_Storage";
 
 const styles = {
   section: "flex justify-center items-center w-full h-[91vh] responsiveSection",
@@ -23,25 +24,8 @@ function IrregularVerbs({ dataTS }: any) {
     const [hint, setHint] = useState(false);
     const [rand, setRand] = useState(0);
     const [defaultInput, setDefaultInput] = useState(false);
-    const [totalScore, setTotalScore] = useState(0);
-   
-// Local Storage
-console.log('Local Storage doesnt work!!!!')
-  /*
-  useEffect(() => {
-    setTotalScore(localStorage.getItem("totalScore") || null)
-  }, [])*/
 
-    //Set totalScore from localStorage
-  /*  useEffect(() => {
-        localStorage.setItem("totalScore", JSON.stringify(totalScore));
-      }, [totalScore]);*/
-
-  {
-    /* Gives a random number -> word from a list
-      Change input styles to default
-*/
-  }
+    const [totalScore, setTotalScore] = useState(getLocalStorage());
 
   function randomWord() {
     setRand(Math.floor(Math.random() * dataTS.length));
@@ -51,14 +35,19 @@ console.log('Local Storage doesnt work!!!!')
    setDefaultInput(true);
   }
 
- 
+ // create use effect to store totalScore in local storage
+  useEffect(() => {
+    localStorage.setItem("totalScore", JSON.stringify(totalScore));
+  }, [totalScore]);
 
   
   return (
     <section className={styles.section}>
       <div className={styles.section_div}>
         <div className={styles.score_div}>
-          Celkové skóre: <span>{totalScore > 0 ? totalScore : 0}</span>
+          Celkové skóre: <span>{ totalScore
+          /*totalScore > 0 ? totalScore : 0 */
+          }</span>
         </div>
         <div className={styles.score_div}>
           Momentální skóre: <span>{score > 0 ? score : 0}</span>

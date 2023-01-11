@@ -1,8 +1,8 @@
 "use client"
 
-import {FC, useState, useEffect} from 'react'
+import { useState, useEffect} from 'react'
 import Table from '../components/mainPage/Table'
-import '../components/mainPage/Main.css'
+import '../styles/MainPage.css'
 
 //This is an simple API for BitCoin currency
 const url = "https://api.coindesk.com/v1/bpi/currentprice.json";
@@ -12,7 +12,7 @@ const styles = {
   card__div: 'mainCard w-[300px] h-[420px] bg-transparent cursor-pointer group perspective',
   card__div__div: 'preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000',
   card__div__div__div: 'border-2 w-full h-full',
-  cardBack: 'mainCardBack my-rotate-y-180 backface-hidden w-full h-full bg-gray-100 mt-[-420px] overflow-hidden shadow-lg shadow-gray-400',
+  cardBack: 'mainCardBack my-rotate-y-180 backface-hidden w-full h-full mt-[-420px] overflow-hidden shadow-lg shadow-gray-400',
   cardBack__div: 'text-center flex flex-col items-center h-full text-gray-800 px-2 pb-24 ',
   cardBack__div__btn: 'bg-teal-500 px-6 py-2 mt-[8rem] mb-8 font-semibold text-white rounded-full delay-500 duration-1000 scale-0 group-hover:scale-125'
 }
