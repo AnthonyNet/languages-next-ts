@@ -18,9 +18,19 @@ const styles = {
 }
 
 function MainPage(){
-  const [myData, setMyData] = useState(null);
+  const [myData, setMyData] = useState('');
+ 
 
  
+ 
+ 
+  // async function to fetch data from API
+  /*
+  async function fetchUrl() {
+    const response = await fetch(url);
+    const data = await response.json();
+    setMyData(data);
+  }*/
   
   //Save API data into myData variable
   
@@ -29,8 +39,10 @@ function MainPage(){
       .then((resp) => resp.json())
       .then((resp) => {
         setMyData(resp);
-      });
+      })
+      .catch((error) => {console.log(error)});
   }, []);
+
 
   return (
     <section
@@ -57,14 +69,15 @@ function MainPage(){
           className={styles.cardBack}>
           <div className={styles.cardBack__div}>
             <h1 className="my-4 text-3xl font-semibold self-center">
-              {/*myData && myData.chartName*/}
+            
+              {myData? myData.chartName : "Loading..."}
             </h1>
             {myData && <Table data={myData} />}
             <button className={styles.cardBack__div__btn}>
               Last update:
             </button>
             <h1 className="text-sm font-semibold ">
-              {/*myData && myData.time.updated*/}
+              {myData && myData.time.updated}
             </h1>
           </div>
         </div>

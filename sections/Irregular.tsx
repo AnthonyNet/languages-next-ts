@@ -25,7 +25,7 @@ function IrregularVerbs({ dataTS }: any) {
     const [rand, setRand] = useState(0);
     const [defaultInput, setDefaultInput] = useState(false);
 
-    const [totalScore, setTotalScore] = useState(getLocalStorage());
+    const [totalScore, setTotalScore] = useState(0);
 
   function randomWord() {
     setRand(Math.floor(Math.random() * dataTS.length));
@@ -56,7 +56,7 @@ function IrregularVerbs({ dataTS }: any) {
         <Score score={stars} />
 
         <div className="px-6 inputs">
-          <h5 className={"text-xl font-medium mb-2 border-b border-gray-300"}>
+          <h5 className={"text-xl dark:bg-black font-medium mb-2 border-b border-gray-300"}>
             {dataTS[rand].cz}
           </h5>
         

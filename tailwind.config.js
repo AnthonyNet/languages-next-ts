@@ -20,7 +20,7 @@ const myClass = plugin(function({addUtilities}){
 });
 
 module.exports = {
-  darkMode: 'class',
+  darkMode: ['class', '[data-mode="dark"]'],
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
