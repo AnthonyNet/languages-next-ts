@@ -1,0 +1,49 @@
+/*
+    MENU
+*/
+
+@media screen and (max-height: 550px) and (orientation: landscape) and (max-width:813px)
+{
+  .responsiveMenu{
+    width: 100vw;
+    padding: 1rem;
+  }
+  .responsiveMenu nav ul main{
+
+  display: flex;
+  justify-content: space-between;
+  /*align-items: flex-start;*/
+ 
+  }
+  .responsiveMenu nav ul main details{
+    width: 50%;
+
+  }
+  
+ 
+  .responsiveMenu nav ul main details{
+
+    padding: 0;
+  }
+}
+
+
+
+/*
+IIREGULAR
+*/
+@media screen and (max-height: 532px) and (orientation: landscape)
+{
+.section_Responsive{
+    height: auto;
+    }
+
+}
+
+@media screen and (max-height: 532px) and (orientation: portrait)
+{
+.section_Responsive{
+    height: auto;
+    }
+
+}

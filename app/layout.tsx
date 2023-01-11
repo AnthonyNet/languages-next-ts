@@ -1,4 +1,6 @@
 import "../styles/globals.css";
+import  '../styles/Mobile.css';
+
 import Head from "./head";
 import Providers from "./Providers";
 

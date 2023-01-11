@@ -11,7 +11,7 @@ import Score from "../components/card/Score";
 import {getLocalStorage} from "../utils/get_Local_Storage";
 
 const styles = {
-  section: "flex justify-center items-center w-full h-[91vh] responsiveSection",
+  section: "section_Responsive flex justify-center items-center w-full h-[91vh] responsiveSection",
   section_div:
     "max-w-sm card my-8 sm:my-0 border-4 border-double border-blue-700 rounded-lg shadow-xl shadow-slate-600 text-center",
   score_div: "py-3 px-6 border-b border-gray-300",

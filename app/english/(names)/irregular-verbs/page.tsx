@@ -9,7 +9,7 @@ import Irregular from '../../../../sections/Irregular';
   return (
     <div>
       <Navbar />
-    <Irregular dataTS={IrregularVerbs} />
+     <Irregular dataTS={IrregularVerbs} />
     </div>
   )
 }

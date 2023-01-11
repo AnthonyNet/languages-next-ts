@@ -17,6 +17,14 @@ import {
 } from "../../myData";
 
 import DarkModeBtn from "../../app/DarkModeBtn";
+const styles = {
+  nav: 'w-full  min-h-[100px] shadow-xl z-[400]',
+  nav__div: 'w-full h-full flex relative justify-between items-start text-xl  p-4 sm:p-8',
+  aside: 'logo sm:w-1/3  flex items-start',
+  article: 'justify-around items-start w-full h-full hidden md:flex',
+  nav__ul: 'flex flex-col border-solid border-t-4 border-sky-400 navDetails',
+
+}
 
 function Navbar(){
   const [nav, setNav] = useState(false);
@@ -27,22 +35,22 @@ function Navbar(){
 
   return (
     <nav
-      className={` w-full  min-h-20 shadow-xl z-[100]`}
+      className={styles.nav}
       /* style={darkMode ? stylesSwitch.dark.basic : stylesSwitch.light.basic}*/
     >
-      <div className="flex relative justify-between items-start w-full h-full text-xl  p-4 sm:p-8">
-        <aside className="logo sm:w-1/3">
+      <div className={styles.nav__div}>
+        <aside className={styles.aside}>
           <Link href="/">
             Learn <strong>languages</strong>
           </Link>
         </aside>
-        <ul className="justify-around items-start w-full h-full hidden md:flex">
+        <article className={styles.article}>
           <Link href="/">Home</Link>
           <details className="cursor-pointer">
             <summary className="uppercase logo">
               <strong className="hover:text-sky-700">English</strong>
             </summary>
-            <ul className="flex flex-col border-solid border-t-4 border-sky-400 navDetails">
+            <ul className={styles.nav__ul}>
               <Link href="/english/irregular-verbs">{`Irregular Verbs (${IrregularVerbs.length})`}</Link>
               <Link href="/english/search-irregular">{`Irregular List (${IrregularVerbs.length})`}</Link>
               <Link href="/english/oxford-B1">{`Oxford B1 (${OxfordB1.length})`}</Link>
@@ -62,7 +70,7 @@ function Navbar(){
               <Link href="/german/goethe">{`Goethe (${Goethe.length})`}</Link>
             </ul>
           </details>
-        </ul>
+        </article>
 
         <span className="hidden md:flex  bottom-2 right-4 text-3xl">
           <DarkModeBtn />

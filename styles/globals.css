@@ -53,6 +53,11 @@
   --mainCardBack: linear-gradient(132deg, rgb(18, 8, 17) 0.00%, rgb(3, 3, 38) 100.00%);
 }
 
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -77,7 +82,6 @@ nav,
 .mainCardBack{
   background: var(--mainCardBack);
 }
-
 
 
 
