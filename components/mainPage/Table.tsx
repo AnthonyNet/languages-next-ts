@@ -1,6 +1,13 @@
 "use client";
+import {Bpi} from "./interface";
 
-const Table = ({data}) => {
+interface Table {
+  myData: Bpi;
+}
+
+const Table = ({myData}:Table) => {
+
+  
   return (
     <table className="table-auto">
       <thead>
@@ -12,19 +19,19 @@ const Table = ({data}) => {
       </thead>
       <tbody>
         <tr>
-          <td>{data.bpi.EUR.code}</td>
-          <td>{data.bpi.EUR.rate}</td>
+          <td>{myData.EUR.code}</td>
+          <td>{myData.EUR.rate}</td>
          
           
         </tr>
         <tr>
-        <td>{data.bpi.USD.code}</td>
-        <td>{data.bpi.USD.rate}</td>
+        <td>{myData.USD.code}</td>
+        <td>{myData.USD.rate}</td>
           
         </tr>
         <tr>
-        <td>{data.bpi.GBP.code}</td>
-        <td>{data.bpi.GBP.rate}</td>
+        <td>{myData.GBP.code}</td>
+        <td>{myData.GBP.rate}</td>
           
         </tr>
       </tbody>
