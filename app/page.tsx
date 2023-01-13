@@ -2,10 +2,6 @@
 
 import {Navbar, MainPage} from '../sections'
 
-interface localStorage {
-  totalScore: number | null;
-}
-
 function Page(){
 
 

@@ -11,6 +11,7 @@ interface Props{
    placeholder: string,
    setDefaultInput: React.Dispatch<React.SetStateAction<boolean>>,
     defaultInput: boolean,
+    totalScore: number,
  }
  
 
@@ -20,7 +21,7 @@ const styles = {
     input: 'text-center border border-gray-300 text-bold',
 }
 
-const Input = ({ myData, setTotalScore, setScore, setStars, placeholder, setDefaultInput, defaultInput}: Props) => {
+const Input = ({ myData, setTotalScore, setScore, setStars, placeholder, setDefaultInput, defaultInput, totalScore}: Props) => {
   const [readOnly, setReadOnly] = useState(false);
   const [input, setInput] = useState("");
   const [checkMistake, setCheckMistake] = useState('');
@@ -53,7 +54,7 @@ const Input = ({ myData, setTotalScore, setScore, setStars, placeholder, setDefa
     setScore((count:number) => count + 1);
     setStars((count:number) => count + 1);
     
-    //localStorage.setItem("totalScore", JSON.stringify(totalScore + 1));
+    localStorage.setItem("totalScore", JSON.stringify(totalScore + 1));
   
   }
 

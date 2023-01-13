@@ -8,7 +8,7 @@ import CardHint from "../components/card/CardHint";
 
 import Score from "../components/card/Score";
 
-import {getLocalStorage} from "../utils/get_Local_Storage";
+
 
 const styles = {
   section: "section_Responsive flex justify-center items-center w-full h-[91vh] responsiveSection",
@@ -24,17 +24,18 @@ function IrregularVerbs({ dataTS }: any) {
     const [hint, setHint] = useState(false);
     const [rand, setRand] = useState(0);
     const [defaultInput, setDefaultInput] = useState(false);
+    const [totalScore, setTotalScore] = useState(0);
 
     if (typeof window !== 'undefined') {
       // do localStorage stuff here
       const item = localStorage.getItem('totalScore')
       if(item== null|| undefined){
-        localStorage.setItem('totalScore', '0')
+        localStorage.setItem('totalScore', '0');
+        setTotalScore(JSON.parse(localStorage.getItem('totalScore') || ""));
       }
      
     } 
 
-    const [totalScore, setTotalScore] = useState(localStorage.getItem('totalScore'));
    
 
   function randomWord() {
@@ -77,6 +78,7 @@ function IrregularVerbs({ dataTS }: any) {
               placeholder={"Present Simple"}
               defaultInput={defaultInput}
               setDefaultInput={setDefaultInput}
+              totalScore={totalScore}
              
               
             />
@@ -88,6 +90,7 @@ function IrregularVerbs({ dataTS }: any) {
               placeholder="Past Simple"
               defaultInput={defaultInput}
               setDefaultInput={setDefaultInput}
+              totalScore={totalScore}
              
               
             />
@@ -101,6 +104,7 @@ function IrregularVerbs({ dataTS }: any) {
                 placeholder="Past Simple 2"
                 defaultInput={defaultInput}
                 setDefaultInput={setDefaultInput}
+                totalScore={totalScore}
                
               />
             )}
@@ -112,6 +116,7 @@ function IrregularVerbs({ dataTS }: any) {
               placeholder="Past Participle"
               defaultInput={defaultInput}
               setDefaultInput={setDefaultInput}
+              totalScore={totalScore}
              
               
             />
@@ -125,6 +130,7 @@ function IrregularVerbs({ dataTS }: any) {
                 placeholder="Past Participle 2"
                 defaultInput={defaultInput}
                 setDefaultInput={setDefaultInput}
+                totalScore={totalScore}
                
               
               />
