@@ -18,24 +18,30 @@ const styles = {
   btn_div: "border-t border-gray-300 text-gray-600",
 };
 
-function IrregularVerbs({ dataTS }: any) {
+
+
+function IrregularVerbs({ dataTS }:any) {
     const [score, setScore] = useState(0);
     const [stars, setStars] = useState(0);
     const [hint, setHint] = useState(false);
     const [rand, setRand] = useState(0);
     const [defaultInput, setDefaultInput] = useState(false);
-    const [totalScore, setTotalScore] = useState(0);
+   // const [totalScore, setTotalScore] = useState<string[]>([]);
+    const [totalScore, setTotalScore] = useState<any>([]);
 
     if (typeof window !== 'undefined') {
       // do localStorage stuff here
       const item = localStorage.getItem('totalScore')
       if(item== null|| undefined){
+       // localStorage.setItem('totalScore',JSON.stringify('0'));
         localStorage.setItem('totalScore', '0');
-        setTotalScore(JSON.parse(localStorage.getItem('totalScore') || ""));
       }
-     
     } 
 
+    useEffect(() => {
+      setTotalScore(JSON.parse(localStorage.getItem('totalScore') || '' ));
+   //   setTotalScore(JSON.parse(localStorage.getItem('totalScore') || ''));
+    },[])
    
 
   function randomWord() {

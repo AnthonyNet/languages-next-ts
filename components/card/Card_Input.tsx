@@ -5,12 +5,15 @@ import { useState, useEffect } from "react";
 interface Props{
 
   myData: string,
+
+
    setTotalScore: React.Dispatch<React.SetStateAction<number>>,
    setScore: React.Dispatch<React.SetStateAction<number>>,
    setStars: React.Dispatch<React.SetStateAction<number>>,
    placeholder: string,
    setDefaultInput: React.Dispatch<React.SetStateAction<boolean>>,
     defaultInput: boolean,
+    //totalScore: number|string[],
     totalScore: number,
  }
  
@@ -46,15 +49,16 @@ const Input = ({ myData, setTotalScore, setScore, setStars, placeholder, setDefa
   if (myData === input) {
     // True === green border
     setCheckStyles(true);
-   
     setReadOnly(true);
 
     //Props
     setTotalScore((count:number) => count + 1);
     setScore((count:number) => count + 1);
     setStars((count:number) => count + 1);
-    
-    localStorage.setItem("totalScore", JSON.stringify(totalScore + 1));
+   // localStorage.setItem("totalScore", JSON.stringify(totalScore + 1));
+    const number = totalScore + 1;
+
+    localStorage.setItem("totalScore", JSON.stringify(number));
   
   }
 

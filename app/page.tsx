@@ -4,7 +4,6 @@ import {Navbar, MainPage} from '../sections'
 
 function Page(){
 
-
   return (
     <div>
         <Navbar />
