@@ -25,6 +25,7 @@ const Input = ({ myData, setTotalScore, setScore, setStars, placeholder, setDefa
   const [input, setInput] = useState("");
   const [checkMistake, setCheckMistake] = useState('');
   const [checkStyles, setCheckStyles] = useState(false);
+ 
 
   //Save Input value into INPUT variable
   const handleChange = (e: any) => {
@@ -48,9 +49,12 @@ const Input = ({ myData, setTotalScore, setScore, setStars, placeholder, setDefa
     setReadOnly(true);
 
     //Props
-    setTotalScore((count:number) => +count + 1);
+    setTotalScore((count:number) => count + 1);
     setScore((count:number) => count + 1);
     setStars((count:number) => count + 1);
+    
+    //localStorage.setItem("totalScore", JSON.stringify(totalScore + 1));
+  
   }
 
 if(myData.startsWith(input)) {

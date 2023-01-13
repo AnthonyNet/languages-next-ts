@@ -13,8 +13,8 @@ export function getLocalStorage(){
 }*/
 
 
-export const getLocalStorage = (key: string):any => {
-    const data = localStorage.getItem(key);
+export const getLocalStorage = ('totalStorage'):any => {
+    const data = localStorage.getItem('totalStorage');
     if (data) {
         return JSON.parse(data);
     } else {

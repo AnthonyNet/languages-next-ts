@@ -25,7 +25,17 @@ function IrregularVerbs({ dataTS }: any) {
     const [rand, setRand] = useState(0);
     const [defaultInput, setDefaultInput] = useState(false);
 
+   /* if (typeof window !== 'undefined') {
+      // do localStorage stuff here
+      const item = localStorage.getItem('totalScore')
+      if(item== null|| undefined){
+        localStorage.setItem('totalScore', '0')
+      }
+     
+    } */
+
     const [totalScore, setTotalScore] = useState(0);
+   
 
   function randomWord() {
     setRand(Math.floor(Math.random() * dataTS.length));
@@ -36,17 +46,14 @@ function IrregularVerbs({ dataTS }: any) {
   }
 
  // create use effect to store totalScore in local storage
-  useEffect(() => {
-    localStorage.setItem("totalScore", JSON.stringify(totalScore));
-  }, [totalScore]);
 
-  
+
   return (
     <section className={styles.section}>
       <div className={styles.section_div}>
         <div className={styles.score_div}>
-          Celkové skóre: <span>{ totalScore
-          /*totalScore > 0 ? totalScore : 0 */
+          Celkové skóre: <span>{ 
+          totalScore
           }</span>
         </div>
         <div className={styles.score_div}>
@@ -70,6 +77,7 @@ function IrregularVerbs({ dataTS }: any) {
               placeholder={"Present Simple"}
               defaultInput={defaultInput}
               setDefaultInput={setDefaultInput}
+             
               
             />
             <Input
@@ -80,6 +88,7 @@ function IrregularVerbs({ dataTS }: any) {
               placeholder="Past Simple"
               defaultInput={defaultInput}
               setDefaultInput={setDefaultInput}
+             
               
             />
             {dataTS[rand].pastSimple2 && (
@@ -92,6 +101,7 @@ function IrregularVerbs({ dataTS }: any) {
                 placeholder="Past Simple 2"
                 defaultInput={defaultInput}
                 setDefaultInput={setDefaultInput}
+               
               />
             )}
             <Input
@@ -102,6 +112,7 @@ function IrregularVerbs({ dataTS }: any) {
               placeholder="Past Participle"
               defaultInput={defaultInput}
               setDefaultInput={setDefaultInput}
+             
               
             />
             {dataTS[rand].pastParticiple2 && (
@@ -114,6 +125,7 @@ function IrregularVerbs({ dataTS }: any) {
                 placeholder="Past Participle 2"
                 defaultInput={defaultInput}
                 setDefaultInput={setDefaultInput}
+               
               
               />
             )}
