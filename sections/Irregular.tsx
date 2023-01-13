@@ -25,16 +25,16 @@ function IrregularVerbs({ dataTS }: any) {
     const [rand, setRand] = useState(0);
     const [defaultInput, setDefaultInput] = useState(false);
 
-   /* if (typeof window !== 'undefined') {
+    if (typeof window !== 'undefined') {
       // do localStorage stuff here
       const item = localStorage.getItem('totalScore')
       if(item== null|| undefined){
         localStorage.setItem('totalScore', '0')
       }
      
-    } */
+    } 
 
-    const [totalScore, setTotalScore] = useState(0);
+    const [totalScore, setTotalScore] = useState(localStorage.getItem('totalScore'));
    
 
   function randomWord() {
