@@ -5,8 +5,6 @@ import Table from "../components/mainPage/Table";
 import { Root, Time, Bpi } from "../components/mainPage/interface";
 import "../styles/MainPage.css";
 
-//This is an simple API for BitCoin currency
-const url = "https://api.coindesk.com/v1/bpi/currentprice.json";
 
 const styles = {
   section:
@@ -22,12 +20,13 @@ const styles = {
     "text-center flex flex-col items-center h-full text-gray-800 px-2 pb-24 ",
   cardBack__div__btn:
     "bg-teal-500 px-6 py-2 mt-[8rem] mb-8 font-semibold text-white rounded-full delay-500 duration-1000 scale-0 group-hover:scale-125",
+    button: 'bg-teal-500 px-6 py-2 mt-[8rem] mb-8 font-semibold text-white rounded-full delay-500 duration-1000 scale-0 group-hover:scale-125',
 };
 
 function MainPage(): JSX.Element {
   const [setData, setMyData] = useState<Root | undefined>();
-  //const [setData, setMyData] = useState<any>();
   const url = "https://api.coindesk.com/v1/bpi/currentprice.json";
+
 
   useEffect(() => {
     fetch(url)
@@ -42,6 +41,7 @@ function MainPage(): JSX.Element {
 
   return (
     <section className={styles.section}>
+      
       <h1 className="ml-[-50px] mt-2 sm:mt-0">Welcome</h1>
       <h1 className="ml-[50px]">
         <strong>humans...</strong>
@@ -62,16 +62,17 @@ function MainPage(): JSX.Element {
               </h2>
 
               {setData && <Table myData={setData.bpi} />}
-              <button className="bg-teal-500 px-6 py-2 mt-[8rem] mb-8 font-semibold text-white rounded-full delay-500 duration-1000 scale-0 group-hover:scale-125">
+              <button className={styles.button}>
                 Last update:
               </button>
-              <h1 className="text-sm font-semibold ">
+              <h2 className="text-sm font-semibold ">
                 {setData && setData.time.updated}
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
       </div>
+
       {/*
        <div class="flex w-full h-full items-center justify-center flex-wrap">
       <div class="w-full md:w-1/2 xl:w-1/3 border-4 border-red-500 h-8"></div>
