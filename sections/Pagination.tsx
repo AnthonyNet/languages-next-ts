@@ -1,23 +1,21 @@
-"use client"
+"use client";
 
+import { useState, useEffect } from "react";
 
-import {useState , useEffect } from "react";
+import { OxfordB1, OxfordB2, OxfordC1, Goethe } from "../myData/";
 
-import {OxfordB1, OxfordB2, OxfordC1, Goethe} from "../myData/";
-
-import Bottom_Menu from '../components/pagination/Bottom_Menu';
+import Top_Menu from "../components/pagination/Top_Menu";
+import Bottom_Menu from "../components/pagination/Bottom_Menu";
 
 const styles = {
-  section: 'min-h-screen flex flex-column justify-center items-baseline flex-wrap',
-  nav: ' w-full h-auto border-4',
-  ul: 'flex flex-row justify-around sm:w-[60%] m-auto flex-wrap',
-  table: 'table-fixed min-w-[50vw] m-auto',
-  thead__tr: 'flex justify-around',
-  tbody__td: 'w-[50%] border-red-400 border-r-4',
-  li__active: 'border-b-4 border-red-600',
+  section:
+    "min-h-screen flex flex-column justify-center items-baseline flex-wrap",
+  table: "table-fixed min-w-[50vw] m-auto",
+  thead__tr: "flex justify-around",
+  tbody__td: "w-[50%] border-red-400 border-r-4",
 };
 
-function Pagination(){
+function Pagination() {
   //add id to all myData items
   /*useEffect(() => {
     myData.forEach((item, index) => {
@@ -30,23 +28,21 @@ function Pagination(){
   const [wordsPerPage, setPostsPerPage] = useState<number>(25);
 
   //  25                    1             25
-  const lastWordIndex:number = currentPage * wordsPerPage;
+  const lastWordIndex: number = currentPage * wordsPerPage;
   //      0              25                 25
-  const firstWordIndex:number = lastWordIndex - wordsPerPage;
+  const firstWordIndex: number = lastWordIndex - wordsPerPage;
   //                                0                  25
   const currentPosts = myData.slice(firstWordIndex, lastWordIndex);
 
-  let pages:number[]= [];
+  let pages: number[] = [];
 
   for (let i = 1; i <= Math.ceil(myData.length / wordsPerPage); i++) {
     pages.push(i);
   }
 
- 
   const prevPage = () => {
     if (currentPage < 2) {
       setCurrentPage(pages.length);
-     
     } else {
       setCurrentPage((page) => page - 1);
     }
@@ -55,7 +51,6 @@ function Pagination(){
   const nextPage = () => {
     if (currentPage > pages.length - 1) {
       setCurrentPage(1);
-      
     } else {
       setCurrentPage((page) => page + 1);
     }
@@ -74,7 +69,7 @@ function Pagination(){
       setMyData(Goethe);
     }
   }, [myNumb]);
-
+  /*
   const MyPosts = () => {
     {currentPosts.map((item, index) => {
       return (
@@ -97,39 +92,11 @@ function Pagination(){
         </tr>
       );
     })}
-  }
-
+  }*/
 
   return (
     <section className={styles.section}>
-      <nav className={styles.nav}>
-        <ul className={styles.ul}>
-          <li 
-            className={myNumb === 0 ? styles.li__active : ''}
-            onClick={() => setMyNumb(0)}
-          >
-            Oxford B1
-          </li>
-          <li
-            className={myNumb === 1 ? styles.li__active : ''}
-            onClick={() => setMyNumb(1)}
-          >
-            Oxford B2
-          </li>
-          <li
-            className={myNumb === 2 ? styles.li__active : ''}
-            onClick={() => setMyNumb(2)}
-          >
-            Oxford C1
-          </li>
-          <li
-            className={myNumb === 3 ? styles.li__active : ''}
-            onClick={() => setMyNumb(3)}
-          >
-            Goethe De
-          </li>
-        </ul>
-      </nav>
+      <Top_Menu myNumb={myNumb} setMyNumb={setMyNumb} />
 
       <main className="w-full">
         <h2 className="text-center">Pagination</h2>
@@ -141,17 +108,15 @@ function Pagination(){
             </tr>
           </thead>
           <tbody>
-          {currentPosts.map((item, index) => {
+            {currentPosts.map((item, index) => {
               return (
                 <tr
                   key={index}
                   className="border-b-2 border-red-300 flex  flex-nowrap"
                 >
-                  <td className={styles.tbody__td}>
-                    {item.czWord}
-                  </td>
+                  <td className={styles.tbody__td}>{item.czWord}</td>
                   {item.sentenceTranslated ? (
-                    <td className="w-[50%] text-right"> 
+                    <td className="w-[50%] text-right">
                       {item.sentenceTranslated}
                     </td>
                   ) : (
@@ -166,9 +131,15 @@ function Pagination(){
         </table>
       </main>
 
-      <Bottom_Menu pages={pages} prevPage={prevPage} nextPage={nextPage} currentPage={currentPage} setCurrentPage={setCurrentPage} />
+      <Bottom_Menu
+        pages={pages}
+        prevPage={prevPage}
+        nextPage={nextPage}
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+      />
     </section>
   );
-};
+}
 
 export default Pagination;
