@@ -37,7 +37,7 @@ const Card = ({ dataTS }:any) => {
           {/* if hidden is true, answers are hidden */}
 
           <li
-              className={hidden?"hidden":`visible flex items-center ${styles.li}`}
+              className={hidden?"hidden":`visible flex  ${styles.li}`}
               onClick={() => setHidden(!hidden)}
             >
               <strong className="m-auto mr-auto">
@@ -56,7 +56,7 @@ const Card = ({ dataTS }:any) => {
       <>
         <li  className={styles.li}>{data[rand].czWord}</li>
 
-        <li className={hidden?"hidden":`visible flex items-center ${styles.li}`}
+        <li className={hidden?"hidden":`visible flex  ${styles.li}`}
             onClick={() => setHidden(!hidden)}>
             <strong className="m-auto mr-auto">
               {data[rand].wordTranslated}
@@ -66,7 +66,7 @@ const Card = ({ dataTS }:any) => {
             </div>
           </li>
           {data[rand].sentenceTranslated?(
-          <li  className={hidden?"hidden":`visible flex items-center ${styles.li}`}
+          <li  className={hidden?"hidden":`visible ${styles.li} flex justify-center`}
           onClick={() => setHidden(!hidden)}
           >{data[rand].sentenceTranslated}</li>
         ):null}
