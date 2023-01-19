@@ -4,24 +4,9 @@
 import {useState , useEffect } from "react";
 
 import {OxfordB1, OxfordB2, OxfordC1, Goethe} from "../myData/";
-import {LeftArrow, RightArrow} from '../components/pagination/Arrows';
 
-interface items {
-  cz?: string;
-  base?: string;
-  pastSimple?: string;
-  pastSimple2?: string;
-  pastParticiple?: string;
-  pastParticiple2?: string;
-  czWord?: string;
-  sentenceTranslated?: string;
-  wordTranslated?: string;
+import Bottom_Menu from '../components/pagination/Bottom_Menu';
 
-}
-interface myProps {
-  items: string;
-  index: number;
-}
 const styles = {
   section: 'min-h-screen flex flex-column justify-center items-baseline flex-wrap',
   nav: ' w-full h-auto border-4',
@@ -41,29 +26,23 @@ function Pagination(){
   });*/
 
   const [myData, setMyData] = useState(OxfordB1);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [wordsPerPage, setPostsPerPage] = useState(25);
-  const [menuPosts, setMenuPosts] = useState();
-
-  const [marginLeft, setMarginLeft] = useState(0);
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [wordsPerPage, setPostsPerPage] = useState<number>(25);
 
   //  25                    1             25
-  const lastWordIndex = currentPage * wordsPerPage;
+  const lastWordIndex:number = currentPage * wordsPerPage;
   //      0              25                 25
-  const firstWordIndex = lastWordIndex - wordsPerPage;
+  const firstWordIndex:number = lastWordIndex - wordsPerPage;
   //                                0                  25
   const currentPosts = myData.slice(firstWordIndex, lastWordIndex);
 
-  let pages= [];
+  let pages:number[]= [];
 
   for (let i = 1; i <= Math.ceil(myData.length / wordsPerPage); i++) {
     pages.push(i);
   }
 
-  const style = {
-    display: currentPage < currentPage - 1 ? "none" : "",
-  };
-
+ 
   const prevPage = () => {
     if (currentPage < 2) {
       setCurrentPage(pages.length);
@@ -187,52 +166,7 @@ function Pagination(){
         </table>
       </main>
 
-      <article className="flex flex-row  w-auto  justify-center">
-        <ul className="flex flex-row  items-center justify-center border-4">
-
-          {/* 
-          PREVIOUS PAGE BUTTON
-          */}
-
-          <li className="sm:w-[50px] px-4 -mb-2" onClick={prevPage}>
-            <LeftArrow />
-          </li>
-
-            {/* 
-             PAGINATION MENU
-          */}
-
-          {pages.map((page, index) => {
-            return (
-              <li
-                className={
-                  page == currentPage
-                    ? "text-xl border-b border-red-400  sm:w-[50px] text-center mt-2 h-[50px]"
-                    : page < currentPage - 3
-                    ? "hidden"
-                    : // : page > currentPage + 4 && currentPage !=1 ? "hidden"
-                    page > currentPage + 3 && page > 7
-                    ? "hidden"
-                    : "sm:w-[50px] sm:h-[50px] p-[2vw] sm:p-4 visible"
-                }
-                style={style}
-                key={index}
-                onClick={() => setCurrentPage(page)}
-              >
-                {page}
-              </li>
-            );
-          })}
-
-          {/* 
-          NEXT PAGE BUTTON
-          */}
-
-          <li onClick={nextPage} className="sm:w-[50px] p-4 -mb-2">
-            <RightArrow />
-          </li>
-        </ul>
-      </article>
+      <Bottom_Menu pages={pages} prevPage={prevPage} nextPage={nextPage} currentPage={currentPage} setCurrentPage={setCurrentPage} />
     </section>
   );
 };

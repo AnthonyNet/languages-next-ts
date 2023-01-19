@@ -20,7 +20,18 @@ const styles = {
 
 };
 
-function IrregularVerbs({ dataTS }: any) {
+
+interface DataTS {
+  cz: string;
+  cz2?: string;
+  base: string;
+  pastSimple: string;
+  pastSimple2?: string;
+  pastParticiple: string;
+  pastParticiple2?: string;
+}
+
+function IrregularVerbs({ dataTS }:any): JSX.Element {
   const [score, setScore] = useState(0);
   const [stars, setStars] = useState(0);
   const [hint, setHint] = useState(false);
@@ -28,6 +39,14 @@ function IrregularVerbs({ dataTS }: any) {
   const [defaultInput, setDefaultInput] = useState(false);
   /*  const [totalScore, setTotalScore] = useState<string[]>([]); */
   const [totalScore, setTotalScore] = useState<any>([]);
+  //give me totalScore hook for typescript, it receives empty array or number
+
+
+
+
+  
+  
+
 
 
   /*------------------------------------------
@@ -67,6 +86,8 @@ HIDE HINTS
     setDefaultInput(true);
   }
 
+
+
  
   return (
     <section className={styles.section}>
@@ -79,7 +100,7 @@ HIDE HINTS
         </div>
 
         <Score score={stars} />
-
+           
         <div className="px-6 inputs">
           <h5 className={styles.h5}>
             {dataTS[rand].cz}
@@ -165,3 +186,5 @@ HIDE HINTS
 }
 
 export default IrregularVerbs;
+
+
