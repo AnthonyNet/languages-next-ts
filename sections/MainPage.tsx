@@ -49,8 +49,7 @@ function MainPage(): JSX.Element {
       <div className={styles.card__div}>
         <div className={styles.card__div__div}>
           <div className={styles.card__div__div__div}>
-            <img
-              src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimg4.wikia.nocookie.net%2F__cb20081229142345%2Ffallout%2Fimages%2F2%2F2a%2FFallout2front.jpg&f=1&nofb=1"
+            <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimg4.wikia.nocookie.net%2F__cb20081229142345%2Ffallout%2Fimages%2F2%2F2a%2FFallout2front.jpg&f=1&nofb=1"
               className="w-full h-full"
               alt="fallout-logo"
             />

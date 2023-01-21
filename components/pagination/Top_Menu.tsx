@@ -14,8 +14,7 @@ const styles = {
 
 function Top_Menu({myNumb, setMyNumb}: Props):JSX.Element {
 
-return(
-<nav className={styles.nav}>
+return <nav className={styles.nav}>
         <ul className={styles.ul}>
           <li 
             className={myNumb === 0 ? styles.li__active : ''}
@@ -43,7 +42,6 @@ return(
           </li>
         </ul>
       </nav>
-)
 }
 
 export default Top_Menu;
