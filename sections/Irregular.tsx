@@ -15,11 +15,9 @@ const styles = {
     "max-w-sm card my-8 xl:my-0 border-4 border-double border-blue-700 rounded-lg shadow-xl shadow-slate-600 text-center",
   score_div: "py-3 px-6 border-b border-gray-300",
   btn_div: "border-t border-gray-300 text-gray-600",
-  h5: 'text-xl dark:bg-black font-medium mb-2 border-b border-gray-300',
-  ul: 'flex flex-col justify-around text-center mb-2',
-
+  h5: "text-xl dark:bg-black font-medium mb-2 border-b border-gray-300",
+  ul: "flex flex-col justify-around text-center mb-2",
 };
-
 
 interface DataTS {
   cz: string;
@@ -31,7 +29,7 @@ interface DataTS {
   pastParticiple2?: string;
 }
 
-function IrregularVerbs({ dataTS }:any): JSX.Element {
+function IrregularVerbs({ dataTS }: any): JSX.Element {
   const [score, setScore] = useState(0);
   const [stars, setStars] = useState(0);
   const [hint, setHint] = useState(false);
@@ -40,14 +38,6 @@ function IrregularVerbs({ dataTS }:any): JSX.Element {
   /*  const [totalScore, setTotalScore] = useState<string[]>([]); */
   const [totalScore, setTotalScore] = useState<any>([]);
   //give me totalScore hook for typescript, it receives empty array or number
-
-
-
-
-  
-  
-
-
 
   /*------------------------------------------
   SET LOCAL STRORAGE IF NOT EXISTS
@@ -62,7 +52,6 @@ function IrregularVerbs({ dataTS }:any): JSX.Element {
     }
   }
 
-
   /*------------------------------------------
    SET TOTAL SCORE FROM LOCAL STORAGE ONE TIME
   ------------------------------------------*/
@@ -71,7 +60,7 @@ function IrregularVerbs({ dataTS }:any): JSX.Element {
     //   setTotalScore(JSON.parse(localStorage.getItem('totalScore') || ''));
   }, []);
 
-/*------------------------------------------
+  /*------------------------------------------
 3.
 AFTER CLICK ON <CardButton />
 GIVES RANDOM NUMBER
@@ -86,9 +75,6 @@ HIDE HINTS
     setDefaultInput(true);
   }
 
-
-
- 
   return (
     <section className={styles.section}>
       <div className={styles.section_div}>
@@ -100,11 +86,9 @@ HIDE HINTS
         </div>
 
         <Score score={stars} />
-           
+
         <div className="px-6 inputs">
-          <h5 className={styles.h5}>
-            {dataTS[rand].cz}
-          </h5>
+          <h5 className={styles.h5}>{dataTS[rand].cz}</h5>
 
           <ul className={styles.ul}>
             <Input
@@ -133,7 +117,6 @@ HIDE HINTS
                 setStars={setStars}
                 placeholder="Past Simple 2"
                 defaultInput={defaultInput}
-
                 totalScore={totalScore}
               />
             )}
@@ -154,12 +137,11 @@ HIDE HINTS
                 setStars={setStars}
                 placeholder="Past Participle 2"
                 defaultInput={defaultInput}
-
                 totalScore={totalScore}
               />
             )}
           </ul>
-          {/* ---   3   ---- */ }
+          {/* ---   3   ---- */}
           <div className={styles.btn_div}>
             <CardButton onClick={randomWord} text="next word" />
           </div>
@@ -186,5 +168,3 @@ HIDE HINTS
 }
 
 export default IrregularVerbs;
-
-
