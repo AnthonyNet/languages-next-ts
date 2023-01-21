@@ -15,7 +15,7 @@ const styles = {
     "mainCard w-[300px] h-[420px] bg-transparent cursor-pointer group perspective",
   card__div__div:
     "preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000",
-  card__div__div__div: "border-2 w-full h-full",
+  card__div__div__div: "w-full h-full",
   cardBack:
     "mainCardBack my-rotate-y-180 backface-hidden w-full h-full mt-[-420px] overflow-hidden shadow-lg shadow-gray-400",
   cardBack__div:
@@ -58,9 +58,12 @@ function MainPage(): JSX.Element {
       <div className={styles.card__div}>
         <div className={styles.card__div__div}>
           <div className={styles.card__div__div__div}>
-            <img
+            <motion.img
+            initial = {{x: 800}}
+            animate = {{x: 0}}
+            transition = {{delay: 1}}
               src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimg4.wikia.nocookie.net%2F__cb20081229142345%2Ffallout%2Fimages%2F2%2F2a%2FFallout2front.jpg&f=1&nofb=1"
-              className="w-full h-full"
+              className="w-full h-full border-2"
               alt="fallout-logo"
             />
           </div>
