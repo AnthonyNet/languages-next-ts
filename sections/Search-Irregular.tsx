@@ -18,9 +18,7 @@ const style = {
 function SearchIrregular() {
   const [search, setSearch] = useState("");
 
-  return (
-    <>
-      <div className={style.input__Container}>
+  return <div className={style.input__Container}>
         <form className={style.form}>
           <div>
             <input
@@ -98,8 +96,6 @@ function SearchIrregular() {
           </div>
         </div>
       </div>
-    </>
-  );
-}
+};
 
 export default SearchIrregular;
