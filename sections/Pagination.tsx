@@ -94,8 +94,7 @@ function Pagination() {
     })}
   }*/
 
-  return (
-    <section className={styles.section}>
+  return <section className={styles.section}>
       <Top_Menu myNumb={myNumb} setMyNumb={setMyNumb} />
 
       <main className="w-full">
@@ -109,8 +108,7 @@ function Pagination() {
           </thead>
           <tbody>
             {currentPosts.map((item, index) => {
-              return (
-                <tr
+              return <tr
                   key={index}
                   className="border-b-2 border-red-300 flex  flex-nowrap"
                 >
@@ -125,7 +123,7 @@ function Pagination() {
                     </td>
                   )}
                 </tr>
-              );
+            
             })}
           </tbody>
         </table>
@@ -139,7 +137,6 @@ function Pagination() {
         setCurrentPage={setCurrentPage}
       />
     </section>
-  );
-}
+};
 
 export default Pagination;
