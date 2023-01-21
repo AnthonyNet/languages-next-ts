@@ -39,8 +39,7 @@ function MainPage(): JSX.Element {
       });
   }, []);
 
-  return (
-    <section className={styles.section}>
+  return <section className={styles.section}>
       
       <h1 className="ml-[-50px] mt-2 sm:mt-0">Welcome</h1>
       <h1 className="ml-[50px]">
@@ -80,7 +79,6 @@ function MainPage(): JSX.Element {
     </div>
      */}
     </section>
-  );
-}
+};
 
 export default MainPage;
