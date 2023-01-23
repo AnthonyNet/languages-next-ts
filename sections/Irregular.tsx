@@ -29,7 +29,7 @@ interface DataTS {
   pastParticiple2?: string;
 }
 
-function IrregularVerbs({ dataTS }: any): JSX.Element {
+function IrregularVerbs({ dataTS }:any): JSX.Element {
   const [score, setScore] = useState(0);
   const [stars, setStars] = useState(0);
   const [hint, setHint] = useState(false);
@@ -37,7 +37,33 @@ function IrregularVerbs({ dataTS }: any): JSX.Element {
   const [defaultInput, setDefaultInput] = useState(false);
 
   const [totalScore, setTotalScore] = useState<any>([]);
- 
+  const {cz} = dataTS[rand]; 
+
+  const propsData:string[] = [];
+/*------------------------------------------
+TADY
+--------------------------------------------*/
+
+  const propertyValues=Object.values(dataTS[rand]);  
+  propertyValues.shift();
+  console.log(propertyValues);  
+
+
+
+
+  const pushData = () => {
+
+    
+    for (const [key , value] of Object.entries(dataTS[rand])) {
+      propsData.push(value);
+    }
+    propsData.shift();
+  }
+
+  pushData();
+
+  
+
   /*------------------------------------------
   SET LOCAL STRORAGE IF NOT EXISTS
    ------------------------------------------*/
@@ -58,6 +84,8 @@ function IrregularVerbs({ dataTS }: any): JSX.Element {
     setTotalScore(JSON.parse(localStorage.getItem("totalScore") || ""));
     //   setTotalScore(JSON.parse(localStorage.getItem('totalScore') || ''));
   }, []);
+
+
 
 
 
@@ -97,63 +125,31 @@ HIDE HINTS
         <Score score={stars} />
 
         <div className="px-6 inputs">
-          <h5 className={styles.h5}>{dataTS[rand].cz}</h5>
+          <h5 className={styles.h5}>{cz}</h5>
 
           <ul className={styles.ul}>
-            <Input
-              myData={dataTS[rand].base}
+          
+          {
+            propertyValues.map((item, index) => {
+           
+              console.log(item);
+              
+              return(
+                <Input
+                key={index}
+              myData={item}
               setTotalScore={setTotalScore}
               setScore={setScore}
               setStars={setStars}
               placeholder={"Present Simple"}
               defaultInput={defaultInput}
               totalScore={totalScore}
-        
             />
-            <Input
-              myData={dataTS[rand].pastSimple}
-              setTotalScore={setTotalScore}
-              setScore={setScore}
-              setStars={setStars}
-              placeholder="Past Simple"
-              defaultInput={defaultInput}
-              totalScore={totalScore}
+              )
+            }
+          )
+          }
             
-            />
-            {dataTS[rand].pastSimple2 && (
-              <Input
-                myData={dataTS[rand].pastSimple2}
-                setTotalScore={setTotalScore}
-                setScore={setScore}
-                setStars={setStars}
-                placeholder="Past Simple 2"
-                defaultInput={defaultInput}
-                totalScore={totalScore}
-              
-              />
-            )}
-            <Input
-              myData={dataTS[rand].pastParticiple}
-              setTotalScore={setTotalScore}
-              setScore={setScore}
-              setStars={setStars}
-              placeholder="Past Participle"
-              defaultInput={defaultInput}
-              totalScore={totalScore}
-              
-            />
-            {dataTS[rand].pastParticiple2 && (
-              <Input
-                myData={dataTS[rand].pastParticiple2}
-                setTotalScore={setTotalScore}
-                setScore={setScore}
-                setStars={setStars}
-                placeholder="Past Participle 2"
-                defaultInput={defaultInput}
-                totalScore={totalScore}
-              
-              />
-            )}
           </ul>
           {/* ---   3   ---- */}
           <div className={styles.btn_div}>
