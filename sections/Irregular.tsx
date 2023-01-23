@@ -104,7 +104,8 @@ HIDE HINTS
           <h5 className={styles.h5}>{cz}</h5>
 
           <ul className={styles.ul}>
-            {propertyValues.map((word, index, key) => {
+
+            {propertyValues.map((word, index) => {
               const array = [
                 "Present Simple",
                 "Past Simple",
