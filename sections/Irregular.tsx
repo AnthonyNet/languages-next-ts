@@ -39,30 +39,15 @@ function IrregularVerbs({ dataTS }:any): JSX.Element {
   const [totalScore, setTotalScore] = useState<any>([]);
   const {cz} = dataTS[rand]; 
 
-  const propsData:string[] = [];
 /*------------------------------------------
-TADY
+Props Data from Object to Array
+ + first item deleted from Array
 --------------------------------------------*/
 
   const propertyValues=Object.values(dataTS[rand]);  
   propertyValues.shift();
   console.log(propertyValues);  
 
-
-
-
-  const pushData = () => {
-
-    
-    for (const [key , value] of Object.entries(dataTS[rand])) {
-      propsData.push(value);
-    }
-    propsData.shift();
-  }
-
-  pushData();
-
-  
 
   /*------------------------------------------
   SET LOCAL STRORAGE IF NOT EXISTS

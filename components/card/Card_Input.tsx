@@ -1,6 +1,5 @@
 "use client";
 
-import { run } from "node:test";
 import { useState, useEffect } from "react";
 
 interface Props {
@@ -56,7 +55,7 @@ const Input = ({
       // True === green border
       setCheckStyles("bg-green-300");
  
-      //Props
+      //Props - SCORE + STARS
       setTotalScore((count: number) => count + 1);
       setScore((count: number) => count + 1);
       setStars((count: number) => count + 1);
