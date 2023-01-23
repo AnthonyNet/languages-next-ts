@@ -12,7 +12,8 @@ export interface Irregular{
     cz: "vzniknout",  
     base: "arise", 		
     pastSimple: "arose",
-    pastParticiple: "arisen"
+    pastParticiple: "arisen",
+    pastParticiple2: "arisen"
 },
 
 {   cz: "probudit", 

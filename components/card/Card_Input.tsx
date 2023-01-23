@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 
 interface Props {
-  myData: string;
+  myData: any;
   setTotalScore: React.Dispatch<React.SetStateAction<number>>;
   setScore: React.Dispatch<React.SetStateAction<number>>;
   setStars: React.Dispatch<React.SetStateAction<number>>;

@@ -29,7 +29,7 @@ interface DataTS {
   pastParticiple2?: string;
 }
 
-function IrregularVerbs({ dataTS }:any): JSX.Element {
+function IrregularVerbs({ dataTS }: any): JSX.Element {
   const [score, setScore] = useState(0);
   const [stars, setStars] = useState(0);
   const [hint, setHint] = useState(false);
@@ -37,17 +37,15 @@ function IrregularVerbs({ dataTS }:any): JSX.Element {
   const [defaultInput, setDefaultInput] = useState(false);
 
   const [totalScore, setTotalScore] = useState<any>([]);
-  const {cz} = dataTS[rand]; 
+  const { cz } = dataTS[rand];
 
-/*------------------------------------------
+  /*------------------------------------------
 Props Data from Object to Array
  + first item deleted from Array
 --------------------------------------------*/
 
-  const propertyValues=Object.values(dataTS[rand]);  
+  const propertyValues = Object.values(dataTS[rand]);
   propertyValues.shift();
-  console.log(propertyValues);  
-
 
   /*------------------------------------------
   SET LOCAL STRORAGE IF NOT EXISTS
@@ -70,11 +68,7 @@ Props Data from Object to Array
     //   setTotalScore(JSON.parse(localStorage.getItem('totalScore') || ''));
   }, []);
 
-
-
-
-
-/*------------------------------------------
+  /*------------------------------------------
 AFTER CLICK ON <CardButton />
 GIVES RANDOM NUMBER
 RESET NUMBER OF STARS
@@ -92,10 +86,7 @@ HIDE HINTS
       let item = inputs[i] as HTMLInputElement;
       item.readOnly = false;
     }
-
   }
-    
-
 
   return (
     <section className={styles.section}>
@@ -113,28 +104,28 @@ HIDE HINTS
           <h5 className={styles.h5}>{cz}</h5>
 
           <ul className={styles.ul}>
-          
-          {
-            propertyValues.map((item, index) => {
-           
-              console.log(item);
-              
-              return(
+            {propertyValues.map((word, index, key) => {
+              const array = [
+                "Present Simple",
+                "Past Simple",
+                "Past Participle",
+                "Past Simple 2",
+                "Past Participle 2",
+              ];
+
+              return (
                 <Input
-                key={index}
-              myData={item}
-              setTotalScore={setTotalScore}
-              setScore={setScore}
-              setStars={setStars}
-              placeholder={"Present Simple"}
-              defaultInput={defaultInput}
-              totalScore={totalScore}
-            />
-              )
-            }
-          )
-          }
-            
+                  key={index}
+                  myData={word}
+                  setTotalScore={setTotalScore}
+                  setScore={setScore}
+                  setStars={setStars}
+                  placeholder={array[index]}
+                  defaultInput={defaultInput}
+                  totalScore={totalScore}
+                />
+              );
+            })}
           </ul>
           {/* ---   3   ---- */}
           <div className={styles.btn_div}>
