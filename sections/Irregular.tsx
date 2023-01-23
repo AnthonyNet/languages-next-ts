@@ -34,10 +34,13 @@ function IrregularVerbs({ dataTS }: any): JSX.Element {
   const [stars, setStars] = useState(0);
   const [hint, setHint] = useState(false);
   const [rand, setRand] = useState(0);
+
   const [defaultInput, setDefaultInput] = useState(false);
-  /*  const [totalScore, setTotalScore] = useState<string[]>([]); */
+
   const [totalScore, setTotalScore] = useState<any>([]);
-  //give me totalScore hook for typescript, it receives empty array or number
+  const [loading, setLoading] = useState(true);
+
+ 
 
   /*------------------------------------------
   SET LOCAL STRORAGE IF NOT EXISTS
@@ -47,7 +50,6 @@ function IrregularVerbs({ dataTS }: any): JSX.Element {
     // do localStorage stuff here
     const item = localStorage.getItem("totalScore");
     if (item == null || undefined) {
-      // localStorage.setItem('totalScore',JSON.stringify('0'));
       localStorage.setItem("totalScore", "0");
     }
   }
@@ -73,7 +75,21 @@ HIDE HINTS
     setStars(0);
     setHint(false);
     setDefaultInput(true);
+    /*
+    const inputs = document.querySelectorAll("input");
+    inputs.forEach((input) => {
+      input.readOnly = false;
+    }
+    );
+*/
+    const inputs = document.getElementsByClassName("card_Input");
+    for (let i = 0; i < inputs.length; i++) {
+      let item = inputs[i] as HTMLInputElement;
+      item.readOnly = false;
+    }
   }
+ 
+
 
   return (
     <section className={styles.section}>
@@ -91,6 +107,10 @@ HIDE HINTS
           <h5 className={styles.h5}>{dataTS[rand].cz}</h5>
 
           <ul className={styles.ul}>
+
+ 
+            
+
             <Input
               myData={dataTS[rand].base}
               setTotalScore={setTotalScore}

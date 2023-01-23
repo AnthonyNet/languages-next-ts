@@ -38,6 +38,8 @@ function Navbar(){
       className={styles.nav}
       /* style={darkMode ? stylesSwitch.dark.basic : stylesSwitch.light.basic}*/
     >
+  
+
       <div className={styles.nav__div}>
         <aside className={styles.aside}>
           <Link href="/">

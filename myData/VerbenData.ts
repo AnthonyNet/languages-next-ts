@@ -3,16 +3,16 @@ export  const VerbenData:{
   cz2?: string;
   base: string;
   pastSimple: string;
-  pastSimple2?: string;
   pastParticiple: string;
+  pastSimple2?: string;
   pastParticiple2?: string;
 }[]=[
   {
     cz: "péct",
     base: "backen",
     pastSimple: "backte",
-    pastSimple2: "buk",
     pastParticiple: "gebacken",
+    pastSimple2: "buk",
   },
   {
     cz: "přikázat",
@@ -164,8 +164,8 @@ export  const VerbenData:{
     cz: "vyblednout",
     base: "erbleichen",
     pastSimple: "erbleichte",
-    pastSimple2: "erblich",
     pastParticiple: "erbleichte",
+    pastSimple2: "erblich",
     pastParticiple2: "erblichen",
   },
   {
@@ -386,8 +386,8 @@ export  const VerbenData:{
     cz: "prát se",
     base: "hauen",
     pastSimple: "haute ",
-    pastSimple2: "hieb",
     pastParticiple: "gehauen",
+    pastSimple2: "hieb",
   },
   {
     cz: "zvednout",
@@ -509,8 +509,8 @@ export  const VerbenData:{
     cz: "dojit",
     base: "melken",
     pastSimple: "melkte",
-    pastSimple2: "molk",
     pastParticiple: "gemelkt",
+    pastSimple2: "molk",
     pastParticiple2: "gemolken",
   },
   {
@@ -630,8 +630,8 @@ export  const VerbenData:{
     cz: "vysát",
     base: "saugen",
     pastSimple: "saugte",
-    pastSimple2: "sog",
     pastParticiple: "gesaugt",
+    pastSimple2: "sog",
     pastParticiple2: "gesogt",
   },
   {
