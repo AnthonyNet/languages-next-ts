@@ -73,7 +73,16 @@ HIDE HINTS
     setStars(0);
     setHint(false);
     setDefaultInput(!defaultInput);
+
+    const inputs = document.getElementsByClassName("card_Input");
+    for (let i = 0; i < inputs.length; i++) {
+      let item = inputs[i] as HTMLInputElement;
+      item.readOnly = false;
+    }
+
   }
+    
+
 
   return (
     <section className={styles.section}>
@@ -99,6 +108,7 @@ HIDE HINTS
               placeholder={"Present Simple"}
               defaultInput={defaultInput}
               totalScore={totalScore}
+        
             />
             <Input
               myData={dataTS[rand].pastSimple}
@@ -108,6 +118,7 @@ HIDE HINTS
               placeholder="Past Simple"
               defaultInput={defaultInput}
               totalScore={totalScore}
+            
             />
             {dataTS[rand].pastSimple2 && (
               <Input
@@ -118,6 +129,7 @@ HIDE HINTS
                 placeholder="Past Simple 2"
                 defaultInput={defaultInput}
                 totalScore={totalScore}
+              
               />
             )}
             <Input
@@ -128,6 +140,7 @@ HIDE HINTS
               placeholder="Past Participle"
               defaultInput={defaultInput}
               totalScore={totalScore}
+              
             />
             {dataTS[rand].pastParticiple2 && (
               <Input
@@ -138,6 +151,7 @@ HIDE HINTS
                 placeholder="Past Participle 2"
                 defaultInput={defaultInput}
                 totalScore={totalScore}
+              
               />
             )}
           </ul>

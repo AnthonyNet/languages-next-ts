@@ -12,6 +12,7 @@ interface Props {
   defaultInput: boolean;
   //totalScore: number|string[],
   totalScore: number;
+
   
 }
 
@@ -31,7 +32,7 @@ const Input = ({
   totalScore,
 }: Props) => {
  
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState<string>("");
   const [checkMistake, setCheckMistake] = useState("");
   const [checkStyles, setCheckStyles] = useState("");
 
@@ -40,9 +41,9 @@ const Input = ({
   const handleChange = (e: any) => {
     setInput(e.target.value);
 
- /*   if(myData===e.target.value){
+    if(myData===e.target.value){
       e.target.readOnly = true;
-    }*/
+    }
   };
   // Watch INPUT variable for changes
   useEffect(() => {
@@ -54,7 +55,7 @@ const Input = ({
     if (myData === input) {
       // True === green border
       setCheckStyles("bg-green-300");
-
+ 
       //Props
       setTotalScore((count: number) => count + 1);
       setScore((count: number) => count + 1);
@@ -94,6 +95,7 @@ setInput => CLEAR VALUE IN INPUT
         className={styles.input + "text-gray-500 " + checkMistake}
         onChange={handleChange}
         placeholder={placeholder}
+      
       />
     </li>
   );
