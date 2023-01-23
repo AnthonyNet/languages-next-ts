@@ -35,10 +35,9 @@ function IrregularVerbs({ dataTS }: any): JSX.Element {
   const [hint, setHint] = useState(false);
   const [rand, setRand] = useState(0);
   const [defaultInput, setDefaultInput] = useState(false);
-  /*  const [totalScore, setTotalScore] = useState<string[]>([]); */
-  const [totalScore, setTotalScore] = useState<any>([]);
-  //give me totalScore hook for typescript, it receives empty array or number
 
+  const [totalScore, setTotalScore] = useState<any>([]);
+ 
   /*------------------------------------------
   SET LOCAL STRORAGE IF NOT EXISTS
    ------------------------------------------*/
