@@ -44,11 +44,16 @@ const Input = ({
       e.target.readOnly = true;
     }
   };
+
+
+
   // Watch INPUT variable for changes
   useEffect(() => {
     runIT();
     
   }, [input]);
+
+
 
   const runIT = () => {
     if (myData === input) {
@@ -65,7 +70,6 @@ const Input = ({
       localStorage.setItem("totalScore", JSON.stringify(number));
     }
 
-
     if (myData.startsWith(input)) {
       // True === GREEN TEXT
       setCheckMistake("text-green-500");
@@ -73,6 +77,10 @@ const Input = ({
       setCheckMistake("text-red-500");
     }
   };
+
+
+
+
 /*------------------------------------------
 WATCH defaultInput for changes TRUE/FALSE
 setCheckStyles TRUE / FALSE
