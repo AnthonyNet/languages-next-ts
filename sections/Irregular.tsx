@@ -59,8 +59,9 @@ function IrregularVerbs({ dataTS }: any): JSX.Element {
     //   setTotalScore(JSON.parse(localStorage.getItem('totalScore') || ''));
   }, []);
 
-  /*------------------------------------------
-3.
+
+
+/*------------------------------------------
 AFTER CLICK ON <CardButton />
 GIVES RANDOM NUMBER
 RESET NUMBER OF STARS
@@ -71,7 +72,7 @@ HIDE HINTS
     setRand(Math.floor(Math.random() * dataTS.length));
     setStars(0);
     setHint(false);
-    setDefaultInput(true);
+    setDefaultInput(!defaultInput);
   }
 
   return (

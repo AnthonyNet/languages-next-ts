@@ -1,5 +1,6 @@
 "use client";
 
+import { run } from "node:test";
 import { useState, useEffect } from "react";
 
 interface Props {
@@ -15,7 +16,7 @@ interface Props {
 }
 
 const styles = {
-  li: "p-2 font-bold",
+  li: " p-2 font-bold ",
   li_green: "p-2 bg-green-300 font-bold",
   input: "card_Input text-center border border-gray-300 text-bold",
 };
@@ -38,10 +39,10 @@ const Input = ({
   //Set read only for Input
   const handleChange = (e: any) => {
     setInput(e.target.value);
-    if(myData===e.target.value){
+
+ /*   if(myData===e.target.value){
       e.target.readOnly = true;
-    }
-   
+    }*/
   };
   // Watch INPUT variable for changes
   useEffect(() => {
