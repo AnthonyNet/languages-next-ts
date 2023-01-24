@@ -50,7 +50,7 @@ function Navbar(){
             <summary className="uppercase logo">
               <strong className="hover:text-sky-700">English</strong>
             </summary>
-            <ul className={styles.nav__ul}>
+            <div className={styles.nav__ul}>
               <Link href="/english/irregular-verbs">{`Irregular Verbs (${IrregularVerbs.length})`}</Link>
               <Link href="/english/search-irregular">{`Irregular List (${IrregularVerbs.length})`}</Link>
               <Link href="/english/oxford-B1">{`Oxford B1 (${OxfordB1.length})`}</Link>
@@ -58,7 +58,7 @@ function Navbar(){
               <Link href="/english/oxford-C1">{`Oxford C1 (${OxfordC1.length})`}</Link>
               <Link href="/english/phrasal-verbs">{`Phrasal Verbs (${LukesPhrasal.length})`}</Link>
               <Link href="/english/pagination">Pagination</Link>
-            </ul>
+            </div>
           </details>
 
           <details className="cursor-pointer">
