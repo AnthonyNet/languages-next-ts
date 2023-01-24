@@ -1,5 +1,5 @@
 import {  useState } from "react";
-import CardButton from "./CardButton";
+import CardButton from "../card/CardButton";
 import { CgClose } from "react-icons/cg";
 
 

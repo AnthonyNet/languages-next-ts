@@ -3,7 +3,7 @@
 
 import Navbar from '../../../../components/navbar/Navbar'
 import { LukesPhrasal } from '../../../../myData'
-import Card from '../../../../components/card/Card'
+import Card from '../../../../components/oxford-goethe/Card'
 
 
 
