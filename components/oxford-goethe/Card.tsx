@@ -1,7 +1,7 @@
 import {  useState } from "react";
 import CardButton from "../card/CardButton";
 import { CgClose } from "react-icons/cg";
-import Card_Vocabs from "../../interface/Card_Vocabs";
+import {Card_Vocabs} from "../../interface/";
 
 {
   /* 
@@ -19,7 +19,7 @@ const styles = {
 }
 
 const Card = ({ dataTS }:{ dataTS:Card_Vocabs[] }) => {
-  console.log(dataTS);
+ 
   
   const [data, setData] = useState(dataTS);
   const [rand, setRand] = useState(0);
