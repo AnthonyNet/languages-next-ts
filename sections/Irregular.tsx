@@ -7,7 +7,7 @@ import CardButton from "../components/card/CardButton";
 import CardHint from "../components/card/CardHint";
 
 import Score from "../components/card/Score";
-import Irregular from "../interface/Irregular";
+import {Irregular} from "../interface/";
 
 const styles = {
   section:

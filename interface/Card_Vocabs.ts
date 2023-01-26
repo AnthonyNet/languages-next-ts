@@ -1,5 +1,5 @@
 export default interface Goethe{
     czWord: string;
-    sentenceTranslated: string;
+    sentenceTranslated?: string;
     wordTranslated: string;
   }
