@@ -1,4 +1,4 @@
-export interface DataTS {
+export default interface DataTS {
     cz: string;
     cz2?: string;
     base: string;

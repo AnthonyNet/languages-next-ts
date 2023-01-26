@@ -7,6 +7,7 @@ import CardButton from "../components/card/CardButton";
 import CardHint from "../components/card/CardHint";
 
 import Score from "../components/card/Score";
+import DataTS from "../interface/Irregular";
 
 const styles = {
   section:
@@ -19,24 +20,16 @@ const styles = {
   ul: "flex flex-col justify-around text-center mb-2",
 };
 
-interface DataTS {
-  cz: string;
-  cz2?: string;
-  base: string;
-  pastSimple: string;
-  pastSimple2?: string;
-  pastParticiple: string;
-  pastParticiple2?: string;
-}
 
-function IrregularVerbs({ dataTS }:any) {
+
+function IrregularVerbs({ dataTS }: { dataTS: DataTS[] }) {
   const [score, setScore] = useState(0);
   const [stars, setStars] = useState(0);
   const [hint, setHint] = useState(false);
   const [rand, setRand] = useState(0);
   const [defaultInput, setDefaultInput] = useState(false);
 
-  const [totalScore, setTotalScore] = useState<any>([]);
+  const [totalScore, setTotalScore] = useState<number| any>([]);
   const { cz } = dataTS[rand];
 
   /*------------------------------------------

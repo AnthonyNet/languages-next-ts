@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import {ReactElement} from 'react';
+
 
 interface Props {
   myData: any;
@@ -31,7 +31,7 @@ const Input = ({
   placeholder,
   defaultInput,
   totalScore,
-}: Props):ReactElement => {
+}: Props) => {
  
   const [input, setInput] = useState<string>("");
   const [checkMistake, setCheckMistake] = useState("");
