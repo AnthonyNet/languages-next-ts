@@ -29,7 +29,7 @@ interface DataTS {
   pastParticiple2?: string;
 }
 
-function IrregularVerbs({ dataTS }: any): JSX.Element {
+function IrregularVerbs({ dataTS }:any) {
   const [score, setScore] = useState(0);
   const [stars, setStars] = useState(0);
   const [hint, setHint] = useState(false);
@@ -124,6 +124,7 @@ HIDE HINTS
                   placeholder={array[index]}
                   defaultInput={defaultInput}
                   totalScore={totalScore}
+                 
                 />
               );
             })}

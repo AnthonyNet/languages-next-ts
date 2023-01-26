@@ -26,7 +26,7 @@ const styles = {
     "bg-teal-500 px-6 py-2 mt-[8rem] mb-8 font-semibold text-white rounded-full delay-500 duration-1000 scale-0 group-hover:scale-125",
 };
 
-function MainPage(): JSX.Element {
+function MainPage() {
   const [setData, setMyData] = useState<Root | undefined>();
   const url = "https://api.coindesk.com/v1/bpi/currentprice.json";
 

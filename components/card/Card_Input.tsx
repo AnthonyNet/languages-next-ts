@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import {ReactElement} from 'react';
 
 interface Props {
   myData: any;
@@ -21,6 +22,7 @@ const styles = {
   input: "card_Input text-center border border-gray-300 text-bold",
 };
 
+
 const Input = ({
   myData,
   setTotalScore,
@@ -29,11 +31,12 @@ const Input = ({
   placeholder,
   defaultInput,
   totalScore,
-}: Props) => {
+}: Props):ReactElement => {
  
   const [input, setInput] = useState<string>("");
   const [checkMistake, setCheckMistake] = useState("");
   const [checkStyles, setCheckStyles] = useState("");
+  
 
   //Save Input value into INPUT variable
   //Set read only for Input
@@ -81,6 +84,7 @@ const Input = ({
 
 
 
+
 /*------------------------------------------
 WATCH defaultInput for changes TRUE/FALSE
 setCheckStyles TRUE / FALSE
@@ -102,7 +106,7 @@ setInput => CLEAR VALUE IN INPUT
         className={styles.input + "text-gray-500 " + checkMistake}
         onChange={handleChange}
         placeholder={placeholder}
-      
+   
       />
     </li>
   );

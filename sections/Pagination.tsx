@@ -69,30 +69,7 @@ function Pagination() {
       setMyData(Goethe);
     }
   }, [myNumb]);
-  /*
-  const MyPosts = () => {
-    {currentPosts.map((item, index) => {
-      return (
-        <tr
-          key={index}
-          className="border-b-2 border-red-300 flex  flex-nowrap"
-        >
-          <td className={styles.tbody__td}>
-            {item.czWord}
-          </td>
-          {item.sentenceTranslated ? (
-            <td className="w-[50%] text-right"> 
-              {item.sentenceTranslated}
-            </td>
-          ) : (
-            <td className="w-[50%] text-right">
-              {item.wordTranslated}
-            </td>
-          )}
-        </tr>
-      );
-    })}
-  }*/
+
 
   return <section className={styles.section}>
       <Top_Menu myNumb={myNumb} setMyNumb={setMyNumb} />
