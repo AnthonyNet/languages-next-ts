@@ -1,10 +1,4 @@
-interface CardHint {
-  base: string;
-  pastSimple: string;
-  pastSimple2?: string;
-  pastParticiple: string;
-  pastParticiple2?: string;
-}
+import Irregular from '../../interface/Irregular'
 
 const CardHint = ({
   base,
@@ -12,7 +6,7 @@ const CardHint = ({
   pastSimple2,
   pastParticiple,
   pastParticiple2,
-}: CardHint) => {
+}: Irregular) => {
   return (
     <ul className="flex justify-between flex-wrap">
       <li>{base} - </li>

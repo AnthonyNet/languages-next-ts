@@ -1,5 +1,5 @@
-export default interface DataTS {
-    cz: string;
+export default interface Irregular {
+    cz?: string;
     cz2?: string;
     base: string;
     pastSimple: string;

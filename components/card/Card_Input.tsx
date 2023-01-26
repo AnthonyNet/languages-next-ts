@@ -12,8 +12,6 @@ interface Props {
   defaultInput: boolean;
   //totalScore: number|string[],
   totalScore: number;
-
-  
 }
 
 const styles = {

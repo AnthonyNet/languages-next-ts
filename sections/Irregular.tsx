@@ -7,7 +7,7 @@ import CardButton from "../components/card/CardButton";
 import CardHint from "../components/card/CardHint";
 
 import Score from "../components/card/Score";
-import DataTS from "../interface/Irregular";
+import Irregular from "../interface/Irregular";
 
 const styles = {
   section:
@@ -22,7 +22,7 @@ const styles = {
 
 
 
-function IrregularVerbs({ dataTS }: { dataTS: DataTS[] }) {
+function IrregularVerbs({ dataTS }: { dataTS: Irregular[] }) {
   const [score, setScore] = useState(0);
   const [stars, setStars] = useState(0);
   const [hint, setHint] = useState(false);
