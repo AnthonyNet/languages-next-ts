@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 
 
 interface Props {
-  myData: any;
+  word: string;
   setTotalScore: React.Dispatch<React.SetStateAction<number>>;
   setScore: React.Dispatch<React.SetStateAction<number>>;
   setStars: React.Dispatch<React.SetStateAction<number>>;
@@ -20,9 +20,12 @@ const styles = {
   input: "card_Input text-center border border-gray-300 text-bold",
 };
 
+/*------------------------------------------
+  Input Component
+------------------------------------------*/
 
 const Input = ({
-  myData,
+  word,
   setTotalScore,
   setScore,
   setStars,
@@ -30,7 +33,6 @@ const Input = ({
   defaultInput,
   totalScore,
 }: Props) => {
- 
   const [input, setInput] = useState<string>("");
   const [checkMistake, setCheckMistake] = useState("");
   const [checkStyles, setCheckStyles] = useState("");
@@ -41,7 +43,7 @@ const Input = ({
   const handleChange = (e: any) => {
     setInput(e.target.value);
 
-    if(myData===e.target.value){
+    if(word===e.target.value){
       e.target.readOnly = true;
     }
   };
@@ -57,7 +59,7 @@ const Input = ({
 
 
   const runIT = () => {
-    if (myData === input) {
+    if (word === input) {
       // True === green border
       setCheckStyles("bg-green-300");
  
@@ -70,8 +72,8 @@ const Input = ({
       const number = totalScore + 1;
       localStorage.setItem("totalScore", JSON.stringify(number));
     }
-
-    if (myData.startsWith(input)) {
+//word --> exact word
+    if (word.startsWith(input)) {
       // True === GREEN TEXT
       setCheckMistake("text-green-500");
     } else {

@@ -5,3 +5,4 @@ export type  {
     Card_Vocabs,
     Irregular
 }
+

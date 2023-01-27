@@ -110,7 +110,7 @@ HIDE HINTS
               return (
                 <Input
                   key={index}
-                  myData={word}
+                  word={word}
                   setTotalScore={setTotalScore}
                   setScore={setScore}
                   setStars={setStars}
