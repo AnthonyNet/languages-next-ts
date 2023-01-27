@@ -49,7 +49,6 @@ const Input = ({
   };
 
 
-
   // Watch INPUT variable for changes
   useEffect(() => {
     runIT();
