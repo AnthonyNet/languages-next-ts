@@ -1,11 +1,11 @@
 export default interface Irregular {
-    cz?: string;
-    cz2?: string;
-    base: string;
-    pastSimple: string;
-    pastSimple2?: string;
-    pastParticiple: string;
-    pastParticiple2?: string;
+    readonly cz?: string;
+    readonly cz2?: string;
+    readonly base: string;
+    readonly pastSimple: string;
+    readonly pastSimple2?: string;
+    readonly pastParticiple: string;
+    readonly pastParticiple2?: string;
   }
 
   

@@ -1,5 +1,5 @@
 export default interface Goethe{
-    czWord: string;
-    sentenceTranslated?: string;
-    wordTranslated: string;
+    readonly czWord: string;
+    readonly sentenceTranslated?: string;
+    readonly wordTranslated: string;
   }
