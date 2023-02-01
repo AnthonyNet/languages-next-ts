@@ -18,7 +18,7 @@ const styles = {
   btn_div: "border-t border-gray-300 text-gray-600",
   h5: "text-xl dark:bg-black font-medium mb-2 border-b border-gray-300",
   ul: "flex flex-col justify-around text-center mb-2",
-};
+} as const;
 
 
 

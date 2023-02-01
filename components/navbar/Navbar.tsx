@@ -23,8 +23,7 @@ const styles = {
   aside: 'logo sm:w-1/3 ',
   article: 'justify-around items-start w-full h-full hidden md:flex',
   nav__ul: 'flex flex-col border-solid border-t-4 border-sky-400 navDetails',
-
-}
+} as const
 
 function Navbar(){
   const [nav, setNav] = useState(false);

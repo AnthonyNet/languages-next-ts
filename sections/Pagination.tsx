@@ -13,7 +13,7 @@ const styles = {
   table: "table-fixed min-w-[50vw] m-auto",
   thead__tr: "flex justify-around",
   tbody__td: "w-[50%] border-red-400 border-r-4",
-};
+} as const;
 
 function Pagination() {
   //add id to all myData items

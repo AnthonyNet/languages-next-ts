@@ -13,7 +13,7 @@ const style = {
   thead: "border-b bg-gray-800 text-white",
   tr: "border-b-2 border-blue-200",
   th: "text-sm font-medium p-2 sm:p-4",
-};
+} as const;
 
 function SearchIrregular() {
   const [search, setSearch] = useState("");
