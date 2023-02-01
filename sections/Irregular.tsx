@@ -22,12 +22,13 @@ const styles = {
 
 
 
+
 function IrregularVerbs({ dataTS }: { dataTS: Irregular[] }) {
-  const [score, setScore] = useState(0);
-  const [stars, setStars] = useState(0);
-  const [hint, setHint] = useState(false);
-  const [rand, setRand] = useState(0);
-  const [defaultInput, setDefaultInput] = useState(false);
+  const [score, setScore] = useState<number>(0);
+  const [stars, setStars] = useState<number>(0);
+  const [hint, setHint] = useState<boolean>(false);
+  const [rand, setRand] = useState<number>(0);
+  const [defaultInput, setDefaultInput] = useState<boolean>(false);
 
   const [totalScore, setTotalScore] = useState<number| any>([]);
   const { cz } = dataTS[rand];
