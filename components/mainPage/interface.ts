@@ -1,42 +1,42 @@
 export interface Root {
-    time: Time
-    disclaimer: string
-    chartName: string
-    bpi: Bpi
+  readonly time: Time
+  readonly disclaimer: string
+  readonly chartName: string
+  readonly bpi: Bpi
   }
   
   export interface Time {
-    updated: string
-    updatedISO: string
-    updateduk: string
+    readonly updated: string
+    readonly updatedISO: string
+    readonly updateduk: string
   }
   
   export interface Bpi {
-    USD: Usd
-    GBP: Gbp
-    EUR: Eur
+    readonly USD: Usd
+    readonly GBP: Gbp
+    readonly EUR: Eur
   }
   
   export interface Usd {
-    code: string
-    symbol: string
-    rate: string
-    description: string
-    rate_float: number
+    readonly code: string
+    readonly symbol: string
+    readonly rate: string
+    readonly description: string
+    readonly rate_float: number
   }
   
   export interface Gbp {
-    code: string
-    symbol: string
-    rate: string
-    description: string
-    rate_float: number
+    readonly code: string
+    readonly symbol: string
+    readonly rate: string
+    readonly description: string
+    readonly rate_float: number
   }
   
   export interface Eur {
-    code: string
-    symbol: string
-    rate: string
-    description: string
-    rate_float: number
+    readonly code: string
+    readonly symbol: string
+    readonly rate: string
+    readonly description: string
+    readonly rate_float: number
   }

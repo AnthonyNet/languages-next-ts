@@ -2,7 +2,7 @@
 import {Bpi} from "./interface";
 
 interface Table {
-  myData: Bpi;
+  readonly myData: Bpi;
 }
 
 const Table = ({myData}:Table) => {
