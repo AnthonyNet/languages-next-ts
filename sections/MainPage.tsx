@@ -28,11 +28,15 @@ const styles = {
     "bg-teal-500 px-6 py-2 mt-[8rem] mb-8 font-semibold text-white rounded-full delay-500 duration-1000 scale-0 group-hover:scale-125",
 } as const;
 
+interface Props {
+  apiData: any //Root | undefined;
+  loading: boolean;
+}
 
 function MainPage() {
  /* const [data, setMyData] = useState<Root | undefined>();*/
   const url = "https://api.coindesk.com/v1/bpi/currentprice.json";
-  const {apiData, loading} = useFetch(url);
+  const {apiData, loading}:Props = useFetch(url);
 
   return (
     <section className={styles.section}>
