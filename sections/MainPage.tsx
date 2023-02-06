@@ -6,6 +6,8 @@ import { Root } from "../components/mainPage/interface";
 import "../styles/MainPage.css";
 import Typewriter from 'typewriter-effect';
 import {motion} from 'framer-motion';
+import useFetch from "../components/fetch/Fetch";
+
 
 
 const styles = {
@@ -26,20 +28,11 @@ const styles = {
     "bg-teal-500 px-6 py-2 mt-[8rem] mb-8 font-semibold text-white rounded-full delay-500 duration-1000 scale-0 group-hover:scale-125",
 } as const;
 
-function MainPage() {
-  const [setData, setMyData] = useState<Root | undefined>();
-  const url = "https://api.coindesk.com/v1/bpi/currentprice.json";
 
-  useEffect(() => {
-    fetch(url)
-      .then((resp) => resp.json())
-      .then((resp) => {
-        setMyData(resp);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
+function MainPage() {
+ /* const [data, setMyData] = useState<Root | undefined>();*/
+  const url = "https://api.coindesk.com/v1/bpi/currentprice.json";
+  const {apiData, loading} = useFetch(url);
 
   return (
     <section className={styles.section}>
@@ -67,19 +60,21 @@ function MainPage() {
               alt="fallout-logo"
             />
           </div>
+         
           <div className={styles.cardBack}>
             <div className={styles.cardBack__div}>
               <h2 className="my-4 text-3xl font-semibold self-center">
-                {setData && setData.chartName}
+                {loading && apiData.chartName}
               </h2>
 
-              {setData && <Table myData={setData.bpi} />}
+              {loading && <Table myData={apiData.bpi} />}
               <button className={styles.button}>Last update:</button>
               <h2 className="text-sm font-semibold ">
-                {setData && setData.time.updated}
+                {loading && apiData.time.updated}
               </h2>
             </div>
           </div>
+
         </div>
       </div>
 
