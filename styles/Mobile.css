@@ -37,6 +37,8 @@ IIREGULAR
 .section_Responsive{
     height: auto;
     }
+ 
+ 
 
 }
 
@@ -46,4 +48,20 @@ IIREGULAR
     height: auto;
     }
 
+}
+
+@media screen and (max-height: 475px) and (orientation: landscape)
+{
+  .card_Ul{
+    padding: 0.5em 2em;
+  
+  }
+
+  .card_Ul li{
+    padding: 0.5rem;
+  }
+
+.card_Ul li:last-child{
+ margin-top: 0;
+}
 }

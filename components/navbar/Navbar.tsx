@@ -18,8 +18,8 @@ import {
 
 import DarkModeBtn from "../../app/DarkModeBtn";
 const styles = {
-  nav: 'flex justify-center items-center w-full  min-h-[100px] shadow-xl z-[400] px-4',
-  nav__div: 'navDetails w-full h-full flex items-start  relative text-xl ',
+  nav: 'flex justify-center items-center w-full  min-h-[10vh] shadow-xl z-[400] px-4',
+  nav__div: 'navDetails w-full h-full flex items-start   relative text-xl ',
   aside: 'logo sm:w-1/3 ',
   article: 'justify-around items-start w-full h-full hidden md:flex',
   nav__ul: 'flex flex-col border-solid border-t-4 border-sky-400 navDetails',

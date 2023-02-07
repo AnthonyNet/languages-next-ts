@@ -12,9 +12,9 @@ import {Card_Vocabs} from "../../interface/";
 }
 
 const styles = {
-  section : 'flex justify-center items-center w-full h-[100vh] p-2 sm:p-0 responsiveSection',
+  section : 'flex justify-center items-center w-full h-[90vh] p-2 sm:p-0 responsiveSection',
   section_div: 'w-[600px]  border-4 border-double border-blue-300 rounded-lg shadow-xl shadow-slate-600',
-  ul: 'flex flex-col justify-around w-full text-center p-8 font-semibold italic',
+  ul: 'card_Ul flex flex-col justify-around w-full text-center p-8 font-semibold italic',
   li: 'p-8 border-b-2 border-slate-300',
 }
 
@@ -98,7 +98,7 @@ const Card = ({ dataTS }:{ dataTS:Card_Vocabs[] }) => {
           ) : null
           }
 
-          <li className="flex justify-around text-center mt-8">
+          <li className="btn_Li flex justify-around text-center mt-8">
             <CardButton onClick={randomWord} text={"Next word"} />
 
             <CardButton
