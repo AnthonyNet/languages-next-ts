@@ -82,13 +82,6 @@ function MainPage() {
         </div>
       </div>
 
-      {/*
-       <div class="flex w-full h-full items-center justify-center flex-wrap">
-      <div class="w-full md:w-1/2 xl:w-1/3 border-4 border-red-500 h-8"></div>
-      <div class="w-full md:w-1/2 xl:w-1/3 border-4 border-red-500 h-8"></div>
-      <div class="w-full md:w-1/2 xl:w-1/3 border-4 border-red-500 h-8"></div>
-    </div>
-     */}
     </section>
   );
 }
