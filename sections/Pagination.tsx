@@ -72,7 +72,7 @@ function Pagination() {
 
 
   return <section className={styles.section}>
-      <Top_Menu myNumb={myNumb} setMyNumb={setMyNumb} />
+      <Top_Menu myNumb={myNumb} setMyNumb={setMyNumb} setCurrentPage={setCurrentPage}/>
 
       <main className="w-full">
         <h2 className="text-center">Pagination</h2>

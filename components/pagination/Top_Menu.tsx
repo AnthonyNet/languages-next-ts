@@ -1,8 +1,8 @@
 
 interface Props {
     setMyNumb: (numb: number) => void;
+    setCurrentPage: (numb: number) => void;
     myNumb: number;
-
 }
 
 const styles = {
@@ -12,31 +12,36 @@ const styles = {
     li__active: 'border-b-4 border-red-600',
   };
 
-function Top_Menu({myNumb, setMyNumb}: Props):JSX.Element {
+function Top_Menu({myNumb, setMyNumb, setCurrentPage}: Props):JSX.Element {
+
+  const handleClick = (numb: number) => {
+    setMyNumb(numb);
+    setCurrentPage(1);
+  }
 
 return <nav className={styles.nav}>
         <ul className={styles.ul}>
           <li 
             className={myNumb === 0 ? styles.li__active : ''}
-            onClick={() => setMyNumb(0)}
+            onClick={() => handleClick(1)}
           >
             Oxford B1
           </li>
           <li
             className={myNumb === 1 ? styles.li__active : ''}
-            onClick={() => setMyNumb(1)}
+            onClick={() => handleClick(2)}
           >
             Oxford B2
           </li>
           <li
             className={myNumb === 2 ? styles.li__active : ''}
-            onClick={() => setMyNumb(2)}
+            onClick={() => handleClick(3)}
           >
             Oxford C1
           </li>
           <li
             className={myNumb === 3 ? styles.li__active : ''}
-            onClick={() => setMyNumb(3)}
+            onClick={() => handleClick(4)}
           >
             Goethe De
           </li>
