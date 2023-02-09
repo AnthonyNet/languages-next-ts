@@ -23,25 +23,25 @@ return <nav className={styles.nav}>
         <ul className={styles.ul}>
           <li 
             className={myNumb === 0 ? styles.li__active : ''}
-            onClick={() => handleClick(1)}
+            onClick={() => handleClick(0)}
           >
             Oxford B1
           </li>
           <li
             className={myNumb === 1 ? styles.li__active : ''}
-            onClick={() => handleClick(2)}
+            onClick={() => handleClick(1)}
           >
             Oxford B2
           </li>
           <li
             className={myNumb === 2 ? styles.li__active : ''}
-            onClick={() => handleClick(3)}
+            onClick={() => handleClick(2)}
           >
             Oxford C1
           </li>
           <li
             className={myNumb === 3 ? styles.li__active : ''}
-            onClick={() => handleClick(4)}
+            onClick={() => handleClick(3)}
           >
             Goethe De
           </li>
