@@ -1,26 +1,44 @@
 import Modal from "./comp/Modal";
 import { moviesData } from "./comp/data";
-import { useState } from "react";
+import { useState, useReducer } from "react";
+import { log } from "console";
+
+interface Ehm {
+  movies: string[];
+  showNotification: boolean;
+  notificationContent: string;
+}
+
+const reducer = (state,action) =>{
+console.log(state, action)
+}
+
+const defaultState:Ehm = {
+  movies: [],
+  showNotification: false,
+  notificationContent: ""
+}
 
 function Pokus() {
-  const [movies, setMovies] = useState(moviesData);
-  const [showNotification, setShowNotification] = useState(false);
+ // const [movies, setMovies] = useState(moviesData);
+ // const [showNotification, setShowNotification] = useState(false);
   const [movieName, setMovieName] = useState("");
+  const [state, dispatch] = useReducer(reducer, defaultState);
 
   const submitForm = (e) => {
     e.preventDefault();
 
     if(movieName){
-    setShowNotification(true);
+      dispatch({type: "ADD_MOVIE"})
     } else{
-      setShowNotification(false);
+    
     }
   };
 
   return (
     <section className="w-screen h-[90vh] flex flex-col items-center justify-center">
 
-{showNotification && <Modal />}
+{state.showNotification && <Modal notifContent={state.notificationContent} />}
 
       <form action="" onSubmit={submitForm} className="border-b-4 mb-8">
         <input className="border-2 border-emerald-500"
@@ -31,10 +49,10 @@ function Pokus() {
         <input type="submit" value="Přidat" className="border-2 hover:text-xl ease-in-out duration-300 "/>
       </form>
       <div>
-        {movies.map((movie) => {
+        {state.movies.map((movie) => {
           const { id, title } = movie;
           return <div key={movie.id}>
-            <p>{movie.title}</p>
+            <p key={movie.id}>{movie.title}</p>
           </div>
         })}
          

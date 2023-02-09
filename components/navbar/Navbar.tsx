@@ -16,7 +16,7 @@ import {
   Goethe,
 } from "../../myData";
 
-import DarkModeBtn from "../../app/DarkModeBtn";
+import DarkModeBtn from "./DarkModeBtn";
 const styles = {
   nav: 'flex justify-center items-center w-full  min-h-[10vh] shadow-xl z-[400] px-4',
   nav__div: 'navDetails w-full h-full flex items-start   relative text-xl ',

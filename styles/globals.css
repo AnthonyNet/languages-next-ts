@@ -66,10 +66,7 @@
  
 }
 
-details[open] summary ~ * {
-  animation: sweep .5s ease-in-out;
-}
-*
+
 
 * {
   box-sizing: border-box;
@@ -97,7 +94,14 @@ nav,
   background: var(--mainCardBack);
 }
 
+details[open] summary ~ * {
+  animation: animate 1s ease-in-out;
+}
 
+@keyframes animate {
+  0%    {opacity: 0; margin-left: -20px}
+  100%  {opacity: 1; margin-left: 0px}
+}
 
 
 

@@ -1,8 +1,10 @@
+interface ModalProps {
+  notifContent: string;
+}
 
-
-const Modal = () => {
+const Modal = ({notifContent}) => {
   return (
-    <h2 className="text-red-400">Film přidán</h2>
+    <h2 className="text-red-400">{notifContent}</h2>
   )
 }
 
