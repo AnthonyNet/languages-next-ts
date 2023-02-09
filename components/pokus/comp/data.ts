@@ -14,7 +14,7 @@ export const moviesData:Movies[] = [
         year: 1994,
         rating: 9.2,
         genres: ['Crime', 'Drama']
-    },
+    }, 
     {
         id: 2,
         title: 'The Godfather',
