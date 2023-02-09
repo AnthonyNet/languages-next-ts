@@ -12,7 +12,7 @@ import {
     VerbenData,
     Goethe,
   } from "../../myData";
-  import DarkModeBtn from "../../app/DarkModeBtn";
+  import DarkModeBtn from "./DarkModeBtn";
 
 interface Mobile  {
     nav: boolean;
