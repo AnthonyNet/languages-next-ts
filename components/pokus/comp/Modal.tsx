@@ -2,7 +2,7 @@
 
 const Modal = () => {
   return (
-    <div>Modal</div>
+    <h2 className="text-red-400">Film přidán</h2>
   )
 }
 
