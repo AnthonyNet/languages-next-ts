@@ -7,7 +7,6 @@ import "../styles/MainPage.css";
 import Typewriter from 'typewriter-effect';
 import {motion} from 'framer-motion';
 import useFetch from "../components/fetch/Fetch";
-import mainImage from '../images/Fall2.webp';
 
 
 const styles = {
