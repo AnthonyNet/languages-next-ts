@@ -3,17 +3,35 @@ import { moviesData } from "./comp/data";
 import { useState, useReducer } from "react";
 import { log } from "console";
 
-interface Ehm {
-  movies: string[];
-  showNotification: boolean;
-  notificationContent: string;
-}
+
 
 const reducer = (state,action) =>{
-console.log(state, action)
+ // console.log(state, action)
+if(action.type === "ADD_MOVIE"){
+  const newMovies = [...state.movies, action.payLoad]
+  return {
+    ...state,
+      movies: newMovies,
+      showNotification: true,
+      notificationContent: "Film byl přidán"
+    }
+  }
+
+  if(action.type === "NO_MOVIE_NAME"){
+    return {
+      ...state,
+      showNotification: true,
+      notificationContent: "Název filmu je povinný"
+    }
+  }
+
+
+  return state
 }
 
-const defaultState:Ehm = {
+
+
+const defaultState:any = {
   movies: [],
   showNotification: false,
   notificationContent: ""
@@ -29,9 +47,11 @@ function Pokus() {
     e.preventDefault();
 
     if(movieName){
-      dispatch({type: "ADD_MOVIE"})
+      const newMovie = {id:new Date().getTime(), name:movieName}
+
+      dispatch({type: "ADD_MOVIE", payLoad: newMovie})
     } else{
-    
+    dispatch( {type: "NO_MOVIE_NAME"} )
     }
   };
 
@@ -50,9 +70,9 @@ function Pokus() {
       </form>
       <div>
         {state.movies.map((movie) => {
-          const { id, title } = movie;
+          
           return <div key={movie.id}>
-            <p key={movie.id}>{movie.title}</p>
+            <p>{movie.name}</p>
           </div>
         })}
          
