@@ -1,5 +1,5 @@
 import Modal from "./comp/Modal";
-import { moviesData } from "./comp/data";
+import { moviesData, MoviesInt } from "./comp/data";
 import { useState, useReducer } from "react";
 import { log } from "console";
 
@@ -25,8 +25,26 @@ if(action.type === "ADD_MOVIE"){
     }
   }
 
+  if(action.type === "CLOSE_NOTIFICATION"){
+    return {
+      ...state,
+      showNotification: false,
+      notificationContent: ""
+    }
+  }
 
-  return state
+  if(action.type === "DELETE_MOVIE"){
+    const newMovies = state.movies.filter((movie:MoviesInt) => movie.id !== action.payLoad)
+    return {
+      ...state,
+      movies: newMovies,
+      showNotification: true,
+      notificationContent: "Film byl smazán"
+    }
+  }
+
+ return new Error("Neplatná akce")
+  //return state
 }
 
 
@@ -55,12 +73,16 @@ function Pokus() {
     }
   };
 
+  const closeNotification = () => {
+    dispatch({type: "CLOSE_NOTIFICATION"})
+  }
+
   return (
     <section className="w-screen h-[90vh] flex flex-col items-center justify-center">
 
-{state.showNotification && <Modal notifContent={state.notificationContent} />}
+{state.showNotification && <Modal notifContent={state.notificationContent} closeNotif={closeNotification}/>}
 
-      <form action="" onSubmit={submitForm} className="border-b-4 mb-8">
+      <form action="" onSubmit={submitForm} className="flex justify-around border-b-4 mb-8 w-[400px] font-bold">
         <input className="border-2 border-emerald-500"
           type="text"
           placeholder="prvni"
@@ -69,10 +91,11 @@ function Pokus() {
         <input type="submit" value="Přidat" className="border-2 hover:text-xl ease-in-out duration-300 "/>
       </form>
       <div>
-        {state.movies.map((movie) => {
+        {state.movies.map((movie:{id:number,name:string}) => {
           
-          return <div key={movie.id}>
-            <p>{movie.name}</p>
+          return <div key={movie.id} className="flex w-[200px] justify-between">
+            <p className="border-b">{movie.name}</p>
+            <button className="border-2 bg-orange-100" type="button" onClick={()=> dispatch({type: "DELETE_MOVIE", payLoad: movie.id})}>Smazat</button>
           </div>
         })}
          

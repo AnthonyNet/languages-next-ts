@@ -1,4 +1,4 @@
-interface Movies {
+export interface MoviesInt {
     id: number;
     title: string;
     year: number;
@@ -7,7 +7,7 @@ interface Movies {
 
 }
 
-export const moviesData:Movies[] = [
+export const moviesData:MoviesInt[] = [
     {
         id: 1,
         title: 'The Shawshank Redemption',
