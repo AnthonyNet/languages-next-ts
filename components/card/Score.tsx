@@ -13,45 +13,45 @@ const Score = ({score}:Score) => {
       case 1:
         return (
           <span>
-            <BsFillStarFill className="starIcon"/>
+            <BsFillStarFill />
           </span>
         );
         break;
       case 2:
         return (
           <span className="flex flex-row">
-            <BsFillStarFill className="starIcon"/>
-            <BsFillStarFill className="starIcon"/>
+            <BsFillStarFill />
+            <BsFillStarFill />
           </span>
         );
         break;
       case 3:
         return (
           <span className="flex flex-row">
-            <BsFillStarFill className="starIcon"/>
-            <BsFillStarFill className="starIcon"/>
-            <BsFillStarFill className="starIcon"/>
+            <BsFillStarFill />
+            <BsFillStarFill />
+            <BsFillStarFill />
           </span>
         );
         break;
       case 4:
         return (
           <span className="flex flex-row">
-            <BsFillStarFill className="starIcon"/>
-            <BsFillStarFill className="starIcon"/>
-            <BsFillStarFill className="starIcon"/>
-            <BsFillStarFill className="starIcon"/>
+            <BsFillStarFill />
+            <BsFillStarFill />
+            <BsFillStarFill />
+            <BsFillStarFill />
           </span>
         );
         break;
       case 5:
         return (
           <span className="flex flex-row">
-            <BsFillStarFill className="starIcon"/>
-            <BsFillStarFill className="starIcon"/>
-            <BsFillStarFill className="starIcon"/>
-            <BsFillStarFill className="starIcon"/>
-            <BsFillStarFill className="starIcon"/>
+            <BsFillStarFill />
+            <BsFillStarFill />
+            <BsFillStarFill />
+            <BsFillStarFill />
+            <BsFillStarFill />
           </span>
         );
 

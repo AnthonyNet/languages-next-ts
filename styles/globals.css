@@ -97,9 +97,11 @@ nav,
   background: var(--mainCardBack);
  
 }
-
+/* ------------------  
+Animations 
+--------------------- */
 details[open] summary ~ *,
-.starIcon {
+.starsDiv span > * {
   animation: animate 1s ease-in-out;
 }
 

@@ -40,7 +40,7 @@ const Input = ({
 
   //Save Input value into INPUT variable
   //Set read only for Input
-  const handleChange = (e: any) => {
+  const handleChange:React.ChangeEventHandler<HTMLInputElement> = (e) => {
     setInput(e.target.value);
 
     if(word===e.target.value){
