@@ -59,7 +59,7 @@ function Pokus() {
   const [movieName, setMovieName] = useState("");
   const [state, dispatch] = useReducer(reducer, defaultState);
 
-  const submitForm = (e) => {
+  const submitForm = (e:Event) => {
     e.preventDefault();
 
     if (movieName) {
