@@ -40,7 +40,6 @@
   
     --blue-main: #1c76c6;
 
- 
 }
 
 
@@ -52,6 +51,8 @@
     --mainCardBack: linear-gradient(132deg, rgb(18, 8, 17) 0.00%, rgb(3, 3, 38) 100.00%);
   
     --blue-main: #1c76c6;
+
+
   }
 
 }
@@ -63,7 +64,6 @@
   --mainCardBack: linear-gradient(132deg, rgb(18, 8, 17) 0.00%, rgb(3, 3, 38) 100.00%);
 
   --blue-main: #1c76c6;
- 
 }
 
 
@@ -72,6 +72,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+ 
 }
 
 
@@ -80,6 +81,7 @@ body {
   max-width: 100vw;
   overflow-x: hidden; 
   color: var(--blue-main);
+
 }
 
 
@@ -88,10 +90,12 @@ nav,
  .main-bg,
  .mobile__Nav{
   background: var(--background-color);
+
 }
 
 .mainCardBack{
   background: var(--mainCardBack);
+ 
 }
 
 details[open] summary ~ * {

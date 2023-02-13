@@ -28,7 +28,12 @@ module.exports = {
     "./sections/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        'spin-slow': 'spin 13s linear infinite',
+        'ping-slow': 'bounce 1s linear infinite',
+      }
+    },
   },
   plugins: [myClass],
 }
