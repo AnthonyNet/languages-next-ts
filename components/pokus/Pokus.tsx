@@ -3,8 +3,10 @@ import { moviesData, MoviesInt } from "./comp/data";
 import { useState, useReducer } from "react";
 import { log } from "console";
 
+
+
 const reducer = (state, action) => {
-  // console.log(state, action)
+   console.log(state)
   if (action.type === "ADD_MOVIE") {
     const newMovies = [...state.movies, action.payLoad];
     return {
@@ -33,7 +35,7 @@ const reducer = (state, action) => {
 
   if (action.type === "DELETE_MOVIE") {
     const newMovies = state.movies.filter(
-      (movie: MoviesInt) => movie.id !== action.payLoad
+      (movie:any) => movie.id !== action.payLoad
     );
     return {
       ...state,
@@ -47,7 +49,12 @@ const reducer = (state, action) => {
   //return state
 };
   
-const defaultState: any = {
+const defaultState:{
+  movies: string[],
+  showNotification: boolean,
+  notificationContent: string,
+
+} = {
   movies: [],
   showNotification: false,
   notificationContent: "",
