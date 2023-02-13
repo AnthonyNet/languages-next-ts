@@ -98,7 +98,8 @@ nav,
  
 }
 
-details[open] summary ~ * {
+details[open] summary ~ *,
+.starIcon {
   animation: animate 1s ease-in-out;
 }
 
