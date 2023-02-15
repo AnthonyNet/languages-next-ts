@@ -8,7 +8,7 @@
 # Learn English and German
 
  
-## MENU
+## MENU 
  - Home -> Simple BTC-Price API on the other side of the picture. Visible by hovering.
  - English
  	- **Irregular Verbs** --> It checks if you write irregular verbs properly.
