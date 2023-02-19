@@ -2,6 +2,7 @@
 
 /*Plugin is used in MainPage Card */
 const plugin = require('tailwindcss/plugin');
+
 const myClass = plugin(function({addUtilities}){
   addUtilities({
     ".my-rotate-y-180": {
