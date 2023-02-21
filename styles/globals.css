@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* still not good*/
+
 @layer base {
   body {
     @apply text-[#1f2937] tracking-wide
