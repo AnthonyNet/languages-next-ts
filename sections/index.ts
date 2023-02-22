@@ -11,4 +11,4 @@ export {
   
     Pagination
 }
-/*  learning reactiveX Functional JS */
+
