@@ -12,7 +12,7 @@ function DarkModeBtn(){
   useEffect(() => {
     setMounted(true);
     setTheme("dark");
-  }, []);
+  }, []); /*Missing dependency */
 
   if (!mounted) {
     return null;
