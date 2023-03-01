@@ -79,7 +79,6 @@ function Navbar(){
           <TiThMenu onClick={handleNav} />
         </div>
       </div>
-
       <Mobile__Nav nav={nav} handleNav={handleNav} />
     </nav>
   );
