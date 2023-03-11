@@ -67,6 +67,7 @@ function Navbar(){
             <ul className="flex flex-col border-solid border-t-4 border-sky-400 navDetails">
               <Link href="/german/irregular-verbs">{`Unregelmäßige Verben (${VerbenData.length})`}</Link>
               <Link href="/german/goethe">{`Goethe (${Goethe.length})`}</Link>
+              <Link href="/german/memory">Memory</Link>
             </ul>
           </details>
         </article>
