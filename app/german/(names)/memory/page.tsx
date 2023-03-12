@@ -1,8 +1,13 @@
-import React from 'react'
+import Navbar from '../../../../components/navbar/Navbar'
 
 const page = () => {
   return (
-    <div>memory</div>
+    <div>
+      <Navbar />
+
+      <h2>memory</h2>
+      
+      </div>
   )
 }
 
