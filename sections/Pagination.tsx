@@ -9,8 +9,8 @@ import Bottom_Menu from "../components/pagination/Bottom_Menu";
 
 const styles = {
   section:
-    "h-screen flex flex-column justify-center items-baseline flex-wrap",
-  table: "table-fixed min-w-[50vw] m-auto",
+    "h-[90vh] flex flex-column justify-center items-baseline flex-wrap",
+  table: "table-fixed min-w-[50vw] max-w-[90%]",
   thead__tr: "flex justify-around",
   tbody__td: "w-[50%] border-red-400 border-r-4",
 } as const;
@@ -74,7 +74,7 @@ function Pagination() {
   return <section className={styles.section}>
       <Top_Menu myNumb={myNumb} setMyNumb={setMyNumb} setCurrentPage={setCurrentPage}/>
 
-      <main className="w-full">
+      <main className="w-full flex flex-col justify-between items-center">
         <h2 className="text-center">Pagination</h2>
         <table className={styles.table}>
           <thead>
