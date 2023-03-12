@@ -1,12 +1,12 @@
 "use client"
 
-import {Navbar, MainPage} from '../sections'
+import { MainPage} from '../sections'
 
 function Page(){
 
   return (
     <div>
-        <Navbar />
+       
         <MainPage />
     </div>
   )
