@@ -12,7 +12,7 @@ const styles = {
     li__active: 'border-b-4 border-red-600',
   };
 
-function Top_Menu({myNumb, setMyNumb, setCurrentPage}: Props):JSX.Element {
+function Top_Menu({myNumb, setMyNumb, setCurrentPage}: Props) {
 
   const handleClick = (numb: number) => {
     setMyNumb(numb);
