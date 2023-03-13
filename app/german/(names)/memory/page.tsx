@@ -1,13 +1,8 @@
-
+import Memory from '../../../../sections/Memory';
 
 const page = () => {
   return (
-    <div>
-    
-
-      <h2>memory</h2>
-      
-      </div>
+    <Memory />
   )
 }
 
