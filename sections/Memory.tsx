@@ -1,60 +1,85 @@
-import MemoryCard from "../components/memoryCard/MemoryCard";
+"use client"
 
-const cards = {
-  
-}
+import MemoryCard from "../components/memoryCard/MemoryCard";
+import { useState, useEffect } from "react";
+
+interface Card {
+  letter: string;
+  select: string;
+  }
+ 
 
 function Memory() {
+  const [count,setCount] = useState<number>(0)
+  const [cards, setCards] = useState<any>([])
+
+ const [store, setStore] = useState<string[]>([])
+
+  const items = [
+     {letter: 'A', select: '1'}, 
+      {letter: 'B', select: '2'},
+      {letter: 'C', select: '3'},
+      {letter: 'D', select: '4'},
+      {letter: 'E', select: '5'},
+      {letter: 'F', select: '6'},
+      {letter: 'G', select: '7'},
+      {letter: 'H', select: '8'},
+  ]
+/* ---------------------------- */
+/*        Setup random Cards          */
+/* ---------------------------- */
+  function resetCards(){
+    const shuffled = [...items, ...items].sort(() => Math.floor(Math.random() * items.length));
+   // const shuffled = [...items, ...items].sort(() => 0.5 - Math.random());
+    setCards(shuffled)
+    //console.log(shuffled);
+  }
+
+  useEffect(() => {
+    resetCards()
+  }, [])
+
+/* ---------------------------- */
+
+
+/* ---------------------------- */
+/*       Compare Cards          */
+/* ---------------------------- */
+
+
+  useEffect(() => {
+    console.log(store);
+    
+    if(store.length === 2){
+      setTimeout(() => {
+        setStore([])
+      }, 1000)
+    }
+
+    if(store[0] === store[1] && store.length === 2){
+      
+     return alert('You found a match!')
+    }
+  }, [store])
+
   return (
     <section className="w-screen h-[90vh] flex flex-col items-center justify-center">
       <h3>Memory</h3>
       <article className="w-[80%] h-[90%] border-4 border-red-400 grid grid-cols-4 grid-rows-4 gap-4 grid-flow-row p-2">
-        <MemoryCard />
-        <div className="grid items-center justify-center border-2 border-red-300">
-          02
-        </div>
-        <div className="grid items-center justify-center border-2 border-red-300">
-          03
-        </div>
-        <div className="grid items-center justify-center border-2 border-red-300">
-          04
-        </div>
-        <div className="grid items-center justify-center border-2 border-red-300">
-          05
-        </div>
-        <div className="grid items-center justify-center border-2 border-red-300">
-          06
-        </div>
-        <div className="grid items-center justify-center border-2 border-red-300">
-          07
-        </div>
-        <div className="grid items-center justify-center border-2 border-red-300">
-          08
-        </div>
-        <div className="grid items-center justify-center border-2 border-red-300">
-          01
-        </div>
-        <div className="grid items-center justify-center border-2 border-red-300">
-          02
-        </div>
-        <div className="grid items-center justify-center border-2 border-red-300">
-          03
-        </div>
-        <div className="grid items-center justify-center border-2 border-red-300">
-          04
-        </div>
-        <div className="grid items-center justify-center border-2 border-red-300">
-          05
-        </div>
-        <div className="grid items-center justify-center border-2 border-red-300">
-          06
-        </div>
-        <div className="grid items-center justify-center border-2 border-red-300">
-          07
-        </div>
-        <div className="grid items-center justify-center border-2 border-red-300">
-          08
-        </div>
+        
+        {cards.map((item:Card, index:number) => {
+          return (
+            <MemoryCard
+              key={index}
+              letter={item.letter}
+              store={store}
+              setStore={setStore}
+             
+            />
+          );
+        })
+        }
+       
       </article>
     </section>
   );

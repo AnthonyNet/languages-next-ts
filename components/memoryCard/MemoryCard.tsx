@@ -1,22 +1,40 @@
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+interface Card {
+letter: string;
+store: string[];
+setStore: (store: string[]) => void;
+}
 
 const styles = {
   
-  card__div:
-    "relative flex items-center justify-center border-2 border-red-300 bg-transparent cursor-pointer group perspective",
-  card__div__div:
-    "preserve-3d group-hover:my-rotate-y-180 w-full h-full  bg-blue-200 duration-1000",
-  card__div__div__div: "w-full h-full",
+  button:
+    "relative flex items-center justify-center border-2 border-red-300 cursor-pointer group perspective",
+    button__div:
+    "preserve-3d group my-rotate-y-180 w-full h-full duration-1000",
+ /* button__div:
+    "preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000",*/
+  button__div__div: "w-full h-full",
   cardBack:
-    "absolute my-rotate-y-180 backface-hidden mt-[-68%] overflow-hidden bg-white w-full h-full",
- 
+    "absolute top-0 my-rotate-y-180 backface-hidden overflow-hidden bg-white w-full h-full",
+ cardBack__div: "text-center flex flex-col items-center text-gray-800"
 } as const;
 
-function Memory() {
+function Memory({ letter, store, setStore}: Card) {
+  const [checkClick, setCheckClick] = useState(false);
+
+  function handleCardClick(){
+   setStore([...store, letter])
+   setCheckClick(true)
+
+
+  }
+
+
   return (
-    <div className={styles.card__div}>
-      <div className={styles.card__div__div}>
-        <div className={styles.card__div__div__div}>
+    <button  className={styles.button} onClick={handleCardClick}>
+      <div className={`${checkClick&&styles.button__div}`}>
+        <div className={styles.button__div__div}>
          
         </div>
 
@@ -24,14 +42,14 @@ function Memory() {
           <div className="w-full h-full flex justify-center items-center">
 
           <h2 className="text-3xl font-semibold self-center">
-             Back
+             {letter}
             </h2>
           </div>
          
          
         </div>
       </div>
-    </div>
+    </button>
   );
 }
 
