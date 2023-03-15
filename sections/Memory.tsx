@@ -17,7 +17,7 @@ function Memory() {
   const [cards, setCards] = useState<any>([])
   const [store, setStore] = useState<any>([])
   const [counter, setCounter] = useState<number>(10)
-const [backCardVisible, setBackCardVisible] = useState<boolean>(false)
+  const [backCardVisible, setBackCardVisible] = useState<boolean>(false)
 
   const items = [
      {letter: 'A', check: false}, 
@@ -32,7 +32,7 @@ const [backCardVisible, setBackCardVisible] = useState<boolean>(false)
 
   const timer = setTimeout(() => {
     if(counter > 0) {
-        setBackCardVisible(true)
+        
         setCounter(counter -1 )
         
      } else {
@@ -46,12 +46,11 @@ const [backCardVisible, setBackCardVisible] = useState<boolean>(false)
 /* ---------------------------- */
   function resetCards(){
     const shuffled = [...items, ...items].sort(() => Math.floor(Math.random() * items.length));
-
     setCards(shuffled)
-   
   }
 
   useEffect(() => {
+    setBackCardVisible(true)
     resetCards()
     return () => clearTimeout(timer);
   }, [])
@@ -76,7 +75,7 @@ const [backCardVisible, setBackCardVisible] = useState<boolean>(false)
     }
 
     if(store[0] !== store[1] && store.length === 2){
-      alert(`Wrong answer! Your score: ${score}`)
+      alert(`Wrong answer! Your score: ${score} -->WANNA NEW GAME?`)
       setScore(0)
       resetCards()
     }
@@ -85,7 +84,7 @@ const [backCardVisible, setBackCardVisible] = useState<boolean>(false)
   return (
     <section className="w-screen h-[90vh] flex flex-col items-center justify-center">
       <h3>Memory</h3>
-      {counter}
+     <h2>{counter>0?counter:'Score: '+score}</h2>
      
       <article className="w-[80%] h-[80%] border-4 border-red-400 grid grid-cols-4 grid-rows-4 gap-4 grid-flow-row p-2">
         
@@ -100,7 +99,6 @@ const [backCardVisible, setBackCardVisible] = useState<boolean>(false)
               backCardVisible={backCardVisible}
               setBackCardVisible={setBackCardVisible}
 
-            
             />
           );
         })
