@@ -45,12 +45,7 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
     setHidden(true);
   };
 
-  //map  data2 items to component
 
-  useEffect(() => {
-    setData2(data[rand]);
-    console.log(czWord, wordTranslated, sentenceTranslated);
-  }, [rand]);
 
   return (
     <motion.section
@@ -96,7 +91,7 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
 
         <motion.div className={styles.cardBack}>
           <div className={styles.cardBack__div}>
-         
+
           {switchLanguage ? (
           sentenceTranslated ? (
             <div>
@@ -104,12 +99,11 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
               <h3 className={styles.h3}>{wordTranslated}</h3>
               <h3 className={styles.h3}>{czWord}</h3>
             </div>
-          ): (
-            <div>
+          ): (<div>
               <h3 className={styles.h3}>{wordTranslated}</h3>
               <h3 className={styles.h3}>{czWord}</h3>
             </div>
-          )
+)
         ):  sentenceTranslated ? (
           <div>
             <h3 className={styles.h3}>{czWord}</h3>
