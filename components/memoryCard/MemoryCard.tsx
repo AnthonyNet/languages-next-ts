@@ -1,12 +1,15 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+
 interface Card {
 letter: string;
-store: string[];
+store: string;
 setStore: (store: string[]) => void;
 backCardVisible: boolean;
 setBackCardVisible: (backCardVisible: boolean) => void;
-
+counter: number;
+resetCards: () => void;
+timer: any;
 }
 
 const styles = {
@@ -23,33 +26,43 @@ const styles = {
  cardBack__div: "text-center flex flex-col items-center text-gray-800"
 } as const;
 
-function Memory({ letter, store, setStore, counter, backCardVisible}: Card) {
+function Memory({ letter, store, setStore, counter, backCardVisible, resetCards, timer}: Card) {
   const [checkClick, setCheckClick] = useState<boolean>(false);
  
- 
 
-  function handleCardClick(){
-   setStore([...store, letter])
-   setCheckClick(true)
+  function handleCardClick(e: React.MouseEvent<HTMLButtonElement>){
+    const {target} = e;
+    console.log((target as HTMLButtonElement).textContent);
     
+   setStore([...store, (target as HTMLButtonElement).textContent])
+   setCheckClick(true)
+
+   if(store[0] !== (target as HTMLButtonElement).textContent && store.length > 0){
+  
+   // setScore(0)
+    resetCards()
+    alert(`Wrong answer! Your score:  -->WANNA NEW GAME?`)
+    
+  }
+ 
+  if(store[0] === (target as HTMLButtonElement).textContent && store.length > 0){
+  //setScore(score + 1)
+  setStore([])
+  }
   }
 
 
 
-  useEffect(() => {
-   
-      store.map(item=>{
-        if(item !== letter && store.length === 2){
-         setTimeout(() => {
-          setCheckClick(false)
-         }, 1000) 
-        }
-      })
-  }, [store])
 
   return (
     <button  className={styles.button} onClick={handleCardClick}>
-      <div className={`${checkClick||backCardVisible?styles.button__div:null}`}>
+      <div className={`
+
+      ${backCardVisible||checkClick?styles.button__div
+        :null
+      }
+      
+      `}>
         <div className={styles.button__div__div}>
          
         </div>

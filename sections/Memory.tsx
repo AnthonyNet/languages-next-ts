@@ -8,14 +8,14 @@ import { useState, useEffect } from "react";
 interface Card {
   letter: string;
   check: boolean;
-  counter: number;
+
   }
  
 
 function Memory() {
   const [score, setScore] = useState<number>(0)
   const [cards, setCards] = useState<any>([])
-  const [store, setStore] = useState<any>([])
+  const [store, setStore] = useState<string[]>([])
   const [counter, setCounter] = useState<number>(10)
   const [backCardVisible, setBackCardVisible] = useState<boolean>(false)
 
@@ -32,7 +32,7 @@ function Memory() {
 
   const timer = setTimeout(() => {
     if(counter > 0) {
-        
+      setBackCardVisible(true)
         setCounter(counter -1 )
         
      } else {
@@ -47,10 +47,14 @@ function Memory() {
   function resetCards(){
     const shuffled = [...items, ...items].sort(() => Math.floor(Math.random() * items.length));
     setCards(shuffled)
+    setStore([])
+    setCounter(10)
+    
+    return () => clearTimeout(timer);
   }
 
   useEffect(() => {
-    setBackCardVisible(true)
+   
     resetCards()
     return () => clearTimeout(timer);
   }, [])
@@ -61,25 +65,7 @@ function Memory() {
 /* ---------------------------- */
 
 
-  useEffect(() => {
-    console.log(store);
-    
-    if(store.length === 2 || store.length > 2){
-      setTimeout(() => {
-        setStore([])
-      }, 1000)
-    }
 
-    if(store[0] === store[1] && store.length === 2){
-    setScore(score + 1)
-    }
-
-    if(store[0] !== store[1] && store.length === 2){
-      alert(`Wrong answer! Your score: ${score} -->WANNA NEW GAME?`)
-      setScore(0)
-      resetCards()
-    }
-  }, [store])
 
   return (
     <section className="w-screen h-[90vh] flex flex-col items-center justify-center">
@@ -98,7 +84,8 @@ function Memory() {
               setStore={setStore}
               backCardVisible={backCardVisible}
               setBackCardVisible={setBackCardVisible}
-
+              resetCards= {resetCards}
+              timer = {timer}
             />
           );
         })
