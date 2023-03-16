@@ -65,14 +65,19 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
         animate={{ rotateY: switchSide ? 0 : 180 }}
       >
         {switchLanguage ? (
-          sentenceTranslated && (
+          sentenceTranslated ? (
             <div>
               <h3 className={styles.h3}>{sentenceTranslated}</h3>
-              <h3 className={styles.h3}>{data[rand].wordTranslated}</h3>
+              <h3 className={styles.h3}>{wordTranslated}</h3>
             </div>
+          ) : (
+            <h3 className={styles.h3}>{wordTranslated}</h3>
           )
         ) : (
+          <div>
+            <h3 className={styles.h3}>{wordTranslated}</h3>
           <h3 className={styles.h3}>{czWord}</h3>
+          </div>
         )}
 
         <div className={styles.section__div__btnCover}>
@@ -91,22 +96,48 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
 
         <motion.div className={styles.cardBack}>
           <div className={styles.cardBack__div}>
-            <h3 className={styles.h3}>{data[rand].wordTranslated}</h3>
-            {!switchLanguage ? (
-              sentenceTranslated && (
-                <div>
-                  <h3 className={styles.h3}>{sentenceTranslated}</h3>
-                  <h3 className={styles.h3}>{data[rand].wordTranslated}</h3>
-                </div>
-              )
-            ) : (
+         
+          {switchLanguage ? (
+          sentenceTranslated ? (
+            <div>
+              <h3 className={styles.h3}>{sentenceTranslated}</h3>
+              <h3 className={styles.h3}>{wordTranslated}</h3>
               <h3 className={styles.h3}>{czWord}</h3>
-            )}
+            </div>
+          ): (
+            <div>
+              <h3 className={styles.h3}>{wordTranslated}</h3>
+              <h3 className={styles.h3}>{czWord}</h3>
+            </div>
+          )
+        ):  sentenceTranslated ? (
+          <div>
+            <h3 className={styles.h3}>{czWord}</h3>
+            <h3 className={styles.h3}>{sentenceTranslated}</h3>
+            <h3 className={styles.h3}>{wordTranslated}</h3>
+          
+          </div>
+        ): (
+          <div>
+               <h3 className={styles.h3}>{czWord}</h3>
+               <h3 className={styles.h3}>{wordTranslated}</h3>
+          </div>
+        )
+        
+        }
+          
+
+           <div className={styles.section__div__btnCover}>
+           <CardButton
+            onClick={() => [setSwitchLanguage(!switchLanguage)]}
+            text={switchLanguage ? "CZ" : "EN"}
+          />
 
             <CardButton
               onClick={() => [setSwitchSide(!switchSide)]}
               text={"Question"}
             />
+           </div>
           </div>
         </motion.div>
       </motion.div>
