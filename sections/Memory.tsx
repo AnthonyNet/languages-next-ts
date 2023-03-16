@@ -18,6 +18,7 @@ function Memory() {
   const [store, setStore] = useState<string[]>([])
   const [counter, setCounter] = useState<number>(10)
   const [backCardVisible, setBackCardVisible] = useState<boolean>(false)
+  const [resetAllCards, setResetAllCards] = useState<boolean>(false)
 
   const items = [
      {letter: 'A', check: false}, 
@@ -32,6 +33,7 @@ function Memory() {
 
   const timer = setTimeout(() => {
     if(counter > 0) {
+      setResetAllCards(!resetAllCards)
       setBackCardVisible(true)
         setCounter(counter -1 )
         
@@ -79,13 +81,13 @@ function Memory() {
             <MemoryCard
               key={index}
               letter={item.letter}
-             
               store={store}
               setStore={setStore}
               backCardVisible={backCardVisible}
-              setBackCardVisible={setBackCardVisible}
               resetCards= {resetCards}
-              timer = {timer}
+              resetAllCards = {resetAllCards}
+              score={score}
+              setScore={setScore}
             />
           );
         })
