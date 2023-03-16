@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 interface Card {
 letter: string;
-store: string;
+store: string[];
 setStore: (store: string[]) => void;
 backCardVisible: boolean;
 setBackCardVisible: (backCardVisible: boolean) => void;
@@ -28,13 +28,14 @@ const styles = {
 
 function Memory({ letter, store, setStore, counter, backCardVisible, resetCards, timer}: Card) {
   const [checkClick, setCheckClick] = useState<boolean>(false);
- 
+  ;
+  
 
   function handleCardClick(e: React.MouseEvent<HTMLButtonElement>){
     const {target} = e;
     console.log((target as HTMLButtonElement).textContent);
     
-   setStore([...store, (target as HTMLButtonElement).textContent])
+   setStore([...store, (target as HTMLButtonElement).textContent as string])
    setCheckClick(true)
 
    if(store[0] !== (target as HTMLButtonElement).textContent && store.length > 0){
@@ -51,6 +52,7 @@ function Memory({ letter, store, setStore, counter, backCardVisible, resetCards,
   }
   }
 
+  
 
 
 
