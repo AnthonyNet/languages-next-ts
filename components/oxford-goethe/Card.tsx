@@ -1,3 +1,5 @@
+"use client"
+import { motion } from "framer-motion";
 import {  useState } from "react";
 import CardButton from "../card/CardButton";
 import { CgClose } from "react-icons/cg";
@@ -83,32 +85,34 @@ const Card = ({ dataTS }:{ dataTS:Card_Vocabs[] }) => {
 
   return (
     <section className={styles.section}>
-      <div className={styles.section_div}>
-        <ul className={styles.ul}>
-        {/* true = Foreign language to Czech false = Czech to Foeign language */}
-          {switchLanguage? <CardTrue />: <CardFalse />}
+    <div className={styles.section_div}>
+      <ul className={styles.ul}>
+      {/* true = Foreign language to Czech false = Czech to Foeign language */}
+        {switchLanguage? <CardTrue />: <CardFalse />}
 
-          {hidden ? (
-            <li
-              className={"text-cyan-500 " + styles.li}
-              onClick={() => setHidden(!hidden)}
-            >
-              show answer
-            </li>
-          ) : null
-          }
-
-          <li className="btn_Li flex justify-around text-center mt-8">
-            <CardButton onClick={randomWord} text={"Next word"} />
-
-            <CardButton
-              onClick={() => [setSwitchLanguage(!switchLanguage), setHidden(true)]}
-              text={switchLanguage ? "CZ ➜ ENG" : "ENG ➜ CZ"}
-            />
+        {hidden ? (
+          <li
+            className={"text-cyan-500 " + styles.li}
+            onClick={() => setHidden(!hidden)}
+          >
+            show answer
           </li>
-        </ul>
-      </div>
-    </section>
+        ) : null
+        }
+
+        <li className="btn_Li flex justify-around text-center mt-8">
+          <CardButton onClick={randomWord} text={"Next word"} />
+
+          <CardButton
+            onClick={() => [setSwitchLanguage(!switchLanguage), setHidden(true)]}
+            text={switchLanguage ? "CZ ➜ ENG" : "ENG ➜ CZ"}
+          />
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
   );
 };
 
