@@ -79,7 +79,7 @@ function Memory() {
             <MemoryCard
               key={index}
               letter={item.letter}
-              check={item.check}
+             
               store={store}
               setStore={setStore}
               backCardVisible={backCardVisible}

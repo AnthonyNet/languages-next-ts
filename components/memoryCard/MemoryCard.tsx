@@ -7,7 +7,7 @@ store: string[];
 setStore: (store: string[]) => void;
 backCardVisible: boolean;
 setBackCardVisible: (backCardVisible: boolean) => void;
-counter: number;
+
 resetCards: () => void;
 timer: any;
 }
@@ -26,7 +26,7 @@ const styles = {
  cardBack__div: "text-center flex flex-col items-center text-gray-800"
 } as const;
 
-function Memory({ letter, store, setStore, counter, backCardVisible, resetCards, timer}: Card) {
+function Memory({ letter, store, setStore, backCardVisible, resetCards}: Card) {
   const [checkClick, setCheckClick] = useState<boolean>(false);
   ;
   
