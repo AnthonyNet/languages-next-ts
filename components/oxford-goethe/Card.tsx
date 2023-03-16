@@ -52,8 +52,6 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
     console.log(czWord, wordTranslated, sentenceTranslated);
   }, [rand]);
 
-
-
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -66,13 +64,17 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
         className={styles.section__div}
         animate={{ rotateY: switchSide ? 0 : 180 }}
       >
-        <h3 className={styles.h3}>{data[rand].wordTranslated}</h3>
-
-        {sentenceTranslated && (
-          <h3 className="w-full p-4 border-4 text-center">
-            {sentenceTranslated}
-          </h3>
+        {switchLanguage ? (
+          sentenceTranslated && (
+            <div>
+              <h3 className={styles.h3}>{sentenceTranslated}</h3>
+              <h3 className={styles.h3}>{data[rand].wordTranslated}</h3>
+            </div>
+          )
+        ) : (
+          <h3 className={styles.h3}>{czWord}</h3>
         )}
+
         <div className={styles.section__div__btnCover}>
           <CardButton
             onClick={() => [setSwitchLanguage(!switchLanguage)]}
@@ -90,13 +92,16 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
         <motion.div className={styles.cardBack}>
           <div className={styles.cardBack__div}>
             <h3 className={styles.h3}>{data[rand].wordTranslated}</h3>
-            {sentenceTranslated && (
-              <h3 className="w-full p-4 border-4 text-center">
-                {" "}
-                {sentenceTranslated}
-              </h3>
+            {!switchLanguage ? (
+              sentenceTranslated && (
+                <div>
+                  <h3 className={styles.h3}>{sentenceTranslated}</h3>
+                  <h3 className={styles.h3}>{data[rand].wordTranslated}</h3>
+                </div>
+              )
+            ) : (
+              <h3 className={styles.h3}>{czWord}</h3>
             )}
-            <h3 className={styles.h3}>{czWord}</h3>
 
             <CardButton
               onClick={() => [setSwitchSide(!switchSide)]}
