@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import CardButton from "../card/CardButton";
-import { CgClose } from "react-icons/cg";
+
 import { Card_Vocabs } from "../../interface/";
 
 {
