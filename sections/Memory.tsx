@@ -13,13 +13,27 @@ interface Item {
   click: boolean;
 }
 
+interface Data {
+  cz: string,  
+  base: string,		
+  pastSimple: string,
+  pastParticiple: string,
+  pastParticiple2?: string,
+}
+
 function Memory() {
-  const [props, setProps] = useState<any>(IrregularVerbs);
+  const [props, setProps] = useState<Data[]>(IrregularVerbs);
 
   const [score, setScore] = useState<number>(0);
-  const [cards, setCards] = useState<any>([]);
+  const [cards, setCards] = useState<Item[]>([]);
   const [store, setStore] = useState<number[]>([]);
   const [prev, setPrev] = useState<number>(-1);
+
+
+useEffect(() => {
+console.log(cards);
+}, [cards])
+
 
   const createData = (english: any) => {
     const RAW = [...english]
