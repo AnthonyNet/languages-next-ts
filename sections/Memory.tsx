@@ -33,9 +33,11 @@ function Memory() {
 
   //fix thecreateData function 
   const createData =  (english) => {
-   
-    const randomEnglish = [...english].sort(() => Math.floor(Math.random() * english.length)).slice(0, 8).map((item,index)=>({select: index, eng: item.base}))
-    const randomCzech = [...english].sort(() => Math.floor(Math.random() * english.length)).slice(0, 8).map((item,index)=>({select: index, cz: item.cz}))
+   const RAW = [...english].sort(() => Math.floor(Math.random() * english.length)).slice(0, 8)
+
+    const randomEnglish = RAW.map((item,index)=>({select: index, eng: item.base}))
+
+    const randomCzech = RAW.map((item,index)=>({select: index, cz: item.cz}))
    
     setCards([...randomEnglish, ...randomCzech].sort(() => Math.floor(Math.random() * randomEnglish.length)))
   
@@ -76,7 +78,7 @@ function Memory() {
 /* ---------------------------- */
 /*       Compare Cards          */
 /* ---------------------------- */
-console.log(cards);
+
 
 
 
