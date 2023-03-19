@@ -19,7 +19,7 @@ const styles = {
     "absolute top-0 my-rotate-y-180 backface-hidden overflow-hidden bg-white w-full h-full",
   cardBack__div:
     "w-full h-full flex flex-col items-center justify-center text-gray-800",
-  border: "border-2 border-green-300",
+  border: ``,
 } as const;
 
 function Memory({ id, item, handleClick }: Card) {
@@ -34,7 +34,7 @@ function Memory({ id, item, handleClick }: Card) {
         // disabled={checkClick}
       >
         <motion.div
-          className={styles.button__div + " " + styles.border}
+          className={styles.button__div + " " + `${item.click&&"border-2 border-green-300"}`}
           animate={{ rotateY: item.check ? 180 : 0 }}
         >
           <motion.div className={styles.button__div__div}>

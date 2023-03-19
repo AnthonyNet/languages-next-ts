@@ -37,7 +37,7 @@ function Memory() {
 
 
 /* ---------------------------- */
-/*        Setup random Cards          */
+/*        Setup random Cards    */
 /* ---------------------------- */
 
 
@@ -47,7 +47,7 @@ function Memory() {
   }, [])
 
 useEffect(() => {
-  console.log(store);
+ // console.log(store);
   
 }, [store])
 
@@ -62,6 +62,7 @@ function check(current:number){
       if(index === prev || index === current){
         return {...item, check: true}
       }else {
+
         return item
       }
     }))
@@ -70,11 +71,14 @@ function check(current:number){
 }
 
 function handleClick(id:number, select:number){
-
+cards[id].click = true
+setCards([...cards])
 if(prev === -1){
   setPrev(id)
   return
 }else {
+cards.map((card:Item) => card.click = false)
+setCards([...cards])
  check(id)
 }
 }
