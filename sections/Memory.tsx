@@ -56,13 +56,15 @@ useEffect(() => {
 /* ---------------------------- */
 function check(current:number){
   if(cards[prev].select === cards[current].select){
+    
     setScore(score + 1)
     setStore([...store, cards[prev].select])
     setCards(cards.map((item:Item, index:number) => {
       if(index === prev || index === current){
-        return {...item, check: true}
+        return {...item, check: true, click: true}
       }else {
-
+cards.map((card:Item) => card.click = false)
+setCards([...cards])
         return item
       }
     }))
@@ -77,7 +79,7 @@ if(prev === -1){
   setPrev(id)
   return
 }else {
-cards.map((card:Item) => card.click = false)
+  cards.map((card:Item) => card.click = false)
 setCards([...cards])
  check(id)
 }
@@ -94,8 +96,7 @@ setCards([...cards])
       <article className="w-[80%] h-[80%] border-4 border-red-400 grid grid-cols-4 grid-rows-4 gap-4 grid-flow-row p-2">
      
       {cards.map((item:Item, index:number) => {
-        console.log(item);
-        
+       
           return (
             <MemoryCard
               key={index}

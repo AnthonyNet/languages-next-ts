@@ -10,7 +10,7 @@ interface Card {
 
 const styles = {
   button:
-    "relative flex items-center justify-center border-2 border-red-300 cursor-pointer group perspective",
+    "relative flex items-center justify-center border-2  cursor-pointer group perspective",
   button__div: "preserve-3d group my-rotate-y-180 w-full h-full duration-1000",
   /* button__div:
     "preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000",*/
@@ -19,22 +19,20 @@ const styles = {
     "absolute top-0 my-rotate-y-180 backface-hidden overflow-hidden bg-white w-full h-full",
   cardBack__div:
     "w-full h-full flex flex-col items-center justify-center text-gray-800",
-  border: ``,
+ 
 } as const;
 
 function Memory({ id, item, handleClick }: Card) {
-  const [checkClick, setCheckClick] = useState<boolean>(false);
-  console.log(item);
-
+  
   return (
     <>
       <motion.button
-        className={styles.button}
+        className={styles.button + " " + (item.click ? "border-green-400" : "border-red-400")}
         onClick={() => handleClick(id, item.select)}
-        // disabled={checkClick}
+        disabled={item.click}
       >
         <motion.div
-          className={styles.button__div + " " + `${item.click&&"border-2 border-green-300"}`}
+          className={styles.button__div}
           animate={{ rotateY: item.check ? 180 : 0 }}
         >
           <motion.div className={styles.button__div__div}>
