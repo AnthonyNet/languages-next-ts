@@ -18,9 +18,9 @@ const styles = {
   section:
     "relative flex justify-center items-center w-full h-[90vh] p-2 sm:p-0 responsiveSection",
   section__div:
-    "w-[600px] min-h-[40dvh] border-double border-4 border-blue-300  rounded-lg shadow-xl shadow-slate-600 preserve-3d group my-rotate-y-180 duration-1000 flex flex-col justify-around",
+    "max-w-[600px] min-h-[40dvh] border-double border-4 border-blue-300  rounded-lg shadow-xl shadow-slate-600 preserve-3d group my-rotate-y-180 duration-1000 flex flex-col justify-around",
   section__div__btnCover: "flex justify-around text-center p-4",
-  h3: "w-full p-4 text-center",
+  h3: "p-4 border-b-4 text-center",
 
   cardBack:
     "absolute top-0 my-rotate-y-180 backface-hidden overflow-hidden bg-white w-full h-full",
@@ -63,6 +63,8 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
         className={styles.section__div}
         animate={{ rotateY: switchSide ? 0 : 180 }}
       >
+
+    
         {switchLanguage ? (
           sentenceTranslated ? (
             <div>
@@ -73,10 +75,7 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
             <h3 className={styles.h3}>{wordTranslated}</h3>
           )
         ) : (
-          <div>
-            <h3 className={styles.h3}>{wordTranslated}</h3>
           <h3 className={styles.h3}>{czWord}</h3>
-          </div>
         )}
 
         <div className={styles.section__div__btnCover}>
