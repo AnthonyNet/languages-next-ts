@@ -5,14 +5,13 @@ import MemoryCard from "../components/memoryCard/MemoryCard";
 import { useState, useEffect } from "react";
 import { IrregularVerbs, VerbenData } from "../myData";
 
-interface Card {
-  id: number;
+interface Item {
+
   cz?: string;
   eng?: string;
- base: string;
-  pastParticiple: string;
-  pastSimple: string;
-  
+  select: number;
+  check: boolean;
+  click: boolean;
   }
  
 
@@ -24,12 +23,12 @@ function Memory() {
   const [store, setStore] = useState<number[]>([])
   const [prev,setPrev] = useState<number>(-1)
 
-  const createData =  (english) => {
+  const createData =  (english:any) => {
    const RAW = [...english].sort(() => Math.floor(Math.random() * english.length)).slice(0, 8)
 
-    const randomEnglish = RAW.map((item,index)=>({select: index, eng: item.base, check:false}))
+    const randomEnglish = RAW.map((item,index)=>({select: index, eng: item.base, check:false, click: false}))
 
-    const randomCzech = RAW.map((item,index)=>({select: index, cz: item.cz, check: false}))
+    const randomCzech = RAW.map((item,index)=>({select: index, cz: item.cz, check: false, click:false}))
    
     setCards([...randomEnglish, ...randomCzech].sort(() => Math.floor(Math.random() * randomEnglish.length)))
   
@@ -55,11 +54,11 @@ useEffect(() => {
 /* ---------------------------- */
 /*       Compare Cards          */
 /* ---------------------------- */
-function check(current){
+function check(current:number){
   if(cards[prev].select === cards[current].select){
     setScore(score + 1)
     setStore([...store, cards[prev].select])
-    setCards(cards.map((item:Card, index:number) => {
+    setCards(cards.map((item:Item, index:number) => {
       if(index === prev || index === current){
         return {...item, check: true}
       }else {
@@ -71,6 +70,7 @@ function check(current){
 }
 
 function handleClick(id:number, select:number){
+
 if(prev === -1){
   setPrev(id)
   return
@@ -89,7 +89,9 @@ if(prev === -1){
      
       <article className="w-[80%] h-[80%] border-4 border-red-400 grid grid-cols-4 grid-rows-4 gap-4 grid-flow-row p-2">
      
-      {cards.map((item:Card, index:number) => {
+      {cards.map((item:Item, index:number) => {
+        console.log(item);
+        
           return (
             <MemoryCard
               key={index}
