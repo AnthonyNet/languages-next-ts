@@ -3,18 +3,10 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
 interface Card {
-item: string;
-select: number;
-store: number[];
-setStore: (store: number[]) => void;
+  id: number;
+  item: {select: number, eng?: string, cz?:string, check: boolean}
+  handleClick: (id:number) => void;
 
-resetCards: () => void;
-resetAllCards: boolean;
-score: number;
-setScore: (score: number) => void;
-
-setCards: (cards: any) => void;
-cards: any;
 }
 
 const styles = {
@@ -28,59 +20,28 @@ const styles = {
   button__div__div: "w-full h-full flex items-center justify-center",
   cardBack:
     "absolute top-0 my-rotate-y-180 backface-hidden overflow-hidden bg-white w-full h-full",
- cardBack__div: "w-full h-full flex flex-col items-center justify-center text-gray-800"
+ cardBack__div: "w-full h-full flex flex-col items-center justify-center text-gray-800",
+ border: "border-2 border-green-300",
 } as const;
 
-function Memory({ item, select, store, setStore, resetCards, resetAllCards, score, setScore, correct, setCorrect, setCards, cards, key}: Card) {
-  const [checkClick, setCheckClick] = useState<boolean>(false);
-  ;
-
-[1,5,7]
-
-
-  
-
- function handleCardClick(e: React.MouseEvent<HTMLButtonElement>){
-    e.preventDefault();
-  
-    setStore([...store, select])
-    if(store.length === 1){
-      if(store[0] === select){
-        setCorrect([...correct, select])
-        setCheckClick(true)
-        setStore([])
-        setScore(score +1 )
-        setCards(cards.map(item=> item[key].check===true))
-      } else {
-        alert('Wrong! Try again!')
-        setScore(0)
-        setTimeout(() => {
-          resetCards()
-        }, 3000); 
-
-      }
-      
-    }
-  }
-
-
-    
-
+function Memory({id, item, handleClick}: Card) {
+const [checkClick, setCheckClick] = useState<boolean>(false)
+//console.log(item);
 
 
   return <>
     <motion.button
       className={styles.button}
-      onClick={handleCardClick}
-      disabled={checkClick}
+      onClick={()=>handleClick(id, item.select)}
+     // disabled={checkClick}
     >
       <motion.div
-        className={styles.button__div}
-        animate={{ rotateY:checkClick ? 180 : 0 }}
+        className={styles.button__div + " " + styles.border}
+       animate={{ rotateY:item.check ? 180 : 0 }}
       >
         <motion.div className={styles.button__div__div}>
          
-            <h2 className="text-4xl">{item}</h2>
+            <h2 className="text-4xl">{item.cz?item.cz:item.eng}</h2>
         
         </motion.div>
         <motion.div className={styles.cardBack}>

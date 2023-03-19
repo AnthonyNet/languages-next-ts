@@ -22,67 +22,62 @@ function Memory() {
   const [score, setScore] = useState<number>(0)
   const [cards, setCards] = useState<any>([])
   const [store, setStore] = useState<number[]>([])
-  const [counter, setCounter] = useState<number>(10)
-  const [backCardVisible, setBackCardVisible] = useState<boolean>(false)
-  const [resetAllCards, setResetAllCards] = useState<boolean>(false)
+  const [prev,setPrev] = useState<number>(-1)
 
-  
-
- /* const randomEnglish = [...english].sort(() => Math.floor(Math.random() * english.length)).slice(0, 8).map((item,index)=>({select: index, language: {english: item.base}}))
-  const randomGerman = [...german].sort(() => Math.floor(Math.random() * german.length)).slice(0, 8)*/
-
-  //fix thecreateData function 
   const createData =  (english) => {
    const RAW = [...english].sort(() => Math.floor(Math.random() * english.length)).slice(0, 8)
 
-    const randomEnglish = RAW.map((item,index)=>({select: index, eng: item.base}))
+    const randomEnglish = RAW.map((item,index)=>({select: index, eng: item.base, check:false}))
 
-    const randomCzech = RAW.map((item,index)=>({select: index, cz: item.cz}))
+    const randomCzech = RAW.map((item,index)=>({select: index, cz: item.cz, check: false}))
    
     setCards([...randomEnglish, ...randomCzech].sort(() => Math.floor(Math.random() * randomEnglish.length)))
   
   }
 
-  const timer = setTimeout(() => {
-    if(counter > 0) {
-      setResetAllCards(!resetAllCards)
-      setBackCardVisible(true)
-        setCounter(counter -1 )
-        
-     } else {
-      setBackCardVisible(false)
-     }
-    }, 1000);
 
 
 /* ---------------------------- */
 /*        Setup random Cards          */
 /* ---------------------------- */
-  function resetCards(){
- 
-    setStore([])
-    setCounter(10)
-    
-    return () => clearTimeout(timer);
-  }
+
 
   useEffect(() => {
     createData(IrregularVerbs)
    
-    resetCards()
-    return () => clearTimeout(timer);
   }, [])
 
-
+useEffect(() => {
+  console.log(store);
+  
+}, [store])
 
 /* ---------------------------- */
 /*       Compare Cards          */
 /* ---------------------------- */
+function check(current){
+  if(cards[prev].select === cards[current].select){
+    setScore(score + 1)
+    setStore([...store, cards[prev].select])
+    setCards(cards.map((item:Card, index:number) => {
+      if(index === prev || index === current){
+        return {...item, check: true}
+      }else {
+        return item
+      }
+    }))
+  }
+  setPrev(-1)
+}
 
-
-
-
-
+function handleClick(id:number, select:number){
+if(prev === -1){
+  setPrev(id)
+  return
+}else {
+ check(id)
+}
+}
   return (
     <section className="w-screen h-[90vh] flex flex-col items-center justify-center">
       <div>
@@ -90,7 +85,7 @@ function Memory() {
         <button onClick={() => setCards(VerbenData)}>C1</button>
       </div>
       <h3>Memory</h3>
-     <h2>{counter>0?counter:'Score: '+score}</h2>
+     <h2>{score}</h2>
      
       <article className="w-[80%] h-[80%] border-4 border-red-400 grid grid-cols-4 grid-rows-4 gap-4 grid-flow-row p-2">
      
@@ -98,15 +93,9 @@ function Memory() {
           return (
             <MemoryCard
               key={index}
-              select={item.select}
-              item={item.cz?item.cz:item.eng}
-              store={store}
-              setStore={setStore}
-              backCardVisible={backCardVisible}
-              resetCards= {resetCards}
-              resetAllCards = {resetAllCards}
-              score={score}
-              setScore={setScore}
+              id={index}
+              item={item}
+              handleClick={handleClick}
             />
           );
         })
