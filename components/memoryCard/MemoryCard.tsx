@@ -7,7 +7,7 @@ item: string;
 select: number;
 store: number[];
 setStore: (store: number[]) => void;
-backCardVisible: boolean;
+
 resetCards: () => void;
 resetAllCards: boolean;
 score: number;
@@ -28,21 +28,24 @@ const styles = {
  cardBack__div: "w-full h-full flex flex-col items-center justify-center text-gray-800"
 } as const;
 
-function Memory({ item, select, store, setStore, backCardVisible, resetCards, resetAllCards, score, setScore}: Card) {
+function Memory({ item, select, store, setStore, resetCards, resetAllCards, score, setScore, correct, setCorrect}: Card) {
   const [checkClick, setCheckClick] = useState<boolean>(false);
   ;
 
 useEffect(() => {
-  setCheckClick(false)
-}, [resetAllCards])
+console.log(store);
+
+}, [store])
   
 
-  function handleCardClick(e: React.MouseEvent<HTMLButtonElement>){
+ function handleCardClick(e: React.MouseEvent<HTMLButtonElement>){
     e.preventDefault();
-   setCheckClick(true)
+  
     setStore([...store, select])
     if(store.length === 1){
       if(store[0] === select){
+        setCorrect([...correct, select])
+        setCheckClick(true)
         setStore([])
         setScore(score +1 )
       } else {
@@ -53,8 +56,12 @@ useEffect(() => {
         }, 3000); 
 
       }
+      
     }
   }
+
+
+    
 
 
 
@@ -66,7 +73,7 @@ useEffect(() => {
     >
       <motion.div
         className={styles.button__div}
-        animate={{ rotateY: backCardVisible||checkClick ? 0 : 180 }}
+        animate={{ rotateY:checkClick ? 180 : 0 }}
       >
         <motion.div className={styles.button__div__div}>
          
@@ -75,7 +82,7 @@ useEffect(() => {
         </motion.div>
         <motion.div className={styles.cardBack}>
           <div className={styles.cardBack__div}>
-            <h1 className="text-4xl sm:text-8xl">?</h1>
+            <h1 className="text-4xl sm:text-8xl">👍</h1>
           </div>
         </motion.div>
       </motion.div>
