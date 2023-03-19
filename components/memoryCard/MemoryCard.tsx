@@ -12,6 +12,9 @@ resetCards: () => void;
 resetAllCards: boolean;
 score: number;
 setScore: (score: number) => void;
+
+setCards: (cards: any) => void;
+cards: any;
 }
 
 const styles = {
@@ -28,14 +31,13 @@ const styles = {
  cardBack__div: "w-full h-full flex flex-col items-center justify-center text-gray-800"
 } as const;
 
-function Memory({ item, select, store, setStore, resetCards, resetAllCards, score, setScore, correct, setCorrect}: Card) {
+function Memory({ item, select, store, setStore, resetCards, resetAllCards, score, setScore, correct, setCorrect, setCards, cards, key}: Card) {
   const [checkClick, setCheckClick] = useState<boolean>(false);
   ;
 
-useEffect(() => {
-console.log(store);
+[1,5,7]
 
-}, [store])
+
   
 
  function handleCardClick(e: React.MouseEvent<HTMLButtonElement>){
@@ -48,6 +50,7 @@ console.log(store);
         setCheckClick(true)
         setStore([])
         setScore(score +1 )
+        setCards(cards.map(item=> item[key].check===true))
       } else {
         alert('Wrong! Try again!')
         setScore(0)
