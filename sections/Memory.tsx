@@ -113,12 +113,11 @@ console.log(cards);
   }
 
   return (
-    <section className="w-screen h-[90vh] flex flex-col items-center justify-center">
-      <div>
-        <button onClick={() => setProps(IrregularVerbs)}>B1</button>
-        <button onClick={() => setProps(VerbenData)}>C1</button>
+    <section className="w-screen h-[85vh] flex flex-col items-center justify-between">
+      <div className="w-[200px] flex justify-between">
+        <button onClick={() => setProps(IrregularVerbs)}>English</button>
+        <button onClick={() => setProps(VerbenData)}>Deutsch</button>
       </div>
-      <h3>Memory</h3>
       <h2>{score}</h2>
 
       <article className="w-[80%] h-[80%] border-4 border-red-400 grid grid-cols-4 grid-rows-4 gap-4 grid-flow-row p-2">
