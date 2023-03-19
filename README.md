@@ -21,6 +21,6 @@
  - Deutsch 
 	- **Unregelmäßige Verben** -> Exercise of Irregular words in German language.
 	-  **Göethe** -> Vocabulary exercise with words needed to reach B2 German CEFR level.
- 
+ 	-  **Memory** -> Simple memory Game
  
   

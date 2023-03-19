@@ -1,59 +1,69 @@
 "use client"
 
 import MemoryCard from "../components/memoryCard/MemoryCard";
+
 import { useState, useEffect } from "react";
+
 
 interface Card {
   letter: string;
-  select: string;
+  check: boolean;
+
   }
  
 
 function Memory() {
-  const [count,setCount] = useState<number>(0)
+  const [score, setScore] = useState<number>(0)
   const [cards, setCards] = useState<any>([])
+  const [store, setStore] = useState<string[]>([])
+  const [counter, setCounter] = useState<number>(10)
+  const [backCardVisible, setBackCardVisible] = useState<boolean>(false)
+  const [resetAllCards, setResetAllCards] = useState<boolean>(false)
 
- const [store, setStore] = useState<string[]>([])
-
-
-  let items = [
-     {word: 'Auto', translate: "Car", select: '0', answered: false}, 
-      {word: 'Brick', translate: "Cihla", select: '1', answered: false},
-      {word: 'Card', translate: "Karta", select: '2', answered: false},
-      {word: 'Dope', translate: "Hustý", select: '3', answered: false},
-      {word: 'Ex', translate: "Bývalý", select: '4', answered: false},
-      {word: 'Fold', translate: "skládat", select: '5', answered: false},
-      {word: 'Goal', translate: "Gól", select: '6', answered: false},
-      {word: 'Hope', translate: "Naděje", select: '7', answered: false},
+  const items = [
+     {letter: 'A', select: '1'}, 
+      {letter: 'B', select: '2'},
+      {letter: 'C', select: '3'},
+      {letter: 'D', select: '4'},
+      {letter: 'E', select: '5'},
+      {letter: 'F', select: '6'},
+      {letter: 'G', select: '7'},
+      {letter: 'H', select: '8'},
   ]
+
+  const timer = setTimeout(() => {
+    if(counter > 0) {
+      setResetAllCards(!resetAllCards)
+      setBackCardVisible(true)
+        setCounter(counter -1 )
+        
+     } else {
+      setBackCardVisible(false)
+     }
+    }, 1000);
+
+
 /* ---------------------------- */
 /*        Setup random Cards          */
 /* ---------------------------- */
   function resetCards(){
-    const shuffled = [...items].sort(() => Math.floor(Math.random() * items.length));
+    const shuffled = [...items, ...items].sort(() => Math.floor(Math.random() * items.length));
    // const shuffled = [...items, ...items].sort(() => 0.5 - Math.random());
     setCards(shuffled)
-    //console.log(shuffled);
+    setStore([])
+    setCounter(10)
+    
+    return () => clearTimeout(timer);
   }
 
   useEffect(() => {
+   
     resetCards()
+    return () => clearTimeout(timer);
   }, [])
 
 /* ---------------------------- */
 
-function handleClick(item){
-
-setStore([...store, item.select])
-
-if(store[0] === item.select){
- 
-  items[item.select].answered = true
-  console.log(items);
-  
-  return setStore([])
-}
-}
 
 /* ---------------------------- */
 /*       Compare Cards          */
@@ -65,29 +75,20 @@ if(store[0] === item.select){
   return (
     <section className="w-screen h-[90vh] flex flex-col items-center justify-center">
       <h3>Memory</h3>
-      <article className="w-[80%] h-[90%] border-4 border-red-400 grid grid-cols-4 grid-rows-4 gap-4 grid-flow-row p-2">
+     <h2>{counter>0?counter:'Score: '+score}</h2>
+     
+      <article className="w-[80%] h-[80%] border-4 border-red-400 grid grid-cols-4 grid-rows-4 gap-4 grid-flow-row p-2">
         
         {items.map((item, index) => {
           return (
-            <div key={index}
-             className={"border-4 flex justify-center items-center " + (items[index].answered?' bg-green-400':null)}
-             onClick={() => handleClick(item)}
-             >
-              {item.word}
-            </div>
-          )
-        })
-        }
-
-      {cards.map((item, index) => {
-          return (
-            <div key={index}
-             className={`border-4 flex justify-center items-center ${items[index].answered?' bg-green-400':null}`}
-             onClick={() => handleClick(item)}
-             >
-              {item.translate}
-            </div>
-          )
+            <MemoryCard
+              key={index}
+              letter={item.letter}
+              store={store}
+              setStore={setStore}
+             
+            />
+          );
         })
         }
        
