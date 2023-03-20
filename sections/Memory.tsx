@@ -21,6 +21,13 @@ interface Data {
   pastParticiple2?: string;
 }
 
+const styles = {
+  section: "w-screen h-[90vh] flex flex-col items-center",
+  section__div: "w-[200px] flex justify-between p-4 font-bold",
+  article: "w-full sm:w-[80%] h-[80%] border-4 border-red-400 grid grid-cols-2 sm:grid-cols-4 grid-rows-8 sm:grid-rows-4 gap-2 sm:gap-4 grid-flow-row p-2",
+
+}
+
 function Memory() {
   const [props, setProps] = useState<Data[]>(IrregularVerbs);
 
@@ -124,14 +131,14 @@ function Memory() {
   }
 
   return (
-    <section className="w-screen h-[90vh] flex flex-col items-center">
-      <div className="w-[200px] flex justify-between p-4 font-bold">
+    <section className={styles.section}>
+      <div className={styles.section__div}>
         <button onClick={() => setProps(IrregularVerbs)}>English</button>
         <button onClick={() => setProps(VerbenData)}>Deutsch</button>
       </div>
       <h2>Score {score}</h2>
 
-      <article className="w-full sm:w-[80%] h-[80%] border-4 border-red-400 grid grid-cols-2 sm:grid-cols-4 grid-rows-8 sm:grid-rows-4 gap-2 sm:gap-4 grid-flow-row p-2">
+      <article className={styles.article}>
         {cards.map((item: Item, index: number) => {
           return (
             <MemoryCard

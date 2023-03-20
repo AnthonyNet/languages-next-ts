@@ -19,6 +19,8 @@ const styles = {
     "absolute top-0 my-rotate-y-180 backface-hidden overflow-hidden bg-white w-full h-full",
   cardBack__div:
     "w-full h-full flex flex-col items-center justify-center text-gray-800",
+    h2: "text-base md:text-2xl xl:text-4xl p-2 sm:p-0",
+    h3: "text-4xl xl:text-8xl",
  
 } as const;
 
@@ -36,11 +38,11 @@ function Memory({ id, item, handleClick }: Card) {
           animate={{ rotateY: item.check ? 180 : 0 }}
         >
           <motion.div className={styles.button__div__div}>
-            <h2 className="text-base md:text-2xl xl:text-4xl p-2 sm:p-0">{item.cz ? item.cz : item.eng}</h2>
+            <h2 className={styles.h2}>{item.cz ? item.cz : item.eng}</h2>
           </motion.div>
           <motion.div className={styles.cardBack}>
             <div className={styles.cardBack__div}>
-              <h2 className="text-4xl xl:text-8xl">👍</h2>
+              <h3 className={styles.h3}>👍</h3>
             </div>
           </motion.div>
         </motion.div>
