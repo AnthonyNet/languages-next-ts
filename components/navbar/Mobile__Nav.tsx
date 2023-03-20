@@ -70,6 +70,7 @@ function Mobile__Nav({nav, handleNav}:Mobile){
                   </summary>
                   <ul className="flex flex-col navDetails">
                     <Link href="/english/irregular-verbs">{`Irregular verbs (${IrregularVerbs.length})`}</Link>
+                    <Link href="/german/memory">Memory</Link>
                     <Link href="/english/search-irregular">{`Irregular list (${IrregularVerbs.length})`}</Link>
                     <Link href="/english/oxford-B1">{`Oxford B1 (${OxfordB1.length})`}</Link>
                     <Link href="/english/oxford-B2">{`Oxford B2 (${OxfordB2.length})`}</Link>
@@ -85,8 +86,9 @@ function Mobile__Nav({nav, handleNav}:Mobile){
                   </summary>
                   <ul className="flex flex-col navDetails">
                     <Link href="/german/german">{`Unregelmäßige Verben (${VerbenData.length})`}</Link>
-                    <Link href="/german/goethe">{`Goethe (${Goethe.length})`}</Link>
                     <Link href="/german/memory">Memory</Link>
+                    <Link href="/german/goethe">{`Goethe (${Goethe.length})`}</Link>
+                    
                   </ul>
                 </details>
               </main>

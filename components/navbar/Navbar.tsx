@@ -51,6 +51,7 @@ function Navbar(){
             </summary>
             <div className={styles.nav__ul}>
               <Link href="/english/irregular-verbs">{`Irregular Verbs (${IrregularVerbs.length})`}</Link>
+              <Link href="/german/memory">Memory</Link>
               <Link href="/english/search-irregular">{`Irregular List (${IrregularVerbs.length})`}</Link>
               <Link href="/english/oxford-B1">{`Oxford B1 (${OxfordB1.length})`}</Link>
               <Link href="/english/oxford-B2">{`Oxford B2 (${OxfordB2.length})`}</Link>
@@ -66,8 +67,9 @@ function Navbar(){
             </summary>
             <ul className="flex flex-col border-solid border-t-4 border-sky-400 navDetails">
               <Link href="/german/irregular-verbs">{`Unregelmäßige Verben (${VerbenData.length})`}</Link>
-              <Link href="/german/goethe">{`Goethe (${Goethe.length})`}</Link>
               <Link href="/german/memory">Memory</Link>
+              <Link href="/german/goethe">{`Goethe (${Goethe.length})`}</Link>
+             
             </ul>
           </details>
         </article>

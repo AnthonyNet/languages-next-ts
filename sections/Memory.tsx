@@ -32,7 +32,7 @@ function Memory() {
 
   const createData = (english: any) => {
     const RAW = [...english]
-      .sort(() => Math.floor(Math.random() * english.length))
+      .sort(() => Math.random() - 0.5)
       .slice(0, 8);
 
     const randomEnglish = RAW.map((item, index) => ({
@@ -51,7 +51,7 @@ function Memory() {
 
     setCards(
       [...randomEnglish, ...randomCzech].sort(() =>
-        Math.floor(Math.random() * randomEnglish.length)
+        Math.floor(Math.random() * 8)
       )
     );
   };
