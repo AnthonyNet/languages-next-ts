@@ -30,7 +30,7 @@ function Memory() {
   const [store, setStore] = useState<number[]>([]);
   const [prev, setPrev] = useState<number>(-1);
 
-  const createData = (english: any) => {
+  const createData = (english: Data[]) => {
     const RAW = [...english]
       .sort(() => Math.random() - 0.5)
       .slice(0, 8);
