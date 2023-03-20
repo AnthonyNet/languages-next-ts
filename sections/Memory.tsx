@@ -14,26 +14,21 @@ interface Item {
 }
 
 interface Data {
-  cz: string,  
-  base: string,		
-  pastSimple: string,
-  pastParticiple: string,
-  pastParticiple2?: string,
+  cz: string;
+  base: string;
+  pastSimple: string;
+  pastParticiple: string;
+  pastParticiple2?: string;
 }
 
 function Memory() {
   const [props, setProps] = useState<Data[]>(IrregularVerbs);
 
+  const [restartCounter, setRestartCounter] = useState<number>(0);
   const [score, setScore] = useState<number>(0);
   const [cards, setCards] = useState<Item[]>([]);
   const [store, setStore] = useState<number[]>([]);
   const [prev, setPrev] = useState<number>(-1);
-
-
-useEffect(() => {
-console.log(cards);
-}, [cards])
-
 
   const createData = (english: any) => {
     const RAW = [...english]
@@ -61,28 +56,45 @@ console.log(cards);
     );
   };
 
-  /* ---------------------------- */
-  /*        Setup random Cards    */
-  /* ---------------------------- */
-
+  /* -------------------------------------------------------- */
+  /* All answers RIGHT => Restart Field */
+  /* ---------------------------- ----------------------------*/
   useEffect(() => {
-    createData(props);
-  }, []);
+    console.log(restartCounter);
+    // Restart Game
+    if (restartCounter == 8) {
+      setRestartCounter(0);
+      createData(props);
+      cards.map((card: Item) =>
+        setTimeout(() => {
+          card.check = false;
+          card.click = false;
+          setCards([...cards]);
+        }, 1000)
+      );
+      setCards([...cards]);
+    }
+  }, [restartCounter]);
 
-  /* ---------------------------- */
-  /*        Check DATA/WORDS change - MENU    */
-  /* ---------------------------- */
+
+
+  /* --------------------------------------------------- */
+  //       FIRST SETUP
+  //       +
+  //     Check DATA/WORDS change - MENU    */
+  /* --------------------------------------------------- */
 
   useEffect(() => {
     createData(props);
   }, [props]);
 
-  /* ---------------------------- */
+  /* --------------------------------------------------- */
   /*       Compare Cards          */
-  /* ---------------------------- */
+  /* --------------------------------------------------- */
   function check(current: number) {
     if (cards[prev].select === cards[current].select) {
       setScore(score + 1);
+      setRestartCounter(restartCounter + 1);
       setStore([...store, cards[prev].select]);
       setCards(
         cards.map((item: Item, index: number) => {
@@ -118,7 +130,7 @@ console.log(cards);
         <button onClick={() => setProps(IrregularVerbs)}>English</button>
         <button onClick={() => setProps(VerbenData)}>Deutsch</button>
       </div>
-      <h2>{score}</h2>
+      <h2>Score {score}</h2>
 
       <article className="w-[80%] h-[80%] border-4 border-red-400 grid grid-cols-4 grid-rows-4 gap-4 grid-flow-row p-2">
         {cards.map((item: Item, index: number) => {
