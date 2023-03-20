@@ -60,7 +60,6 @@ function Memory() {
   /* All answers RIGHT => Restart Field */
   /* ---------------------------- ----------------------------*/
   useEffect(() => {
-    console.log(restartCounter);
     // Restart Game
     if (restartCounter == 8) {
       setRestartCounter(0);
@@ -125,14 +124,14 @@ function Memory() {
   }
 
   return (
-    <section className="w-screen h-[85vh] flex flex-col items-center justify-between">
-      <div className="w-[200px] flex justify-between">
+    <section className="w-screen h-[90vh] flex flex-col items-center">
+      <div className="w-[200px] flex justify-between p-4 font-bold">
         <button onClick={() => setProps(IrregularVerbs)}>English</button>
         <button onClick={() => setProps(VerbenData)}>Deutsch</button>
       </div>
       <h2>Score {score}</h2>
 
-      <article className="w-[80%] h-[80%] border-4 border-red-400 grid grid-cols-4 grid-rows-4 gap-4 grid-flow-row p-2">
+      <article className="w-full sm:w-[80%] h-[80%] border-4 border-red-400 grid grid-cols-2 sm:grid-cols-4 grid-rows-8 sm:grid-rows-4 gap-2 sm:gap-4 grid-flow-row p-2">
         {cards.map((item: Item, index: number) => {
           return (
             <MemoryCard

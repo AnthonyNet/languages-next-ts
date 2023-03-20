@@ -36,11 +36,11 @@ function Memory({ id, item, handleClick }: Card) {
           animate={{ rotateY: item.check ? 180 : 0 }}
         >
           <motion.div className={styles.button__div__div}>
-            <h2 className="text-4xl">{item.cz ? item.cz : item.eng}</h2>
+            <h2 className="text-base md:text-2xl xl:text-4xl p-2 sm:p-0">{item.cz ? item.cz : item.eng}</h2>
           </motion.div>
           <motion.div className={styles.cardBack}>
             <div className={styles.cardBack__div}>
-              <h1 className="text-4xl sm:text-8xl">👍</h1>
+              <h2 className="text-4xl xl:text-8xl">👍</h2>
             </div>
           </motion.div>
         </motion.div>
