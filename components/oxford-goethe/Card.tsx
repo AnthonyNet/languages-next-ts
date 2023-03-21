@@ -18,7 +18,7 @@ const styles = {
   section:
     "relative flex justify-center items-center w-full h-[90vh] p-2 sm:p-0 responsiveSection",
   section__div:
-    "w-full sm:w-[600px] h-[250px] sm:h-[270px] md:h-[350px] border-double border-4 border-blue-300  rounded-lg shadow-xl shadow-slate-600 preserve-3d group my-rotate-y-180 duration-1000 flex flex-col justify-around",
+    "w-full sm:w-[600px] h-[250px] sm:h-[270px] md:h-[320px] border-double border-4 border-blue-300  rounded-lg shadow-xl shadow-slate-600 preserve-3d group my-rotate-y-180 duration-1000 flex flex-col justify-around",
     article: "w-full flex flex-col justify-center sm:grow",
   section__div__btnCover: "flex justify-around text-center p-2 sm:p-4 border-t-2 border-blue-400",
   h3: "py-2 md:py-4  text-center",
