@@ -27,8 +27,8 @@ const styles = {
     "absolute top-0 my-rotate-y-180 backface-hidden overflow-hidden w-full h-full mainCardBack",
   cardBack__div:
     "h-full text-center flex flex-col items-center text-gray-600 ",
-    cardBack__answersCover: "w-full h-full flex flex-col justify-center p-4",
-  cardBack__btnCover: "w-full flex justify-around p-2 sm:p-4  border-t-2 border-blue-400",  
+    cardBack__answersCover: "w-full h-full flex flex-col justify-center md:p-4",
+  cardBack__btnCover: "w-full flex justify-around p-2 md:p-4  border-t-2 border-blue-400",  
 };
 
 const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
