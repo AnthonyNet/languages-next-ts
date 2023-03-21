@@ -64,4 +64,8 @@ IIREGULAR
 .card_Ul li:last-child{
  margin-top: 0;
 }
+
+.responsiveMenu{
+  overflow: auto;
+  }
 }

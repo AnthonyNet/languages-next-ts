@@ -18,17 +18,17 @@ const styles = {
   section:
     "relative flex justify-center items-center w-full h-[90vh] p-2 sm:p-0 responsiveSection",
   section__div:
-    "w-full sm:w-[600px] h-[40dvh] border-double border-4 border-blue-300  rounded-lg shadow-xl shadow-slate-600 preserve-3d group my-rotate-y-180 duration-1000 flex flex-col justify-around",
-    article: "h-full w-full flex flex-col justify-center border-b-2 border-blue-400",
-  section__div__btnCover: "flex justify-around text-center p-4",
+    "w-full sm:w-[600px] h-[40dvh] min-h-[250px] border-double border-4 border-blue-300  rounded-lg shadow-xl shadow-slate-600 preserve-3d group my-rotate-y-180 duration-1000 flex flex-col justify-around",
+    article: "w-full flex flex-col justify-center grow",
+  section__div__btnCover: "flex justify-around text-center p-4 border-t-2 border-blue-400",
   h3: "p-4  text-center",
 
   cardBack:
     "absolute top-0 my-rotate-y-180 backface-hidden overflow-hidden w-full h-full mainCardBack",
   cardBack__div:
     "h-full text-center flex flex-col items-center text-gray-600 ",
-    cardBack__answersCover: "w-full h-full flex flex-col justify-center border-b-2 border-blue-400 p-4",
-  cardBack__btnCover: "w-full flex justify-around  p-4",  
+    cardBack__answersCover: "w-full h-full flex flex-col justify-center p-4",
+  cardBack__btnCover: "w-full flex justify-around  p-4  border-t-2 border-blue-400",  
 };
 
 const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
