@@ -85,7 +85,7 @@ function Mobile__Nav({nav, handleNav}:Mobile){
                     <strong> Deutsch</strong>
                   </summary>
                   <ul className="flex flex-col navDetails">
-                    <Link href="/german/german">{`Unregelmäßige Verben (${VerbenData.length})`}</Link>
+                    <Link href="/german/irregular-verbs">{`Unregelmäßige Verben (${VerbenData.length})`}</Link>
                     <Link href="/german/memory">Memory</Link>
                     <Link href="/german/goethe">{`Goethe (${Goethe.length})`}</Link>
                     
