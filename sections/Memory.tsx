@@ -47,7 +47,7 @@ function Memory() {
       eng: item.base,
       check: false,
       click: false,
-    }));
+    })) ;
 
     const randomCzech = RAW.map((item, index) => ({
       select: index,
@@ -56,12 +56,14 @@ function Memory() {
       click: false,
     }));
 
-    setCards(
-      [...randomEnglish, ...randomCzech].sort(() =>
-        Math.floor(Math.random() * 8)
-      )
-    );
+    setCards([...randomEnglish, ...randomCzech].sort(() => Math.random() - 0.5));
+    
   };
+
+  useEffect(() => {
+    console.log(cards);
+  }, [cards]);
+
 
   /* -------------------------------------------------------- */
   /* All answers RIGHT => Restart Field */
@@ -70,6 +72,7 @@ function Memory() {
     // Restart Game
     if (restartCounter == 8) {
       setRestartCounter(0);
+     // setProps([...props].sort(() => Math.random() - 0.5));
       createData(props);
       cards.map((card: Item) =>
         setTimeout(() => {
@@ -78,7 +81,8 @@ function Memory() {
           setCards([...cards]);
         }, 1000)
       );
-      setCards([...cards]);
+     //setCards([...cards]);
+     
     }
   }, [restartCounter]);
 
@@ -92,7 +96,7 @@ function Memory() {
 
   useEffect(() => {
     createData(props);
-  }, [props]);
+  }, []);
 
   /* --------------------------------------------------- */
   /*       Compare Cards          */
