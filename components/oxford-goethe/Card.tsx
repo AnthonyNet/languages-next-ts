@@ -34,7 +34,7 @@ const styles = {
 const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
   const [data, setData] = useState(dataTS);
 
-  const [rand, setRand] = useState(0);
+  const [rand, setRand] = useState<number>(0);
   const [data2, setData2] = useState(dataTS[0]);
 
   const { czWord, wordTranslated, sentenceTranslated } = data2;
