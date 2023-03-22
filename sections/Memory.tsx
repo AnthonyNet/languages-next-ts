@@ -78,7 +78,7 @@ function Memory() {
         setTimeout(() => {
           card.check = false;
           card.click = false;
-          setCards([...cards]);
+         // setCards([...cards]);
         }, 1000)
       );
      //setCards([...cards]);
