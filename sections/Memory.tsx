@@ -6,19 +6,19 @@ import { useState, useEffect } from "react";
 import { IrregularVerbs, VerbenData } from "../myData";
 
 interface Item {
-  cz?: string;
-  eng?: string;
-  select: number;
+  readonly cz?: string;
+  readonly eng?: string;
+  readonly select: number;
   check: boolean;
   click: boolean;
 }
 
 interface Data {
-  cz: string;
-  base: string;
-  pastSimple: string;
-  pastParticiple: string;
-  pastParticiple2?: string;
+  readonly cz: string;
+  readonly base: string;
+  readonly pastSimple: string;
+  readonly pastParticiple: string;
+  readonly pastParticiple2?: string;
 }
 
 const styles = {
