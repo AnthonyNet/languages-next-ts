@@ -32,25 +32,25 @@ const styles = {
 };
 
 const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
-  const [data, setData] = useState(dataTS);
+ 
 
   const [rand, setRand] = useState<number>(0);
-  const [data2, setData2] = useState(dataTS[0]);
+  const [data, setData] = useState(dataTS[0]);
 
-  const { czWord, wordTranslated, sentenceTranslated } = data2;
+  const { czWord, wordTranslated, sentenceTranslated } = data;
 
-  const [switchSide, setSwitchSide] = useState(true);
-  const [switchLanguage, setSwitchLanguage] = useState(true);
-  const [hidden, setHidden] = useState(true);
+  const [switchSide, setSwitchSide] = useState<boolean>(true);
+  const [switchLanguage, setSwitchLanguage] = useState<boolean>(true);
+ 
 
   const randomWord = () => {
-    setRand(Math.floor(Math.random() * data.length));
-    setHidden(true);
+    setRand(Math.floor(Math.random() * dataTS.length));
+   
   };
 
-  useEffect(() => {
+ /* useEffect(() => {
     setData2(data[rand]);
-  }, [rand]);
+  }, [rand]);*/
 
   return (
     <motion.section
