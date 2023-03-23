@@ -9,6 +9,10 @@ const style = {
   form: "shadow-md rounded px-8 pt-6 pb-8 mb-4",
   input:
     'shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"',
+    main: "flex flex-col",
+    main__div: "overflow-x-auto sm:-mx-6 lg:-mx-8",
+    main__div__div: "inline-block min-w-full sm:px-6 lg:px-8",
+    main__div__div__div: "overflow-hidden",
   table: "min-w-full text-center",
   thead: "border-b bg-gray-800 text-white",
   tr: "border-b-2 border-blue-200",
@@ -31,10 +35,10 @@ function SearchIrregular() {
           </div>
         </form>
 
-        <div className="flex flex-col">
-          <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
-            <div className="inline-block min-w-full sm:px-6 lg:px-8">
-              <div className="overflow-hidden">
+        <div className={style.main}>
+          <div className={style.main__div}>
+            <div className={style.main__div__div}>
+              <div className={style.main__div__div__div}>
                 <table className={style.table}>
                   <thead className={style.thead}>
                     <tr>
@@ -57,7 +61,10 @@ function SearchIrregular() {
                   </thead>
                   <tbody className="text-green">
                     {
-                      // Find all matching words with the same value which has been written into the input
+                      /* ----------------------
+                      Find all matching words with the same value which has been written into the input
+                      ---------------------- */
+
                       IrregularVerbs.filter((item) => {
                         return search.toLowerCase() === ""
                           ? item
