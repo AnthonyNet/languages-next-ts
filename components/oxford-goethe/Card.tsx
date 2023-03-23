@@ -48,9 +48,7 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
    
   };
 
- /* useEffect(() => {
-    setData2(data[rand]);
-  }, [rand]);*/
+
 
   return (
     <motion.section
