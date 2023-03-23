@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import CardButton from "../card/CardButton";
 
 import { Card_Vocabs } from "../../interface/";
