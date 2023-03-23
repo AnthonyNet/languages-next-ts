@@ -16,12 +16,6 @@ const styles = {
 } as const;
 
 function Pagination() {
-  //add id to all myData items
-  /*useEffect(() => {
-    myData.forEach((item, index) => {
-      item.id = index + 1;
-    });
-  });*/
 
   const [myData, setMyData] = useState(OxfordB1);
   const [currentPage, setCurrentPage] = useState<number>(1);
