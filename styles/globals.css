@@ -100,7 +100,7 @@ nav,
 Animations 
 --------------------- */
 details[open] summary ~ *,
-.starsDiv span > * {
+.starsDiv > * {
   animation: animate 1s ease-in-out;
 }
 

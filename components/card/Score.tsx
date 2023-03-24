@@ -6,8 +6,17 @@ interface Score{
 
 const Score = ({score}:Score) => {
 
+const iterateStars = (score:number) => {
+  let stars = [];
+  for (let i = 0; i < score; i++) {
+    stars.push(<BsFillStarFill key={i} />);
+  }
+  return stars;
+};
+
 
     {/*the function gives stars depends on score number */}
+    /*
   const runMe = (score: number) => {
     switch (score) {
       case 1:
@@ -58,12 +67,12 @@ const Score = ({score}:Score) => {
       default:
         return <span>ㅤ</span>;
     }
-  };
+  };*/
 
   return (
     <div  className=" flex  justify-center py-3 px-6 border-b border-gray-300 text-yellow-400 starsDiv">
-          {runMe(score)}
-         
+          {/*runMe(score)*/}
+           {iterateStars(score)}
         </div>
   )
 }
