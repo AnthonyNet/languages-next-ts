@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect} from "react";
 
 
 interface Props {
@@ -10,7 +10,6 @@ interface Props {
   setStars: React.Dispatch<React.SetStateAction<number>>;
   placeholder: string;
   defaultInput: boolean;
-  //totalScore: number|string[],
   totalScore: number;
 }
 

@@ -66,6 +66,7 @@ function Pagination() {
     }
   }, [myNumb]);
 
+  
 
   return <section className={styles.section}>
       <Top_Menu myNumb={myNumb} setMyNumb={setMyNumb} setCurrentPage={setCurrentPage}/>
