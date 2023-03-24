@@ -61,8 +61,8 @@ function Memory() {
   };
 
   useEffect(() => {
-    console.log(cards);
-  }, [cards]);
+    console.log(props);
+  }, [props]);
 
 
   /* -------------------------------------------------------- */
@@ -134,11 +134,13 @@ function Memory() {
     }
   }
 
+ 
+
   return (
     <section className={styles.section}>
       <div className={styles.section__div}>
-        <button onClick={() => setProps(IrregularVerbs)}>English</button>
-        <button onClick={() => setProps(VerbenData)}>Deutsch</button>
+        <button onClick={() => createData(IrregularVerbs)}>English</button>
+        <button onClick={() => createData(VerbenData)}>Deutsch</button>
       </div>
       <h2 className="text-lg sm:text-2xl">Score: {score}</h2>
 
