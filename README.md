@@ -12,6 +12,7 @@
  - Home -> Simple BTC-Price API on the other side of the picture. Visible by hovering.
  - English
  	- **Irregular Verbs** --> It checks if you write irregular verbs properly.
+	- **Memory** --> Simple game for learning English/German words.
  	- **Irregular List** --> Simple search engine to simplify you to find exact irregular word/words.
 	- **Oxford B1, B2, C1** --> Vocabulary lists made for CEFR exams. 
 		- Simple cards for vocabulary learning with hidden answers.
@@ -20,6 +21,7 @@
 
  - Deutsch 
 	- **Unregelmäßige Verben** -> Exercise of Irregular words in German language.
+	- **Memory** --> Simple game for learning English/German words.
 	-  **Göethe** -> Vocabulary exercise with words needed to reach B2 German CEFR level.
  	-  **Memory** -> Simple memory Game
  
