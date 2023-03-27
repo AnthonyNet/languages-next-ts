@@ -28,6 +28,10 @@ const styles = {
 
 }
 
+//write simple function which return result of 1+1
+
+
+
 function Memory() {
   const [props, setProps] = useState<Data[]>(IrregularVerbs);
 
@@ -57,7 +61,7 @@ function Memory() {
     }));
 
     setCards([...randomEnglish, ...randomCzech].sort(() => Math.random() - 0.5));
-    
+
   };
 
   useEffect(() => {
@@ -82,7 +86,7 @@ function Memory() {
         }, 1000)
       );
      //setCards([...cards]);
-     
+
     }
   }, [restartCounter]);
 
@@ -134,7 +138,7 @@ function Memory() {
     }
   }
 
- 
+
 
   return (
     <section className={styles.section}>

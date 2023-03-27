@@ -68,7 +68,7 @@ Props Data from Object to Array
 AFTER CLICK ON <CardButton />
 GIVES RANDOM NUMBER
 RESET NUMBER OF STARS
-HIDE HINTS 
+HIDE HINTS
 ------------------------------------------*/
 
   function randomWord() {
