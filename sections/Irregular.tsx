@@ -7,7 +7,7 @@ import CardButton from "../components/card/CardButton";
 import CardHint from "../components/card/CardHint";
 
 import Score from "../components/card/Score";
-import {Irregular} from "../interface/";
+import { Irregular } from "../interface/";
 
 const styles = {
   section:
@@ -30,7 +30,7 @@ function IrregularVerbs({ dataTS }: { dataTS: Irregular[] }) {
   const [rand, setRand] = useState<number>(0);
   const [defaultInput, setDefaultInput] = useState<boolean>(false);
 
-  const [totalScore, setTotalScore] = useState<number|any>([]);
+  const [totalScore, setTotalScore] = useState<number | any>([]);
 
 
   const { cz } = dataTS[rand];
@@ -120,7 +120,7 @@ HIDE HINTS
                   placeholder={array[index]}
                   defaultInput={defaultInput}
                   totalScore={totalScore}
-                 
+
                 />
               );
             })}
