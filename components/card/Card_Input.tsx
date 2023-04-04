@@ -35,7 +35,7 @@ const Input = ({
   const [input, setInput] = useState<string>("");
   const [checkMistake, setCheckMistake] = useState("");
   const [checkStyles, setCheckStyles] = useState("");
-  
+
 
   //Save Input value into INPUT variable
   //Set read only for Input
@@ -47,26 +47,23 @@ const Input = ({
     }
   };
 
-
   // Watch INPUT variable for changes
   useEffect(() => {
     runIT();
-    
   }, [input]);
-
 
 
   const runIT = () => {
     if (word === input) {
       // True === green border
       setCheckStyles("bg-green-300");
- 
+
       //Props - SCORE + STARS
       setTotalScore((count: number) => count + 1);
       setScore((count: number) => count + 1);
       setStars((count: number) => count + 1);
-   
-     
+
+
       const number = totalScore + 1;
       localStorage.setItem("totalScore", JSON.stringify(number));
     }
@@ -79,17 +76,13 @@ const Input = ({
     }
   };
 
-
-
-
-
 /*------------------------------------------
 WATCH defaultInput for changes TRUE/FALSE
 setCheckStyles TRUE / FALSE
-setReadOnly TRUE / FALSE 
+setReadOnly TRUE / FALSE
 setInput => CLEAR VALUE IN INPUT
 ------------------------------------------*/
- 
+
   useEffect(() => {
     setCheckStyles('');
     setInput("");
@@ -104,7 +97,7 @@ setInput => CLEAR VALUE IN INPUT
         className={styles.input + "text-gray-500 " + checkMistake}
         onChange={handleChange}
         placeholder={placeholder}
-   
+
       />
     </li>
   );

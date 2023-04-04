@@ -3,7 +3,7 @@ import {Root} from "../mainPage/interface"
 
 
 const Fetch = (url:any) => {
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState<boolean>(false);
     const [apiData, setApiData] = useState({});
 
     const getData = async () => {
@@ -18,7 +18,6 @@ const Fetch = (url:any) => {
 
 
     useEffect(() => {
-        
         getData();
     });
 

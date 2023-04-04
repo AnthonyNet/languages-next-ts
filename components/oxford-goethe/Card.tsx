@@ -7,10 +7,10 @@ import CardButton from "../card/CardButton";
 import { Card_Vocabs } from "../../interface/";
 
 {
-  /* 
-  
+  /*
+
   This Card component is used in OXford B1, B2, C1 & Göethe
-    
+
   */
 }
 
@@ -25,29 +25,24 @@ const styles = {
 
   cardBack:
     "absolute top-0 my-rotate-y-180 backface-hidden overflow-hidden w-full h-full mainCardBack",
-  cardBack__div:
+ 	 cardBack__div:
     "h-full text-center flex flex-col items-center text-gray-600 ",
     cardBack__answersCover: "w-full h-full flex flex-col justify-center md:p-4",
-  cardBack__btnCover: "w-full flex justify-around p-2 md:p-4  border-t-2 border-blue-400",  
+  	cardBack__btnCover: "w-full flex justify-around p-2 md:p-4  border-t-2 border-blue-400",
 };
 
 const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
- 
 
   const [rand, setRand] = useState<number>(0);
   const [data, setData] = useState(dataTS[0]);
-
   const { czWord, wordTranslated, sentenceTranslated } = data;
-
   const [switchSide, setSwitchSide] = useState<boolean>(true);
   const [switchLanguage, setSwitchLanguage] = useState<boolean>(true);
- 
+
 
   const randomWord = () => {
     setRand(Math.floor(Math.random() * dataTS.length));
-   
   };
-
 
 
   return (
