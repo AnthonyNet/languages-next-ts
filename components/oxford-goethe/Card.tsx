@@ -33,7 +33,6 @@ const styles = {
 
 const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
 
-  const [rand, setRand] = useState<number>(0);
   const [data, setData] = useState(dataTS[0]);
   const { czWord, wordTranslated, sentenceTranslated } = data;
   const [switchSide, setSwitchSide] = useState<boolean>(true);
@@ -41,9 +40,9 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
 
 
   const randomWord = () => {
-    setRand(Math.floor(Math.random() * dataTS.length));
+	const rand = Math.floor(Math.random() * dataTS.length);
+    setData(dataTS[rand]);
   };
-
 
   return (
     <motion.section
@@ -78,7 +77,7 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
             text={switchLanguage ? "CZ" : "EN"}
           />
 
-          <CardButton onClick={()=>randomWord()} text={"Next word"} />
+          <CardButton onClick={randomWord} text={"Next word"} />
 
           <CardButton
             onClick={() => [setSwitchSide(!switchSide)]}
