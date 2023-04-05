@@ -10,8 +10,6 @@ const styles = {
   button:
     "relative flex items-center justify-center border-2  cursor-pointer group perspective",
   button__div: "preserve-3d group my-rotate-y-180 w-full h-full duration-1000",
-  /* button__div:
-    "preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000",*/
   button__div__div: "w-full h-full flex items-center justify-center",
   cardBack:
     "absolute top-0 my-rotate-y-180 backface-hidden overflow-hidden bg-white w-full h-full",
