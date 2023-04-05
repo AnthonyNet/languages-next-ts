@@ -78,7 +78,7 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
             text={switchLanguage ? "CZ" : "EN"}
           />
 
-          <CardButton onClick={randomWord} text={"Next word"} />
+          <CardButton onClick={()=>randomWord()} text={"Next word"} />
 
           <CardButton
             onClick={() => [setSwitchSide(!switchSide)]}

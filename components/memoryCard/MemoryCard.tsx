@@ -1,7 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
-
 interface Card {
   id: number;
   item: {select:number, check:boolean, cz?:string, eng?:string, click: boolean} ;
@@ -21,11 +19,11 @@ const styles = {
     "w-full h-full flex flex-col items-center justify-center text-gray-800",
     h2: "text-base md:text-2xl xl:text-4xl p-2 sm:p-0",
     h3: "text-4xl xl:text-8xl",
- 
+
 } as const;
 
 function Memory({ id, item, handleClick }: Card) {
-  
+
   return (
     <>
       <motion.button
