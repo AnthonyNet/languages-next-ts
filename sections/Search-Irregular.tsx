@@ -8,7 +8,7 @@ const style = {
   input__Container: "w-full min-h-[90vh]",
   form: "shadow-md rounded px-8 pt-6 pb-8 mb-4",
   input:
-    'shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"',
+    'shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight text-red-500',
     main: "flex flex-col",
     main__div: "overflow-x-auto sm:-mx-6 lg:-mx-8",
     main__div__div: "inline-block min-w-full sm:px-6 lg:px-8",
@@ -27,10 +27,11 @@ function SearchIrregular() {
           <div>
             <input
               className={style.input}
-              id="username"
+              id="search"
               type="text"
               placeholder="Hledej slovo"
               onChange={(e) => setSearch(e.target.value)}
+
             />
           </div>
         </form>
