@@ -24,7 +24,7 @@ interface Data {
 const styles = {
   section: "w-screen h-[90vh] flex flex-col items-center",
   section__div: "w-[200px] flex justify-between p-2 sm:p-4 font-bold",
-  article: "w-full sm:w-[80%] h-[80%] border-4 border-red-400 grid grid-cols-2 sm:grid-cols-4 grid-rows-8 sm:grid-rows-4 gap-2 sm:gap-4 grid-flow-row p-2",
+  article: "w-full sm:w-[95%] h-[80%] border-4 border-red-400 grid grid-cols-2 sm:grid-cols-4 grid-rows-8 sm:grid-rows-4 gap-2 sm:gap-4 grid-flow-row p-2",
 
 }
 

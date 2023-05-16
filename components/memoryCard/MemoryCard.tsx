@@ -15,8 +15,8 @@ const styles = {
     "absolute top-0 my-rotate-y-180 backface-hidden overflow-hidden bg-white w-full h-full",
   cardBack__div:
     "w-full h-full flex flex-col items-center justify-center text-gray-800",
-    h2: "text-base md:text-2xl xl:text-4xl p-2 sm:p-0",
-    h3: "text-4xl xl:text-8xl",
+    h2: "text-base md:text-xl xl:text-2xl p-2 sm:p-0",
+    h3: "text-4xl xl:text-6xl",
 
 } as const;
 
