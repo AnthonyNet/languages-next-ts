@@ -9,20 +9,23 @@
 
  
 ## MENU 
- - Home -> Simple BTC-Price API on the other side of the picture. Visible by hovering.
- - English
- 	- **Irregular Verbs** --> It checks if you write irregular verbs properly.
-	- **Memory** --> Simple game for learning English/German words.
- 	- **Irregular List** --> Simple search engine to simplify you to find exact irregular word/words.
-	- **Oxford B1, B2, C1** --> Vocabulary lists made for CEFR exams. 
-		- Simple cards for vocabulary learning with hidden answers.
-	-  **Phrasal Verbs** --> Simple cards for phrasal verbs learning. 
-	- **Pagination** --> All voabulary lists sorted by pagination and simple top menu.
+*  ### Home -> Simple BTC-Price API on the other side of the picture. Visible by hovering.
+* ### English
+ 	- **[Irregular Verbs](https://languages-next-ts.vercel.app/english/irregular-verbs)** --> It checks if you write irregular verbs properly.
+	- **[Memory Game](https://languages-next-ts.vercel.app/german/memory)** --> Simple game for learning English/German words.
+ 	- **[Irregular Verbs List](https://languages-next-ts.vercel.app/english/search-irregular)** --> Simple search engine to simplify you to find exact irregular word/words.
+ 	-  **Oxford Vocabulary Exercises** --> Simple card exercise for vocabulary training. Oxford CEFR vocabulry lists.
+		- **[Oxford B1](https://languages-next-ts.vercel.app/english/oxford-B1)**
+		- **[Oxford B2](https://languages-next-ts.vercel.app/english/oxford-B2)**
+		- **[Oxford C1](https://languages-next-ts.vercel.app/english/oxford-C1)**
+	- **Phrasal verbs exercise** --> Simple card exercise for vocabulary training.
+		- **[Phrasal Verbs](https://languages-next-ts.vercel.app/english/phrasal-verbs)**
+	- **[Pagination](https://languages-next-ts.vercel.app/english/pagination)** --> All vocabulary lists sorted by pagination and simple top menu.
 
- - Deutsch 
-	- **Unregelmäßige Verben** -> Exercise of Irregular words in German language.
-	- **Memory** --> Simple game for learning English/German words.
-	-  **Göethe** -> Vocabulary exercise with words needed to reach B2 German CEFR level.
- 	-  **Memory** -> Simple memory Game
+* ### Deutsch 
+	- **[Unregelmäßige Verben](https://languages-next-ts.vercel.app/german/irregular-verbs)** -> Exercise of Irregular words in German language.
+	- **[Memory Game](https://languages-next-ts.vercel.app/german/memory)** --> Simple game for learning English/German words.
+	- **[Göethe B1](https://languages-next-ts.vercel.app/german/goethe)** -> Vocabulary exercise with words needed to reach B2 German CEFR level.
+ 	
  
   
