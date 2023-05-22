@@ -9,7 +9,7 @@ function page(){
 
   return (
     <div>
-     
+
       <Card dataTS={OxfordB1}/>
     </div>
   )

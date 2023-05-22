@@ -8,7 +8,7 @@ import Irregular from '../../../../sections/Irregular';
  function page() {
   return (
     <div>
- 
+
      <Irregular dataTS={IrregularVerbs} />
     </div>
   )

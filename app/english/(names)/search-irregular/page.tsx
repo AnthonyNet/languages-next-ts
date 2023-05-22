@@ -9,7 +9,7 @@ function page(){
 
   return (
     <div>
-    
+
       <SearchIrregular />
     </div>
   )

@@ -2,7 +2,7 @@
 
 
 
-import {Pagination} from '../../../../sections/'
+import {Pagination} from '../../../../sections'
 
 
 
@@ -10,7 +10,7 @@ function page(){
 
   return (
     <div>
-    
+
       <Pagination />
     </div>
   )
