@@ -18,7 +18,7 @@
   h2 {
     @apply text-3xl sm:text-4xl
   }
-  
+
   li {
     @apply cursor-pointer
   }
@@ -37,7 +37,7 @@
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
     --background-color: white;
     --mainCardBack: white;
-  
+
     --blue-main: #1c76c6;
 
 }
@@ -49,7 +49,7 @@
 
     --background-color: linear-gradient(132deg, rgb(0, 1, 0) 0.00%, rgb(3, 3, 38) 100.00%);
     --mainCardBack: linear-gradient(132deg, rgb(18, 8, 17) 0.00%, rgb(3, 3, 38) 100.00%);
-  
+
     --blue-main: #1c76c6;
 
 
@@ -57,7 +57,7 @@
 
 }
 
-/* Theme button light/dark switch */ 
+/* Theme button light/dark switch */
 [data-theme='dark'] {
 
   --background-color: linear-gradient(132deg, rgb(0, 1, 0) 0.00%, rgb(3, 3, 38) 100.00%);
@@ -72,19 +72,19 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
- 
+
 }
 
 
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   color: var(--blue-main);
 
 }
 
- 
+
 body,
 nav,
  .main-bg,
@@ -96,20 +96,18 @@ nav,
 .mainCardBack{
   background: var(--mainCardBack);
 }
-/* ------------------  
-Animations 
+/* ------------------
+Animations
 --------------------- */
 details[open] summary ~ *,
-.starsDiv > * {
+.starsDiv > *,
+nav {
   animation: animate 1s ease-in-out;
 }
+
+
 
 @keyframes animate {
   0%    {opacity: 0; margin-left: -20px}
   100%  {opacity: 1; margin-left: 0px}
 }
-
-
-
-
-

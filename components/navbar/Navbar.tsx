@@ -18,12 +18,12 @@ import {
 
 import DarkModeBtn from "./DarkModeBtn";
 const styles = {
-  nav: 'flex justify-center items-center w-full  min-h-[10vh] shadow-xl z-[400] px-4',
-  nav__div: 'navDetails w-full h-full flex items-start   relative text-xl ',
-  aside: 'logo sm:w-1/3 ',
-  article: 'justify-around items-start w-full h-full hidden md:flex',
-  nav__ul: 'flex flex-col border-solid border-t-4 border-sky-400 navDetails',
-} as const
+	nav: "flex justify-center items-center w-full  min-h-[10vh] shadow-xl z-[400] px-4 fixed",
+	nav__div: "navDetails w-full h-full flex items-start   relative text-xl",
+	aside: "logo sm:w-1/3 ",
+	article: "justify-around items-start w-full h-full hidden md:flex",
+	nav__ul: "flex flex-col border-solid border-t-4 border-sky-400 navDetails p-2",
+} as const;
 
 function Navbar(){
   const [nav, setNav] = useState(false);
@@ -49,7 +49,7 @@ function Navbar(){
             <summary className="uppercase logo">
               <strong className="hover:text-sky-700">English</strong>
             </summary>
-            <div className={styles.nav__ul}>
+            <ul className={styles.nav__ul}>
               <Link href="/english/irregular-verbs">{`Irregular Verbs (${IrregularVerbs.length})`}</Link>
               <Link href="/german/memory">Memory</Link>
               <Link href="/english/search-irregular">{`Irregular List (${IrregularVerbs.length})`}</Link>
@@ -58,18 +58,19 @@ function Navbar(){
               <Link href="/english/oxford-C1">{`Oxford C1 (${OxfordC1.length})`}</Link>
               <Link href="/english/phrasal-verbs">{`Phrasal Verbs (${LukesPhrasal.length})`}</Link>
               <Link href="/english/pagination">Pagination</Link>
-            </div>
+            </ul>
           </details>
 
           <details className="cursor-pointer">
             <summary className="uppercase logo">
               <strong className="hover:text-sky-700">Deutsch</strong>
             </summary>
-            <ul className="flex flex-col border-solid border-t-4 border-sky-400 navDetails">
+            <ul className={styles.nav__ul}>
+
               <Link href="/german/irregular-verbs">{`Unregelmäßige Verben (${VerbenData.length})`}</Link>
               <Link href="/german/memory">Memory</Link>
               <Link href="/german/goethe">{`Goethe (${Goethe.length})`}</Link>
-             
+
             </ul>
           </details>
         </article>
