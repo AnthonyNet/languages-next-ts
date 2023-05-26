@@ -16,7 +16,7 @@ import { Card_Vocabs } from "../../interface/";
 
 const styles = {
   section:
-    "relative flex justify-center items-center w-full h-screen p-2 sm:p-0 responsiveSection",
+    "relative flex justify-center items-center p-2 sm:p-0 responsiveSection",
   section__div:
     "w-full sm:w-[600px] h-[250px] sm:h-[270px] md:h-[320px] border-double border-4 border-blue-300  rounded-lg shadow-xl shadow-slate-600 preserve-3d group my-rotate-y-180 duration-1000 flex flex-col justify-around",
     article: "w-full flex flex-col justify-center sm:grow",

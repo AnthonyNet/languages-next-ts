@@ -10,7 +10,7 @@ import useFetch from "../components/fetch/Fetch";
 
 const styles = {
 	section:
-		"responsiveSection flex flex-col justify-center items-center w-full min-h-[100vh] h-auto sm:h-[90%] border-red-300  border-t-2",
+		"responsiveSection flex flex-col justify-center items-center  min-h-[100vh] h-auto sm:h-[90%] border-red-300  border-t-2",
 	card__div:
 		"mainCard w-[300px] h-[420px] bg-transparent cursor-pointer group perspective",
 	card__div__div:

@@ -9,7 +9,7 @@ import Bottom_Menu from "../components/pagination/Bottom_Menu";
 
 const styles = {
   section:
-    "h-screen flex flex-column justify-center items-baseline flex-wrap",
+    "flex flex-column justify-center items-baseline flex-wrap",
     main: "w-full flex flex-col justify-between items-center",
     h2: "text-center",
   table: "table-fixed min-w-[50vw] max-w-[90%]",

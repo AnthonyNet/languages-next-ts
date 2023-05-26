@@ -26,6 +26,10 @@
   strong {
     @apply font-bold text-cyan-600
   }
+
+  section {
+	@apply w-full h-screen
+  }
 }
 
 /* :-( */
