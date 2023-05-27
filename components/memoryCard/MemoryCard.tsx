@@ -23,28 +23,30 @@ const styles = {
 function Memory({ id, item, handleClick }: Card) {
 
   return (
-    <>
-      <motion.button
-        className={styles.button + " " + (item.click ? "border-green-400" : "border-red-400")}
-        onClick={() => handleClick(id, item.select)}
-        disabled={item.click}
-      >
-        <motion.div
-          className={styles.button__div}
-          animate={{ rotateY: item.check ? 180 : 0 }}
-        >
-          <motion.div className={styles.button__div__div}>
-            <h2 className={styles.h2}>{item.cz ? item.cz : item.eng}</h2>
-          </motion.div>
-          <motion.div className={styles.cardBack}>
-            <div className={styles.cardBack__div}>
-              <h3 className={styles.h3}>👍</h3>
-            </div>
-          </motion.div>
-        </motion.div>
-      </motion.button>
-    </>
-  );
+		<>
+			<motion.button
+				className={
+					styles.button +
+					" " +
+					(item.click ? "border-green-400" : "ring-8 border-indigo-600 ")
+				}
+				onClick={() => handleClick(id, item.select)}
+				disabled={item.click}>
+				<motion.div
+					className={styles.button__div}
+					animate={{ rotateY: item.check ? 180 : 0 }}>
+					<motion.div className={styles.button__div__div}>
+						<h2 className={styles.h2}>{item.cz ? item.cz : item.eng}</h2>
+					</motion.div>
+					<motion.div className={styles.cardBack}>
+						<div className={styles.cardBack__div}>
+							<h3 className={styles.h3}>👍</h3>
+						</div>
+					</motion.div>
+				</motion.div>
+			</motion.button>
+		</>
+	);
 }
 
 export default Memory;
