@@ -829,13 +829,13 @@ export  const VerbenData:{
     pastParticiple: "gesessen",
   },
   {
-    cz: "",
+    cz: "štípat",
     base: "spalten",
     pastSimple: "spaltete",
     pastParticiple: "gespalten",
   },
   {
-    cz: "",
+    cz: "plivat",
     base: "speien",
     pastSimple: "spie",
     pastParticiple: "gespie(e)n",
