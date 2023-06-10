@@ -28,7 +28,9 @@ const styles = {
 	h3: "py-2 md:py-4  text-center border-b border-blue-600 w-auto mx-auto",
 	button_green:
 		"cardBtn bg-green-600 hover:bg-green-800 focus:bg-green-800 active:bg-green-800",
-	button_red: "cardBtn bg-red-600 hover:bg-red-800 focus:bg-red-800 active:bg-red-800",
+	button_red:
+		"cardBtn bg-red-600 hover:bg-red-800 focus:bg-red-800 active:bg-red-800",
+	image: "hover:rotate-90 transition  ease-in-out duration-700",
 	cardBack:
 		"absolute top-0 my-rotate-y-180 backface-hidden overflow-hidden w-full h-full mainCardBack",
 	cardBack__div: "h-full text-center flex flex-col items-center text-gray-600 ",
@@ -63,10 +65,8 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
 					{switchLanguage ? (
 						sentenceTranslated ? (
 							<div>
-								<h3 className={styles.h3}>
-									{sentenceTranslated}</h3>
+								<h3 className={styles.h3}>{sentenceTranslated}</h3>
 								<h3 className={styles.h3}>{wordTranslated}</h3>
-
 							</div>
 						) : (
 							<h3 className={styles.h3}>{wordTranslated}</h3>
@@ -79,9 +79,9 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
 				<div className={styles.section__div__btnCover}>
 					<button onClick={() => [setSwitchLanguage(!switchLanguage)]}>
 						{switchLanguage ? (
-							<Image src={czFlag} alt="cz-flag" />
+							<Image className={styles.image} src={czFlag} alt="cz-flag" />
 						) : (
-							<Image src={enFlag} alt="eng-flag" />
+							<Image className={styles.image} src={enFlag} alt="eng-flag" />
 						)}
 					</button>
 
