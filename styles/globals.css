@@ -30,6 +30,10 @@
   section {
 	@apply w-full h-screen
   }
+
+  .cardBtn {
+	@apply px-6 py-2.5 mt-2 mb-2 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition  ease-in-out duration-500
+  }
 }
 
 /* :-( */
@@ -65,7 +69,7 @@
 [data-theme='dark'] {
 
   --background-color: linear-gradient(132deg, rgb(0, 1, 0) 0.00%, rgb(3, 3, 38) 100.00%);
-  --mainCardBack: linear-gradient(132deg, rgb(18, 8, 17) 0.00%, rgb(3, 3, 38) 100.00%);
+  --mainCardBack: linear-gradient(132deg, rgb(13, 12, 13) 0.00%, rgb(3, 3, 38) 100.00%);
 
   --blue-main: #1c76c6;
 }
