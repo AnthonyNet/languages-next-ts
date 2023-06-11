@@ -96,7 +96,8 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
 					</button>
 				</div>
 
-				<motion.div className={styles.cardBack}>
+				<motion.div
+					className={styles.cardBack}>
 					<div className={styles.cardBack__div}>
 						{switchLanguage ? (
 							sentenceTranslated ? (

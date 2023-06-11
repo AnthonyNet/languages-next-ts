@@ -6,11 +6,10 @@ interface Props {
 }
 
 const styles = {
-    
-    nav: ' w-full h-auto',
-    ul: 'flex flex-row justify-around sm:w-[60%] m-auto flex-wrap border-t-2 border-blue-300',
-    li__active: 'border-b-4 border-red-600',
-  };
+	nav: " w-full h-auto mt-[10vh]",
+	ul: "flex flex-row justify-around sm:w-[60%] m-auto flex-wrap border-y-2 border-blue-300",
+	li__active: "border-b-4 border-red-600",
+};
 
 function Top_Menu({myNumb, setMyNumb, setCurrentPage}: Props) {
 
@@ -21,7 +20,7 @@ function Top_Menu({myNumb, setMyNumb, setCurrentPage}: Props) {
 
 return <nav className={styles.nav}>
         <ul className={styles.ul}>
-          <li 
+          <li
             className={myNumb === 0 ? styles.li__active : ''}
             onClick={() => handleClick(0)}
           >
