@@ -14,7 +14,7 @@ const styles = {
     h2: "text-center",
   table: "table-fixed min-w-[50vw] max-w-[90%]",
   thead__tr: "flex justify-around",
-  tbody__td: "w-[50%] border-red-400 border-r-4",
+  tbody__td: "w-[50%] border-red-400 border-l-4 text-right",
 } as const;
 
 function Pagination() {
@@ -68,49 +68,57 @@ function Pagination() {
 
 
 
-  return <section className={styles.section}>
-      <Top_Menu myNumb={myNumb} setMyNumb={setMyNumb} setCurrentPage={setCurrentPage}/>
+  return (
+		<section className={styles.section}>
+			<Top_Menu
+				myNumb={myNumb}
+				setMyNumb={setMyNumb}
+				setCurrentPage={setCurrentPage}
+			/>
 
-      <main className={styles.main}>
-        <h2 className={styles.h2}>Pagination</h2>
-        <table className={styles.table}>
-          <thead>
-            <tr className={styles.thead__tr}>
-              <th>CZ</th>
-              <th>ENG</th>
-            </tr>
-          </thead>
-          <tbody>
-            {currentPosts.map((item, index) => {
-              return <tr
-                  key={index}
-                  className="border-b-2 border-red-300 flex  flex-nowrap"
-                >
-                  <td className={styles.tbody__td}>{item.czWord}</td>
-                  {item.sentenceTranslated ? (
-                    <td className="w-[50%] text-right">
-                      {item.sentenceTranslated}
-                    </td>
-                  ) : (
-                    <td className="w-[50%] text-right">
-                      {item.wordTranslated}
-                    </td>
-                  )}
-                </tr>
+			<main className={styles.main}>
+				<h2 className={styles.h2}>Pagination</h2>
+				<table className={styles.table}>
+					<thead>
+						<tr className={styles.thead__tr}>
+							<th>English</th>
+							<th>Czech</th>
+						</tr>
+					</thead>
+					<tbody>
+						{currentPosts.map((item, index) => {
+							return (
+								<tr
+									key={index}
+									className="border-b-2 border-red-300 flex  flex-nowrap">
+									{item.sentenceTranslated ? (
+										<td className="w-[50%] text-left">
+											{item.sentenceTranslated}
+										</td>
+									) : (
+										<td className="w-[50%] text-left">
+											{item.wordTranslated}
+										</td>
+									)}
+									<td className={styles.tbody__td}>{item.czWord}</td>
 
-            })}
-          </tbody>
-        </table>
-      </main>
+								</tr>
+							);
+						})}
 
-      <Bottom_Menu
-        pages={pages}
-        prevPage={prevPage}
-        nextPage={nextPage}
-        currentPage={currentPage}
-        setCurrentPage={setCurrentPage}
-      />
-    </section>
+					</tbody>
+				</table>
+			</main>
+
+			<Bottom_Menu
+				pages={pages}
+				prevPage={prevPage}
+				nextPage={nextPage}
+				currentPage={currentPage}
+				setCurrentPage={setCurrentPage}
+			/>
+		</section>
+	);
 };
 
 export default Pagination;
