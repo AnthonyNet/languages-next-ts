@@ -60,7 +60,6 @@
 
     --blue-main: #1c76c6;
 
-
   }
 
 }
@@ -92,6 +91,9 @@ body {
 
 }
 
+.tooltip:hover .tooltip-item {
+    visibility: visible;
+}
 
 body,
 nav,
@@ -99,6 +101,10 @@ nav,
  .mobile__Nav{
   background: var(--background-color);
 
+}
+
+.navCover{
+	background: var(--background-color);
 }
 
 .mainCardBack{
