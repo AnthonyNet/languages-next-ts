@@ -1,20 +1,6 @@
 "use client";
 import Link from "next/link";
-
 import { CgClose } from "react-icons/cg";
-import { useState, useEffect } from "react";
-
-import {
-	IrregularVerbs,
-	OxfordB1,
-	OxfordB2,
-	OxfordC1,
-	LukesPhrasal,
-	VerbenData,
-	Goethe,
-} from "../../myData";
-import DarkModeBtn from "./DarkModeBtn";
-
 import Mobile_UL from "./Mobile_UL";
 
 const styles = {
@@ -36,25 +22,10 @@ interface Mobile {
 }
 
 function Mobile__Nav({ nav, handleNav }: Mobile) {
-	const [english, setEnglish] = useState(false);
-	const [german, setGerman] = useState(false);
-
-	function handleEnglish() {
-		setGerman(false);
-		setEnglish(!english);
-	}
-
-	function handleGerman() {
-		setEnglish(false);
-		setGerman(!german);
-	}
 
 	return (
 		<main className={nav ? styles.main__open : styles.main__close}>
-			<div
-				className={nav ? styles.main__div__open : styles.main__div__close}
-				/* style={darkMode? stylesSwitch.dark.responsiveMenu: null}*/
-			>
+			<div className={nav ? styles.main__div__open : styles.main__div__close}>
 				<header className={styles.main__header}>
 					<aside className={styles.main__header__aside}>
 						<Link href="/">

@@ -89,7 +89,8 @@ const styles = {
 	},
 };
 
-interface Mobile {
+
+type Mobile = {
 	handleNav: () => void;
 }
 
