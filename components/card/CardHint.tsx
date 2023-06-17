@@ -8,14 +8,14 @@ const CardHint = ({
   pastParticiple2,
 }: Irregular) => {
   return (
-    <ul className="flex justify-between flex-wrap">
-      <li>{base} - </li>
-      <li>{pastSimple} - </li>
-      {pastSimple2 && <li>{pastSimple2} - </li>}
-      <li>{pastParticiple}</li>
-      {pastParticiple2 ? <li> -{pastParticiple2}</li> : null}
-    </ul>
-  );
+		<ul className="flex justify-between flex-wrap">
+			<li>{base}</li>
+			<li> {pastSimple} </li>
+			{pastSimple2 && <li>{pastSimple2}</li>}
+			<li> {pastParticiple} </li>
+			{pastParticiple2 ? <li>{pastParticiple2}</li> : null}
+		</ul>
+	);
 };
 
 export default CardHint;

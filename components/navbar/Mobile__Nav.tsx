@@ -15,15 +15,19 @@ import {
 } from "../../myData";
 import DarkModeBtn from "./DarkModeBtn";
 
+import Mobile_UL from "./Mobile_UL";
+
 const styles = {
-	main__icon: "transition duration-700 ease-in-out mr-2",
-	main__icon__open: "rotate-90 transition duration-700 ease-in-out mr-2",
-	main__h3: "text-xl mb-2",
-	main__ul: "cursor-pointer transition duration-700 ease-in-out",
-	main__ul__open:
-		" cursor-pointer transition duration-700 ease-in-out text-sky-400 ulAnimation",
-	main__ul__li: "flex flex-row items-center cursor-pointer",
-	main__ul__li__open: "transition ease-in-out duration-700 ml-[30px]",
+	main__open: "snap-x z-10  fixed left-0 top-0 w-full h-screen bg-black/70",
+	main__close: "z-0",
+	main__div__open:
+		"responsiveMenu fixed left-0 top-0 w-[85%] sm:w-[60%] md:w-[45%] h-screen mobile__Nav p-4 sm:p-8 ease-in duration-500",
+	main__div__close: "fixed top-10 left-[-100%] ease-in duration-500",
+	main__header: "flex justify-between items-center",
+	main__header__aside: "logo sm:mr-40",
+	main__header__div:
+		"navClose rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer",
+	main__div__div: "mottoCover border-b border-gray-300 my-4 text-sm sm:text-lg",
 };
 
 interface Mobile {
@@ -46,169 +50,29 @@ function Mobile__Nav({ nav, handleNav }: Mobile) {
 	}
 
 	return (
-		<div
-			className={
-				nav
-					? "snap-x z-10  fixed left-0 top-0 w-full h-screen bg-black/70"
-					: "z-0"
-			}>
+		<main className={nav ? styles.main__open : styles.main__close}>
 			<div
-				className={
-					nav
-						? "responsiveMenu fixed left-0 top-0 w-[85%] sm:w-[60%] md:w-[45%] h-screen mobile__Nav p-4 sm:p-8 ease-in duration-500"
-						: "fixed top-10 left-[-100%] ease-in duration-500"
-				}
+				className={nav ? styles.main__div__open : styles.main__div__close}
 				/* style={darkMode? stylesSwitch.dark.responsiveMenu: null}*/
 			>
-				<div className="flex justify-between items-center">
-					<aside className="logo sm:mr-40">
+				<header className={styles.main__header}>
+					<aside className={styles.main__header__aside}>
 						<Link href="/">
 							Learn <strong>languages</strong>
 						</Link>
 					</aside>
-					<div
-						onClick={handleNav}
-						className="navClose rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer">
+					<div onClick={handleNav} className={styles.main__header__div}>
 						<CgClose />
 					</div>
-				</div>
-				<div className="mottoCover border-b border-gray-300 my-4 text-sm sm:text-lg">
+				</header>
+				<div className={styles.main__div__div}>
 					<p>Evolution means everyday learning</p>
 				</div>
-				<nav>
-					<ul className="flex flex-col z-20">
-						<div className="flex justify-between items-center">
-							<Link className={styles.main__h3} href="/" onClick={handleNav}>
-								Home
-							</Link>
-							<span className="bottom-2 right-4 text-3xl">
-								<DarkModeBtn />
-							</span>
-						</div>
 
-						<main>
-							<div className="flex flex-row">
-								<span
-									className={
-										!english ? styles.main__icon : styles.main__icon__open
-									}>
-									➤
-								</span>
-								<h3 onClick={handleEnglish} className={styles.main__h3}>
-									English
-								</h3>
-							</div>
-							<ul className={english ? styles.main__ul__open : styles.main__ul}>
-								{english && (
-									<>
-										<li
-											onClick={handleNav}
-											className={
-												!english
-													? styles.main__ul__li
-													: styles.main__ul__li__open
-											}>
-											<Link href="/english/irregular-verbs">{`Irregular verbs (${IrregularVerbs.length})`}</Link>
-										</li>
-										<li onClick={handleNav}
-											className={
-												english
-													? styles.main__ul__li__open
-													: styles.main__ul__li
-											}>
-											<Link href="/german/memory">Memory</Link>
-										</li>
-										<li onClick={handleNav}
-											className={
-												english
-													? styles.main__ul__li__open
-													: styles.main__ul__li
-											}>
-											<Link href="/english/search-irregular">{`Irregular list (${IrregularVerbs.length})`}</Link>
-										</li>
-										<li onClick={handleNav}
-											className={
-												english
-													? styles.main__ul__li__open
-													: styles.main__ul__li
-											}>
-											<Link href="/english/oxford-B1">{`Oxford B1 (${OxfordB1.length})`}</Link>
-										</li>
-										<li onClick={handleNav}
-											className={
-												english
-													? styles.main__ul__li__open
-													: styles.main__ul__li
-											}>
-											<Link href="/english/oxford-B2">{`Oxford B2 (${OxfordB2.length})`}</Link>
-										</li>
-										<li onClick={handleNav}
-											className={
-												english
-													? styles.main__ul__li__open
-													: styles.main__ul__li
-											}>
-											<Link href="/english/oxford-C1">{`Oxford C1 (${OxfordC1.length})`}</Link>
-										</li>
-										<li onClick={handleNav}
-											className={
-												english
-													? styles.main__ul__li__open
-													: styles.main__ul__li
-											}>
-											<Link href="/english/phrasal-verbs">{`Lukes Phrasal (${LukesPhrasal.length})`}</Link>
-										</li>
-										<li onClick={handleNav}
-											className={
-												english
-													? styles.main__ul__li__open
-													: styles.main__ul__li
-											}>
-											<Link href="/english/pagination">Pagination</Link>
-										</li>
-									</>
-								)}
-							</ul>
-							<div className="flex flex-row">
-								<span
-									className={
-										!german ? styles.main__icon : styles.main__icon__open
-									}>
-									➤
-								</span>
-								<h3 onClick={handleGerman} className={styles.main__h3}>
-									German
-								</h3>
-							</div>
-							<ul className={german ? styles.main__ul__open : styles.main__ul}>
-								{german && (
-									<>
-										<li onClick={handleNav}
-											className={
-												german ? styles.main__ul__li__open : styles.main__ul__li
-											}>
-											<Link href="/german/irregular-verbs">{`Unregelmäßige Verben (${VerbenData.length})`}</Link>
-										</li>
-										<li onClick={handleNav}
-											className={
-												german ? styles.main__ul__li__open : styles.main__ul__li
-											}>
-											<Link href="/german/memory">Memory</Link>
-										</li>
-										<li onClick={handleNav}
-											className={
-												german ? styles.main__ul__li__open : styles.main__ul__li
-											}>
-											<Link href="/german/goethe">{`Goethe (${Goethe.length})`}</Link>
-										</li>
-									</>
-								)}
-							</ul>
-						</main>
-					</ul>
-				</nav>
+				<Mobile_UL handleNav={handleNav} />
+
 			</div>
-		</div>
+		</main>
 	);
 }
 

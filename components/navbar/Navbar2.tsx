@@ -7,13 +7,13 @@ import { TiThMenu } from "react-icons/ti";
 import Mobile__Nav from "./Mobile__Nav";
 
 import {
-  IrregularVerbs,
-  OxfordB1,
-  OxfordB2,
-  OxfordC1,
-  LukesPhrasal,
-  VerbenData,
-  Goethe,
+	IrregularVerbs,
+	OxfordB1,
+	OxfordB2,
+	OxfordC1,
+	LukesPhrasal,
+	VerbenData,
+	Goethe,
 } from "../../myData";
 
 import DarkModeBtn from "./DarkModeBtn";
@@ -23,22 +23,25 @@ const styles = {
 	aside: "logo sm:w-1/3 ",
 	article: "justify-around items-start w-full h-full hidden md:flex",
 	container:
-		"relative inline-block tooltip",
+		"relative inline-block tooltip hover:text-white transition ease-in-out duration-700",
+	main__a:
+		"transition ease-in-out duration-700 px-2 py-1 font-medium transform hover:-translate-y-6", //ulAnimation
 	cover:
 		"flex flex-col p-4 bg-white w-60 h-auto rounded-md z-20 absolute right-0 invisible tooltip-item border-2 navCover",
-	ul: "list-disc space-y-2",
+	ul: "list-disc space-y-2 ",
 	ul__li: "flex items-start",
-	ul__li__a: "font-medium text-sm text-gray-500 hover:text-black",
+	ul__li__a:
+		"font-bold text-sm text-gray-500 hover:text-sky-600 transition duration-700 ease-in-out transform",
 } as const;
 
-function Navbar(){
-  const [nav, setNav] = useState(false);
+function Navbar() {
+	const [nav, setNav] = useState(false);
 
-  const handleNav = () => {
-    setNav(!nav);
-  };
+	const handleNav = () => {
+		setNav(!nav);
+	};
 
-  return (
+	return (
 		<nav
 			className={styles.nav}
 			/* style={darkMode ? stylesSwitch.dark.basic : stylesSwitch.light.basic}*/
@@ -55,7 +58,7 @@ function Navbar(){
 					<div className={styles.container}>
 						<a
 							href="#"
-							className="transition ease-in-out duration-700 px-2 py-1 font-medium transform hover:-translate-y-6">
+							className={styles.main__a}>
 							English
 						</a>
 						<div className={styles.cover}>
@@ -120,7 +123,7 @@ function Navbar(){
 					<div className={styles.container}>
 						<a
 							href="#"
-							className="transition ease-in-out duration-700 px-2 py-1 font-medium transform hover:-translate-y-6">
+							className={styles.main__a}>
 							German
 						</a>
 
@@ -162,6 +165,6 @@ function Navbar(){
 			<Mobile__Nav nav={nav} handleNav={handleNav} />
 		</nav>
 	);
-};
+}
 
 export default Navbar;
