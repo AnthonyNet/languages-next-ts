@@ -126,7 +126,7 @@ nav {
 
 @keyframes animateUl {
   0%    {opacity: 0; margin-left: -20px;}
-  60%  {opacity: 1; margin-left: 20px; transform: scale(0.9);}
+  60%  {opacity: 1; margin-left: 30px; transform: scale(0.9);}
   100% {transform: scale(1);}
 }
 .ulAnimation li {
@@ -154,4 +154,10 @@ nav {
   }
     .ulAnimation li:nth-child(6) {
     transition-delay: 2.4s;
+  }
+   .ulAnimation li:nth-child(7) {
+    transition-delay: 2.8s;
+  }
+   .ulAnimation li:nth-child(8) {
+    transition-delay: 3.2s;
   }
