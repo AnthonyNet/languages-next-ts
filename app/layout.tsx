@@ -4,7 +4,7 @@ import  '../styles/Mobile.css';
 
 import Head from "./head";
 import Providers from "./Providers";
-import Navbar from "../components/navbar/Navbar2";
+import Navbar from "../components/navbar/Navbar";
 
 export default function RootLayout({
   children,

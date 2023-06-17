@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import DarkModeBtn from "./DarkModeBtn";
 import {useState } from 'react';
-
+import {menuData} from './dataNav';
 import {
 	IrregularVerbs,
 	OxfordB1,
@@ -12,64 +12,6 @@ import {
 	VerbenData,
 	Goethe,
 } from "../../myData";
-
-const menuData = {
-	english: [
-		{
-			href: "/english/irregular-verbs",
-			name: "Irregular Verbs",
-			length: IrregularVerbs.length
-		},
-		{
-			href: "/german/memory",
-			name: "Memory",
-		},
-		{
-			href: "/english/search-irregular",
-			name: "Search Irregular",
-		},
-		{
-			href: "/english/oxford-B1",
-			name: "Oxford B1",
-			length: OxfordB1.length,
-		},
-		{
-			href: "/english/oxford-B2",
-			name: "Oxford B2",
-			length: OxfordB2.length,
-		},
-		{
-			href: "/english/oxford-C1",
-			name: "Oxford C1",
-			length: OxfordC1.length,
-		},
-		{
-			href: "/english/phrasal-verbs",
-			name: "Lukes Phrasal",
-			length: LukesPhrasal.length,
-		},
-		{
-			href: "/english/pagination",
-			name: "Pagination",
-		},
-	],
-	german: [
-		{
-			href: "/german/irregular-verbs",
-			name: "Verben",
-			length: VerbenData.length,
-		},
-		{
-			href: "/german/memory",
-			name: "Memory",
-		},
-		{
-			href: "/german/goethe",
-			name: "Göethe",
-			length: Goethe.length,
-		}
-	]
-};
 
 const styles = {
 	main: "flex flex-col z-20",
@@ -87,7 +29,7 @@ const styles = {
 			"cursor-pointer transition  duration-100 ease-in-out text-sky-400 font-bold ulAnimation",
 		ul__li__open: "transition ease-in-out duration-700 ml-[30px]",
 	},
-};
+} as const;
 
 
 type Mobile = {
