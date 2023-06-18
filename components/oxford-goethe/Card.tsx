@@ -30,7 +30,7 @@ const styles = {
 		"cardBtn bg-green-600 hover:bg-green-800 focus:bg-green-800 active:bg-green-800",
 	button_red:
 		"cardBtn bg-red-600 hover:bg-red-800 focus:bg-red-800 active:bg-red-800",
-	image: "hover:rotate-90 transition  ease-in-out duration-700",
+	image: "hover:rotate-90 transition ease-in-out duration-700",
 	cardBack:
 		"absolute top-0 my-rotate-y-180 backface-hidden overflow-hidden w-full h-full mainCardBack",
 	cardBack__div: "h-full text-center flex flex-col items-center text-gray-600 ",
@@ -60,7 +60,8 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
 			className={styles.section}>
 			<motion.div
 				className={styles.section__div}
-				animate={{ rotateY: switchSide ? 0 : 180 }}>
+				animate={{ rotateY: switchSide ? 0 : 180 }}
+				transition={{ duration: 0.5 }}>
 				<article className={styles.article}>
 					{switchLanguage ? (
 						sentenceTranslated ? (

@@ -8,10 +8,10 @@ const styles = {
 	nav__div: "navDetails w-full h-full flex items-start   relative text-xl",
 	aside: "logo sm:w-1/3 ",
 	article: "justify-around items-start w-full h-full hidden md:flex",
+	homeBtn: "transition ease-in-out duration-500 navItem font-bold hover:text-indigo-800",
 	container:
-		"relative inline-block tooltip hover:text-white transition ease-in-out duration-700",
-	main__a:
-		"transition ease-in-out duration-500 px-2 py-1 font-medium", //ulAnimation
+		"relative inline-block tooltip hover:text-indigo-800 transition ease-in-out duration-700",
+	main__a: "px-2 py-1 font-medium navItem transition-all ease-in-out duration-1000", //ulAnimation
 	cover:
 		"flex flex-col p-4 bg-white w-60 h-auto rounded-md z-20 absolute right-0 invisible tooltip-item border-2 navCover",
 	ul: "list-disc space-y-2 style-",
@@ -43,7 +43,7 @@ function NavItems() {
 
 	return (
 		<article className={styles.article}>
-			<Link href="/" className="hover:text-white transition ease-in-out duration-500">
+			<Link href="/" className= {styles.homeBtn}>
 				Home
 			</Link>
 
