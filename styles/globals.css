@@ -43,25 +43,29 @@
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
-    --background-color: white;
-    --mainCardBack: white;
 
+
+	--white: rgb(238, 234, 234);
     --blue-main: #1c76c6;
+	--menu-item: #1c6cb3;
+	--menu-item-hover: #5327b3;
 
+	 --background-color: var(--white);
+     --mainCardBack: var(--white);
 }
 
 
 /*if browser´s theme is dark */
+
 @media (prefers-color-scheme: dark){
   :root {
 
     --background-color: linear-gradient(132deg, rgb(0, 1, 0) 0.00%, rgb(3, 3, 38) 100.00%);
     --mainCardBack: linear-gradient(132deg, rgb(18, 8, 17) 0.00%, rgb(3, 3, 38) 100.00%);
 
-    --blue-main: #1c76c6;
-
+ 	--menu-item: var(--blue-main);
+	--menu-item-hover: var(--white);
   }
-
 }
 
 /* Theme button light/dark switch */
@@ -70,7 +74,8 @@
   --background-color: linear-gradient(132deg, rgb(0, 1, 0) 0.00%, rgb(3, 3, 38) 100.00%);
   --mainCardBack: linear-gradient(132deg, rgb(5, 4, 18) 0.00%, rgb(2, 2, 26) 100.00%);
 
-  --blue-main: #1c76c6;
+  --menu-item: var(--blue-main);
+  --menu-item-hover: var(--white);
 }
 
 
@@ -102,6 +107,13 @@ nav,
   background: var(--background-color);
 
 }
+nav .navItem{
+  color: var(--menu-item);
+}
+nav .navItem:hover{
+  color: var(--menu-item-hover);
+  transform: translateY(-5px);
+}
 
 .navCover{
 	background: var(--background-color);
@@ -113,6 +125,7 @@ nav,
 /* ------------------
 Animations
 --------------------- */
+
 details[open] summary ~ *,
 .starsDiv > *,
 nav {
@@ -123,41 +136,46 @@ nav {
   0%    {opacity: 0; margin-left: -20px}
   100%  {opacity: 1; margin-left: 0px}
 }
-
+/*
 @keyframes animateUl {
   0%    {opacity: 0; margin-left: -20px;}
   60%  {opacity: 1; margin-left: 30px; transform: scale(0.9);}
   100% {transform: scale(1);}
 }
+
 .ulAnimation li {
   animation: animateUl 1s ease-in-out;
 }
+*/
 
  .ulAnimation li:nth-child(1) {
-    transition-delay: 0.4s;
+    transition-delay: 0.2s;
   }
 
   .ulAnimation li:nth-child(2) {
-    transition-delay: 0.8s;
+    transition-delay: 0.4s;
   }
 
   .ulAnimation li:nth-child(3) {
-    transition-delay: 1.2s;
+    transition-delay: 0.6s;
   }
 
   .ulAnimation li:nth-child(4) {
-    transition-delay: 1.6s;
+    transition-delay: 0.8s;
   }
 
   .ulAnimation li:nth-child(5) {
-    transition-delay: 2s;
+	transition-delay: 1s;
   }
-    .ulAnimation li:nth-child(6) {
-    transition-delay: 2.4s;
+
+  .ulAnimation li:nth-child(6) {
+	transition-delay: 1.2s;
   }
-   .ulAnimation li:nth-child(7) {
-    transition-delay: 2.8s;
+
+  .ulAnimation li:nth-child(7) {
+	transition-delay: 1.4s;
   }
-   .ulAnimation li:nth-child(8) {
-    transition-delay: 3.2s;
+
+  .ulAnimation li:nth-child(8) {
+	transition-delay: 1.6s;
   }

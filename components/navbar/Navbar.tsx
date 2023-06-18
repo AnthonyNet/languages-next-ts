@@ -5,87 +5,59 @@ import Link from "next/link";
 
 import { TiThMenu } from "react-icons/ti";
 import Mobile__Nav from "./Mobile__Nav";
+import Nav_Items from "./Nav_Items";
 
-import {
-  IrregularVerbs,
-  OxfordB1,
-  OxfordB2,
-  OxfordC1,
-  LukesPhrasal,
-  VerbenData,
-  Goethe,
-} from "../../myData";
 
 import DarkModeBtn from "./DarkModeBtn";
 const styles = {
 	nav: "flex justify-center items-center w-full  min-h-[10vh] shadow-xl z-[400] px-4 fixed",
 	nav__div: "navDetails w-full h-full flex items-start   relative text-xl",
-	aside: "logo sm:w-1/3 ",
+	aside: "logo sm:w-1/3 navItem transition ease-in-out duration-1000",
 	article: "justify-around items-start w-full h-full hidden md:flex",
-	nav__ul: "flex flex-col border-solid border-t-4 border-sky-400 navDetails p-2",
+	container:
+		"relative inline-block tooltip hover:text-white transition ease-in-out duration-700",
+	main__a:
+		"transition ease-in-out duration-700 px-2 py-1 font-medium transform hover:-translate-y-6", //ulAnimation
+	cover:
+		"flex flex-col p-4 bg-white w-60 h-auto rounded-md z-20 absolute right-0 invisible tooltip-item border-2 navCover",
+	ul: "list-disc space-y-2 ",
+	ul__li: "flex items-start",
+	ul__li__a:
+		"font-bold text-sm text-gray-500 hover:text-sky-600 transition duration-700 ease-in-out transform",
 } as const;
 
-function Navbar(){
-  const [nav, setNav] = useState(false);
 
-  const handleNav = () => {
-    setNav(!nav);
-  };
+function Navbar() {
+	const [nav, setNav] = useState(false);
 
-  return (
-    <nav
-      className={styles.nav}
-      /* style={darkMode ? stylesSwitch.dark.basic : stylesSwitch.light.basic}*/
-    >
-      <div className={styles.nav__div}>
-        <aside className={styles.aside}>
-          <Link href="/">
-            Learn <strong>languages</strong>
-          </Link>
-        </aside>
-        <article className={styles.article}>
-          <Link href="/">Home</Link>
-          <details className="cursor-pointer">
-            <summary className="uppercase logo">
-              <strong className="hover:text-sky-700">English</strong>
-            </summary>
-            <ul className={styles.nav__ul}>
-              <Link href="/english/irregular-verbs">{`Irregular Verbs (${IrregularVerbs.length})`}</Link>
-              <Link href="/german/memory">Memory</Link>
-              <Link href="/english/search-irregular">{`Irregular List (${IrregularVerbs.length})`}</Link>
-              <Link href="/english/oxford-B1">{`Oxford B1 (${OxfordB1.length})`}</Link>
-              <Link href="/english/oxford-B2">{`Oxford B2 (${OxfordB2.length})`}</Link>
-              <Link href="/english/oxford-C1">{`Oxford C1 (${OxfordC1.length})`}</Link>
-              <Link href="/english/phrasal-verbs">{`Phrasal Verbs (${LukesPhrasal.length})`}</Link>
-              <Link href="/english/pagination">Pagination</Link>
-            </ul>
-          </details>
+	const handleNav = () => {
+		setNav(!nav);
+	};
 
-          <details className="cursor-pointer">
-            <summary className="uppercase logo">
-              <strong className="hover:text-sky-700">Deutsch</strong>
-            </summary>
-            <ul className={styles.nav__ul}>
+	return (
+		<nav
+			className={styles.nav}
+			/* style={darkMode ? stylesSwitch.dark.basic : stylesSwitch.light.basic}*/
+		>
+			<div className={styles.nav__div}>
+				<aside className={styles.aside}>
+					<Link href="/">
+						Learn <strong>languages</strong>
+					</Link>
+				</aside>
+				<Nav_Items />
 
-              <Link href="/german/irregular-verbs">{`Unregelmäßige Verben (${VerbenData.length})`}</Link>
-              <Link href="/german/memory">Memory</Link>
-              <Link href="/german/goethe">{`Goethe (${Goethe.length})`}</Link>
+				<span className="hidden md:flex  bottom-2 right-4 text-3xl">
+					<DarkModeBtn />
+				</span>
 
-            </ul>
-          </details>
-        </article>
-
-        <span className="hidden md:flex  bottom-2 right-4 text-3xl">
-          <DarkModeBtn />
-        </span>
-
-        <div className="text-4xl md:hidden ml-auto">
-          <TiThMenu onClick={handleNav} />
-        </div>
-      </div>
-      <Mobile__Nav nav={nav} handleNav={handleNav} />
-    </nav>
-  );
-};
+				<div className="text-4xl md:hidden ml-auto">
+					<TiThMenu onClick={handleNav} />
+				</div>
+			</div>
+			<Mobile__Nav nav={nav} handleNav={handleNav} />
+		</nav>
+	);
+}
 
 export default Navbar;

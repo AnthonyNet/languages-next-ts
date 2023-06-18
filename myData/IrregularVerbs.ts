@@ -414,7 +414,7 @@
 
 },
 {   cz: "ležet",
-    base: "lie (in bed)",
+    base: "lie",
     pastSimple: "lay",
    pastParticiple: "lain"
 
