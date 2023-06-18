@@ -6,9 +6,8 @@ import Link from "next/link";
 import { TiThMenu } from "react-icons/ti";
 import Mobile__Nav from "./Mobile__Nav";
 import Nav_Items from "./Nav_Items";
-
-
 import DarkModeBtn from "./DarkModeBtn";
+
 const styles = {
 	nav: "flex justify-center items-center w-full  min-h-[10vh] shadow-xl z-[400] px-4 fixed",
 	nav__div: "navDetails w-full h-full flex items-start   relative text-xl",

@@ -8,11 +8,11 @@ const styles = {
 	main__close: "z-0",
 	main__div__open:
 		"responsiveMenu fixed left-0 top-0 w-[85%] sm:w-[60%] md:w-[45%] h-screen mobile__Nav p-4 sm:p-8 ease-in duration-500",
-	main__div__close: "fixed top-10 left-[-100%] ease-in duration-500",
+	main__div__close: "fixed top-10 left-[-100%] ease-in duration-500 mobile__Nav",
 	main__header: "flex justify-between items-center",
 	main__header__aside: "logo sm:mr-40",
 	main__header__closeBtn:
-		"navClose rounded-full  p-3 shadow-inner shadow-sky-100 shadow-xl cursor-pointer",
+		"navClose rounded-full  p-3 shadow-inner shadow-sky-100 shadow-md cursor-pointer ring-1",
 	main__div__div: "mottoCover border-b border-gray-300 my-4 text-sm sm:text-lg",
 };
 
