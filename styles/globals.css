@@ -43,25 +43,29 @@
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
-    --background-color: white;
-    --mainCardBack: white;
 
+
+	--white: rgb(238, 234, 234);
     --blue-main: #1c76c6;
+	--menu-item: #1c6cb3;
+	--menu-item-hover: #5327b3;
 
+	 --background-color: var(--white);
+     --mainCardBack: var(--white);
 }
 
 
 /*if browser´s theme is dark */
+
 @media (prefers-color-scheme: dark){
   :root {
 
     --background-color: linear-gradient(132deg, rgb(0, 1, 0) 0.00%, rgb(3, 3, 38) 100.00%);
     --mainCardBack: linear-gradient(132deg, rgb(18, 8, 17) 0.00%, rgb(3, 3, 38) 100.00%);
 
-    --blue-main: #1c76c6;
-
+ 	--menu-item: var(--blue-main);
+	--menu-item-hover: var(--white);
   }
-
 }
 
 /* Theme button light/dark switch */
@@ -70,7 +74,8 @@
   --background-color: linear-gradient(132deg, rgb(0, 1, 0) 0.00%, rgb(3, 3, 38) 100.00%);
   --mainCardBack: linear-gradient(132deg, rgb(5, 4, 18) 0.00%, rgb(2, 2, 26) 100.00%);
 
-  --blue-main: #1c76c6;
+  --menu-item: var(--blue-main);
+  --menu-item-hover: var(--white);
 }
 
 
@@ -101,6 +106,13 @@ nav,
  .mobile__Nav{
   background: var(--background-color);
 
+}
+nav .navItem{
+  color: var(--menu-item);
+}
+nav .navItem:hover{
+  color: var(--menu-item-hover);
+  transform: translateY(-5px);
 }
 
 .navCover{

@@ -12,7 +12,7 @@ import DarkModeBtn from "./DarkModeBtn";
 const styles = {
 	nav: "flex justify-center items-center w-full  min-h-[10vh] shadow-xl z-[400] px-4 fixed",
 	nav__div: "navDetails w-full h-full flex items-start   relative text-xl",
-	aside: "logo sm:w-1/3 ",
+	aside: "logo sm:w-1/3 navItem transition ease-in-out duration-1000",
 	article: "justify-around items-start w-full h-full hidden md:flex",
 	container:
 		"relative inline-block tooltip hover:text-white transition ease-in-out duration-700",
