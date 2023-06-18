@@ -5,7 +5,7 @@ import Link from "next/link";
 
 import { TiThMenu } from "react-icons/ti";
 import Mobile__Nav from "./Mobile__Nav";
-import NavItems from "./NavItems";
+import Nav_Items from "./Nav_Items";
 
 
 import DarkModeBtn from "./DarkModeBtn";
@@ -45,7 +45,7 @@ function Navbar() {
 						Learn <strong>languages</strong>
 					</Link>
 				</aside>
-				<NavItems />
+				<Nav_Items />
 
 				<span className="hidden md:flex  bottom-2 right-4 text-3xl">
 					<DarkModeBtn />

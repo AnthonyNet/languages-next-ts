@@ -14,9 +14,10 @@ interface Props {
 }
 
 const styles = {
-  li: " p-2 font-bold ",
-  li_green: "p-2 bg-green-300 font-bold",
-  input: "card_Input text-center border border-gray-300 text-bold",
+	li: "m-1 p-1 font-bold border-2 border-blue-600  focus:border-indigo-900   rounded-md shadow-[0_10px_250px_rgba(8,_12,_284,_0.6)] hover:shadow-[1px_10px_15px_rgba(17,_71,_183,_0.9)]",
+	li_green: "p-2 font-bold",
+	input:
+		"card_Input text-center text-bold cursor-pointer focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent p-1  hover:shadow-lg transition ease-in-out duration-500 bg-transparent",
 };
 
 /*------------------------------------------
@@ -56,7 +57,7 @@ const Input = ({
   const runIT = () => {
     if (word === input) {
       // True === green border
-      setCheckStyles("bg-green-300");
+      setCheckStyles("border-green-600 border-inset");
 
       //Props - SCORE + STARS
       setTotalScore((count: number) => count + 1);
@@ -90,11 +91,11 @@ setInput => CLEAR VALUE IN INPUT
 
 
   return (
-    <li className={styles.li + checkStyles}>
+    <li className={styles.li + " " +  checkStyles}>
       <input
         type="text"
         value={input}
-        className={styles.input + "text-gray-500 " + checkMistake}
+        className={styles.input + " " + checkMistake}
         onChange={handleChange}
         placeholder={placeholder}
 

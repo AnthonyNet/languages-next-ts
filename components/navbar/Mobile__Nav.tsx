@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { CgClose } from "react-icons/cg";
-import Mobile_UL from "./Mobile_UL";
+import Mobile_Items from "./Mobile_Items";
 
 const styles = {
 	main__open: "snap-x z-10  fixed left-0 top-0 w-full h-screen bg-black/70",
@@ -11,8 +11,8 @@ const styles = {
 	main__div__close: "fixed top-10 left-[-100%] ease-in duration-500",
 	main__header: "flex justify-between items-center",
 	main__header__aside: "logo sm:mr-40",
-	main__header__div:
-		"navClose rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer",
+	main__header__closeBtn:
+		"navClose rounded-full  p-3 shadow-inner shadow-sky-100 shadow-xl cursor-pointer",
 	main__div__div: "mottoCover border-b border-gray-300 my-4 text-sm sm:text-lg",
 };
 
@@ -32,7 +32,7 @@ function Mobile__Nav({ nav, handleNav }: Mobile) {
 							Learn <strong>languages</strong>
 						</Link>
 					</aside>
-					<div onClick={handleNav} className={styles.main__header__div}>
+					<div onClick={handleNav} className={styles.main__header__closeBtn}>
 						<CgClose />
 					</div>
 				</header>
@@ -40,7 +40,7 @@ function Mobile__Nav({ nav, handleNav }: Mobile) {
 					<p>Evolution means everyday learning</p>
 				</div>
 
-				<Mobile_UL handleNav={handleNav} />
+				<Mobile_Items handleNav={handleNav} />
 
 			</div>
 		</main>

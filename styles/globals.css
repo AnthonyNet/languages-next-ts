@@ -113,6 +113,7 @@ nav,
 /* ------------------
 Animations
 --------------------- */
+
 details[open] summary ~ *,
 .starsDiv > *,
 nav {

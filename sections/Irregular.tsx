@@ -13,7 +13,7 @@ const styles = {
   section:
     "section_Responsive flex justify-center items-center responsiveSection",
   section_div:
-    "max-w-sm card my-8 xl:my-0 border-4 border-double border-blue-700 rounded-lg shadow-xl shadow-slate-600 text-center",
+    "max-w-sm card my-8 xl:my-0 border-4 border-double border-blue-700 rounded-lg shadow-lg shadow-sky-600 text-center",
   score_div: "py-3 px-6 border-b border-gray-300",
   btn_div: "border-t border-gray-300 text-gray-600",
   h5: "text-xl dark:bg-black font-medium mb-2 border-b border-gray-300",
