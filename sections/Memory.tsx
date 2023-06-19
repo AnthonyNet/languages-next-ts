@@ -26,6 +26,8 @@ const styles = {
 	section__div: "w-[200px] flex justify-between p-2 sm:p-4 font-bold mt-[10vh]",
 	article:
 		"w-full sm:w-[95%]  h-[79vh] border-solid border-2 border-indigo-600 grid  grid-cols-2 sm:grid-cols-4 grid-rows-8 sm:grid-rows-4 gap-2 sm:gap-4 grid-flow-row p-2",
+	h2: "text-lg sm:text-2xl",
+	navItem: "navItem"
 };
 
 //write simple function which return result of 1+1
@@ -135,27 +137,35 @@ function Memory() {
 
 
   return (
-    <section className={styles.section}>
-      <div className={styles.section__div}>
-        <button onClick={() => createData(IrregularVerbs)}>English</button>
-        <button onClick={() => createData(VerbenData)}>Deutsch</button>
-      </div>
-      <h2 className="text-lg sm:text-2xl">Score: {score}</h2>
+		<section className={styles.section}>
+			<div className={styles.section__div}>
+				<button
+					onClick={() => createData(IrregularVerbs)}
+					className={styles.navItem}>
+					English
+				</button>
+				<button
+					onClick={() => createData(VerbenData)}
+					className={styles.navItem}>
+					Deutsch
+				</button>
+			</div>
+			<h2 className={styles.h2}>Score: {score}</h2>
 
-      <article className={styles.article}>
-        {cards.map((item: Item, index: number) => {
-          return (
-            <MemoryCard
-              key={index}
-              id={index}
-              item={item}
-              handleClick={handleClick}
-            />
-          );
-        })}
-      </article>
-    </section>
-  );
+			<article className={styles.article}>
+				{cards.map((item: Item, index: number) => {
+					return (
+						<MemoryCard
+							key={index}
+							id={index}
+							item={item}
+							handleClick={handleClick}
+						/>
+					);
+				})}
+			</article>
+		</section>
+	);
 }
 
 export default Memory;

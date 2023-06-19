@@ -5,7 +5,7 @@ import { useState } from "react";
 import { IrregularVerbs } from "../myData";
 
 const style = {
-  input__Container: "w-full min-h-[90vh]",
+  section: "w-full min-h-[90vh] mt-[10vh]",
   form: "shadow-md rounded px-8 pt-6 pb-8 mb-4",
   input:
     'shadow appearance-none border rounded w-full py-2 px-3 leading-tight text-white focus:outline-none focus:shadow-outline',
@@ -22,7 +22,7 @@ const style = {
 function SearchIrregular() {
   const [search, setSearch] = useState("");
 
-  return <div className={style.input__Container}>
+  return <section className={style.section}>
         <form className={style.form}>
           <div>
             <input
@@ -103,7 +103,7 @@ function SearchIrregular() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 };
 
 export default SearchIrregular;

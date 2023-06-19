@@ -107,12 +107,15 @@ nav,
   background: var(--background-color);
 
 }
-nav .navItem{
+nav .navItem,
+article .navItem {
   color: var(--menu-item);
 }
-nav .navItem:hover{
+nav .navItem:hover,
+.navItem:hover{
   color: var(--menu-item-hover);
   transform: translateY(-5px);
+  transition: all 0.5s ease-in-out;
 }
 
 .navCover{
