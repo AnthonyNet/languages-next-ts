@@ -1,2721 +1,2721 @@
 export const OxfordB2: {
-wordTranslated: string;
-sentenceTranslated?: string;
+word: string;
+sentenceExample?: string;
 czWord: string;
 czSentence?: string;
 }[] = [
   {
-    wordTranslated: "	abandon  v.	",
-    sentenceTranslated: "	 her natural mother had abandoned her at an early age	",
+    word: "	abandon  v.	",
+    sentenceExample: "	 her natural mother had abandoned her at an early age	",
     czWord: "	opustit	",
   },
   {
-    wordTranslated: "	acceptable adj.	",
-    sentenceTranslated: "	 has tried to find a solution acceptable to everyone	",
+    word: "	acceptable adj.	",
+    sentenceExample: "	 has tried to find a solution acceptable to everyone	",
     czWord: "	přijatelný",
   },
   {
-    wordTranslated: "	accompany  v.	",
-    sentenceTranslated: "	 I don't want to go alone, can you accompany me?	",
+    word: "	accompany  v.	",
+    sentenceExample: "	 I don't want to go alone, can you accompany me?	",
     czWord: "	doprovázet",
   },
   {
-    wordTranslated: "	account  v.	",
-    sentenceTranslated: "	 be accounted	",
+    word: "	account  v.	",
+    sentenceExample: "	 be accounted	",
     czWord: "	účet být považován",
   },
   {
-    wordTranslated: "	accurate adj.	",
-    sentenceTranslated: "	 accurate shooter	",
+    word: "	accurate adj.	",
+    sentenceExample: "	 accurate shooter	",
     czWord: "	přesný",
   },
   {
-    wordTranslated: "	accuse  v.	",
-    sentenceTranslated: "	 falsely accused He accused him of theft	",
+    word: "	accuse  v.	",
+    sentenceExample: "	 falsely accused He accused him of theft	",
     czWord: "	obvinit křivě obviněný ",
     czSentence: "	 Obvinil ho z krádeže	",
   },
   {
-    wordTranslated: "	acknowledge  v.	",
-    sentenceTranslated:
+    word: "	acknowledge  v.	",
+    sentenceExample:
       "	 His friends had to acknowledge he's a good programmer.	",
     czWord: "	uznat",
   },
   {
-    wordTranslated: "	acquire  v.	",
-    sentenceTranslated: "	 I managed to acquire all the books I needed.	",
+    word: "	acquire  v.	",
+    sentenceExample: "	 I managed to acquire all the books I needed.	",
     czWord: "	získat",
     czSentence: "	 Podařilo se mi získat všechny knihy, které jsem potřeboval	",
   },
   {
-    wordTranslated: "	actual adj.	",
-    sentenceTranslated: "	 those were his actual words	",
+    word: "	actual adj.	",
+    sentenceExample: "	 those were his actual words	",
     czWord: "	skutečný ",
     czSentence: "	 to byla jeho skutečná slova	",
   },
   {
-    wordTranslated: "	adapt  v.	",
-    sentenceTranslated: "	 Adapt yourself the you´ll survive	",
+    word: "	adapt  v.	",
+    sentenceExample: "	 Adapt yourself the you´ll survive	",
     czWord: "	přizpůsobit se",
   },
   {
-    wordTranslated: "additional adj.",
+    word: "additional adj.",
     czWord: "přídavný",
   },
   {
-    wordTranslated: "	administration n.	",
+    word: "	administration n.	",
 
     czWord: "	správa, administrativa",
   },
   {
-    wordTranslated: "	adopt  v.	",
-    sentenceTranslated: "	 he adopted a patronizing tone	",
+    word: "	adopt  v.	",
+    sentenceExample: "	 he adopted a patronizing tone	",
     czWord: "	přijmout, adoptovat ",
     czSentence: "	 přijal povýšenecký tón	",
   },
   {
-    wordTranslated: "	advance n. v. adj.	",
-    sentenceTranslated: "	 the advance of civilization army advanced	",
+    word: "	advance n. v. adj.	",
+    sentenceExample: "	 the advance of civilization army advanced	",
     czWord: "	pokrok, postup, záloha",
   },
-  { wordTranslated: "	affair n.	", czWord: "	aféra" },
+  { word: "	affair n.	", czWord: "	aféra" },
   {
-    wordTranslated: "	afterwards ad v.	",
-    sentenceTranslated: "	 the offender was arrested shortly afterwards	",
+    word: "	afterwards ad v.	",
+    sentenceExample: "	 the offender was arrested shortly afterwards	",
     czWord: "	poté, později",
   },
   {
-    wordTranslated: "	agency n.	",
+    word: "	agency n.	",
 
     czWord: "	agentura, kancelář",
   },
   {
-    wordTranslated: "	agenda n.	",
-    sentenceTranslated: "	 the government had its own agenda	",
+    word: "	agenda n.	",
+    sentenceExample: "	 the government had its own agenda	",
     czWord: "	denní program",
   },
   {
-    wordTranslated: "	aid n.  v.	",
-    sentenceTranslated:
+    word: "	aid n.  v.	",
+    sentenceExample:
       "	 women were aided in childbirth by midwives 700,000 tons of food aid	",
     czWord: "	pomoc ",
     czSentence: "	 ženám při porodu pomáhaly porodní asistentky	",
   },
   {
-    wordTranslated: "	aircraft n.	",
+    word: "	aircraft n.	",
 
     czWord: "	letadlo",
   },
-  { wordTranslated: "	alter  v.	", czWord: "	změnit" },
+  { word: "	alter  v.	", czWord: "	změnit" },
   {
-    wordTranslated: "	amount  v.	",
-    sentenceTranslated: "	 losses amounted to over 10 million dollars	",
+    word: "	amount  v.	",
+    sentenceExample: "	 losses amounted to over 10 million dollars	",
     czWord: "	částka, činit",
   },
-  { wordTranslated: "	anger n.	", czWord: "	hněv" },
-  { wordTranslated: "	angle n.	", czWord: "	úhel" },
+  { word: "	anger n.	", czWord: "	hněv" },
+  { word: "	angle n.	", czWord: "	úhel" },
   {
-    wordTranslated: "	anniversary n.	",
+    word: "	anniversary n.	",
 
     czWord: "	výročí",
   },
-  { wordTranslated: "	annual adj.	", czWord: "	roční" },
+  { word: "	annual adj.	", czWord: "	roční" },
   {
-    wordTranslated: "	anxious adj.	",
-    sentenceTranslated: "	 she was extremely anxious about her exams	",
+    word: "	anxious adj.	",
+    sentenceExample: "	 she was extremely anxious about her exams	",
     czWord: "	úzkostný, znepokojený",
   },
   {
-    wordTranslated: "	apparent adj.	",
-    sentenceTranslated: "	 his apparent lack of concern	",
+    word: "	apparent adj.	",
+    sentenceExample: "	 his apparent lack of concern	",
     czWord: "	zdánlivý, zjevný ",
     czSentence: "	 jeho zjevný nedostatek starostí	",
   },
   {
-    wordTranslated: "	apparently ad v.	",
-    sentenceTranslated: "	 I'm apparently not as good as I thought	",
+    word: "	apparently ad v.	",
+    sentenceExample: "	 I'm apparently not as good as I thought	",
     czWord: "	zřejmě",
   },
   {
-    wordTranslated: "	appeal n.  v.	",
-    sentenceTranslated:
+    word: "	appeal n.  v.	",
+    sentenceExample:
       "	 He appealed to Adam to bring back what he stole. He said he would appeal against the conviction.	",
     czWord: "	apelovat, odvolání",
   },
   {
-    wordTranslated: "	approach n. v	",
-    sentenceTranslated: "	 Slow down as you approach the corner.	",
+    word: "	approach n. v	",
+    sentenceExample: "	 Slow down as you approach the corner.	",
     czWord: "	přiblížit se, přístup",
   },
   {
-    wordTranslated: "	appropriate adj.	",
-    sentenceTranslated:
+    word: "	appropriate adj.	",
+    sentenceExample:
       "	 What is appropriate external soundcard with headphones?	",
     czWord: "	vhodný",
   },
   {
-    wordTranslated: "	approval n.	",
-    sentenceTranslated: "	 the road plans have been given approval	",
+    word: "	approval n.	",
+    sentenceExample: "	 the road plans have been given approval	",
     czWord: "	schválení",
   },
   {
-    wordTranslated: "	approve  v.	",
-    sentenceTranslated: "	 I approve it to you	",
+    word: "	approve  v.	",
+    sentenceExample: "	 I approve it to you	",
     czWord: "	schválit",
   },
   {
-    wordTranslated: "	arise  v.	",
-    sentenceTranslated: "	 new difficulties had arisen	",
+    word: "	arise  v.	",
+    sentenceExample: "	 new difficulties had arisen	",
     czWord: "	vzniknout ",
     czSentence: "	 objevily se nové potíže	",
   },
   {
-    wordTranslated: "	armed adj.	",
+    word: "	armed adj.	",
 
     czWord: "	ozbrojený",
   },
   {
-    wordTranslated: "	arms n.	",
-    sentenceTranslated: "	 arms exports	",
+    word: "	arms n.	",
+    sentenceExample: "	 arms exports	",
     czWord: "	zbraně, náručí",
   },
   {
-    wordTranslated: "	artificial adj.	",
+    word: "	artificial adj.	",
 
     czWord: "	umělý",
   },
   {
-    wordTranslated: "	artistic adj.	",
+    word: "	artistic adj.	",
 
     czWord: "	umělecký",
   },
   {
-    wordTranslated: "	ashamed adj.	",
+    word: "	ashamed adj.	",
 
     czWord: "	zahanbený",
   },
   {
-    wordTranslated: "	assess  v.	",
-    sentenceTranslated: "	 judge must assess who is guilty	",
+    word: "	assess  v.	",
+    sentenceExample: "	 judge must assess who is guilty	",
     czWord: "	posoudit, odhadnout",
   },
   {
-    wordTranslated: "	assessment n.	",
-    sentenceTranslated: "	 Assessment of candidates	",
+    word: "	assessment n.	",
+    sentenceExample: "	 Assessment of candidates	",
     czWord: "	hodnocení",
   },
   {
-    wordTranslated: "	associate  v.	",
-    sentenceTranslated:
+    word: "	associate  v.	",
+    sentenceExample:
       "	 a business associate I associated wealth with freedom	",
     czWord: "	společník, spojovat",
   },
   {
-    wordTranslated: "	associated adj.	",
+    word: "	associated adj.	",
 
     czWord: "	sdružený",
   },
   {
-    wordTranslated: "	association n.	",
-    sentenceTranslated: "	 the National Association of Broadcasters	",
+    word: "	association n.	",
+    sentenceExample: "	 the National Association of Broadcasters	",
     czWord: "	sdružení",
   },
   {
-    wordTranslated: "	assume  v.	",
-    sentenceTranslated: "	 I assume he's gayhe assumed full responsibility	",
+    word: "	assume  v.	",
+    sentenceExample: "	 I assume he's gayhe assumed full responsibility	",
     czWord: "	předpokládat, převzít",
   },
   {
-    wordTranslated: "	attempt n.  v.	",
+    word: "	attempt n.  v.	",
 
     czWord: "	pokus",
   },
   {
-    wordTranslated: "	back  v.	",
-    sentenceTranslated: "	 enty backed him	",
+    word: "	back  v.	",
+    sentenceExample: "	 enty backed him	",
     czWord: "	podporovat",
   },
   {
-    wordTranslated: "	bacteria n.	",
+    word: "	bacteria n.	",
 
     czWord: "	bakterie",
   },
   {
-    wordTranslated: "	bar  v.	",
-    sentenceTranslated: "	 She bars the door	",
+    word: "	bar  v.	",
+    sentenceExample: "	 She bars the door	",
     czWord: "	zatarasit",
   },
-  { wordTranslated: "	barrier n.	", czWord: "	bariéra" },
+  { word: "	barrier n.	", czWord: "	bariéra" },
   {
-    wordTranslated: "	basically ad v.	",
-    sentenceTranslated: "	 People are basically monsters	",
+    word: "	basically ad v.	",
+    sentenceExample: "	 People are basically monsters	",
     czWord: "	v podstatě",
   },
-  { wordTranslated: "	battle  v.	", czWord: "	bojovat" },
+  { word: "	battle  v.	", czWord: "	bojovat" },
   {
-    wordTranslated: "	bear (deal with)  v.	",
-    sentenceTranslated: "	 carry the weighshe could hardly bear his sarcasm	",
+    word: "	bear (deal with)  v.	",
+    sentenceExample: "	 carry the weighshe could hardly bear his sarcasm	",
     czWord: "	nést (zabývat se) ",
     czSentence: "	 stěží snesla jeho sarkasmus	",
   },
   {
-    wordTranslated: "	beat n.	",
+    word: "	beat n.	",
 
     czWord: "	tlukot, takt, úder",
   },
-  { wordTranslated: "	beg  v.	", czWord: "	prosit" },
+  { word: "	beg  v.	", czWord: "	prosit" },
   {
-    wordTranslated: "	being n.	",
+    word: "	being n.	",
 
     czWord: "	Bytost, tvor",
   },
-  { wordTranslated: "	bent adj.	", czWord: "	ohnutý" },
+  { word: "	bent adj.	", czWord: "	ohnutý" },
   {
-    wordTranslated: "	beyond prep., ad v.	",
-    sentenceTranslated: "	 he pointed to a spot beyond the trees	",
+    word: "	beyond prep., ad v.	",
+    sentenceExample: "	 he pointed to a spot beyond the trees	",
     czWord: "	za, mimo, na druhé straně ",
     czSentence: "	 ukázal na místo za stromy	",
   },
-  { wordTranslated: "	bill  v.	", czWord: "	účtovat" },
-  { wordTranslated: "	bitter adj.	", czWord: "	hořký" },
+  { word: "	bill  v.	", czWord: "	účtovat" },
+  { word: "	bitter adj.	", czWord: "	hořký" },
   {
-    wordTranslated: "	blame  v. n.	",
-    sentenceTranslated: "	 don't blame me for your mistakes	",
+    word: "	blame  v. n.	",
+    sentenceExample: "	 don't blame me for your mistakes	",
     czWord: "	obviňovat",
   },
-  { wordTranslated: "	blind adj.	", czWord: "	slepý" },
+  { word: "	blind adj.	", czWord: "	slepý" },
   {
-    wordTranslated: "	bond n.	",
+    word: "	bond n.	",
 
     czWord: "	pouto, vázat",
   },
   {
-    wordTranslated: "	border  v.	",
-    sentenceTranslated: "	 a pool bordered by palm trees	",
+    word: "	border  v.	",
+    sentenceExample: "	 a pool bordered by palm trees	",
     czWord: "	hraničit",
   },
-  { wordTranslated: "	breast n.	", czWord: "	prsa" },
+  { word: "	breast n.	", czWord: "	prsa" },
   {
-    wordTranslated: "	brief adj.	",
-    sentenceTranslated: "	 Brief letter	",
+    word: "	brief adj.	",
+    sentenceExample: "	 Brief letter	",
     czWord: "	krátký, stručný Stručný dopis",
   },
-  { wordTranslated: "	broad adj.	", czWord: "	široký" },
+  { word: "	broad adj.	", czWord: "	široký" },
   {
-    wordTranslated: "	broadcast  v. n.	",
+    word: "	broadcast  v. n.	",
 
     czWord: "	vysílání",
   },
-  { wordTranslated: "	budget n.	", czWord: "	rozpočet" },
-  { wordTranslated: "	bullet n.	", czWord: "	kulka" },
-  { wordTranslated: "	bunch n.	", czWord: "	parta" },
-  { wordTranslated: "	burn n.	", czWord: "	spálit" },
-  { wordTranslated: "	bush n.	", czWord: "	keř" },
+  { word: "	budget n.	", czWord: "	rozpočet" },
+  { word: "	bullet n.	", czWord: "	kulka" },
+  { word: "	bunch n.	", czWord: "	parta" },
+  { word: "	burn n.	", czWord: "	spálit" },
+  { word: "	bush n.	", czWord: "	keř" },
   {
-    wordTranslated: "	calculate  v.	",
+    word: "	calculate  v.	",
 
     czWord: "	vypočítat",
   },
   {
-    wordTranslated: "	cancel  v.	",
-    sentenceTranslated: "	 he was forced to cancel his visit	",
+    word: "	cancel  v.	",
+    sentenceExample: "	 he was forced to cancel his visit	",
     czWord: "	zrušit ",
     czSentence: "	 byl nucen svou návštěvu zrušit	",
   },
   {
-    wordTranslated: "	capable adj.	",
-    sentenceTranslated: "	 He´s capable to do anything.	",
+    word: "	capable adj.	",
+    sentenceExample: "	 He´s capable to do anything.	",
     czWord: "	schopný",
   },
   {
-    wordTranslated: "	capacity n.	",
+    word: "	capacity n.	",
 
     czWord: "	kapacita",
   },
   {
-    wordTranslated: "	capture  v. n.	",
+    word: "	capture  v. n.	",
 
     czWord: "	zachytit, zajetí, zajmout",
   },
   {
-    wordTranslated: "	cast n.  v.	",
-    sentenceTranslated: "	 the moon cast a pale light over the cottage	",
+    word: "	cast n.  v.	",
+    sentenceExample: "	 the moon cast a pale light over the cottage	",
     czWord: "	obsazení, házet, vrhat",
     czSentence: "	 měsíc vrhal na chaloupku bledé světlo	",
   },
-  { wordTranslated: "	catch n.	", czWord: "	chytit" },
-  { wordTranslated: "	cell n.	", czWord: "	buňka" },
+  { word: "	catch n.	", czWord: "	chytit" },
+  { word: "	cell n.	", czWord: "	buňka" },
   {
-    wordTranslated: "	chain  v.	",
-    sentenceTranslated: "	 she chained her bicycle to the railing	",
+    word: "	chain  v.	",
+    sentenceExample: "	 she chained her bicycle to the railing	",
     czWord: "	připoutat, přivázat řetězem ",
     czSentence: "	 připoutala kolo řetězem k zábradlí	",
   },
   {
-    wordTranslated: "	chair  v.	",
-    sentenceTranslated: "	 the debate was chaired by the Archbishop of York	",
+    word: "	chair  v.	",
+    sentenceExample: "	 the debate was chaired by the Archbishop of York	",
     czWord: "	předsedat",
   },
   {
-    wordTranslated: "	chairman n.	",
+    word: "	chairman n.	",
 
     czWord: "	předseda",
   },
   {
-    wordTranslated: "	challenge  v.	",
+    word: "	challenge  v.	",
 
     czWord: "	výzva",
   },
   {
-    wordTranslated: "	chart  v.	",
-    sentenceTranslated: "	 Cook charted the coasts and waters of New Zealand	",
+    word: "	chart  v.	",
+    sentenceExample: "	 Cook charted the coasts and waters of New Zealand	",
     czWord: "	zmapovat ",
     czSentence: "	 Cook zmapoval pobřeží a vody Nového Zélandu	",
   },
   {
-    wordTranslated: "	chief adj. n.	",
-    sentenceTranslated: "	 the chief reason for the spending cuts	",
+    word: "	chief adj. n.	",
+    sentenceExample: "	 the chief reason for the spending cuts	",
     czWord: "	hlavní, šéf ",
     czSentence: "	 hlavní důvod škrtů ve výdajích	",
   },
   {
-    wordTranslated: "	circumstance n.	",
+    word: "	circumstance n.	",
 
     czWord: "	okolnost",
   },
-  { wordTranslated: "	cite  v.	", czWord: "	citovat" },
-  { wordTranslated: "	citizen n.	", czWord: "	občan" },
+  { word: "	cite  v.	", czWord: "	citovat" },
+  { word: "	citizen n.	", czWord: "	občan" },
   {
-    wordTranslated: "	civil adj.	",
+    word: "	civil adj.	",
 
     czWord: "	občanský",
   },
   {
-    wordTranslated: "	closely ad v.	",
-    sentenceTranslated: "	 He missed his head closely	",
+    word: "	closely ad v.	",
+    sentenceExample: "	 He missed his head closely	",
     czWord: "	těsně",
   },
   {
-    wordTranslated: "	collapse  v. n.	",
-    sentenceTranslated: "	 collapse after using drugs	",
+    word: "	collapse  v. n.	",
+    sentenceExample: "	 collapse after using drugs	",
     czWord: "	kolaps, zhroucení",
   },
   {
-    wordTranslated: "	combination n.	",
+    word: "	combination n.	",
 
     czWord: "	kombinace",
   },
   {
-    wordTranslated: "	comfort n. v.	",
-    sentenceTranslated:
+    word: "	comfort n. v.	",
+    sentenceExample:
       "	 she broke down in tears and her friend tried to comfort her	",
     czWord: "	pohodlí, utěšit ",
     czSentence: "	 propukla v slzy a její přítel se ji snažil utěšit	",
   },
   {
-    wordTranslated: "	command n. v.	",
+    word: "	command n. v.	",
 
     czWord: "	příkaz, velet, přikázat",
   },
   {
-    wordTranslated: "	commission n.  v.	",
-    sentenceTranslated:
+    word: "	commission n.  v.	",
+    sentenceExample:
       "	 They commissioned me to write a series of articles on language.	",
     czWord: "	komise, pověření, provize ",
     czSentence: "	 Pověřili mě, abych napsal sérii článků o jazyce.	",
   },
   {
-    wordTranslated: "	commitment n.	",
-    sentenceTranslated: "	 commitment to take care of kids	",
+    word: "	commitment n.	",
+    sentenceExample: "	 commitment to take care of kids	",
     czWord: "	závazek",
   },
   {
-    wordTranslated: "	committee n.	",
+    word: "	committee n.	",
 
     czWord: "	výbor, komise",
   },
   {
-    wordTranslated: "	commonly ad v.	",
+    word: "	commonly ad v.	",
 
     czWord: "	běžně",
   },
   {
-    wordTranslated: "	complicated adj.	",
+    word: "	complicated adj.	",
 
     czWord: "	složitý",
   },
   {
-    wordTranslated: "	concept n.	",
-    sentenceTranslated: "	 russia is a difficult concept	",
+    word: "	concept n.	",
+    sentenceExample: "	 russia is a difficult concept	",
     czWord: "	pojem",
   },
   {
-    wordTranslated: "	concern n. v.	",
-    sentenceTranslated: "	 be concerned	",
+    word: "	concern n. v.	",
+    sentenceExample: "	 be concerned	",
     czWord: "	znepokojení, starost mít starost, dělat si starosti",
   },
   {
-    wordTranslated: "	concerned adj.	",
-    sentenceTranslated:
+    word: "	concerned adj.	",
+    sentenceExample:
       "	 the villagers are concerned about zombiesgrandma is concerned	",
     czWord: "	znepokojený, ustaraný",
   },
   {
-    wordTranslated: "	conduct  v. n.	",
-    sentenceTranslated:
+    word: "	conduct  v. n.	",
+    sentenceExample:
       "	 conduct an investigation disorderly conduct, being disorderly	",
     czWord: "	vést, chování ",
     czSentence: "	 vést vyšetřování, výtržnictví, rušení veřejného pořádku	",
   },
   {
-    wordTranslated: "	confidence n.	",
-    sentenceTranslated: "	 confidence in government	",
+    word: "	confidence n.	",
+    sentenceExample: "	 confidence in government	",
     czWord: "	důvěra",
   },
   {
-    wordTranslated: "	conflict n. v.	",
-    sentenceTranslated: "	 parents' and children's interests sometimes conflict	",
+    word: "	conflict n. v.	",
+    sentenceExample: "	 parents' and children's interests sometimes conflict	",
     czWord: "	konflikt, být v rozporu",
   },
   {
-    wordTranslated: "	confusing adj.	",
+    word: "	confusing adj.	",
 
     czWord: "	matoucí",
   },
   {
-    wordTranslated: "	conscious adj.	",
-    sentenceTranslated: "	 He is conscious what he's doing	",
+    word: "	conscious adj.	",
+    sentenceExample: "	 He is conscious what he's doing	",
     czWord: "	vědomý",
   },
   {
-    wordTranslated: "	conservative adj.	",
-   
+    word: "	conservative adj.	",
+
     czWord: "	konzervativní, opatrný",
   },
   {
-    wordTranslated: "	consideration n.	",
-    sentenceTranslated:
+    word: "	consideration n.	",
+    sentenceExample:
       "	 companies should show more consideration for their employees	",
     czWord: "	ohled, ohleduplnost, pozornost, úvaha ",
     czSentence: "	 společnosti by měly více brát ohled na své zaměstnance	",
   },
   {
-    wordTranslated: "	consistent adj.	",
-    sentenceTranslated:
+    word: "	consistent adj.	",
+    sentenceExample:
       "	 To be better you should be more consistent You should stay consistent in your opinions	",
     czWord: "	důsledný, konzistentní",
   },
   {
-    wordTranslated: "	constant adj.	",
-    sentenceTranslated: "	 the pain is constant	",
+    word: "	constant adj.	",
+    sentenceExample: "	 the pain is constant	",
     czWord: "	stálý",
   },
   {
-    wordTranslated: "	constantly ad v.	",
-    sentenceTranslated: "	 the world is constantly changing	",
+    word: "	constantly ad v.	",
+    sentenceExample: "	 the world is constantly changing	",
     czWord: "	neustále",
   },
   {
-    wordTranslated: "	construct  v.	",
-    sentenceTranslated: "	 a company that constructs oil rigs	",
+    word: "	construct  v.	",
+    sentenceExample: "	 a company that constructs oil rigs	",
     czWord: "	postavit ",
     czSentence: "	 společnost, která staví ropné plošiny	",
   },
   {
-    wordTranslated: "	construction n.	",
+    word: "	construction n.	",
 
     czWord: "	konstrukce",
   },
   {
-    wordTranslated: "	contemporary adj.	",
-    sentenceTranslated: "	the event was recorded by a contemporary historian	",
+    word: "	contemporary adj.	",
+    sentenceExample: "	the event was recorded by a contemporary historian	",
     czWord: "	současný ",
   },
   {
-    wordTranslated: "	contest n.  v.	",
+    word: "	contest n.  v.	",
 
     czWord: "	soutěž",
   },
   {
-    wordTranslated: "	contract n.  v.	",
-    sentenceTranslated: "	 glass contracts as it cools	",
+    word: "	contract n.  v.	",
+    sentenceExample: "	 glass contracts as it cools	",
     czWord: "	smlouva, smršťovat",
   },
   {
-    wordTranslated: "	contribute  v.	",
-    sentenceTranslated: "	 contribute to charity	",
+    word: "	contribute  v.	",
+    sentenceExample: "	 contribute to charity	",
     czWord: "	přispět",
   },
   {
-    wordTranslated: "	contribution n.	",
+    word: "	contribution n.	",
 
     czWord: "	příspěvek",
   },
   {
-    wordTranslated: "	convert  v.	",
+    word: "	convert  v.	",
 
     czWord: "	převést",
   },
   {
-    wordTranslated: "	convinced adj.	",
-    sentenceTranslated: "	 she was not entirely convinced	",
+    word: "	convinced adj.	",
+    sentenceExample: "	 she was not entirely convinced	",
     czWord: "	přesvědčený ",
     czSentence: "	  nebyla zcela přesvědčena	",
   },
   {
-    wordTranslated: "	corporate adj.	",
+    word: "	corporate adj.	",
 
     czWord: "	podnikový",
   },
   {
-    wordTranslated: "	council n.	",
-    sentenceTranslated: "	 an official human rights council	",
+    word: "	council n.	",
+    sentenceExample: "	 an official human rights council	",
     czWord: "	rada ",
     czSentence: "	  oficiální rada pro lidská práva	",
   },
   {
-    wordTranslated: "	county n.	",
+    word: "	county n.	",
 
     czWord: "	kraj, okres",
   },
   {
-    wordTranslated: "	courage n.	",
-    sentenceTranslated: "	 Kookis has no courage.	",
+    word: "	courage n.	",
+    sentenceExample: "	 Kookis has no courage.	",
     czWord: "	odvaha, kuráž",
   },
   {
-    wordTranslated: "	crash n.  v.	",
+    word: "	crash n.  v.	",
 
     czWord: "	havárie",
   },
   {
-    wordTranslated: "	creation n.	",
+    word: "	creation n.	",
 
     czWord: "	tvorba, stvoření",
   },
   {
-    wordTranslated: "	creature n.	",
+    word: "	creature n.	",
 
     czWord: "	stvoření",
   },
   {
-    wordTranslated: "	credit  v.	",
-    sentenceTranslated:
+    word: "	credit  v.	",
+    sentenceExample:
       "	 the bank refused to extend their credit the screenplay is credited to one American and two Japanese writers	",
     czWord: "	úvěr, být připsán",
   },
   {
-    wordTranslated: "	crew n.	",
+    word: "	crew n.	",
 
     czWord: "	posádka, parta",
   },
-  { wordTranslated: "	crisis n.	", czWord: "	krize" },
+  { word: "	crisis n.	", czWord: "	krize" },
   {
-    wordTranslated: "	criterion n.	",
-    sentenceTranslated: "	 violating safety criteria	",
+    word: "	criterion n.	",
+    sentenceExample: "	 violating safety criteria	",
     czWord: "	kritérium ",
     czSentence: "	  porušení bezpečnostních kritérií	",
   },
-  { wordTranslated: "	critic n.	", czWord: "	kritik" },
+  { word: "	critic n.	", czWord: "	kritik" },
   {
-    wordTranslated: "	critical adj.	",
+    word: "	critical adj.	",
 
     czWord: "	kritický",
   },
   {
-    wordTranslated: "	criticism n.	",
+    word: "	criticism n.	",
 
     czWord: "	kritika",
   },
-  { wordTranslated: "	crop n.	", czWord: "	plodina" },
+  { word: "	crop n.	", czWord: "	plodina" },
   {
-    wordTranslated: "	crucial adj.	",
-    sentenceTranslated: "	 English in programming is crucial	",
+    word: "	crucial adj.	",
+    sentenceExample: "	 English in programming is crucial	",
     czWord: "	rozhodující",
   },
   {
-    wordTranslated: "	cry n.	",
-    sentenceTranslated: "	 a cry of despair	",
+    word: "	cry n.	",
+    sentenceExample: "	 a cry of despair	",
     czWord: "	pláč, křik, volání ",
     czSentence: "	  výkřik zoufalství	",
   },
-  { wordTranslated: "	cure  v. n.	", czWord: "	léčit" },
-  { wordTranslated: "	current n.	", czWord: "	proud" },
+  { word: "	cure  v. n.	", czWord: "	léčit" },
+  { word: "	current n.	", czWord: "	proud" },
   {
-    wordTranslated: "	curve n.  v.	",
-    sentenceTranslated: "	 the population curve	",
+    word: "	curve n.  v.	",
+    sentenceExample: "	 the population curve	",
     czWord: "	křivka, křivit, ohýbat",
   },
   {
-    wordTranslated: "	curved adj.	",
-    sentenceTranslated: "	 curved mirror	",
+    word: "	curved adj.	",
+    sentenceExample: "	 curved mirror	",
     czWord: "	zakřivený",
   },
-  { wordTranslated: "	debt n.	", czWord: "	dluh" },
+  { word: "	debt n.	", czWord: "	dluh" },
   {
-    wordTranslated: "	decent adj.	",
-    sentenceTranslated: "	 Georgie is a decent manmake yourself decent	",
+    word: "	decent adj.	",
+    sentenceExample: "	 Georgie is a decent manmake yourself decent	",
     czWord: "	slušný ",
     czSentence: "	  udělej se slušným	",
   },
   {
-    wordTranslated: "	declare  v.	",
-    sentenceTranslated: "	 georgie declare nonsense	",
+    word: "	declare  v.	",
+    sentenceExample: "	 georgie declare nonsense	",
     czWord: "	prohlásit",
   },
   {
-    wordTranslated: "	decline  v. n.	",
+    word: "	decline  v. n.	",
 
     czWord: "	pokles, odmítnout",
   },
   {
-    wordTranslated: "	decrease  v. n.	",
+    word: "	decrease  v. n.	",
 
     czWord: "	pokles",
   },
   {
-    wordTranslated: "	deeply ad v.	",
+    word: "	deeply ad v.	",
 
     czWord: "	hluboce",
   },
   {
-    wordTranslated: "	defeat  v. n.	",
+    word: "	defeat  v. n.	",
 
     czWord: "	porážka",
   },
-  { wordTranslated: "	defend  v.	", czWord: "	bránit" },
+  { word: "	defend  v.	", czWord: "	bránit" },
   {
-    wordTranslated: "	delay  v. n.	",
+    word: "	delay  v. n.	",
 
     czWord: "	zpoždění, oddálit, odložit",
   },
   {
-    wordTranslated: "	deliberate adj.	",
-    sentenceTranslated: "	 a deliberate attempt to provoke conflict	",
+    word: "	deliberate adj.	",
+    sentenceExample: "	 a deliberate attempt to provoke conflict	",
     czWord: "	záměrný, úmyslný",
   },
   {
-    wordTranslated: "	deliberately the fire was started deliberately	",
+    word: "	deliberately the fire was started deliberately	",
 
     czWord: "	záměrně, úmyslně",
   },
   {
-    wordTranslated: "	delight  v. n.	",
-    sentenceTranslated: "	 The little girls squealed with delight	",
+    word: "	delight  v. n.	",
+    sentenceExample: "	 The little girls squealed with delight	",
     czWord: "	potěšení ",
     czSentence: "	 Děvčata ječela radostí	",
   },
   {
-    wordTranslated: "	delighted adj.	",
+    word: "	delighted adj.	",
 
     czWord: "	potěšený",
   },
   {
-    wordTranslated: "	delivery n.	",
+    word: "	delivery n.	",
 
     czWord: "	dodávka",
   },
   {
-    wordTranslated: "	demand n.  v.	",
-    sentenceTranslated:
+    word: "	demand n.  v.	",
+    sentenceExample:
       "	 Yes programmers are in high demand I demand more money	",
     czWord: "	poptávka, požadovat",
   },
   {
-    wordTranslated: "	demonstrate  v.	",
+    word: "	demonstrate  v.	",
 
     czWord: "	demonstrovat, ukázat",
   },
   {
-    wordTranslated: "	deny  v.	",
-    sentenceTranslated:
+    word: "	deny  v.	",
+    sentenceExample:
       "	 they deny any responsibility for the tragedyAn atheist denies the existence of God.	",
     czWord: "	popřít",
   },
   {
-    wordTranslated: "	depressed adj.	",
+    word: "	depressed adj.	",
 
     czWord: "	depresivní",
   },
-  { wordTranslated: "	depth n.	", czWord: "	hloubka" },
+  { word: "	depth n.	", czWord: "	hloubka" },
   {
-    wordTranslated: "	desert  v.	",
+    word: "	desert  v.	",
 
     czWord: "	opustit, dezertovat",
   },
   {
-    wordTranslated: "	deserve  v.	",
+    word: "	deserve  v.	",
 
     czWord: "	zasloužit si",
   },
   {
-    wordTranslated: "	desire n.  v.	",
-    sentenceTranslated: "	 my desire is to be a programmer	",
+    word: "	desire n.  v.	",
+    sentenceExample: "	 my desire is to be a programmer	",
     czWord: "	touha, přání",
   },
   {
-    wordTranslated: "	desperate adj.	",
+    word: "	desperate adj.	",
 
     czWord: "	zoufalý",
   },
   {
-    wordTranslated: "	detail  v.	",
-    sentenceTranslated: "	 Can you detail me what happened?	",
+    word: "	detail  v.	",
+    sentenceExample: "	 Can you detail me what happened?	",
     czWord: "	vylíčit, detail",
   },
   {
-    wordTranslated: "	detailed adj.	",
+    word: "	detailed adj.	",
 
     czWord: "	podrobný",
   },
   {
-    wordTranslated: "	detect  v.	",
+    word: "	detect  v.	",
 
     czWord: "	detekovat",
   },
-  { wordTranslated: "	dig  v.	", czWord: "	kopat" },
+  { word: "	dig  v.	", czWord: "	kopat" },
   {
-    wordTranslated: "	disc n.	",
+    word: "	disc n.	",
 
     czWord: "	kotouč, disk č.",
   },
   {
-    wordTranslated: "	discount  v.	",
+    word: "	discount  v.	",
 
     czWord: "	zlevnit",
   },
   {
-    wordTranslated: "	dishonest adj.	",
-    sentenceTranslated: "	 Guys like Adam are dishonest.	",
+    word: "	dishonest adj.	",
+    sentenceExample: "	 Guys like Adam are dishonest.	",
     czWord: "	nečestný",
   },
   {
-    wordTranslated: "	dismiss  v.	",
+    word: "	dismiss  v.	",
 
     czWord: "	propustit, zavrhnout",
   },
   {
-    wordTranslated: "	display  v. n.	",
+    word: "	display  v. n.	",
 
     czWord: "	zobrazení",
   },
   {
-    wordTranslated: "	distribute  v.	",
+    word: "	distribute  v.	",
 
     czWord: "	distribuovat",
   },
   {
-    wordTranslated: "	district n.	",
+    word: "	district n.	",
 
     czWord: "	okres, čtvrť",
   },
-  { wordTranslated: "	divide n.	", czWord: "	rozdělit" },
+  { word: "	divide n.	", czWord: "	rozdělit" },
   {
-    wordTranslated: "	division n.	",
+    word: "	division n.	",
 
     czWord: "	oddělení, divize",
   },
   {
-    wordTranslated: "	domestic adj.	",
+    word: "	domestic adj.	",
 
     czWord: "	domácí, vnitrostátní",
   },
   {
-    wordTranslated: "	dominate  v.	",
-    sentenceTranslated: "	 Stupidity dominatesdominate the country	",
+    word: "	dominate  v.	",
+    sentenceExample: "	 Stupidity dominatesdominate the country	",
     czWord: "	ovládat",
   },
   {
-    wordTranslated: "	downwards ad v.	",
+    word: "	downwards ad v.	",
 
     czWord: "	dolů",
   },
-  { wordTranslated: "	dozen n.	", czWord: "	tucet" },
+  { word: "	dozen n.	", czWord: "	tucet" },
   {
-    wordTranslated: "	draft n.  v.	",
-    sentenceTranslated: "	 its my draft	",
+    word: "	draft n.  v.	",
+    sentenceExample: "	 its my draft	",
     czWord: "	návrh, tah",
   },
-  { wordTranslated: "	drag  v.	", czWord: "	táhnout" },
-  { wordTranslated: "	edit  v.	", czWord: "	upravit" },
-  { wordTranslated: "	edition n.	", czWord: "	vydání" },
+  { word: "	drag  v.	", czWord: "	táhnout" },
+  { word: "	edit  v.	", czWord: "	upravit" },
+  { word: "	edition n.	", czWord: "	vydání" },
   {
-    wordTranslated: "	efficient adj.	",
-    sentenceTranslated: "	 Really efficient weapon	",
+    word: "	efficient adj.	",
+    sentenceExample: "	 Really efficient weapon	",
     czWord: "	účinný",
   },
   {
-    wordTranslated: "	elderly adj.	",
+    word: "	elderly adj.	",
 
     czWord: "	starší",
   },
-  { wordTranslated: "	elect  v.	", czWord: "	zvolit" },
+  { word: "	elect  v.	", czWord: "	zvolit" },
   {
-    wordTranslated: "	elsewhere ad v.	",
-    sentenceTranslated: "	 Man its disgusting, do it elsewhere	",
+    word: "	elsewhere ad v.	",
+    sentenceExample: "	 Man its disgusting, do it elsewhere	",
     czWord: "	jinde, někde jinde",
   },
   {
-    wordTranslated: "	emerge  v.	",
-    sentenceTranslated: "	 black ravens emerged from the fog	",
+    word: "	emerge  v.	",
+    sentenceExample: "	 black ravens emerged from the fog	",
     czWord: "	vynořit se, objevit se",
   },
   {
-    wordTranslated: "	emotional adj.	",
+    word: "	emotional adj.	",
 
     czWord: "	citový",
   },
   {
-    wordTranslated: "	emphasis n.	",
-    sentenceTranslated:
+    word: "	emphasis n.	",
+    sentenceExample:
       "	 they placed great emphasis on the individual's freedom	",
     czWord: "	důraz",
   },
   {
-    wordTranslated: "	emphasize  v.	",
+    word: "	emphasize  v.	",
 
     czWord: "	zdůraznit",
   },
   {
-    wordTranslated: "	enable  v.	",
+    word: "	enable  v.	",
 
     czWord: "	povolit, umožnit",
   },
   {
-    wordTranslated: "	encounter  v. n.	",
+    word: "	encounter  v. n.	",
 
     czWord: "	setkat se",
   },
   {
-    wordTranslated: "	engage  v.	",
-    sentenceTranslated: "	 organizations engage in a variety of activities	",
+    word: "	engage  v.	",
+    sentenceExample: "	 organizations engage in a variety of activities	",
     czWord: "	angažovat se",
   },
   {
-    wordTranslated: "	enhance  v.	",
-    sentenceTranslated: "	 I should enhance my skills	",
+    word: "	enhance  v.	",
+    sentenceExample: "	 I should enhance my skills	",
     czWord: "	zlepšit",
   },
   {
-    wordTranslated: "	enquiry n.	",
-    sentenceTranslated: "	 no enquiry for george	",
+    word: "	enquiry n.	",
+    sentenceExample: "	 no enquiry for george	",
     czWord: "	dotaz",
   },
   {
-    wordTranslated: "	ensure  v.	",
-    sentenceTranslated: "	 she would ensure him a place in society	",
+    word: "	ensure  v.	",
+    sentenceExample: "	 she would ensure him a place in society	",
     czWord: "	zajistit ",
     czSentence: "	  zajistila by mu místo ve společnosti	",
   },
   {
-    wordTranslated: "	enthusiasm n.	",
+    word: "	enthusiasm n.	",
 
     czWord: "	nadšení",
   },
   {
-    wordTranslated: "	enthusiastic adj.	",
+    word: "	enthusiastic adj.	",
 
     czWord: "	nadšený",
   },
-  { wordTranslated: "	entire adj.	", czWord: "	celý" },
+  { word: "	entire adj.	", czWord: "	celý" },
   {
-    wordTranslated: "	entirely ad v.	",
-    sentenceTranslated: "	 we have an entirely different outlook	",
+    word: "	entirely ad v.	",
+    sentenceExample: "	 we have an entirely different outlook	",
     czWord: "	zcela ",
     czSentence: "	  máme úplně jiný pohled	",
   },
   {
-    wordTranslated: "	equal n.	",
-    sentenceTranslated: "	 we all treat each other as equals	",
+    word: "	equal n.	",
+    sentenceExample: "	 we all treat each other as equals	",
     czWord: "	sobě rovní",
   },
   {
-    wordTranslated: "	establish  v.	",
-    sentenceTranslated:
+    word: "	establish  v.	",
+    sentenceExample:
       "	 the British established a rich trade with Portugal Establish connection	",
     czWord: "	založit, navázat",
   },
   {
-    wordTranslated: "	estate n.	",
-    sentenceTranslated: "	 I´d like to have my own estate	",
+    word: "	estate n.	",
+    sentenceExample: "	 I´d like to have my own estate	",
     czWord: "	panství",
   },
   {
-    wordTranslated: "	estimate  v. n.	",
-    sentenceTranslated: "	 he estimated the number of rats	",
+    word: "	estimate  v. n.	",
+    sentenceExample: "	 he estimated the number of rats	",
     czWord: "	odhad ",
     czSentence: "	  odhadl počet krys	",
   },
   {
-    wordTranslated: "	evaluate  v.	",
-    sentenceTranslated: "	 How you evaluate the price of Bitcoin?	",
+    word: "	evaluate  v.	",
+    sentenceExample: "	 How you evaluate the price of Bitcoin?	",
     czWord: "	hodnotit",
   },
   {
-    wordTranslated: "	even adj.	",
+    word: "	even adj.	",
 
     czWord: "	sudý, dokonce, ani",
   },
   {
-    wordTranslated: "	examination n.	",
-    sentenceTranslated:
+    word: "	examination n.	",
+    sentenceExample:
       "	 Doctor did examination and examined him A school examination	",
     czWord: "	vyšetření, zkouška",
   },
   {
-    wordTranslated: "	excuse n.  v.	",
-    sentenceTranslated:
+    word: "	excuse n.  v.	",
+    sentenceExample:
       "	 Radley the second name mr. Excusethat pathetic excuse for a man!	",
     czWord: "	výmluva, omluva",
   },
   {
-    wordTranslated: "	executive n. adj.	",
-    sentenceTranslated: "	 an executive chairman	",
+    word: "	executive n. adj.	",
+    sentenceExample: "	 an executive chairman	",
     czWord: "	jednatel, výkonný vedoucí",
   },
   {
-    wordTranslated: "	expectation n.	",
+    word: "	expectation n.	",
 
     czWord: "	očekávání",
   },
-  { wordTranslated: "	expense n.	", czWord: "	výdaj" },
+  { word: "	expense n.	", czWord: "	výdaj" },
   {
-    wordTranslated: "	exploration n.	",
+    word: "	exploration n.	",
 
     czWord: "	průzkum",
   },
   {
-    wordTranslated: "	expose  v.	",
-    sentenceTranslated:
+    word: "	expose  v.	",
+    sentenceExample:
       "	 You don't want to expose like that!Clothes exposed one breast	",
     czWord: "	vystavit, odhalit",
   },
   {
-    wordTranslated: "	extent n.	",
-    sentenceTranslated: "	 the extent of the damage	",
+    word: "	extent n.	",
+    sentenceExample: "	 the extent of the damage	",
     czWord: "	rozsah ",
     czSentence: "	  rozsah poškození	",
   },
   {
-    wordTranslated: "	external adj.	",
+    word: "	external adj.	",
 
     czWord: "	vnější",
   },
   {
-    wordTranslated: "	extraordinary adj.	",
+    word: "	extraordinary adj.	",
 
     czWord: "	mimořádný",
   },
   {
-    wordTranslated: "	facility n.	",
+    word: "	facility n.	",
 
     czWord: "	zařízení",
   },
-  { wordTranslated: "	failure n.	", czWord: "	selhání" },
+  { word: "	failure n.	", czWord: "	selhání" },
   {
-    wordTranslated: "	faith n.	",
+    word: "	faith n.	",
 
     czWord: "	víra, důvěra",
   },
   {
-    wordTranslated: "	fault n.	",
-    sentenceTranslated:
+    word: "	fault n.	",
+    sentenceExample:
       "	 my worst fault is impatienceengine fault its not my fault	",
     czWord: "	chyba, porucha, vina",
   },
   {
-    wordTranslated: "	favour  v.	",
-    sentenceTranslated: "	 give me a favor I've come to ask you a favor	",
+    word: "	favour  v.	",
+    sentenceExample: "	 give me a favor I've come to ask you a favor	",
     czWord: "	laskavost",
   },
-  { wordTranslated: "	feather n.	", czWord: "	peří" },
-  { wordTranslated: "	fee n.	", czWord: "	poplatek" },
+  { word: "	feather n.	", czWord: "	peří" },
+  { word: "	fee n.	", czWord: "	poplatek" },
   {
-    wordTranslated: "	feed n.	",
+    word: "	feed n.	",
 
     czWord: "	krmení, krmivo",
   },
   {
-    wordTranslated: "	feedback n.	",
+    word: "	feedback n.	",
 
     czWord: "	zpětná vazba",
   },
   {
-    wordTranslated: "	feel n.	",
+    word: "	feel n.	",
 
     czWord: "	pocit, dotek",
   },
   {
-    wordTranslated: "	fellow adj.	",
-    sentenceTranslated: "	 Georgie is a good fellow	",
+    word: "	fellow adj.	",
+    sentenceExample: "	 Georgie is a good fellow	",
     czWord: "	chlapík, kolega",
   },
   {
-    wordTranslated: "	figure  v.	",
-    sentenceTranslated: "	 he figured in a crime	",
+    word: "	figure  v.	",
+    sentenceExample: "	 he figured in a crime	",
     czWord: "	figurovat",
   },
   {
-    wordTranslated: "	file  v.	",
-    sentenceTranslated: "	 the contract, when signed, is filed	",
+    word: "	file  v.	",
+    sentenceExample: "	 the contract, when signed, is filed	",
     czWord: "	založit",
   },
   {
-    wordTranslated: "	finance n. v.	",
+    word: "	finance n. v.	",
 
     czWord: "	financovat",
   },
   {
-    wordTranslated: "	finding n.	",
-    sentenceTranslated:
+    word: "	finding n.	",
+    sentenceExample:
       "	 a local doctor reported the finding of numerous dead rats	",
     czWord: "	nález",
   },
-  { wordTranslated: "	firm n.	", czWord: "	firma" },
-  { wordTranslated: "	fix n.	", czWord: "	oprava" },
+  { word: "	firm n.	", czWord: "	firma" },
+  { word: "	fix n.	", czWord: "	oprava" },
   {
-    wordTranslated: "	flash n.  v.	",
-    sentenceTranslated: "	 a lightning flash the lights started flashing	",
+    word: "	flash n.  v.	",
+    sentenceExample: "	 a lightning flash the lights started flashing	",
     czWord: "	blesk, záblesk, blikat",
   },
   {
-    wordTranslated: "	flexible adj.	",
+    word: "	flexible adj.	",
 
     czWord: "	pružný",
   },
   {
-    wordTranslated: "	float  v.	",
+    word: "	float  v.	",
 
     czWord: "	plout, vznášet se",
   },
-  { wordTranslated: "	fold n.	", czWord: "	přeložit" },
+  { word: "	fold n.	", czWord: "	přeložit" },
   {
-    wordTranslated: "	folding adj.	",
-    sentenceTranslated: "	 a folding chair	",
+    word: "	folding adj.	",
+    sentenceExample: "	 a folding chair	",
     czWord: "	skládací",
   },
   {
-    wordTranslated: "	following	",
+    word: "	following	",
 
     czWord: "	následující",
   },
   {
-    wordTranslated: "	forgive  v.	",
+    word: "	forgive  v.	",
 
     czWord: "	odpustit",
   },
   {
-    wordTranslated: "	former adj.	",
-    sentenceTranslated: "	 former marines	",
+    word: "	former adj.	",
+    sentenceExample: "	 former marines	",
     czWord: "	bývalý",
   },
   {
-    wordTranslated: "	fortune n.	",
+    word: "	fortune n.	",
 
     czWord: "	štěstí, bohatství",
   },
-  { wordTranslated: "	forward adj.	", czWord: "	vpřed" },
+  { word: "	forward adj.	", czWord: "	vpřed" },
   {
-    wordTranslated: "	found  v.	",
-    sentenceTranslated: "	 the monastery was founded in 1665	",
+    word: "	found  v.	",
+    sentenceExample: "	 the monastery was founded in 1665	",
     czWord: "	založit, postavit",
   },
   {
-    wordTranslated: "	free  v.	",
+    word: "	free  v.	",
 
     czWord: "	volný, uvolnit, osvobodit",
   },
   {
-    wordTranslated: "	frequency n.	",
+    word: "	frequency n.	",
 
     czWord: "	frekvence",
   },
   {
-    wordTranslated: "	fuel  v.	",
+    word: "	fuel  v.	",
 
     czWord: "	natankovat, palivo",
   },
-  { wordTranslated: "	fully ad v.	", czWord: "	plně" },
+  { word: "	fully ad v.	", czWord: "	plně" },
   {
-    wordTranslated: "	function  v.	",
-    sentenceTranslated:
+    word: "	function  v.	",
+    sentenceExample:
       "	 her liver is functioning normally He is functioning as a welder here	",
     czWord: "	fungovat, pracovat, působit",
   },
   {
-    wordTranslated: "	fund n.	",
-    sentenceTranslated: "	,  v.	",
+    word: "	fund n.	",
+    sentenceExample: "	,  v.	",
     czWord: "	fond, financovat",
   },
   {
-    wordTranslated: "	fundamental adj.	",
-    sentenceTranslated: "	 he protection of fundamental human rights	",
+    word: "	fundamental adj.	",
+    sentenceExample: "	 he protection of fundamental human rights	",
     czWord: "	základní",
   },
   {
-    wordTranslated: "	funding n.	",
+    word: "	funding n.	",
 
     czWord: "	financování",
   },
   {
-    wordTranslated: "	furthermore ad v.	",
-    sentenceTranslated:
+    word: "	furthermore ad v.	",
+    sentenceExample:
       "	 Georgie speaks too much, furthermore, he don't know when to stop	",
     czWord: "	dále, mimoto",
   },
   {
-    wordTranslated: "	gain  v. n.	",
-    sentenceTranslated: "	 gain more muscles	",
+    word: "	gain  v. n.	",
+    sentenceExample: "	 gain more muscles	",
     czWord: "	zisk, získat",
   },
   {
-    wordTranslated: "	generate  v.	",
+    word: "	generate  v.	",
 
     czWord: "	generovat",
   },
   {
-    wordTranslated: "	govern  v.	",
+    word: "	govern  v.	",
 
     czWord: "	vládnout",
   },
   {
-    wordTranslated: "	grab  v.	",
-    sentenceTranslated: "	 she grabbed him by the shirt collar	",
+    word: "	grab  v.	",
+    sentenceExample: "	 she grabbed him by the shirt collar	",
     czWord: "	urvat, uchopit ",
     czSentence: "	 popadla ho za límec košile	",
   },
-  { wordTranslated: "	grade  v.	", czWord: "	stupeň" },
+  { word: "	grade  v.	", czWord: "	stupeň" },
   {
-    wordTranslated: "	gradually ad v.	",
-    sentenceTranslated: "	 You have to learn language gradually	",
+    word: "	gradually ad v.	",
+    sentenceExample: "	 You have to learn language gradually	",
     czWord: "	postupně",
   },
   {
-    wordTranslated: "	grand adj.	",
+    word: "	grand adj.	",
 
     czWord: "	velký, velkolepý",
   },
   {
-    wordTranslated: "	grant  v. n.	",
-    sentenceTranslated:
+    word: "	grant  v. n.	",
+    sentenceExample:
       "	 permission granted a letter granting them permission to smoke	",
     czWord: "	Udělit, poskytnout",
   },
   {
-    wordTranslated: "	guarantee  v. n.	",
+    word: "	guarantee  v. n.	",
 
     czWord: "	zaručit, ručit, záruka",
   },
   {
-    wordTranslated: "	handle  v. n.	",
+    word: "	handle  v. n.	",
 
     czWord: "	rukojeť, držadlo, zacházet, manipulovat",
   },
   {
-    wordTranslated: "	harm n. v.	",
-    sentenceTranslated: "	 harm someone's property or to harm someone	",
+    word: "	harm n. v.	",
+    sentenceExample: "	 harm someone's property or to harm someone	",
     czWord: "	poškodit, ublížit",
   },
   {
-    wordTranslated: "	harmful adj.	",
-    sentenceTranslated: "	 sugars that can be harmful to the teeth	",
+    word: "	harmful adj.	",
+    sentenceExample: "	 sugars that can be harmful to the teeth	",
     czWord: "	škodlivý",
   },
-  { wordTranslated: "	hearing n.	", czWord: "	slyšení" },
-  { wordTranslated: "	heaven n.	", czWord: "	nebe" },
-  { wordTranslated: "	heel n.	", czWord: "	pata" },
+  { word: "	hearing n.	", czWord: "	slyšení" },
+  { word: "	heaven n.	", czWord: "	nebe" },
+  { word: "	heel n.	", czWord: "	pata" },
   {
-    wordTranslated: "	hesitate  v.	",
-    sentenceTranslated: "	 Join me, don´t hesitate.	",
+    word: "	hesitate  v.	",
+    sentenceExample: "	 Join me, don´t hesitate.	",
     czWord: "	váhat",
   },
-  { wordTranslated: "	hire n.	", czWord: "	najmout" },
+  { word: "	hire n.	", czWord: "	najmout" },
   {
-    wordTranslated: "	hold n.	",
+    word: "	hold n.	",
 
     czWord: "	držení, držet",
   },
-  { wordTranslated: "	hollow adj.	", czWord: "	dutý" },
-  { wordTranslated: "	holy adj.	", czWord: "	svatý" },
+  { word: "	hollow adj.	", czWord: "	dutý" },
+  { word: "	holy adj.	", czWord: "	svatý" },
   {
-    wordTranslated: "	honour n. v.	",
-    sentenceTranslated: "	 Honor Your Father and Mother	",
+    word: "	honour n. v.	",
+    sentenceExample: "	 Honor Your Father and Mother	",
     czWord: "	čest",
   },
   {
-    wordTranslated: "	host  v.	",
-    sentenceTranslated: "	 virus have found his host	",
+    word: "	host  v.	",
+    sentenceExample: "	 virus have found his host	",
     czWord: "	hostitel",
   },
-  { wordTranslated: "	house  v.	", czWord: "	dům" },
+  { word: "	house  v.	", czWord: "	dům" },
   {
-    wordTranslated: "	household n.	",
+    word: "	household n.	",
 
     czWord: "	domácnost",
   },
-  { wordTranslated: "	housing n.	", czWord: "	bydlení" },
+  { word: "	housing n.	", czWord: "	bydlení" },
   {
-    wordTranslated: "	humorous adj.	",
+    word: "	humorous adj.	",
 
     czWord: "	humorný",
   },
-  { wordTranslated: "	hunt n.	", czWord: "	lov" },
+  { word: "	hunt n.	", czWord: "	lov" },
   {
-    wordTranslated: "	hurt n.	",
+    word: "	hurt n.	",
 
     czWord: "	bolest, zranění",
   },
   {
-    wordTranslated: "	illustrate  v.	",
+    word: "	illustrate  v.	",
 
     czWord: "	ilustrovat",
   },
   {
-    wordTranslated: "	imagination n.	",
+    word: "	imagination n.	",
 
     czWord: "	představivost",
   },
   {
-    wordTranslated: "	impatient adj.	",
+    word: "	impatient adj.	",
 
     czWord: "	netrpělivý",
   },
   {
-    wordTranslated: "	imply  v.	",
-    sentenceTranslated: "	 Are you implying (that) I'm fat?	",
+    word: "	imply  v.	",
+    sentenceExample: "	 Are you implying (that) I'm fat?	",
     czWord: "	naznačovat",
   },
   {
-    wordTranslated: "	impose  v.	",
-    sentenceTranslated: "	 Dont impose me your thoughts	",
+    word: "	impose  v.	",
+    sentenceExample: "	 Dont impose me your thoughts	",
     czWord: "	vnucovat",
   },
   {
-    wordTranslated: "	impress  v.	",
-    sentenceTranslated: "	 Im impressed	",
+    word: "	impress  v.	",
+    sentenceExample: "	 Im impressed	",
     czWord: "	zapůsobit, ohromit Jsem ohromen",
   },
   {
-    wordTranslated: "	impressed adj.	",
-    sentenceTranslated:
+    word: "	impressed adj.	",
+    sentenceExample:
       "	 I was very impressed with the results He gave me an impressed look	",
     czWord: "	ohromený, dojatý",
   },
-  { wordTranslated: "	inch n.	", czWord: "	palec" },
-  { wordTranslated: "	income n.	", czWord: "	příjem" },
+  { word: "	inch n.	", czWord: "	palec" },
+  { word: "	income n.	", czWord: "	příjem" },
   {
-    wordTranslated: "	increasingly ad v.	",
-    sentenceTranslated: "	 increasingly, attention is paid to health	",
+    word: "	increasingly ad v.	",
+    sentenceExample: "	 increasingly, attention is paid to health	",
     czWord: "	stále více ",
     czSentence: "	  stále více se pozornost věnuje zdraví	",
   },
   {
-    wordTranslated: "	industrial adj.	",
+    word: "	industrial adj.	",
 
     czWord: "	průmyslový",
   },
   {
-    wordTranslated: "	initial adj.	",
-    sentenceTranslated: "	 Initial impression	",
+    word: "	initial adj.	",
+    sentenceExample: "	 Initial impression	",
     czWord: "	počáteční prvotní dojem",
   },
   {
-    wordTranslated: "	initially ad v.	",
-    sentenceTranslated: "	 Širda looked as a good friend initially.	",
+    word: "	initially ad v.	",
+    sentenceExample: "	 Širda looked as a good friend initially.	",
     czWord: "	zpočátku",
   },
   {
-    wordTranslated: "	initiative n.	",
-    sentenceTranslated: "	 use your initiative, imagination, and common sense	",
+    word: "	initiative n.	",
+    sentenceExample: "	 use your initiative, imagination, and common sense	",
     czWord: "	iniciativa ",
     czSentence: "	  použijte svou iniciativu, představivost a zdravý rozum	",
   },
-  { wordTranslated: "	inner adj.	", czWord: "	vnitřní" },
+  { word: "	inner adj.	", czWord: "	vnitřní" },
   {
-    wordTranslated: "	insight n.	",
-    sentenceTranslated:
+    word: "	insight n.	",
+    sentenceExample:
       "	 Insights into the life and work of Sir Charles Sherrington Insight into the human evolution. Insight of our planet.	",
     czWord: "	vhled, pochopení, porozumění ",
   },
   {
-    wordTranslated: "	insist  v.	",
-    sentenceTranslated: "	 Širda insist he did nothing wrong	",
+    word: "	insist  v.	",
+    sentenceExample: "	 Širda insist he did nothing wrong	",
     czWord: "	trvat na",
   },
   {
-    wordTranslated: "	inspire  v.	",
+    word: "	inspire  v.	",
 
     czWord: "	inspirovat",
   },
   {
-    wordTranslated: "	instance n.	",
-    sentenceTranslated: "	 A serious instance of corruption.	",
+    word: "	instance n.	",
+    sentenceExample: "	 A serious instance of corruption.	",
     czWord: "	instance, příklad",
   },
-  { wordTranslated: "	institute n.	", czWord: "	ústav" },
+  { word: "	institute n.	", czWord: "	ústav" },
   {
-    wordTranslated: "	insurance n.	",
+    word: "	insurance n.	",
 
     czWord: "	pojištění",
   },
   {
-    wordTranslated: "	intended adj.	",
-    sentenceTranslated: "	 intended assassination was thwart	",
+    word: "	intended adj.	",
+    sentenceExample: "	 intended assassination was thwart	",
     czWord: "	zamýšlený ",
     czSentence: "	  zamýšlený atentát byl zmařen	",
   },
   {
-    wordTranslated: "	internal adj.	",
-    sentenceTranslated: "	 the tube had an internal diameter of 1.1 mm	",
+    word: "	internal adj.	",
+    sentenceExample: "	 the tube had an internal diameter of 1.1 mm	",
     czWord: "	vnitřní ",
     czSentence: "	  trubka měla vnitřní průměr 1,1 mm	",
   },
   {
-    wordTranslated: "	interpret  v.	",
-    sentenceTranslated: "	 the evidence is difficult to interpret	",
+    word: "	interpret  v.	",
+    sentenceExample: "	 the evidence is difficult to interpret	",
     czWord: "	interpretovat",
   },
   {
-    wordTranslated: "	interrupt  v.	",
+    word: "	interrupt  v.	",
 
     czWord: "	přerušit",
   },
   {
-    wordTranslated: "	investigation n.	",
+    word: "	investigation n.	",
 
     czWord: "	vyšetřování",
   },
   {
-    wordTranslated: "	investment n.	",
+    word: "	investment n.	",
 
     czWord: "	investice",
   },
-  { wordTranslated: "	issue  v.	", czWord: "	problém" },
-  { wordTranslated: "	joy n.	", czWord: "	radost" },
+  { word: "	issue  v.	", czWord: "	problém" },
+  { word: "	joy n.	", czWord: "	radost" },
   {
-    wordTranslated: "	judgement n.	",
+    word: "	judgement n.	",
 
     czWord: "	rozsudek, rozhodnutí",
   },
-  { wordTranslated: "	junior adj.	", czWord: "	mladší" },
+  { word: "	junior adj.	", czWord: "	mladší" },
   {
-    wordTranslated: "	justice n.	",
+    word: "	justice n.	",
 
     czWord: "	spravedlnost",
   },
   {
-    wordTranslated: "	justify  v.	",
+    word: "	justify  v.	",
 
     czWord: "	ospravedlnit",
   },
   {
-    wordTranslated: "	labour n.	",
-    sentenceTranslated: "	 they labored from dawn to dusk	",
+    word: "	labour n.	",
+    sentenceExample: "	 they labored from dawn to dusk	",
     czWord: "	práce",
   },
   {
-    wordTranslated: "	landscape n.	",
+    word: "	landscape n.	",
 
     czWord: "	krajina",
   },
   {
-    wordTranslated: "	largely ad v.	",
-    sentenceTranslated: "	 their efforts were largely unsuccessful	",
+    word: "	largely ad v.	",
+    sentenceExample: "	 their efforts were largely unsuccessful	",
     czWord: "	z velké části, převážně",
   },
   {
-    wordTranslated: "	latest n.	",
+    word: "	latest n.	",
 
     czWord: "	nejnovější",
   },
   {
-    wordTranslated: "	launch  v. n.	",
-    sentenceTranslated: "	 New Metro game has been launched	",
+    word: "	launch  v. n.	",
+    sentenceExample: "	 New Metro game has been launched	",
     czWord: "	spustit",
   },
   {
-    wordTranslated: "	leadership n.	",
+    word: "	leadership n.	",
 
     czWord: "	vedení",
   },
   {
-    wordTranslated: "	lean  v.	",
-    sentenceTranslated: "	 he leaned back in his chair	",
+    word: "	lean  v.	",
+    sentenceExample: "	 he leaned back in his chair	",
     czWord: "	opřít se, hubený",
   },
   {
-    wordTranslated: "	leave n.	",
-    sentenceTranslated: "	 Joe was home on leave	",
+    word: "	leave n.	",
+    sentenceExample: "	 Joe was home on leave	",
     czWord: "	dovolená, nechat",
   },
   {
-    wordTranslated: "	level  v.	",
-    sentenceTranslated: "	 they leveled ground for disabled	",
+    word: "	level  v.	",
+    sentenceExample: "	 they leveled ground for disabled	",
     czWord: "	přizpůsobit",
   },
   {
-    wordTranslated: "	limited adj.	",
+    word: "	limited adj.	",
 
     czWord: "	omezený",
   },
   {
-    wordTranslated: "	line  v.	",
+    word: "	line  v.	",
 
     czWord: "	řadit, lemovat",
   },
-  { wordTranslated: "	lively adj.	", czWord: "	živý" },
+  { word: "	lively adj.	", czWord: "	živý" },
   {
-    wordTranslated: "	load n.  v.	",
-    sentenceTranslated: "	 they must carry a load they load up their equipment	",
+    word: "	load n.  v.	",
+    sentenceExample: "	 they must carry a load they load up their equipment	",
     czWord: "	zatížení, náklad, naložit ",
     czSentence: "	  musí nést náklad nakládají své vybavení	",
   },
-  { wordTranslated: "	loan n.	", czWord: "	půjčka č." },
+  { word: "	loan n.	", czWord: "	půjčka č." },
   {
-    wordTranslated: "	long-term adj ad v.	",
-    sentenceTranslated: "	 long-term memory	",
+    word: "	long-term adj ad v.	",
+    sentenceExample: "	 long-term memory	",
     czWord: "	dlouhodobý",
   },
   {
-    wordTranslated: "	loose adj.	",
-    sentenceTranslated: "	 a loose interpretation	",
+    word: "	loose adj.	",
+    sentenceExample: "	 a loose interpretation	",
     czWord: "	volný volný výklad",
   },
-  { wordTranslated: "	low n.	", czWord: "	nízko" },
+  { word: "	low n.	", czWord: "	nízko" },
   {
-    wordTranslated: "	lower  v.	",
-    sentenceTranslated:
+    word: "	lower  v.	",
+    sentenceExample:
       "	 He watched the coffin being lowered into the ground The temperature has lowered gradually this month.	",
     czWord: "	snížit se",
   },
-  { wordTranslated: "	lung n.	", czWord: "	plíce" },
+  { word: "	lung n.	", czWord: "	plíce" },
   {
-    wordTranslated: "	maintain  v.	",
+    word: "	maintain  v.	",
 
     czWord: "	udržovat",
   },
   {
-    wordTranslated: "	majority n.	",
+    word: "	majority n.	",
 
     czWord: "	většina",
   },
-  { wordTranslated: "	make n.	", czWord: "	udělat" },
+  { word: "	make n.	", czWord: "	udělat" },
   {
-    wordTranslated: "	map  v.	",
-    sentenceTranslated:
+    word: "	map  v.	",
+    sentenceExample:
       "	 map something the country have still not been mapped.	",
     czWord: "	mapovat",
   },
   {
-    wordTranslated: "	mass n. adj.	",
-    sentenceTranslated: "	 both countries began massing troops in the region	",
+    word: "	mass n. adj.	",
+    sentenceExample: "	 both countries began massing troops in the region	",
     czWord: "	hmota, ",
     czSentence: "	  hromadit obě země začaly v regionu hromadit vojáky	",
   },
   {
-    wordTranslated: "	master n. v.	",
-    sentenceTranslated: "	 I never mastered english	",
+    word: "	master n. v.	",
+    sentenceExample: "	 I never mastered english	",
     czWord: "	mistr, zvládnout ",
     czSentence: "	  Angličtinu jsem nikdy neovládal	",
   },
   {
-    wordTranslated: "	matching adj.	",
-    sentenceTranslated: "	 pants and matching socks	",
+    word: "	matching adj.	",
+    sentenceExample: "	 pants and matching socks	",
     czWord: "	vhodný",
   },
   {
-    wordTranslated: "	material adj.	",
+    word: "	material adj.	",
 
     czWord: "	hmotný",
   },
   {
-    wordTranslated: "	means n.	",
-    sentenceTranslated: "	 resolving disputes by peaceful means	",
+    word: "	means n.	",
+    sentenceExample: "	 resolving disputes by peaceful means	",
     czWord: "	prostředek, způsob ",
     czSentence: "	  řešení sporů mírovými prostředky	",
   },
   {
-    wordTranslated: "	measurement n.	",
+    word: "	measurement n.	",
 
     czWord: "	měření",
   },
-  { wordTranslated: "	medium n.	", czWord: "	střední" },
-  { wordTranslated: "	melt  v.	", czWord: "	tát" },
+  { word: "	medium n.	", czWord: "	střední" },
+  { word: "	melt  v.	", czWord: "	tát" },
   {
-    wordTranslated: "	military adj. , n.	",
+    word: "	military adj. , n.	",
 
     czWord: "	vojenský",
   },
-  { wordTranslated: "	mineral n.	", czWord: "	nerost" },
+  { word: "	mineral n.	", czWord: "	nerost" },
   {
-    wordTranslated: "	minor adj.	",
+    word: "	minor adj.	",
 
     czWord: "	méně důležitý, vedlejší",
   },
   {
-    wordTranslated: "	minority n.	",
+    word: "	minority n.	",
 
     czWord: "	menšina",
   },
-  { wordTranslated: "	mission n.	", czWord: "	mise" },
+  { word: "	mission n.	", czWord: "	mise" },
   {
-    wordTranslated: "	mistake  v.	",
+    word: "	mistake  v.	",
 
     czWord: "	zmýlit se",
   },
-  { wordTranslated: "	mixed adj.	", czWord: "	smíšený" },
-  { wordTranslated: "	modify  v.	", czWord: "	upravit" },
+  { word: "	mixed adj.	", czWord: "	smíšený" },
+  { word: "	modify  v.	", czWord: "	upravit" },
   {
-    wordTranslated: "	monitor n.  v.	",
+    word: "	monitor n.  v.	",
 
     czWord: "	monitorovat",
   },
   {
-    wordTranslated: "	moral adj. n.	",
+    word: "	moral adj. n.	",
 
     czWord: "	mravní",
   },
   {
-    wordTranslated: "	mount  v.	",
-    sentenceTranslated: "	 he mount a picture to the wall	",
+    word: "	mount  v.	",
+    sentenceExample: "	 he mount a picture to the wall	",
     czWord: "	připevnit",
   },
   {
-    wordTranslated: "	multiple adj.	",
+    word: "	multiple adj.	",
 
     czWord: "	vícenásobný",
   },
   {
-    wordTranslated: "	multiply  v.	",
+    word: "	multiply  v.	",
 
     czWord: "	násobit",
   },
   {
-    wordTranslated: "	mysterious adj.	",
+    word: "	mysterious adj.	",
 
     czWord: "	tajemný",
   },
-  { wordTranslated: "	narrow  v.	", czWord: "	úzký" },
+  { word: "	narrow  v.	", czWord: "	úzký" },
   {
-    wordTranslated: "	national n.	",
+    word: "	national n.	",
 
     czWord: "	národní",
   },
   {
-    wordTranslated: "	neat adj.	",
-    sentenceTranslated: "	 Your house is always so neat - how do you manage it?	",
+    word: "	neat adj.	",
+    sentenceExample: "	 Your house is always so neat - how do you manage it?	",
     czWord: "	úhledný",
   },
   {
-    wordTranslated: "	nerve n.	",
-    sentenceTranslated:
+    word: "	nerve n.	",
+    sentenceExample:
       "	 I got up the nerve to ask Miss Kinnian to have dinner with me	",
     czWord: "	nerv, odvaha ",
     czSentence:
       "	  Dostal jsem odvahu a požádal slečnu Kinnianovou, aby se mnou povečeřela	",
   },
   {
-    wordTranslated: "	nevertheless ad v.	",
-    sentenceTranslated: "	 Georgie is crazy nevertheless we like him	",
+    word: "	nevertheless ad v.	",
+    sentenceExample: "	 Georgie is crazy nevertheless we like him	",
     czWord: "	přesto, nicméně",
   },
   {
-    wordTranslated: "	notion n.	",
-    sentenceTranslated: "	 I had no notion of what her words meant	",
+    word: "	notion n.	",
+    sentenceExample: "	 I had no notion of what her words meant	",
     czWord: "	pojem, představa",
   },
   {
-    wordTranslated: "	numerous adj.	",
+    word: "	numerous adj.	",
 
     czWord: "	četný",
   },
   {
-    wordTranslated: "	obey  v.	",
-    sentenceTranslated: "	 I always obey my father	",
+    word: "	obey  v.	",
+    sentenceExample: "	 I always obey my father	",
     czWord: "	poslouchat",
   },
   {
-    wordTranslated: "	object  v.	",
-    sentenceTranslated: "	 enty objected but nobody's listened to him	",
+    word: "	object  v.	",
+    sentenceExample: "	 enty objected but nobody's listened to him	",
     czWord: "	namítat",
   },
   {
-    wordTranslated: "	objective n. adj.	",
-    sentenceTranslated: "	 historians try to be objective and impartial	",
+    word: "	objective n. adj.	",
+    sentenceExample: "	 historians try to be objective and impartial	",
     czWord: "	objektivní ",
     czSentence: "	  historici se snaží být objektivní a nestranní	",
   },
   {
-    wordTranslated: "	obligation n.	",
-    sentenceTranslated: "	 I have an obligation to look after her	",
+    word: "	obligation n.	",
+    sentenceExample: "	 I have an obligation to look after her	",
     czWord: "	povinnost ",
     czSentence: "	  Mám povinnost se o ni starat	",
   },
   {
-    wordTranslated: "	observation n.	",
-    sentenceTranslated: "	 observation of naked chicks	",
+    word: "	observation n.	",
+    sentenceExample: "	 observation of naked chicks	",
     czWord: "	pozorování",
   },
   {
-    wordTranslated: "	observe  v.	",
+    word: "	observe  v.	",
 
     czWord: "	pozorovat",
   },
   {
-    wordTranslated: "	obtain  v.	",
-    sentenceTranslated: "	 this achievement is difficult to obtain	",
+    word: "	obtain  v.	",
+    sentenceExample: "	 this achievement is difficult to obtain	",
     czWord: "	získat, dosáhnout",
   },
   {
-    wordTranslated: "	occasionally ad v.	",
-    sentenceTranslated: "	 Georgie call me occasionally	",
+    word: "	occasionally ad v.	",
+    sentenceExample: "	 Georgie call me occasionally	",
     czWord: "	příležitostně, občas",
   },
   {
-    wordTranslated: "	offence n.	",
-    sentenceTranslated:
+    word: "	offence n.	",
+    sentenceExample:
       "	offense against public order, verbal offense, no offence	",
     czWord: "	přestupek, útok, urážka ",
   },
   {
-    wordTranslated: "	offend  v.	",
-    sentenceTranslated: "	 Don't offend others	",
+    word: "	offend  v.	",
+    sentenceExample: "	 Don't offend others	",
     czWord: "	urazit",
   },
   {
-    wordTranslated: "	offensive adj.	",
+    word: "	offensive adj.	",
 
     czWord: "	útočný",
   },
   {
-    wordTranslated: "	official n.	",
+    word: "	official n.	",
 
     czWord: "	úředník",
   },
   {
-    wordTranslated: "	opening n.	",
+    word: "	opening n.	",
 
     czWord: "	otevření",
   },
   {
-    wordTranslated: "	operate  v.	",
-    sentenceTranslated: "	 a shortage of workers to operate new machines	",
+    word: "	operate  v.	",
+    sentenceExample: "	 a shortage of workers to operate new machines	",
     czWord: "	fungovat, pracovat",
   },
-  { wordTranslated: "	opponent n.	", czWord: "	soupeř" },
+  { word: "	opponent n.	", czWord: "	soupeř" },
   {
-    wordTranslated: "	oppose  v.	",
+    word: "	oppose  v.	",
 
     czWord: "	oponovat, čelit, vzdorovat",
   },
   {
-    wordTranslated: "	opposed adj.	",
-    sentenceTranslated:
+    word: "	opposed adj.	",
+    sentenceExample:
       "	 Mom’s strongly opposed to my learning to drive.I’d prefer to go in May, as opposed to (= rather than) September.	",
     czWord: "	proti, protichůdný",
     czSentence:
       "	 Máma je zásadně proti tomu, abych se učil řídit.Raději bych jel v květnu, než (= spíše než) v září.	",
   },
   {
-    wordTranslated: "	opposition n.	",
+    word: "	opposition n.	",
 
     czWord: "	opozice",
   },
-  { wordTranslated: "	origin n.	", czWord: "	původ" },
+  { word: "	origin n.	", czWord: "	původ" },
   {
-    wordTranslated: "	otherwise ad v.	",
-    sentenceTranslated: "	 Stop it, otherwise I´ll hit you	",
+    word: "	otherwise ad v.	",
+    sentenceExample: "	 Stop it, otherwise I´ll hit you	",
     czWord: "	jinak",
   },
   {
-    wordTranslated: "	outcome n.	",
-    sentenceTranslated: "	 you drink and this is the outcome	",
+    word: "	outcome n.	",
+    sentenceExample: "	 you drink and this is the outcome	",
     czWord: "	výsledek",
   },
-  { wordTranslated: "	outer adj.	", czWord: "	vnější" },
+  { word: "	outer adj.	", czWord: "	vnější" },
   {
-    wordTranslated: "	outline n. v.	",
-    sentenceTranslated:
+    word: "	outline n. v.	",
+    sentenceExample:
       "	 fill in the outlines with color her large eyes were darkly outlined with eyeliner	",
     czWord: "	obrys",
     czSentence: "	 její velké oči byly tmavě ohraničené očními linkami	",
   },
   {
-    wordTranslated: "	overall adj. ad v.	",
-    sentenceTranslated:
+    word: "	overall adj. ad v.	",
+    sentenceExample:
       "	 overall effect of disinformations is catastrophic Im the best overall	",
     czWord: "	celkový",
   },
   {
-    wordTranslated: "	owe  v.	",
-    sentenceTranslated: "	 I owe you 25 cents	",
+    word: "	owe  v.	",
+    sentenceExample: "	 I owe you 25 cents	",
     czWord: "	dlužit",
   },
   {
-    wordTranslated: "	pace n.  v.	",
-    sentenceTranslated: "	 I steal with quiet pace	",
+    word: "	pace n.  v.	",
+    sentenceExample: "	 I steal with quiet pace	",
     czWord: "	tempo, krok, kráčet",
   },
   {
-    wordTranslated: "	package  v.	",
+    word: "	package  v.	",
 
     czWord: "	balíček",
   },
   {
-    wordTranslated: "	parliament n.	",
+    word: "	parliament n.	",
 
     czWord: "	parlament",
   },
   {
-    wordTranslated: "	participant n.	",
+    word: "	participant n.	",
 
     czWord: "	účastník",
   },
   {
-    wordTranslated: "	partly ad v.	",
-    sentenceTranslated: "	 you're only partly right	",
+    word: "	partly ad v.	",
+    sentenceExample: "	 you're only partly right	",
     czWord: "	částečně",
     czSentence: "	 máš pravdu jen částečně	",
   },
-  { wordTranslated: "	passage n.	", czWord: "	průchod" },
+  { word: "	passage n.	", czWord: "	průchod" },
   {
-    wordTranslated: "	patient adj.	",
-    sentenceTranslated: "	 be patient, your time will come	",
+    word: "	patient adj.	",
+    sentenceExample: "	 be patient, your time will come	",
     czWord: "	trpělivý",
   },
-  { wordTranslated: "	pension	", czWord: "	důchod" },
+  { word: "	pension	", czWord: "	důchod" },
   {
-    wordTranslated: "	permanent adj.	",
-    sentenceTranslated: "	 Permanent ban	",
+    word: "	permanent adj.	",
+    sentenceExample: "	 Permanent ban	",
     czWord: "	stálý",
   },
   {
-    wordTranslated: "	permit  v. n.	",
-    sentenceTranslated: "	 he is only in Britain on a work permit	",
+    word: "	permit  v. n.	",
+    sentenceExample: "	 he is only in Britain on a work permit	",
     czWord: "	povolení",
   },
   {
-    wordTranslated: "	perspective n.	",
+    word: "	perspective n.	",
 
     czWord: "	perspektiva",
   },
-  { wordTranslated: "	phase n.	", czWord: "	fáze" },
+  { word: "	phase n.	", czWord: "	fáze" },
   {
-    wordTranslated: "	phenomenon n.	",
+    word: "	phenomenon n.	",
 
     czWord: "	jev, fenomén",
   },
-  { wordTranslated: "	pick n.	", czWord: "	vybrat" },
+  { word: "	pick n.	", czWord: "	vybrat" },
   {
-    wordTranslated: "	picture  v.	",
-    sentenceTranslated: "	 he is pictured with party guests	",
+    word: "	picture  v.	",
+    sentenceExample: "	 he is pictured with party guests	",
     czWord: "	zobrazovat, malovat",
     czSentence: "	 je na snímku s hosty večírku	",
   },
   {
-    wordTranslated: "	pile n.  v.	",
-    sentenceTranslated: "	 pile of shitmother in law piled mess	",
+    word: "	pile n.  v.	",
+    sentenceExample: "	 pile of shitmother in law piled mess	",
     czWord: "	hromada, hromadit",
   },
   {
-    wordTranslated: "	pitch n.	",
-    sentenceTranslated: "	 a football pitch. pitch of the voice.	",
+    word: "	pitch n.	",
+    sentenceExample: "	 a football pitch. pitch of the voice.	",
     czWord: "	hřiště, výška",
   },
   {
-    wordTranslated: "	plain adj.	",
-    sentenceTranslated: "	 good plain food	",
+    word: "	plain adj.	",
+    sentenceExample: "	 good plain food	",
     czWord: "	prostý dobré obyčejné jídlo",
   },
   {
-    wordTranslated: "	plot  v.	",
+    word: "	plot  v.	",
 
     czWord: "	zápletka, spiknutí",
   },
   {
-    wordTranslated: "	pointed adj.	",
-    sentenceTranslated: "	 pointed arrow	",
+    word: "	pointed adj.	",
+    sentenceExample: "	 pointed arrow	",
     czWord: "	špičatý",
   },
   {
-    wordTranslated: "	position  v.	",
-    sentenceTranslated: "	 he pulled out a chair and positioned it between them	",
+    word: "	position  v.	",
+    sentenceExample: "	 he pulled out a chair and positioned it between them	",
     czWord: "	pozice, umístit",
   },
   {
-    wordTranslated: "	possess  v.	",
-    sentenceTranslated: "	 I do not possess a television set	",
+    word: "	possess  v.	",
+    sentenceExample: "	 I do not possess a television set	",
     czWord: "	vlastnit, posednout",
   },
   {
-    wordTranslated: "	power  v.	",
-    sentenceTranslated:
+    word: "	power  v.	",
+    sentenceExample:
       "	 he car is powered by a fuel-injected 3.0-liter engine	",
     czWord: "	pohánět",
   },
   {
-    wordTranslated: "	praise n.  v.	",
-    sentenceTranslated: "	 Praise the lord	",
+    word: "	praise n.  v.	",
+    sentenceExample: "	 Praise the lord	",
     czWord: "	chválit, velebit",
   },
   {
-    wordTranslated: "	preparation n.	",
+    word: "	preparation n.	",
 
     czWord: "	příprava",
   },
   {
-    wordTranslated: "	presence n.	",
+    word: "	presence n.	",
 
     czWord: "	přítomnost",
   },
   {
-    wordTranslated: "	preserve  v.	",
-    sentenceTranslated: "	 The best-preserved corpse in history.	",
+    word: "	preserve  v.	",
+    sentenceExample: "	 The best-preserved corpse in history.	",
     czWord: "	zachovat",
   },
   {
-    wordTranslated: "	prime adj.	",
-    sentenceTranslated: "	 prime minister	",
+    word: "	prime adj.	",
+    sentenceExample: "	 prime minister	",
     czWord: "	hlavní",
   },
   {
-    wordTranslated: "	principle n.	",
-    sentenceTranslated: "	 the first principle of all things was water	",
+    word: "	principle n.	",
+    sentenceExample: "	 the first principle of all things was water	",
     czWord: "	princip, zásada",
     czSentence: "	 prvním principem všech věcí byla voda	",
   },
   {
-    wordTranslated: "	privacy n.	",
+    word: "	privacy n.	",
 
     czWord: "	soukromí",
   },
   {
-    wordTranslated: "	procedure n.	",
-    sentenceTranslated:
+    word: "	procedure n.	",
+    sentenceExample:
       "	 the procedure is as follows: Give me your money! the police are now reviewing procedures	",
     czWord: "	postup, procedura",
     czSentence: "	 Policie nyní přezkoumává postupy	",
   },
   {
-    wordTranslated: "	process  v.	",
-    sentenceTranslated: "	 the various stages in processing the wool	",
+    word: "	process  v.	",
+    sentenceExample: "	 the various stages in processing the wool	",
     czWord: "	zpracování",
   },
   {
-    wordTranslated: "	produce n.	",
+    word: "	produce n.	",
 
     czWord: "	produkce, vyrábět",
   },
   {
-    wordTranslated: "	progress  v.	",
+    word: "	progress  v.	",
 
     czWord: "	postupovat",
   },
   {
-    wordTranslated: "	project  v.	",
-    sentenceTranslated: "	 project a project	",
+    word: "	project  v.	",
+    sentenceExample: "	 project a project	",
     czWord: "	projektovat, projekt",
   },
   {
-    wordTranslated: "	proof n.	",
-    sentenceTranslated: "	 you will be asked to give proof of your identity	",
+    word: "	proof n.	",
+    sentenceExample: "	 you will be asked to give proof of your identity	",
     czWord: "	důkaz",
   },
   {
-    wordTranslated: "	proposal n.	",
-    sentenceTranslated: "	 My proposal is to handcuff georgie	",
+    word: "	proposal n.	",
+    sentenceExample: "	 My proposal is to handcuff georgie	",
     czWord: "	návrh č.",
   },
   {
-    wordTranslated: "	propose  v.	",
-    sentenceTranslated:
+    word: "	propose  v.	",
+    sentenceExample:
       "	 Georgie is proposing how to rule the world i propose to focus more on english	",
     czWord: "	navrhnout",
   },
   {
-    wordTranslated: "	prospect n.	",
-    sentenceTranslated:
+    word: "	prospect n.	",
+    sentenceExample:
       "	 there was no prospect of a reconciliation the company is also prospecting for gold	",
     czWord: "	vyhlídka, výhled, hledat",
     czSentence:
       "	 prospect Mira nebyla vyhlídka na usmíření společnost také hledá zlato	",
   },
-  { wordTranslated: "	pupil n.	", czWord: "	žák" },
+  { word: "	pupil n.	", czWord: "	žák" },
   {
-    wordTranslated: "	purchase n.  v.	",
-    sentenceTranslated: "	 I purchased headphones	",
+    word: "	purchase n.  v.	",
+    sentenceExample: "	 I purchased headphones	",
     czWord: "	koupě, nákup",
   },
-  { wordTranslated: "	pure adj.	", czWord: "	čistý" },
+  { word: "	pure adj.	", czWord: "	čistý" },
   {
-    wordTranslated: "	pursue  v.	",
-    sentenceTranslated: "	 the officer pursued the van	",
+    word: "	pursue  v.	",
+    sentenceExample: "	 the officer pursued the van	",
     czWord: "	pronásledovat",
   },
   {
-    wordTranslated: "	range  v.	",
+    word: "	range  v.	",
 
     czWord: "	rozsah, řadit se",
   },
   {
-    wordTranslated: "	rank n. v.	",
-    sentenceTranslated: "	 she is ranked number four in the world	",
+    word: "	rank n. v.	",
+    sentenceExample: "	 she is ranked number four in the world	",
     czWord: "	hodnost, řadit se",
     czSentence: "	 je na čtvrtém místě světového žebříčku	",
   },
-  { wordTranslated: "	rapid adj.	", czWord: "	rychlý" },
+  { word: "	rapid adj.	", czWord: "	rychlý" },
   {
-    wordTranslated: "	rapidly ad v.	",
-    sentenceTranslated: "	 the problem is rapidly worsening	",
+    word: "	rapidly ad v.	",
+    sentenceExample: "	 the problem is rapidly worsening	",
     czWord: "	rychle",
     czSentence: "	 problém se rychle zhoršuje	",
   },
   {
-    wordTranslated: "	rate  v.	",
-    sentenceTranslated: "	 the crime rate rose by 26 percent exchange rate	",
+    word: "	rate  v.	",
+    sentenceExample: "	 the crime rate rose by 26 percent exchange rate	",
     czWord: "	sazba, míra",
   },
-  { wordTranslated: "	raw adj.	", czWord: "	syrový" },
+  { word: "	raw adj.	", czWord: "	syrový" },
   {
-    wordTranslated: "	reach n.	",
-    sentenceTranslated: "	 we reached the border	",
+    word: "	reach n.	",
+    sentenceExample: "	 we reached the border	",
     czWord: "	dosah, dosáhnout",
   },
   {
-    wordTranslated: "	reasonable adj.	",
-    sentenceTranslated: "	 be reasonable	",
+    word: "	reasonable adj.	",
+    sentenceExample: "	 be reasonable	",
     czWord: "	rozumný",
   },
   {
-    wordTranslated: "	recall  v.	",
-    sentenceTranslated: "	 You should recalled Zeman.	",
+    word: "	recall  v.	",
+    sentenceExample: "	 You should recalled Zeman.	",
     czWord: "	odvolat",
   },
   {
-    wordTranslated: "	recover  v.	",
+    word: "	recover  v.	",
 
     czWord: "	zotavit se",
   },
   {
-    wordTranslated: "	reduction n.	",
+    word: "	reduction n.	",
 
     czWord: "	snížení",
   },
   {
-    wordTranslated: "	regard  v. n.	",
-    sentenceTranslated:
+    word: "	regard  v. n.	",
+    sentenceExample:
       "	 Georgie regard himself as a genuine genius she regarded Omaha as her base	",
     czWord: "	považovat, ohled",
     czSentence: "	 považovala Omahu za svou základnu	",
   },
   {
-    wordTranslated: "	regional adj.	",
+    word: "	regional adj.	",
 
     czWord: "	krajský",
   },
   {
-    wordTranslated: "	register  v. n.	",
+    word: "	register  v. n.	",
 
     czWord: "	registr, evidence",
   },
   {
-    wordTranslated: "	regret  v. n.	",
-    sentenceTranslated: "	 You wont regret	",
+    word: "	regret  v. n.	",
+    sentenceExample: "	 You wont regret	",
     czWord: "	litovat",
   },
   {
-    wordTranslated: "	regulation n.	",
+    word: "	regulation n.	",
 
     czWord: "	nařízení č.",
   },
   {
-    wordTranslated: "	relatively ad v.	",
+    word: "	relatively ad v.	",
 
     czWord: "	relativně",
   },
   {
-    wordTranslated: "	relevant adj.	",
-    sentenceTranslated: "	 the candidate's experience is relevant to the job	",
+    word: "	relevant adj.	",
+    sentenceExample: "	 the candidate's experience is relevant to the job	",
     czWord: "	příslušný",
   },
   {
-    wordTranslated: "	relief n.	",
-    sentenceTranslated: "	 relief on the toilet	",
+    word: "	relief n.	",
+    sentenceExample: "	 relief on the toilet	",
     czWord: "	úleva",
   },
   {
-    wordTranslated: "	rely  v.	",
-    sentenceTranslated: "	 Can I rely at you?	",
+    word: "	rely  v.	",
+    sentenceExample: "	 Can I rely at you?	",
     czWord: "	spoléhat",
   },
   {
-    wordTranslated: "	remark n.  v.	",
-    sentenceTranslated: "	 Tom's looking peaked, she remarked	",
+    word: "	remark n.  v.	",
+    sentenceExample: "	 Tom's looking peaked, she remarked	",
     czWord: "	poznámka, poznamenat",
     czSentence: "Tom vypadá špičkově, poznamenala",
   },
   {
-    wordTranslated: "	representative n. adj.	",
+    word: "	representative n. adj.	",
 
     czWord: "	zástupce, představitel, reprezentativní",
   },
   {
-    wordTranslated: "	reputation n.	",
+    word: "	reputation n.	",
 
     czWord: "	pověst",
   },
   {
-    wordTranslated: "	requirement n.	",
+    word: "	requirement n.	",
 
     czWord: "	požadavek",
   },
   {
-    wordTranslated: "	reserve n.  v.	",
-    sentenceTranslated: "	 reserve some money	",
+    word: "	reserve n.  v.	",
+    sentenceExample: "	 reserve some money	",
     czWord: "	rezervovat, odložit",
   },
   {
-    wordTranslated: "	resident n. adj.	",
-    sentenceTranslated: "	 Im resident in Trebeach	",
+    word: "	resident n. adj.	",
+    sentenceExample: "	 Im resident in Trebeach	",
     czWord: "	obyvatel, bydlící",
   },
   {
-    wordTranslated: "	resist  v.	",
-    sentenceTranslated: "	 antibodies help us to resist infection	",
+    word: "	resist  v.	",
+    sentenceExample: "	 antibodies help us to resist infection	",
     czWord: "	odolat odporovat",
   },
   {
-    wordTranslated: "	resolve  v.	",
+    word: "	resolve  v.	",
 
     czWord: "	vyřešit, rozhodnout",
   },
   {
-    wordTranslated: "	resort n.	",
+    word: "	resort n.	",
 
     czWord: "	letovisko",
   },
   {
-    wordTranslated: "	retain  v.	",
-    sentenceTranslated:
+    word: "	retain  v.	",
+    sentenceExample:
       "	 built in 1830, the house retains many of its original features limestone is known to retain water	",
     czWord: "	udržet",
     czSentence:
       "	 dům si zachovává mnoho ze svých původních prvků. Je známo, že vápenec zadržuje vodu	",
   },
   {
-    wordTranslated: "	reveal  v.	",
-    sentenceTranslated:
+    word: "	reveal  v.	",
+    sentenceExample:
       "	 the clouds were breaking up to reveal a clear blue skyreveal a criminal	",
     czWord: "	odhalit",
   },
   {
-    wordTranslated: "	revolution n.	",
+    word: "	revolution n.	",
 
     czWord: "	revoluce",
   },
   {
-    wordTranslated: "	reward n. v.	",
+    word: "	reward n. v.	",
 
     czWord: "	odměna",
   },
-  { wordTranslated: "	rid  v.	", czWord: "	zbavit se" },
-  { wordTranslated: "	root n.	", czWord: "	kořen" },
+  { word: "	rid  v.	", czWord: "	zbavit se" },
+  { word: "	root n.	", czWord: "	kořen" },
   {
-    wordTranslated: "	round n.	",
+    word: "	round n.	",
 
     czWord: "	kolo, zaokrouhlit, kulatý",
   },
   {
-    wordTranslated: "	routine adj.	",
+    word: "	routine adj.	",
 
     czWord: "	rutinní",
   },
   {
-    wordTranslated: "	rub  v.	",
-    sentenceTranslated: "	 kookis has been rubbing his crotch	",
+    word: "	rub  v.	",
+    sentenceExample: "	 kookis has been rubbing his crotch	",
     czWord: "	třít, masáž",
     czSentence: "	 kookis si třel rozkrok	",
   },
   {
-    wordTranslated: "	rubber n.  , adj.	",
+    word: "	rubber n.  , adj.	",
 
     czWord: "	guma",
   },
   {
-    wordTranslated: "	rural adj.	",
+    word: "	rural adj.	",
 
     czWord: "	venkovský",
   },
   {
-    wordTranslated: "	rush  v. n.	",
+    word: "	rush  v. n.	",
 
     czWord: "	spěchat",
   },
-  { wordTranslated: "	sample  v.	", czWord: "	vzorek" },
+  { word: "	sample  v.	", czWord: "	vzorek" },
   {
-    wordTranslated: "	satisfied adj.	",
+    word: "	satisfied adj.	",
 
     czWord: "	spokojený",
   },
   {
-    wordTranslated: "	satisfy  v.	",
-    sentenceTranslated: "	 Im satisfied	",
+    word: "	satisfy  v.	",
+    sentenceExample: "	 Im satisfied	",
     czWord: "	uspokojit",
   },
   {
-    wordTranslated: "	saving n.	",
-    sentenceTranslated: "	 a fuel-saving vehicle	",
+    word: "	saving n.	",
+    sentenceExample: "	 a fuel-saving vehicle	",
     czWord: "	úspora",
   },
   {
-    wordTranslated: "	scale n.	",
+    word: "	scale n.	",
 
     czWord: "	měřítko, stupnice",
   },
   {
-    wordTranslated: "	schedule  v.	",
+    word: "	schedule  v.	",
 
     czWord: "	rozvrh",
   },
   {
-    wordTranslated: "	scheme n.	",
+    word: "	scheme n.	",
 
     czWord: "	schéma č.",
   },
   {
-    wordTranslated: "	scream  v. n.	",
+    word: "	scream  v. n.	",
 
     czWord: "	křičet",
   },
   {
-    wordTranslated: "	screen  v.	",
-    sentenceTranslated: "	 screen her face	",
+    word: "	screen  v.	",
+    sentenceExample: "	 screen her face	",
     czWord: "	chránit, clonit",
   },
   {
-    wordTranslated: "	seat  v.	",
-    sentenceTranslated: "	 he seated her next to her husband	",
+    word: "	seat  v.	",
+    sentenceExample: "	 he seated her next to her husband	",
     czWord: "	usadit",
   },
-  { wordTranslated: "	sector n.	", czWord: "	sektor" },
+  { word: "	sector n.	", czWord: "	sektor" },
   {
-    wordTranslated: "	secure  v. adj.	",
-    sentenceTranslated: "	 secure a perimeter	",
+    word: "	secure  v. adj.	",
+    sentenceExample: "	 secure a perimeter	",
     czWord: "	zajistit",
     czSentence: "	 Zajistit obvod/okruh	",
   },
-  { wordTranslated: "	seek  v.	", czWord: "	hledat" },
-  { wordTranslated: "	select  v.	", czWord: "	vybrat" },
-  { wordTranslated: "	selection n.	", czWord: "	výběr" },
-  { wordTranslated: "	senior adj.	", czWord: "	starší" },
-  { wordTranslated: "	sense  v.	", czWord: "	smysl" },
+  { word: "	seek  v.	", czWord: "	hledat" },
+  { word: "	select  v.	", czWord: "	vybrat" },
+  { word: "	selection n.	", czWord: "	výběr" },
+  { word: "	senior adj.	", czWord: "	starší" },
+  { word: "	sense  v.	", czWord: "	smysl" },
   {
-    wordTranslated: "	sensitive adj.	",
+    word: "	sensitive adj.	",
 
     czWord: "	citlivý",
   },
   {
-    wordTranslated: "	sentence  v.	",
-    sentenceTranslated: "	 he was sentenced to death	",
+    word: "	sentence  v.	",
+    sentenceExample: "	 he was sentenced to death	",
     czWord: "	odsoudit, věta",
   },
   {
-    wordTranslated: "	sequence n.	",
-    sentenceTranslated: "	 a grueling sequence of exercises a logical sequence	",
+    word: "	sequence n.	",
+    sentenceExample: "	 a grueling sequence of exercises a logical sequence	",
     czWord: "	sekvence, pořadí, posloupnost",
     czSentence: "	 vyčerpávající pořadí cvičení	",
   },
   {
-    wordTranslated: "	session n.	",
+    word: "	session n.	",
 
     czWord: "	sezení, zasedání, schůze",
   },
   {
-    wordTranslated: "	settle  v.	",
+    word: "	settle  v.	",
 
     czWord: "	usadit se",
   },
   {
-    wordTranslated: "	severe adj.	",
-    sentenceTranslated: "	 a severe test of stamina a severe sentence	",
+    word: "	severe adj.	",
+    sentenceExample: "	 a severe test of stamina a severe sentence	",
     czWord: "	těžký, přísný",
   },
-  { wordTranslated: "	shade n.	", czWord: "	odstín" },
-  { wordTranslated: "	shadow n.	", czWord: "	stín" },
+  { word: "	shade n.	", czWord: "	odstín" },
+  { word: "	shadow n.	", czWord: "	stín" },
   {
-    wordTranslated: "	shallow adj.	",
-    sentenceTranslated: "	 shallow grave	",
+    word: "	shallow adj.	",
+    sentenceExample: "	 shallow grave	",
     czWord: "	mělký",
   },
-  { wordTranslated: "	shame n.	", czWord: "	hanba" },
-  { wordTranslated: "	shape  v.	", czWord: "	tvarovat" },
+  { word: "	shame n.	", czWord: "	hanba" },
+  { word: "	shape  v.	", czWord: "	tvarovat" },
   {
-    wordTranslated: "	shelter n.  v.	",
-    sentenceTranslated: "	 Its is raining we need to find a shelter	",
+    word: "	shelter n.  v.	",
+    sentenceExample: "	 Its is raining we need to find a shelter	",
     czWord: "	přístřeší, úkryt",
   },
-  { wordTranslated: "	shift  v.	", czWord: "	posunout" },
+  { word: "	shift  v.	", czWord: "	posunout" },
   {
-    wordTranslated: "	ship  v.	",
-    sentenceTranslated: "	 the wounded soldiers were shipped home	",
+    word: "	ship  v.	",
+    sentenceExample: "	 the wounded soldiers were shipped home	",
     czWord: "	dopravit, loď",
   },
   {
-    wordTranslated: "	shocked adj.	",
+    word: "	shocked adj.	",
 
     czWord: "	šokovaný",
   },
   {
-    wordTranslated: "	shooting n.	",
+    word: "	shooting n.	",
 
     czWord: "	střelba",
   },
   {
-    wordTranslated: "	shot n.	",
+    word: "	shot n.	",
 
     czWord: "	střela, výstřel",
   },
   {
-    wordTranslated: "	significant adj.	",
-    sentenceTranslated: "	 a significant increase in sales	",
+    word: "	significant adj.	",
+    sentenceExample: "	 a significant increase in sales	",
     czWord: "	významný",
   },
   {
-    wordTranslated: "	significantly ad v.	",
-    sentenceTranslated: "	 he paused significantly	",
+    word: "	significantly ad v.	",
+    sentenceExample: "	 he paused significantly	",
     czWord: "	výrazně",
     czSentence: "	 významně se odmlčel	",
   },
-  { wordTranslated: "	silence n.	", czWord: "	ticho" },
-  { wordTranslated: "	silk n.	", czWord: "	hedvábí" },
+  { word: "	silence n.	", czWord: "	ticho" },
+  { word: "	silk n.	", czWord: "	hedvábí" },
   {
-    wordTranslated: "	sincere adj.	",
-    sentenceTranslated:
+    word: "	sincere adj.	",
+    sentenceExample:
       "	 she'd sounded sincere enough He's so sincere that you know exactly where you stand with him.	",
     czWord: "	upřímný",
   },
-  { wordTranslated: "	slave n.	", czWord: "	otrok" },
+  { word: "	slave n.	", czWord: "	otrok" },
   {
-    wordTranslated: "	slide  v. n.	",
+    word: "	slide  v. n.	",
 
     czWord: "	skluzavka, klouzat, snímek",
   },
-  { wordTranslated: "	slight adj.	", czWord: "	mírný" },
+  { word: "	slight adj.	", czWord: "	mírný" },
   {
-    wordTranslated: "	slip  v.	",
-    sentenceTranslated: "	 I slipped on the ice we slipped out by a back door	",
+    word: "	slip  v.	",
+    sentenceExample: "	 I slipped on the ice we slipped out by a back door	",
     czWord: "	uklouznout, proklouznout",
   },
   {
-    wordTranslated: "	slope n.  v.	",
-    sentenceTranslated:
+    word: "	slope n.  v.	",
+    sentenceExample:
       "	steep slope he slithered helplessly down the slopethe garden sloped down to a stream	",
     czWord: "	svah, stráň, sklon, spadat, svažovat, sklánět prudký kopec",
     czSentence: "	 bezmocně klouzal po svahu, zahrada se svažovala k potoku	",
   },
   {
-    wordTranslated: "	somewhat ad v.	",
-    sentenceTranslated: "	 He´s somewhat stupid	",
+    word: "	somewhat ad v.	",
+    sentenceExample: "	 He´s somewhat stupid	",
     czWord: "	poněkud",
   },
-  { wordTranslated: "	soul n.	", czWord: "	duše" },
+  { word: "	soul n.	", czWord: "	duše" },
   {
-    wordTranslated: "	specialist n. adj.	",
+    word: "	specialist n. adj.	",
 
     czWord: "	odborný, specialista",
   },
-  { wordTranslated: "	species n.	", czWord: "	druh" },
+  { word: "	species n.	", czWord: "	druh" },
   {
-    wordTranslated: "	speed  v.	",
-    sentenceTranslated: "	 Speed it up!	",
+    word: "	speed  v.	",
+    sentenceExample: "	 Speed it up!	",
     czWord: "	zrychlit",
   },
   {
-    wordTranslated: "	spiritual adj.	",
+    word: "	spiritual adj.	",
 
     czWord: "	duchovní",
   },
   {
-    wordTranslated: "	split  v. n.	",
+    word: "	split  v. n.	",
 
     czWord: "	Rozdělit",
   },
   {
-    wordTranslated: "	spot  v.	",
-    sentenceTranslated: "	 enemy spotted	",
+    word: "	spot  v.	",
+    sentenceExample: "	 enemy spotted	",
     czWord: "	spatřit",
   },
-  { wordTranslated: "	spread n.	", czWord: "	šířit" },
+  { word: "	spread n.	", czWord: "	šířit" },
   {
-    wordTranslated: "	stable adj.	",
+    word: "	stable adj.	",
 
     czWord: "	stabilní",
   },
   {
-    wordTranslated: "	stage  v.	",
-    sentenceTranslated:
+    word: "	stage  v.	",
+    sentenceExample:
       "	 the show is being staged at the Goodspeed Opera House	",
     czWord: "	inscenovat",
   },
-  { wordTranslated: "	stand n.	", czWord: "	stát" },
-  { wordTranslated: "	stare  v.	", czWord: "	zírat" },
-  { wordTranslated: "	status n.	", czWord: "	stav" },
+  { word: "	stand n.	", czWord: "	stát" },
+  { word: "	stare  v.	", czWord: "	zírat" },
+  { word: "	status n.	", czWord: "	stav" },
   {
-    wordTranslated: "	steady adj.	",
-    sentenceTranslated: "	 steady customers	",
+    word: "	steady adj.	",
+    sentenceExample: "	 steady customers	",
     czWord: "	stálý",
   },
-  { wordTranslated: "	steel n.	", czWord: "	ocel" },
-  { wordTranslated: "	steep adj.	", czWord: "	strmý" },
-  { wordTranslated: "	step  v.	", czWord: "	kráčet" },
+  { word: "	steel n.	", czWord: "	ocel" },
+  { word: "	steep adj.	", czWord: "	strmý" },
+  { word: "	step  v.	", czWord: "	kráčet" },
   {
-    wordTranslated: "	sticky adj.	",
+    word: "	sticky adj.	",
 
     czWord: "	lepkavý",
   },
-  { wordTranslated: "	stiff adj.	", czWord: "	tuhý" },
+  { word: "	stiff adj.	", czWord: "	tuhý" },
   {
-    wordTranslated: "	stock n.	",
-    sentenceTranslated: "	v computer is on stock	",
+    word: "	stock n.	",
+    sentenceExample: "	v computer is on stock	",
     czWord: "	sklad, skladem",
   },
   {
-    wordTranslated: "	stream n.	",
+    word: "	stream n.	",
 
     czWord: "	proud, tok, potok",
   },
   {
-    wordTranslated: "	stretch  v. n.	",
+    word: "	stretch  v. n.	",
 
     czWord: "	protáhnout se, natáhnout, úsek, roztažení",
   },
-  { wordTranslated: "	strict adj.	", czWord: "	přísný" },
+  { word: "	strict adj.	", czWord: "	přísný" },
   {
-    wordTranslated: "	strike  v. n.	",
-    sentenceTranslated:
+    word: "	strike  v. n.	",
+    sentenceExample:
       "	 he raised his hand, as if to strike me an earthquake struck the island dockers voted for an all-out strike counter strike	",
     czWord: "	udeřit, zasáhnout, stávka, útok",
   },
   {
-    wordTranslated: "	structure  v.	",
-    sentenceTranslated:
+    word: "	structure  v.	",
+    sentenceExample:
       "	 the game is structured so that there are five ways to win	",
     czWord: "	struktura",
   },
   {
-    wordTranslated: "	struggle  v. n.	",
+    word: "	struggle  v. n.	",
 
     czWord: "	boj, bojovat",
   },
-  { wordTranslated: "	stuff  v.	", czWord: "	věci" },
+  { word: "	stuff  v.	", czWord: "	věci" },
   {
-    wordTranslated: "	subject adj.	",
+    word: "	subject adj.	",
 
     czWord: "	poddaný, zotročený",
   },
   {
-    wordTranslated: "	submit  v.	",
-    sentenceTranslated:
+    word: "	submit  v.	",
+    sentenceExample:
       "	 Submit a form The report has been submitted to our boss	",
     czWord: "	předložit",
   },
   {
-    wordTranslated: "	sum n.  v.	",
-    sentenceTranslated: "	 the sum of two prime numbers	",
+    word: "	sum n.  v.	",
+    sentenceExample: "	 the sum of two prime numbers	",
     czWord: "	suma, součet, shrnout, sečíst",
   },
-  { wordTranslated: "	surgery n.	", czWord: "	operace" },
+  { word: "	surgery n.	", czWord: "	operace" },
   {
-    wordTranslated: "	surround  v.	",
-    sentenceTranslated: "	 surround sound	",
+    word: "	surround  v.	",
+    sentenceExample: "	 surround sound	",
     czWord: "	obklopit, obklíčit, obehnat",
   },
   {
-    wordTranslated: "	surrounding adj.	",
+    word: "	surrounding adj.	",
 
     czWord: "	okolní",
   },
-  { wordTranslated: "	survey  v.	", czWord: "	průzkum" },
+  { word: "	survey  v.	", czWord: "	průzkum" },
   {
-    wordTranslated: "	suspect  v. n.	",
-    sentenceTranslated:
+    word: "	suspect  v. n.	",
+    sentenceExample:
       "	 If you suspect a gas leak, do not turn on an electric light	",
     czWord: "	podezřelý, tušit",
     czSentence:
       "	 Pokud máte podezření na únik plynu, nezapínejte elektrické světlo	",
   },
-  { wordTranslated: "	swear  v.	", czWord: "	přísahat" },
+  { word: "	swear  v.	", czWord: "	přísahat" },
   {
-    wordTranslated: "	sweep  v.	",
-    sentenceTranslated: "	 Mother in law dont even sweep.	",
+    word: "	sweep  v.	",
+    sentenceExample: "	 Mother in law dont even sweep.	",
     czWord: "	zametat",
   },
-  { wordTranslated: "	switch n.	", czWord: "	vypínač" },
-  { wordTranslated: "	tale n.	", czWord: "	pohádka" },
-  { wordTranslated: "	tank n.	", czWord: "	nádrž" },
-  { wordTranslated: "	target  v.	", czWord: "	cíl" },
+  { word: "	switch n.	", czWord: "	vypínač" },
+  { word: "	tale n.	", czWord: "	pohádka" },
+  { word: "	tank n.	", czWord: "	nádrž" },
+  { word: "	target  v.	", czWord: "	cíl" },
   {
-    wordTranslated: "	tear THEIR WALLS TEAR	",
+    word: "	tear THEIR WALLS TEAR	",
 
     czWord: "	trhat, roztržení",
   },
   {
-    wordTranslated: "	temporary adj.	",
+    word: "	temporary adj.	",
 
     czWord: "	dočasný",
   },
   {
-    wordTranslated: "	term  v.	",
-    sentenceTranslated:
+    word: "	term  v.	",
+    sentenceExample:
       "	 he has been termed Georgie Peorgie he has been termed the father of modern theology	",
     czWord: "	termín, označit, pojmenovat",
   },
   {
-    wordTranslated: "	therapy n.	",
+    word: "	therapy n.	",
 
     czWord: "	terapie, léčba",
   },
-  { wordTranslated: "	threat n.	", czWord: "	ohrožení" },
+  { word: "	threat n.	", czWord: "	ohrožení" },
   {
-    wordTranslated: "	threaten  v.	",
-    sentenceTranslated:
+    word: "	threaten  v.	",
+    sentenceExample:
       "	 Any danger that is sufﬁciently serious as to threaten the whole organism must be liquidated.	",
     czWord: "	vyhrožovat",
   },
   {
-    wordTranslated: "	thus ad v.	",
-    sentenceTranslated:
+    word: "	thus ad v.	",
+    sentenceExample:
       "	 He accepted her offer and thus became Sheriff of Colorado. Thus they stood and waited for what appeared to be the reading of a will.	",
     czWord: "	tím pádem, tedy, a tak",
     czSentence:
       "	 Přijal její nabídku a stal se tak šerifem okresu Ouray v Coloradu. Tak stáli a čekali na to, co vypadalo jako čtení závěti.	",
   },
-  { wordTranslated: "	time  v.	", czWord: "	načasovat" },
+  { word: "	time  v.	", czWord: "	načasovat" },
   {
-    wordTranslated: "	title  v.	",
-    sentenceTranslated: "	 You can title me crazy georgie	",
+    word: "	title  v.	",
+    sentenceExample: "	 You can title me crazy georgie	",
     czWord: "	titul",
   },
   {
-    wordTranslated: "	tough adj.	",
-    sentenceTranslated: "	 though guy	",
+    word: "	tough adj.	",
+    sentenceExample: "	 though guy	",
     czWord: "	tvrdý",
   },
   {
-    wordTranslated: "	track  v.	",
-    sentenceTranslated: "	 Secondary radars that track the aircraft in flight	",
+    word: "	track  v.	",
+    sentenceExample: "	 Secondary radars that track the aircraft in flight	",
     czWord: "	sledovat",
   },
   {
-    wordTranslated: "	transfer  v. n.	",
+    word: "	transfer  v. n.	",
 
     czWord: "	převod, přemístění",
   },
   {
-    wordTranslated: "	transform  v.	",
+    word: "	transform  v.	",
 
     czWord: "	přeměnit, přetvořit",
   },
   {
-    wordTranslated: "	transition n.	",
-    sentenceTranslated:
+    word: "	transition n.	",
+    sentenceExample:
       "	 Students in transition from one program to another. We have transitioned from bombarding to peace bombarding	",
     czWord: "	přechod",
     czSentence: "	 Studenti při přechodu z jednoho programu do druhého	",
   },
   {
-    wordTranslated: "	trial n.	",
+    word: "	trial n.	",
 
     czWord: "	soud, pokus",
   },
   {
-    wordTranslated: "	trip  v.	",
-    sentenceTranslated: "	 he tripped over his cat	",
+    word: "	trip  v.	",
+    sentenceExample: "	 he tripped over his cat	",
     czWord: "	klopýtnout, výlet",
   },
   {
-    wordTranslated: "	trouble  v.	",
-    sentenceTranslated: "	 he was not troubled by doubts don't trouble me	",
+    word: "	trouble  v.	",
+    sentenceExample: "	 he was not troubled by doubts don't trouble me	",
     czWord: "	Trápit, obtěžovat",
   },
   {
-    wordTranslated: "	truly ad v.	",
-    sentenceTranslated: "	 a truly free press	",
+    word: "	truly ad v.	",
+    sentenceExample: "	 a truly free press	",
     czWord: "	skutečně",
   },
   {
-    wordTranslated: "	trust n. ,  v.	",
+    word: "	trust n. ,  v.	",
 
     czWord: "	důvěřovat",
   },
   {
-    wordTranslated: "	tune n.	",
+    word: "	tune n.	",
 
     czWord: "	naladit, melodie",
   },
   {
-    wordTranslated: "	ultimately ad v.	",
-    sentenceTranslated: "	 ultimately Adam has only himself to blame	",
+    word: "	ultimately ad v.	",
+    sentenceExample: "	 ultimately Adam has only himself to blame	",
     czWord: "	nakonec",
   },
   {
-    wordTranslated: "	unconscious adj.	",
-    sentenceTranslated: "	 the boy was beaten unconscious	",
+    word: "	unconscious adj.	",
+    sentenceExample: "	 the boy was beaten unconscious	",
     czWord: "	nevědomý, v bezvědomí",
   },
   {
-    wordTranslated: "	unexpected adj.	",
+    word: "	unexpected adj.	",
 
     czWord: "	neočekávaný",
   },
   {
-    wordTranslated: "	unique adj.	",
+    word: "	unique adj.	",
 
     czWord: "	jedinečný",
   },
   {
-    wordTranslated: "	unknown adj.	",
+    word: "	unknown adj.	",
 
     czWord: "	neznámý",
   },
-  { wordTranslated: "	upper adj.	", czWord: "	horní" },
+  { word: "	upper adj.	", czWord: "	horní" },
   {
-    wordTranslated: "	upwards ad v.	",
+    word: "	upwards ad v.	",
 
     czWord: "	nahoru",
   },
   {
-    wordTranslated: "	urban adj.	",
-    sentenceTranslated: "	 the urban population	",
+    word: "	urban adj.	",
+    sentenceExample: "	 the urban population	",
     czWord: "	městský",
   },
   {
-    wordTranslated: "	urge  v.	",
-    sentenceTranslated: "	 Adam has been urging him to lend him some money	",
+    word: "	urge  v.	",
+    sentenceExample: "	 Adam has been urging him to lend him some money	",
     czWord: "	naléhat, nabádat",
   },
   {
-    wordTranslated: "	value  v.	",
-    sentenceTranslated: "	 his estate was valued at $45,000	",
+    word: "	value  v.	",
+    sentenceExample: "	 his estate was valued at $45,000	",
     czWord: "	ocenit",
   },
   {
-    wordTranslated: "	vary  v.	",
-    sentenceTranslated:
+    word: "	vary  v.	",
+    sentenceExample:
       "	 Programming languages vary flats are varying in the price	",
     czWord: "	lišit se, kolísat",
   },
-  { wordTranslated: "	vast adj.	", czWord: "	rozlehlý" },
+  { word: "	vast adj.	", czWord: "	rozlehlý" },
   {
-    wordTranslated: "	venue n.	",
-    sentenceTranslated: "	 the river could soon be the venue for a UFC event	",
+    word: "	venue n.	",
+    sentenceExample: "	 the river could soon be the venue for a UFC event	",
     czWord: "	místo, místo konání",
   },
-  { wordTranslated: "	very adj.	", czWord: "	velmi" },
+  { word: "	very adj.	", czWord: "	velmi" },
   {
-    wordTranslated: "	via prep. via Skype	",
+    word: "	via prep. via Skype	",
 
     czWord: "	přes",
   },
-  { wordTranslated: "	violence n.	", czWord: "	násilí" },
+  { word: "	violence n.	", czWord: "	násilí" },
   {
-    wordTranslated: "	vision n.	",
-    sentenceTranslated: "	 night vision	",
+    word: "	vision n.	",
+    sentenceExample: "	 night vision	",
     czWord: "	vidění",
   },
-  { wordTranslated: "	vital adj.	", czWord: "	vitální" },
+  { word: "	vital adj.	", czWord: "	vitální" },
   {
-    wordTranslated: "	volume n.	",
-    sentenceTranslated: "	 a volume of air	",
+    word: "	volume n.	",
+    sentenceExample: "	 a volume of air	",
     czWord: "	objem",
   },
   {
-    wordTranslated: "	wage n.	",
-    sentenceTranslated:
+    word: "	wage n.	",
+    sentenceExample:
       "	 we were struggling to get better wages it is necessary to destroy their capacity to wage war	",
     czWord: "	mzda, vést",
     czSentence:
       "	 snažili jsme se získat lepší mzdy je nutné zničit jejich schopnost vést válku	",
   },
   {
-    wordTranslated: "	way ad v.	",
-    sentenceTranslated: "	 it is way off	",
+    word: "	way ad v.	",
+    sentenceExample: "	 it is way off	",
     czWord: "	způsob. Je to daleko",
   },
   {
-    wordTranslated: "	weakness n.	",
+    word: "	weakness n.	",
 
     czWord: "	slabost",
   },
   {
-    wordTranslated: "	wealth n.	",
-    sentenceTranslated: "	 ancestral wealth	",
+    word: "	wealth n.	",
+    sentenceExample: "	 ancestral wealth	",
     czWord: "	bohatství",
   },
   {
-    wordTranslated: "	wealthy adj.	",
+    word: "	wealthy adj.	",
 
     czWord: "	bohatý",
   },
   {
-    wordTranslated:
+    word:
       "	whereas conj. she take care of kids whereas he was learning english	",
 
     czWord: "	zatímco, kdežto",
   },
   {
-    wordTranslated: "	wherever conj. I go wherever I want.	",
+    word: "	wherever conj. I go wherever I want.	",
 
     czWord: "	kdekoliv",
   },
   {
-    wordTranslated: "	whisper  v. n.	",
+    word: "	whisper  v. n.	",
 
     czWord: "	šeptat",
   },
   {
-    wordTranslated: "	whom pron.	",
-    sentenceTranslated: "	 whom did he marry	",
+    word: "	whom pron.	",
+    sentenceExample: "	 whom did he marry	",
     czWord: "	koho",
   },
   {
-    wordTranslated: "	widely ad v.	",
+    word: "	widely ad v.	",
 
     czWord: "	široce",
   },
   {
-    wordTranslated: "	wildlife n.	",
-    sentenceTranslated: "	 wolves are wildlife	",
+    word: "	wildlife n.	",
+    sentenceExample: "	 wolves are wildlife	",
     czWord: "	divoká zvěř",
   },
   {
-    wordTranslated: "	willing adj.	",
-    sentenceTranslated: "	 Willy from The Simpsons is willing guy	",
+    word: "	willing adj.	",
+    sentenceExample: "	 Willy from The Simpsons is willing guy	",
     czWord: "	ochotný",
   },
-  { wordTranslated: "	wind	", czWord: "	vítr" },
-  { wordTranslated: "	wire n.	", czWord: "	drát" },
-  { wordTranslated: "	wise adj.	", czWord: "	moudrý" },
+  { word: "	wind	", czWord: "	vítr" },
+  { word: "	wire n.	", czWord: "	drát" },
+  { word: "	wise adj.	", czWord: "	moudrý" },
   {
-    wordTranslated: "	witness n.  v.	",
+    word: "	witness n.  v.	",
 
     czWord: "	svědek, být svědkem, svědčit",
   },
-  { wordTranslated: "	worse n.	", czWord: "	horší" },
-  { wordTranslated: "	worst n.	", czWord: "	nejhorší" },
+  { word: "	worse n.	", czWord: "	horší" },
+  { word: "	worst n.	", czWord: "	nejhorší" },
   {
-    wordTranslated: "	worth n.	",
-    sentenceTranslated: "	 Worth of bitcoin is...	",
+    word: "	worth n.	",
+    sentenceExample: "	 Worth of bitcoin is...	",
     czWord: "	hodnota",
   },
   {
-    wordTranslated: "	wound n. v.	",
-    sentenceTranslated: "	 a knife wound the sergeant was seriously wounded	",
+    word: "	wound n. v.	",
+    sentenceExample: "	 a knife wound the sergeant was seriously wounded	",
     czWord: "	rána, zranění, poranit",
     czSentence: "	 zranění nožem seržant byl vážně zraněn	",
   },
   {
-    wordTranslated: "	wrap  v.	",
+    word: "	wrap  v.	",
 
     czWord: "	zabalit, obal",
   },

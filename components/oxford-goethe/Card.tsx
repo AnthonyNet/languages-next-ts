@@ -41,7 +41,7 @@ const styles = {
 const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
 
   const [data, setData] = useState(dataTS[0]);
-  const { czWord, wordTranslated, sentenceTranslated } = data;
+  const {word, sentenceExample, czWord, /*czSentence*/} = data;
   const [switchSide, setSwitchSide] = useState<boolean>(true);
   const [switchLanguage, setSwitchLanguage] = useState<boolean>(true);
 
@@ -62,15 +62,20 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
 				className={styles.section__div}
 				animate={{ rotateY: switchSide ? 0 : 180 }}
 				transition={{ duration: 0.5 }}>
+				<header className="fixed top-0 left-0 flex flex-row justify-center w-full">
+					<h2>B1</h2>
+					<h2>B2</h2>
+					<h2>C1</h2>
+				</header>
 				<article className={styles.article}>
 					{switchLanguage ? (
-						sentenceTranslated ? (
+						sentenceExample ? (
 							<div>
-								<h3 className={styles.h3}>{sentenceTranslated}</h3>
-								<h3 className={styles.h3}>{wordTranslated}</h3>
+								<h3 className={styles.h3}>{sentenceExample}</h3>
+								<h3 className={styles.h3}>{word}</h3>
 							</div>
 						) : (
-							<h3 className={styles.h3}>{wordTranslated}</h3>
+							<h3 className={styles.h3}>{word}</h3>
 						)
 					) : (
 						<h3 className={styles.h3}>{czWord}</h3>
@@ -97,32 +102,31 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
 					</button>
 				</div>
 
-				<motion.div
-					className={styles.cardBack}>
+				<motion.div className={styles.cardBack}>
 					<div className={styles.cardBack__div}>
 						{switchLanguage ? (
-							sentenceTranslated ? (
+							sentenceExample ? (
 								<div className={styles.cardBack__answersCover}>
-									<h3 className={styles.h3}>{sentenceTranslated}</h3>
-									<h3 className={styles.h3}>{wordTranslated}</h3>
+									<h3 className={styles.h3}>{sentenceExample}</h3>
+									<h3 className={styles.h3}>{word}</h3>
 									<h3 className={styles.h3}>{czWord}</h3>
 								</div>
 							) : (
 								<div className={styles.cardBack__answersCover}>
-									<h3 className={styles.h3}>{wordTranslated}</h3>
+									<h3 className={styles.h3}>{word}</h3>
 									<h3 className={styles.h3}>{czWord}</h3>
 								</div>
 							)
-						) : sentenceTranslated ? (
+						) : sentenceExample ? (
 							<div className={styles.cardBack__answersCover}>
 								<h3 className={styles.h3}>{czWord}</h3>
-								<h3 className={styles.h3}>{sentenceTranslated}</h3>
-								<h3 className={styles.h3}>{wordTranslated}</h3>
+								<h3 className={styles.h3}>{sentenceExample}</h3>
+								<h3 className={styles.h3}>{word}</h3>
 							</div>
 						) : (
 							<div className={styles.cardBack__answersCover}>
 								<h3 className={styles.h3}>{czWord}</h3>
-								<h3 className={styles.h3}>{wordTranslated}</h3>
+								<h3 className={styles.h3}>{word}</h3>
 							</div>
 						)}
 
