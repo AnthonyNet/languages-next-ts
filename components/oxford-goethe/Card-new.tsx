@@ -1,4 +1,4 @@
-"use client";
+// create a better new card component"use client";
 import { useState } from "react";
 import { Card_Vocabs } from "../../interface/";
 import Image from "next/image";
@@ -41,7 +41,7 @@ const styles = {
 const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
 
   const [data, setData] = useState(dataTS[0]);
-  const {word, sentenceExample, czWord, /*czSentence*/} = data;
+  const {word, sentenceExample, czWord, czSentence} = data;
   const [switchSide, setSwitchSide] = useState<boolean>(true);
   const [switchLanguage, setSwitchLanguage] = useState<boolean>(true);
 
@@ -79,7 +79,6 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
 						)
 					) : (
 						<h3 className={styles.h3}>{czWord}</h3>
-
 					)}
 				</article>
 
