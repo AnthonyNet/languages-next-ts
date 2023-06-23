@@ -91,13 +91,13 @@ function Pagination() {
 								<tr
 									key={index}
 									className="border-b-2 border-red-300 flex  flex-nowrap">
-									{item.sentenceTranslated ? (
+									{item.sentenceExample ? (
 										<td className="w-[50%] text-left">
-											{item.sentenceTranslated}
+											{item.sentenceExample}
 										</td>
 									) : (
 										<td className="w-[50%] text-left">
-											{item.wordTranslated}
+											{item.word}
 										</td>
 									)}
 									<td className={styles.tbody__td}>{item.czWord}</td>

@@ -12,7 +12,7 @@ const styles = {
 	cover: "preserve-3d group my-rotate-y-180 w-full h-full",
 	cover__div: "w-full h-full flex items-center justify-center",
 	cardBack:
-		"absolute top-0 my-rotate-y-180 backface-hidden overflow-hidden bg-blue-950  w-full h-full",
+		"absolute top-0 my-rotate-y-180 backface-hidden overflow-hidden bg-blue-950  w-full h-full ",
 	cardBack__div:
 		"w-full h-full flex flex-col items-center justify-center text-gray-800",
 	h2: "text-base md:text-xl xl:text-2xl p-2 sm:p-0",

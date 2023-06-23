@@ -1,14 +1,16 @@
 // create a better new card component"use client";
+"use client"
 import { useState } from "react";
 import { Card_Vocabs } from "../../interface/";
 import Image from "next/image";
 
 import { motion } from "framer-motion";
-import Typewriter from "typewriter-effect";
+import { OxfordB1, OxfordB2, OxfordC1, Goethe } from "../../myData2/";
 
 //FLAGS images
 import czFlag from "../../myData/images/cz.png";
 import enFlag from "../../myData/images/eng.png";
+
 {
   /*
 
@@ -20,11 +22,10 @@ import enFlag from "../../myData/images/eng.png";
 const styles = {
 	section:
 		"relative flex justify-center items-center p-2 sm:p-0 responsiveSection",
-	section__div:
-		"w-full sm:w-[600px] h-[250px] sm:h-[270px] md:h-[320px] border-double border-4 border-blue-800  rounded-lg shadow-lg shadow-blue-800 preserve-3d group my-rotate-y-180 duration-1000 flex flex-col justify-around ",
+	card: "flex flex-col justify-between w-full sm:w-[600px] h-[250px] sm:h-[270px] md:h-[320px] border-double border-4 border-blue-800  rounded-lg shadow-lg shadow-blue-800 preserve-3d group my-rotate-y-180 duration-1000 ",
 	article: "w-full flex flex-col justify-center sm:grow ",
-	section__div__btnCover:
-		"flex justify-around text-center border-t-2 border-blue-400",
+	card__div__btnCover:
+		"flex justify-around items-center text-center border-t-2 border-blue-400 min-h-[10%]",
 	h3: "py-2 md:py-4  text-center border-b border-blue-600 w-auto mx-auto",
 	button_green:
 		"cardBtn bg-green-600 hover:bg-green-800 focus:bg-green-800 active:bg-green-800",
@@ -35,21 +36,34 @@ const styles = {
 		"absolute top-0 my-rotate-y-180 backface-hidden overflow-hidden w-full h-full mainCardBack",
 	cardBack__div: "h-full text-center flex flex-col items-center text-gray-600 ",
 	cardBack__answersCover: "w-full h-full flex flex-col justify-center md:p-4",
-	cardBack__btnCover: "w-full flex justify-around   border-t-2 border-blue-400",
+	cardBack__btnCover:
+		"w-full flex justify-around items-center  border-t-2 border-blue-400",
 };
 
-const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
+interface Words  {
+	word: string | undefined;
+	sentenceExample?: string;
+	czWord: string;
+	czSentence?: string;
+}
 
-  const [data, setData] = useState(dataTS[0]);
-  const {word, sentenceExample, czWord, czSentence} = data;
+const Card = () => {
+
+  const [number, setNumber] = useState<number>(1);
+  const [incommingData, setIncommingData] = useState<Words[]>(OxfordB1);
+
+  const {word, sentenceExample, czWord, czSentence} = incommingData[number];
   const [switchSide, setSwitchSide] = useState<boolean>(true);
   const [switchLanguage, setSwitchLanguage] = useState<boolean>(true);
 
-
   const randomWord = () => {
-	const rand = Math.floor(Math.random() * dataTS.length);
-    setData(dataTS[rand]);
+	setNumber(Math.floor(Math.random() * incommingData.length));
   };
+
+  const handleClick = (data: Words[]) => {
+	setNumber(0);
+	setIncommingData(data);
+  }
 
   return (
 		<motion.section
@@ -59,13 +73,14 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
 			transition={{ duration: 1 }}
 			className={styles.section}>
 			<motion.div
-				className={styles.section__div}
+				className={styles.card}
 				animate={{ rotateY: switchSide ? 0 : 180 }}
 				transition={{ duration: 0.5 }}>
-				<header className="fixed top-0 left-0 flex flex-row justify-center w-full">
-					<h2>B1</h2>
-					<h2>B2</h2>
-					<h2>C1</h2>
+				<header className=" flex flex-row justify-around w-full p-2 text-xl">
+					<button onClick={() => handleClick(OxfordB1)}>B1</button>
+					<button onClick={() => handleClick(OxfordB2)}>B2</button>
+					<button onClick={() => handleClick(OxfordC1)}>C1</button>
+					<button onClick={() => handleClick(Goethe)}>Goethe</button>
 				</header>
 				<article className={styles.article}>
 					{switchLanguage ? (
@@ -78,11 +93,14 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
 							<h3 className={styles.h3}>{word}</h3>
 						)
 					) : (
-						<h3 className={styles.h3}>{czWord}</h3>
+						<>
+							<h3 className={styles.h3}>{czWord}</h3>
+							<h3 className={styles.h3}>{czSentence}</h3>
+						</>
 					)}
 				</article>
 
-				<div className={styles.section__div__btnCover}>
+				<div className={styles.card__div__btnCover}>
 					<button onClick={() => [setSwitchLanguage(!switchLanguage)]}>
 						{switchLanguage ? (
 							<Image className={styles.image} src={czFlag} alt="cz-flag" />

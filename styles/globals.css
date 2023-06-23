@@ -79,7 +79,6 @@
 }
 
 
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -125,6 +124,9 @@ nav .navItem:hover,
 .mainCardBack{
   background: var(--mainCardBack);
 }
+
+
+
 /* ------------------
 Animations
 --------------------- */

@@ -12,7 +12,7 @@ const styles = {
 	section:
 		"responsiveSection flex flex-col justify-center items-center  min-h-[100vh] h-auto sm:h-[90%] border-red-300  border-t-2",
 	card__div:
-		"mainCard w-[300px] h-[420px] bg-transparent cursor-pointer group perspective",
+		"mainCard w-[300px] h-[420px] bg-transparent cursor-pointer group perspectivez",
 	card__div__div:
 		"preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000",
 	card__div__div__div: "w-full h-full",

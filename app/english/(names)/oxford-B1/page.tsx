@@ -1,7 +1,7 @@
 "use client"
 
 import { OxfordB1 } from '../../../../myData'
-import Card from '../../../../components/oxford-goethe/Card'
+import Card from '../../../../components/oxford-goethe/Card-new'
 
 
 

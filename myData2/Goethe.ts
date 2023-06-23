@@ -1,65 +1,89 @@
 import { Card_Vocabs } from "../interface";
 
 export const Goethe: Card_Vocabs[] = [
+
+	   {
+        word: "abschließen",
+        sentenceExample: "Er wird bald sein Studium abschließen.",
+        czWord: "dokončit",
+        czSentence: "Brzy dokončí svoje studium."
+    },
+    {
+        word: "anbieten",
+        sentenceExample: "Ich kann dir meine Hilfe anbieten.",
+        czWord: "nabídnout",
+        czSentence: "Můžu ti nabídnout mou pomoc."
+    },
+    {
+        word: "aufhören",
+        sentenceExample: "Es hört bald auf zu regnen.",
+        czWord: "přestat",
+        czSentence: "Brzy přestane pršet."
+    },
+
 	{
 		word: "abschließen",
 		sentenceExample: "Er wird bald sein Studium abschließen.",
 		czWord: "dokončit",
-		czSentence: "He will soon complete his studies.",
+		czSentence: "Brzy dokončí svoje studium.",
 	},
 	{
-		word: "anbieten",
-		sentenceExample: "Sie bieten eine große Auswahl an Produkten an.",
-		czWord: "poskytnout",
-		czSentence: "They offer a wide range of products.",
+		word: "entspannen",
+		sentenceExample: "Nach der Arbeit entspanne ich mich gerne mit einem Buch.",
+		czWord: "odpočívat",
+		czSentence: "Po práci si rád odpočinu s knihou.",
 	},
 	{
-		word: "bedeuten",
-		sentenceExample: "Dieser Vertrag bedeutet eine langfristige Bindung.",
-		czWord: "znamenat",
-		czSentence: "This contract implies a long-term commitment.",
-	},
-	{
-		word: "beeinflussen",
-		sentenceExample: "Die Medien können die öffentliche Meinung beeinflussen.",
-		czWord: "ovlivnit",
-		czSentence: "The media can influence public opinion.",
-	},
-	{
-		word: "beschäftigen",
-		sentenceExample: "Er ist mit einem wichtigen Projekt beschäftigt.",
-		czWord: "zaměstnat",
-		czSentence: "He is occupied with an important project.",
-	},
-	{
-		word: "betonen",
-		sentenceExample: "Sie betonte die Bedeutung des Umweltschutzes.",
-		czWord: "zdůraznit",
-		czSentence: "She emphasized the importance of environmental protection.",
-	},
-	{
-		word: "beurteilen",
-		sentenceExample: "Es ist schwierig, eine Situation objektiv zu beurteilen.",
-		czWord: "posoudit",
-		czSentence: "It is difficult to assess a situation objectively.",
-	},
-	{
-		word: "durchführen",
+		word: "teilnehmen",
 		sentenceExample:
-			"Wir werden eine Umfrage durchführen, um Feedback zu erhalten.",
-		czWord: "provést",
-		czSentence: "We will conduct a survey to gather feedback.",
+			"Ich werde am nächsten Monat an einem Deutschkurs teilnehmen.",
+		czWord: "zúčastnit se",
+		czSentence: "Příští měsíc se zúčastním kurzu němčiny.",
 	},
 	{
-		word: "einfach",
-		sentenceExample: "Das Konzept ist einfach zu verstehen.",
-		czWord: "jednoduchý",
-		czSentence: "The concept is easy to understand.",
+		word: "empfehlen",
+		sentenceExample: "Der Arzt empfiehlt, mehr Wasser zu trinken.",
+		czWord: "doporučit",
+		czSentence: "Doktor doporučuje pít více vody.",
 	},
 	{
-		word: "entwickeln",
-		sentenceExample: "Sie möchten ihre Fähigkeiten weiterentwickeln.",
-		czWord: "rozvíjet",
-		czSentence: "They want to develop their skills further.",
+		word: "verbessern",
+		sentenceExample: "Ich möchte meine Deutschkenntnisse verbessern.",
+		czWord: "zlepšit",
+		czSentence: "Chci zlepšit své znalosti němčiny.",
 	},
+	{
+		word: "erlauben",
+		sentenceExample: "Meine Eltern erlauben mir, am Wochenende auszugehen.",
+		czWord: "povolit",
+		czSentence: "Moji rodiče mi dovolují chodit ven o víkendu.",
+	},
+	{
+		word: "unterstützen",
+		sentenceExample: "Meine Familie unterstützt mich bei meinen Zielen.",
+		czWord: "podpořit",
+		czSentence: "Moje rodina mě podporuje v mých cílech.",
+	},
+	{
+		word: "vermeiden",
+		sentenceExample: "Ich versuche, ungesundes Essen zu vermeiden.",
+		czWord: "vyhnout se",
+		czSentence: "Snažím se vyhnout nezdravému jídlu.",
+	},
+{
+	word: "verständigen",
+    sentenceExample: "Ich versuche, ungesundes Essen zu verständigen.",
+    czWord: "vyhnout se",
+    czSentence: "Snažím se vyhnout nezdravému jídlu.",
+},
+ {
+	word: "verständischen",
+    sentenceExample: "Ich versuche, ungesundes Essen zu verständischen.",
+    czWord: "vyhnout se",
+    czSentence: "Snažím se vyhnout nezdravému jídlu.",
+ },
+
+
+
+
 ];

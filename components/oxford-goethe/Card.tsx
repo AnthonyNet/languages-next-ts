@@ -22,7 +22,7 @@ const styles = {
 		"relative flex justify-center items-center p-2 sm:p-0 responsiveSection",
 	section__div:
 		"w-full sm:w-[600px] h-[250px] sm:h-[270px] md:h-[320px] border-double border-4 border-blue-800  rounded-lg shadow-lg shadow-blue-800 preserve-3d group my-rotate-y-180 duration-1000 flex flex-col justify-around ",
-	article: "w-full flex flex-col justify-center sm:grow ",
+	article: "w-full flex flex-col justify-center sm:grow h-[200px]",
 	section__div__btnCover:
 		"flex justify-around text-center border-t-2 border-blue-400",
 	h3: "py-2 md:py-4  text-center border-b border-blue-600 w-auto mx-auto",
