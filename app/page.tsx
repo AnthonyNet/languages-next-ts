@@ -76,6 +76,7 @@ function MainPage() {
 					</div>
 				</div>
 			</div>
+			<h4 className="max-w-[300px] text-center">Hover the image to get Bitcoin real price</h4>
 		</section>
 	);
 }
