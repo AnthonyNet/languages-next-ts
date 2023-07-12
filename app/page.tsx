@@ -76,11 +76,6 @@ function MainPage() {
 					</div>
 				</div>
 			</div>
-
-				<h4 className="max-w-[300px] text-center">
-					Hover the image to reveal a realtime Bitcoin price
-				</h4>
-
 		</section>
 	);
 }
