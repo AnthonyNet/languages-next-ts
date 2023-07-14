@@ -11,11 +11,10 @@ import czFlag from "../../myData/images/cz.png";
 import enFlag from "../../myData/images/eng.png";
 {
   /*
-
   This Card component is used in OXford B1, B2, C1 & Göethe
-
   */
 }
+
 
 const styles = {
 	section:
