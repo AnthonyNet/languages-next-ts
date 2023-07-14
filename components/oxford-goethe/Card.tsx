@@ -62,11 +62,7 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
 				className={styles.section__div}
 				animate={{ rotateY: switchSide ? 0 : 180 }}
 				transition={{ duration: 0.5 }}>
-				<header className="fixed top-0 left-0 flex flex-row justify-center w-full">
-					<h2>B1</h2>
-					<h2>B2</h2>
-					<h2>C1</h2>
-				</header>
+
 				<article className={styles.article}>
 					{switchLanguage ? (
 						sentenceExample ? (
