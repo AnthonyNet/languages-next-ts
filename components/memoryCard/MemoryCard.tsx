@@ -8,8 +8,8 @@ interface Card {
 
 const styles = {
 	container:
-		"relative flex items-center justify-center  cursor-pointer group perspective",
-	cover: "preserve-3d group my-rotate-y-180 w-full h-full",
+		"relative flex items-center justify-center  cursor-pointer group perspective border-blue-500 hover:shadow-[1px_10px_15px_rgba(17,_71,_183,_0.9)]",
+	cover: "preserve-3d group my-rotate-y-180 w-full h-full ",
 	cover__div: "w-full h-full flex items-center justify-center",
 	cardBack:
 		"absolute top-0 my-rotate-y-180 backface-hidden overflow-hidden rounded-3xl w-full h-full bg-black ",
