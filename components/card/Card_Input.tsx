@@ -98,7 +98,6 @@ setInput => CLEAR VALUE IN INPUT
         className={styles.input + " " + checkMistake}
         onChange={handleChange}
         placeholder={placeholder}
-
       />
     </li>
   );

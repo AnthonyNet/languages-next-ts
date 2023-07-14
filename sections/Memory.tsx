@@ -21,11 +21,36 @@ interface Data {
   readonly pastParticiple2?: string;
 }
 
+const objekt: Otec = [
+	{
+		item1: "slovo",
+		item2: 1,
+	},
+	{
+		item1: 1,
+		item2: "slovo",
+	}
+]
+
+interface Otec  {
+		Dite1: Dite1;
+		Dite2: Dite2;
+}
+interface Dite1 extends Otec  {
+item1: string;
+item2: number;
+}
+interface Dite2 extends Otec{
+	item1: number;
+	item2: string;
+}
+
+
 const styles = {
 	section: "flex flex-col items-center",
 	section__div: "w-[200px] flex justify-between p-2 sm:p-4 font-bold mt-[10vh]",
 	article:
-		"w-full sm:w-[95%]  h-[79vh] border-solid border-2 border-indigo-600 grid  grid-cols-2 sm:grid-cols-4 grid-rows-8 sm:grid-rows-4 gap-2 sm:gap-4 grid-flow-row p-2",
+		"w-full sm:w-[95%]  h-[79vh] border-solid grid  grid-cols-2 sm:grid-cols-4 grid-rows-8 sm:grid-rows-4 gap-2 sm:gap-4 grid-flow-row p-2",
 	h2: "text-lg sm:text-2xl",
 	navItem: "navItem"
 };
@@ -97,6 +122,7 @@ function Memory() {
   useEffect(() => {
     createData(props);
   }, []);
+
 
   /* --------------------------------------------------- */
   /*       Compare Cards          */

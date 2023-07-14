@@ -21,18 +21,18 @@ function DarkModeBtn(){
  const currentTheme = theme === "system" ? systemTheme : theme;
 
  const ButtonDark = () => (
-  <BsFillMoonFill
-  className="h-8 w-8 cursor-pointer text-cellow-500 motion-safe:animate-ping-slow"
-  onClick={() => setTheme("dark")}
-/>
- )
+		<BsFillMoonFill
+			className="h-8 w-8 cursor-pointer text-cellow-500 motion-safe:animate-ping-slow"
+			onClick={() => setTheme("dark")}
+		/>
+ );
 
  const ButtonLight = () => (
-  <BsFillSunFill
-  className="h-8 w-8 cursor-pointer text-cellow-500 motion-safe:animate-spin-slow"
-  onClick={() => setTheme("light")}
-/>
-  )
+		<BsFillSunFill
+			className="h-8 w-8 cursor-pointer text-cellow-500 motion-safe:animate-spin-slow text-white/75"
+			onClick={() => setTheme("light")}
+		/>
+ );
 
 
 

@@ -9,8 +9,9 @@ import Nav_Items from "./Nav_Items";
 import DarkModeBtn from "./DarkModeBtn";
 
 const styles = {
-	nav: "flex justify-center items-center w-full  min-h-[10vh] shadow-xl z-[400] px-4 fixed",
-	nav__div: "navDetails w-full h-full flex items-start   relative text-xl",
+	nav: "flex justify-center items-center w-full  min-h-[10vh] shadow-xl shadow-[0_10px_20px_rgba(66,_11,_89,_1)] z-[400] px-4 fixed text-[#881DF2] bg-gradient-to-r from-[#4E0F8C] to-[#7A11BF] text-shadow",
+	nav__div:
+		"navDetails w-full h-full flex items-start   relative text-xl text-[#881DF2] ",
 	aside: "logo sm:w-1/3 navItem transition ease-in-out duration-1000",
 	article: "justify-around items-start w-full h-full hidden md:flex",
 	container:
@@ -46,7 +47,7 @@ function Navbar() {
 				</aside>
 				<Nav_Items />
 
-				<span className="hidden md:flex  bottom-2 right-4 text-3xl">
+				<span className="hidden md:flex  bottom-2 right-4 text-3xl ">
 					<DarkModeBtn />
 				</span>
 

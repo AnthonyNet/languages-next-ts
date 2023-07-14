@@ -7,9 +7,6 @@
     @apply text-[#1f2937] tracking-wide
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-bold
-  }
 
   h1 {
     @apply text-4xl sm:text-5xl md:text-6xl font-[Raleway]
@@ -21,10 +18,6 @@
 
   li {
     @apply cursor-pointer
-  }
-
-  strong {
-    @apply font-bold text-cyan-600
   }
 
   section {
@@ -40,15 +33,15 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
-
+  /*--font-family:  'Noto Sans', sans-serif;*/
 
 	--white: rgb(238, 234, 234);
-    --blue-main: #1c76c6;
+    --text-main: #881DF2;
+	--text-secondary: #9c64ba;
 	--menu-item: #1c6cb3;
 	--menu-item-hover: #5327b3;
+	--font-weight: 850;
+	--text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.97);
 
 	 --background-color: var(--white);
      --mainCardBack: var(--white);
@@ -63,21 +56,20 @@
     --background-color: linear-gradient(132deg, rgb(0, 1, 0) 0.00%, rgb(3, 3, 38) 100.00%);
     --mainCardBack: linear-gradient(132deg, rgb(18, 8, 17) 0.00%, rgb(3, 3, 38) 100.00%);
 
- 	--menu-item: var(--blue-main);
+ 	--menu-item: var(--text-main);
 	--menu-item-hover: var(--white);
   }
 }
 
 /* Theme button light/dark switch */
 [data-theme='dark'] {
-
-  --background-color: linear-gradient(132deg, rgb(0, 1, 0) 0.00%, rgb(3, 3, 38) 100.00%);
+	--background-color: rgb(0, 0, 0);
+  /*--background-color: linear-gradient(132deg, rgb(0, 1, 0) 0.00%, rgb(38, 7, 24) 100.00%);*/
   --mainCardBack: linear-gradient(132deg, rgb(5, 4, 18) 0.00%, rgb(2, 2, 26) 100.00%);
 
-  --menu-item: var(--blue-main);
+  --menu-item: var(--text-main);
   --menu-item-hover: var(--white);
 }
-
 
 * {
   box-sizing: border-box;
@@ -86,18 +78,13 @@
 
 }
 
-
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  color: var(--blue-main);
-
+  color: var(--text-main);
 }
 
-.tooltip:hover .tooltip-item {
-    visibility: visible;
-}
 
 body,
 nav,
@@ -117,15 +104,22 @@ nav .navItem:hover,
   transition: all 0.5s ease-in-out;
 }
 
-.navCover{
-	background: var(--background-color);
+.navCover{ background: var(--background-color); }
+
+.mainCardBack{ background: var(--mainCardBack); }
+strong{ font-weight: var(--font-weight);}
+
+.borders,
+strong,
+.text-shadow{
+	  text-shadow: var(--text-shadow);
 }
 
-.mainCardBack{
-  background: var(--mainCardBack);
+.btnBitcoin{background-color: var(--text-main)}
+
+.tooltip:hover .tooltip-item {
+    visibility: visible;
 }
-
-
 
 /* ------------------
 Animations
