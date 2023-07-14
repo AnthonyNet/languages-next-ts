@@ -25,9 +25,9 @@ const styles = {
 	section: "flex flex-col items-center",
 	section__div: "w-[200px] flex justify-between p-2 sm:p-4 font-bold mt-[10vh]",
 	article:
-		"w-full sm:w-[95%]  h-[79vh] border-solid border-2 border-indigo-600 grid  grid-cols-2 sm:grid-cols-4 grid-rows-8 sm:grid-rows-4 gap-2 sm:gap-4 grid-flow-row p-2",
+		"w-full sm:w-[95%]  h-[79vh] border-solid grid  grid-cols-2 sm:grid-cols-4 grid-rows-8 sm:grid-rows-4 gap-2 sm:gap-4 grid-flow-row p-2",
 	h2: "text-lg sm:text-2xl",
-	navItem: "navItem"
+	navItem: "navItem",
 };
 
 //write simple function which return result of 1+1
