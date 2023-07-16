@@ -9,16 +9,16 @@ import Nav_Items from "./Nav_Items";
 import DarkModeBtn from "./DarkModeBtn";
 
 const styles = {
-	nav: "flex justify-center items-center w-full  min-h-[10vh] shadow-xl z-[400] px-4 fixed",
-	nav__div: "navDetails w-full h-full flex items-start   relative text-xl",
-	aside: "logo sm:w-1/3 navItem transition ease-in-out duration-1000",
+	nav: "flex justify-center items-center w-full  min-h-[10vh] shadow-xl z-[400] px-4 fixed ",
+	nav__div: "navDetails w-full h-full flex items-start relative text-xl",
+	aside: "logo sm:w-1/3 transition ease-in-out duration-1000 nav__item",
 	article: "justify-around items-start w-full h-full hidden md:flex",
 	container:
 		"relative inline-block tooltip hover:text-white transition ease-in-out duration-700",
 	main__a:
 		"transition ease-in-out duration-700 px-2 py-1 font-medium transform hover:-translate-y-6", //ulAnimation
 	cover:
-		"flex flex-col p-4 bg-white w-60 h-auto rounded-md z-20 absolute right-0 invisible tooltip-item border-2 navCover",
+		"flex flex-col p-4 bg-white w-60 h-auto rounded-md z-20 absolute right-0 invisible tooltip-item ",
 	ul: "list-disc space-y-2 ",
 	ul__li: "flex items-start",
 	ul__li__a:

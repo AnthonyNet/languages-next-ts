@@ -13,10 +13,6 @@ const Fetch = (url:any) => {
         setLoading(true);
     }
 
-
-
-
-
     useEffect(() => {
         getData();
     });

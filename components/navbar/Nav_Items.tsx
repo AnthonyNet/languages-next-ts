@@ -13,7 +13,7 @@ const styles = {
 		"relative inline-block tooltip transition ease-in-out duration-700",
 	main__a: "px-2 py-1 font-medium navItem transition-all ease-in-out duration-1000", //ulAnimation
 	cover:
-		"flex flex-col p-4 w-60 h-auto rounded-md z-20 absolute right-0 invisible tooltip-item border-2 navCover",
+		"flex flex-col p-4 w-60 h-auto rounded-md z-20 absolute right-0 invisible tooltip-item border-2 nav__cover",
 	ul: "list-disc space-y-2 style-",
 	//ul__li: "flex items-start",
 	ul__li:
