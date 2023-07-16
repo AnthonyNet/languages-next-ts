@@ -8,16 +8,15 @@ interface Card {
 
 const styles = {
 	container:
-		"relative flex items-center justify-center  cursor-pointer group perspective border-blue-500 hover:shadow-[1px_10px_15px_rgba(17,_71,_183,_0.9)]",
+		"relative flex items-center justify-center  cursor-pointer group perspective mainCardBorder borderShadow transition ease-in-out duration-500",
 	cover: "preserve-3d group my-rotate-y-180 w-full h-full ",
 	cover__div: "w-full h-full flex items-center justify-center",
 	cardBack:
 		"absolute top-0 my-rotate-y-180 backface-hidden overflow-hidden rounded-3xl w-full h-full bg-black ",
 	cardBack__div:
-		"w-full h-full flex flex-col items-center justify-center text-gray-800",
+		"w-full h-full flex flex-col items-center justify-center",
 	h2: "text-base md:text-xl xl:text-2xl p-2 sm:p-0",
 	h3: "text-4xl xl:text-6xl",
-
 } as const;
 
 function Memory({ id, item, handleClick }: Card) {
@@ -29,9 +28,10 @@ const fadeOut = item.check && "opacity-0 transition-opacity duration-1000 delay-
 				styles.container +
 				" " +
 				(item.click
-					? "border-2 border-green-400  rounded-3xl p-4"
-					: "border-[#881DF2] p-4 border-2 rounded-3xl")
-				+ " " + fadeOut
+					? "border-2 mainCardBorderGreen  rounded-3xl p-4"
+					: "border-[#881DF2] p-4 border-2 rounded-3xl") +
+				" " +
+				fadeOut
 			}
 			onClick={() => handleClick(id, item.select)}
 			disabled={item.click}>

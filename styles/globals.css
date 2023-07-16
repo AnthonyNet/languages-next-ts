@@ -4,15 +4,11 @@
 
 @layer base {
   body {
-    @apply text-[#1f2937] tracking-wide
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-bold
+    @apply tracking-wide
   }
 
   h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl font-[Raleway]
+    @apply text-4xl sm:text-5xl md:text-6xl
   }
 
   h2 {
@@ -23,35 +19,38 @@
     @apply cursor-pointer
   }
 
-  strong {
-    @apply font-bold text-cyan-600
-  }
-
   section {
 	@apply w-full h-screen
   }
 
-  .cardBtn {
-	@apply px-6 py-2.5 mt-2 mb-2 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition  ease-in-out duration-500
-  }
 }
 
 /* :-( */
 :root {
   --max-width: 1100px;
-  --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
-
+  --font-family:  'Noto Sans', sans-serif;
 
 	--white: rgb(238, 234, 234);
-    --blue-main: #1c76c6;
-	--menu-item: #1c6cb3;
+
+	--main-purple:#881DF2;
+    --text-main: var(--main-purple);
+
+	--text-secondary: #9c64ba;
+
 	--menu-item-hover: #5327b3;
+	--font-weight: 850;
+	--text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.97);
 
 	 --background-color: var(--white);
-     --mainCardBack: var(--white);
+	 --mainCardBack: #f5f5f5;
+
+	 --border-color: var(--text-main);
+	 --border-radius: 12px;
+	 --border-shadow: 1px 10px 15px var(--main-purple);
+
+	--black-color: rgb(0, 0, 0);
+	--navbar-gradient: linear-gradient(132deg, rgb(25, 5, 45) 0.00%, rgb(47, 16, 67) 100.00%);
+
 }
 
 
@@ -59,57 +58,71 @@
 
 @media (prefers-color-scheme: dark){
   :root {
+    --background-color: var(--black-color);
 
-    --background-color: linear-gradient(132deg, rgb(0, 1, 0) 0.00%, rgb(3, 3, 38) 100.00%);
-    --mainCardBack: linear-gradient(132deg, rgb(18, 8, 17) 0.00%, rgb(3, 3, 38) 100.00%);
-
- 	--menu-item: var(--blue-main);
+ 	--menu-item: var(--text-main);
 	--menu-item-hover: var(--white);
   }
 }
 
 /* Theme button light/dark switch */
 [data-theme='dark'] {
+	--background-color: rgb(0, 0, 0);
+  /*--background-color: linear-gradient(132deg, rgb(0, 1, 0) 0.00%, rgb(38, 7, 24) 100.00%);*/
 
-  --background-color: linear-gradient(132deg, rgb(0, 1, 0) 0.00%, rgb(3, 3, 38) 100.00%);
-  --mainCardBack: linear-gradient(132deg, rgb(5, 4, 18) 0.00%, rgb(2, 2, 26) 100.00%);
-
-  --menu-item: var(--blue-main);
+  --menu-item: var(--text-main);
   --menu-item-hover: var(--white);
 }
-
-
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
+  font-family: var(--font-family);
 }
-
 
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  color: var(--blue-main);
-
+  color: var(--text-main);
 }
 
-.tooltip:hover .tooltip-item {
-    visibility: visible;
-}
 
 body,
-nav,
  .main-bg,
  .mobile__Nav{
   background: var(--background-color);
-
 }
+
+.custom__color{
+	color: var(--text-main);
+}
+.custom__border{
+	border-color: var(--text-main);
+}
+
+.custom__boxShadow{
+	box-shadow: var(--border-shadow);
+}
+
+.custom__background{
+	background: var(--navbar-gradient);
+}
+
+/* ------------------
+Navbar
+--------------------- */
+
+nav{
+	  background: var(--navbar-gradient);
+	  font-size: 150%;
+}
+
 nav .navItem,
 article .navItem {
-  color: var(--menu-item);
+  color: var(--main-purple);
+  font-size: 130%;
 }
 nav .navItem:hover,
 .navItem:hover{
@@ -120,11 +133,34 @@ nav .navItem:hover,
 
 .navCover{
 	background: var(--background-color);
+	border: 2px solid var(--main-purple);
+	color: var(--main-purple)
 }
 
-.mainCardBack{
-  background: var(--mainCardBack);
+.tooltip:hover .tooltip-item {
+    visibility: visible;
 }
+
+.mainCardBack{ background: var(--mainCardBack); }
+strong{ font-weight: var(--font-weight);}
+
+.borders,
+.text-shadow{
+	  text-shadow: var(--text-shadow);
+}
+
+.mainCardBorder{border-color: var(--border-color);}
+.mainCardBorderGreen{
+	border-color: green;
+}
+.borderShadow:hover{
+	box-shadow: var(--border-shadow);
+}
+
+.irregularCardBorder{
+	border: 4px double var(--border-color);
+	box-shadow: var(--border-shadow);
+	}
 /* ------------------
 Animations
 --------------------- */
