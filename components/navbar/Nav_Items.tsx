@@ -4,14 +4,15 @@ import Link from "next/link";
 import { menuData } from "./dataNav";
 
 const styles = {
-	nav: "flex justify-center items-center w-full  min-h-[10vh] shadow-xl z-[400] px-4 fixed",
-	nav__div: "navDetails w-full h-full flex items-start   relative text-xl",
+	nav: "flex justify-center items-center w-full  min-h-[10vh] shadow-xl z-[400] px-4 fixed __text_shadow",
+	nav__div: "w-full h-full flex items-start   relative text-xl",
 	aside: "logo sm:w-1/3 ",
 	article: "justify-around items-start w-full h-full hidden md:flex",
-	homeBtn: "navItem font-bold hover:text-indigo-800",
+	homeBtn: "font-bold hover:text-indigo-800 __nav-item",
 	container:
 		"relative inline-block tooltip transition ease-in-out duration-700",
-	main__a: "px-2 py-1 font-medium navItem transition-all ease-in-out duration-1000", //ulAnimation
+	main__a:
+		"px-2 py-1 font-medium transition-all ease-in-out duration-1000 __nav-item", //ulAnimation
 	cover:
 		"flex flex-col p-4 w-60 h-auto rounded-md z-20 absolute right-0 invisible tooltip-item border-2 nav__cover",
 	ul: "list-disc space-y-2 style-",

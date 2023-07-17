@@ -22,18 +22,17 @@ function DarkModeBtn(){
 
  const ButtonDark = () => (
   <BsFillMoonFill
-  className="h-8 w-8 cursor-pointer text-cellow-500 motion-safe:animate-ping-slow"
+  className="h-8 w-8 cursor-pointer text-cellow-500 motion-safe:animate-ping-slow hover:text-white transition ease-in duration-500"
   onClick={() => setTheme("dark")}
 />
  )
 
  const ButtonLight = () => (
-  <BsFillSunFill
-  className="h-8 w-8 cursor-pointer text-cellow-500 motion-safe:animate-spin-slow"
-  onClick={() => setTheme("light")}
-/>
-  )
-
+		<BsFillSunFill
+			className="h-8 w-8 cursor-pointer text-cellow-500 motion-safe:animate-spin-slow hover:text-white transition ease-in duration-500"
+			onClick={() => setTheme("light")}
+		/>
+ );
 
 
   return <div>

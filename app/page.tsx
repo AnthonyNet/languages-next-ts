@@ -9,7 +9,8 @@ import useFetch from "../components/fetch/Fetch";
 const styles = {
 	section:
 		"responsiveSection flex flex-col justify-center items-center  min-h-[100vh] h-auto sm:h-[90%] pokusX",
-	card__div: "bg-transparent cursor-pointer",
+	card__div:
+		"cursor-pointer __gradient __text_shadow rounded-tl-3xl rounded-br-3xl -skew-x-12 pr-2",
 } as const;
 
 interface Props {
@@ -34,14 +35,11 @@ function MainPage() {
 						ease: "easeOut",
 					}}
 					className={styles.card__div}>
-					<h1 className="text-[180px]">
+					<h1 className="text-[7vw] md-text[10vw]  2xl:text-[120px] leading-[160px]">
 						Learn <strong>languages</strong>
 					</h1>
-
 				</motion.div>
-
 			</section>
-			<section className={styles.section}></section>
 		</>
 	);
 }

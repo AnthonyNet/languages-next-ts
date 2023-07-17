@@ -13,9 +13,9 @@ const styles = {
   section:
     "section_Responsive flex justify-center items-center responsiveSection",
   section_div:
-    "max-w-sm card my-8 xl:my-0 rounded-3xl text-center border-4 border-double __border_color __box_shadow_color",
+    "max-w-sm card my-8 xl:my-0 rounded-3xl text-center border-4 border-double __border_color ",
   score_div: "py-3 px-6 ",
-  btn_div: "border-t border-gray-300 text-gray-600",
+  btn_div: " text-gray-600",
   h5: "text-3xl dark:bg-black font-medium p-4",
   ul: "flex flex-col justify-around text-center mb-2",
 } as const;

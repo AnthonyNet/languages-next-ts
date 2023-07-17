@@ -15,7 +15,7 @@ const iterateStars = (score:number) => {
 };
 
   return (
-		<div className=" flex  justify-center items-center h-8  px-6  border-y-4 border-purple-800 border-double text-yellow-400 starsDiv __box_shadow_color __border_color">
+		<div className=" flex  justify-center items-center h-8  px-6  border-y-4 border-purple-800 border-double text-yellow-400 starsDiv  __border_color">
 			{/*runMe(score)*/}
 			{iterateStars(score)}
 		</div>
