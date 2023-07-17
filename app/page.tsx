@@ -40,6 +40,20 @@ function MainPage() {
 					</h1>
 				</motion.div>
 				<h2>Working in progress...</h2>
+				<Typewriter
+					options={{
+						strings: [
+							"React",
+							"Next.js",
+							"Tailwind CSS",
+							"TypeScript",
+							"HTML",
+							"CSS",
+						],
+						autoStart: true,
+						loop: true,
+					}}
+				/>
 			</section>
 		</>
 	);

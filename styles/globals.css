@@ -38,7 +38,7 @@
 	--color-dark:  #4e0f8c;
 
 	--font-weight: 850;
-	--shadow: 0px 3px 10px rgba(26, 25, 25, 0.97);
+	--shadow: 0px;
 	--text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.97);
 	--color-white: var(--white);
 	--border-radius: 12px;
@@ -54,6 +54,7 @@
 	:root {
 		--color-white: var(--black-color);
 		--menu-item: var(--color-main);
+		--shadow: 0px 3px 10px rgba(26, 25, 25, 0.97);
 	}
 }
 
@@ -126,7 +127,9 @@ strong {
 .text-shadow {
 	text-shadow: var(--shadow);
 }
-
+/* ------------------
+MEMORY GAME
+--------------------- */
 .mainCardBorder {
 	border-color: var(--color-main);
 }
