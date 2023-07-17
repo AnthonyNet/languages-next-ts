@@ -12,7 +12,7 @@ const styles = {
 	main__header: "flex justify-between items-center",
 	main__header__aside: "logo sm:mr-40",
 	main__header__closeBtn:
-		"navClose rounded-full  p-3 shadow-inner shadow-sky-100 shadow-md cursor-pointer ring-1",
+		"navClose rounded-full  p-3 __box_shadow_color ring-1 shadow-md cursor-pointer ",
 	main__div__div: "mottoCover border-b border-gray-300 my-4 text-sm sm:text-lg",
 };
 

@@ -30,7 +30,7 @@
 	--font-family: "Noto Sans", sans-serif;
 
 	--white: rgb(238, 234, 234);
-	--black-color: rgb(0, 0, 0);
+	--black: rgb(0, 0, 0);
 
 	--color-main: #881df2;
 	--color-light: #9c64ba;
@@ -39,29 +39,30 @@
 
 	--font-weight: 850;
 	--shadow: 0px;
-	--text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.97);
-	--color-white: var(--white);
+	--text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.57);
 	--border-radius: 12px;
 	--border-shadow: 1px 10px 15px var(--color-main);
+	--hover-nav-items: var(--color-dark);
 
 	/* --gradient: linear-gradient(132deg, rgb(78, 15, 140) 0%, rgb(122, 17, 191) 100%); */
-	--gradient: linear-gradient(132deg, var(--color-white) 0%, var(--color-main) 100%);
+	--gradient: linear-gradient(132deg, var(--white) 0%, var(--color-main) 100%);
 }
 
 /*if browser´s theme is dark */
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--color-white: var(--black-color);
-		--menu-item: var(--color-main);
+		--white: var(--black);
 		--shadow: 0px 3px 10px rgba(26, 25, 25, 0.97);
+		--text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.97);
+		--hover-nav-items: var(--white);
 	}
 }
 
 /* Theme button light/dark switch */
 [data-theme="dark"] {
-	--color-white: rgb(0, 0, 0);
-	--menu-item: var(--color-main);
+	--white: var(--black);
+	--hover-nav-items: rgb(255, 255, 255);
 }
 
 * {
@@ -81,33 +82,34 @@ body {
 body,
 .main-bg,
 .mobile__Nav {
-	background: var(--color-white);
+	background: var(--white);
 }
 
 .__text_color { color: var(--color-main);}
 .__border_color { border-color: var(--color-main); }
 .__border_hover:hover{ box-shadow: var(--border-shadow); }
 .__box_shadow_color { box-shadow: var(--border-shadow);}
-.__background { background: var(--black-color); }
+.__background { background: var(--black); }
 .__gradient { background: var(--gradient); }
 
 .__text_shadow { text-shadow: var(--text-shadow); }
 .__button_color { background: var(--gradient); }
-
-
+.__memory_border_green { border-color: green; }
+.__oxford_card_background { background: var(--white); }
+strong { font-weight: var(--font-weight); }
 /* ------------------
 Navbar
 --------------------- */
 
 nav .__nav-item:hover,
 .__nav-item:hover {
-	color: var(--white);
+	color: var(--hover-nav-items);
 	transform: translateY(-5px);
 	transition: all 0.5s ease-in-out;
 }
 
 .nav__cover {
-	background: var(--color-white);
+	background: var(--white);
 	border: 2px solid var(--color-main);
 	color: var(--color-main);
 }
@@ -116,30 +118,6 @@ nav .__nav-item:hover,
 	visibility: visible;
 }
 
-.mainCardBack {
-	background: var(--color-white);
-}
-strong {
-	font-weight: var(--font-weight);
-}
-
-.borders,
-.text-shadow {
-	text-shadow: var(--shadow);
-}
-/* ------------------
-MEMORY GAME
---------------------- */
-.mainCardBorder {
-	border-color: var(--color-main);
-}
-.mainCardBorderGreen {
-	border-color: green;
-}
-
-.irregularCardBorder {
-	box-shadow: var(--border-shadow);
-}
 /* ------------------
 Animations
 --------------------- */
@@ -154,23 +132,18 @@ nav {
 	0% {
 		opacity: 0;
 		margin-left: -20px;
+
 	}
 	100% {
 		opacity: 1;
 		margin-left: 0px;
+		filter: saturate(4);
 	}
 }
-/*
-@keyframes animateUl {
-  0%    {opacity: 0; margin-left: -20px;}
-  60%  {opacity: 1; margin-left: 30px; transform: scale(0.9);}
-  100% {transform: scale(1);}
-}
 
-.ulAnimation li {
-  animation: animateUl 1s ease-in-out;
+.ulAnimation li{
+	filter: saturate(2);
 }
-*/
 
 .ulAnimation li:nth-child(1) {
 	transition-delay: 0.2s;

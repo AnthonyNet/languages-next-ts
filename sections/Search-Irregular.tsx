@@ -5,18 +5,18 @@ import { useState } from "react";
 import { IrregularVerbs } from "../myData";
 
 const style = {
-  section: "w-full min-h-[90vh] mt-[10vh]",
-  form: "shadow-md rounded px-8 pt-6 pb-8 mb-4",
-  input:
-    'shadow appearance-none border rounded w-full py-2 px-3 leading-tight text-white focus:outline-none focus:shadow-outline',
-    main: "flex flex-col",
-    main__div: "overflow-x-auto sm:-mx-6 lg:-mx-8",
-    main__div__div: "inline-block min-w-full sm:px-6 lg:px-8",
-    main__div__div__div: "overflow-hidden",
-  table: "min-w-full text-center",
-  thead: "border-b bg-gray-800 text-white",
-  tr: "border-b-2 border-blue-200",
-  th: "text-sm font-medium p-2 sm:p-4",
+	section: "w-full min-h-[90vh] mt-[10vh]",
+	form: "shadow-md rounded px-8 pt-6 pb-8 mb-4",
+	input:
+		"shadow appearance-none border rounded w-full py-2 px-3 max-w-[300px] __border_color ml-auto",
+	main: "flex flex-col",
+	main__div: "overflow-x-auto sm:-mx-6 lg:-mx-8",
+	main__div__div: "inline-block min-w-full sm:px-6 lg:px-8",
+	main__div__div__div: "overflow-hidden",
+	table: "min-w-full text-center",
+	thead: "border-b bg-indigo-800/20 __border_color",
+	tr: "border-b-2 __border_color hover:even:bg-indigo-800/40 hover:odd:bg-pink-800/20",
+	th: "text-sm font-medium p-2 sm:p-4",
 } as const;
 
 function SearchIrregular() {

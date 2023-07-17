@@ -24,9 +24,9 @@ const styles = {
 		div__div: "mottoCover border-b border-gray-300 my-4 text-sm sm:text-lg",
 		icon: "transition duration-700 ease-in-out mr-2",
 		icon__open: "rotate-90 transition duration-700 ease-in-out mr-2",
-		h3: "text-xl mb-2",
+		h3: "text-xl mb-2 cursor-pointer",
 		ul__open:
-			"cursor-pointer transition  duration-100 ease-in-out text-sky-400 font-bold ulAnimation",
+			"cursor-pointer transition  duration-100 ease-in-out font-bold ulAnimation",
 		ul__li__open: "transition ease-in-out duration-700 ml-[30px]",
 	},
 } as const;

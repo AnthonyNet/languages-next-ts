@@ -27,7 +27,7 @@ const styles = {
 	article:
 		"w-full sm:w-[95%]  h-[79vh] grid  grid-cols-2 sm:grid-cols-4 grid-rows-8 sm:grid-rows-4 gap-2 sm:gap-4 grid-flow-row p-2",
 	h2: "text-lg sm:text-2xl",
-	navItem: "navItem",
+	navItem: "__nav-item",
 };
 
 //write simple function which return result of 1+1

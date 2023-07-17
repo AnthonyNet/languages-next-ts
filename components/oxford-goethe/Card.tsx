@@ -20,7 +20,7 @@ const styles = {
 	section:
 		"relative flex justify-center items-center p-2 sm:p-0 responsiveSection",
 	section__div:
-		"w-full sm:w-[600px] h-[250px] sm:h-[270px] md:h-[320px] border-double border-4   rounded-lg  preserve-3d group my-rotate-y-180 duration-1000 flex flex-col justify-around __border_color __box_shadow_color",
+		"w-full sm:w-[600px] h-[250px] sm:h-[270px] md:h-[320px] border-double border-4   rounded-lg  preserve-3d group my-rotate-y-180 duration-1000 flex flex-col justify-around __border_color",
 	article: "w-full flex flex-col justify-center sm:grow ",
 	section__div__btnCover:
 		"flex justify-around text-center border-t-2 __border_color",
@@ -29,7 +29,7 @@ const styles = {
 		" rounded bg-green-600  focus:bg-green-800 active:bg-green-800 w-40 text-2xl font-bold __text_shadow hover:scale-75 transition ease-in-out dutation-700  __button_color",
 	image: "hover:rotate-90 transition ease-in-out duration-700",
 	cardBack:
-		"absolute top-0 my-rotate-y-180 backface-hidden overflow-hidden w-full h-full mainCardBack",
+		"absolute top-0 my-rotate-y-180 backface-hidden overflow-hidden w-full h-full __oxford_card_background",
 	cardBack__div: "h-full text-center flex flex-col items-center text-gray-600 ",
 	cardBack__answersCover: "w-full h-full flex flex-col justify-center md:p-4",
 	cardBack__btnCover: "w-full flex justify-around   border-t-2 __border_color",

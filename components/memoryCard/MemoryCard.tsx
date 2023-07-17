@@ -14,7 +14,7 @@ const styles = {
 	cardBack:
 		"absolute top-0 my-rotate-y-180 backface-hidden overflow-hidden rounded-3xl w-full h-full bg-black ",
 	cardBack__div: "w-full h-full flex flex-col items-center justify-center",
-	h2: "text-base md:text-xl xl:text-2xl p-2 sm:p-0",
+	h2: "text-base font-bold md:text-xl xl:text-3xl p-2 sm:p-0",
 	h3: "text-4xl xl:text-6xl",
 } as const;
 
@@ -27,8 +27,8 @@ const fadeOut = item.check && "opacity-0 transition-opacity duration-1000 delay-
 				styles.container +
 				" " +
 				(item.click
-					? "border-2 mainCardBorderGreen  rounded-3xl p-4"
-					: "border-[#881DF2] p-4 border-2 rounded-3xl") +
+					? "border-2 rounded-3xl p-4  __memory_border_green"
+					: "p-4 border-2 rounded-3xl __border_color") +
 				" " +
 				fadeOut
 			}
