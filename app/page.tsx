@@ -39,6 +39,7 @@ function MainPage() {
 						Learn <strong>languages</strong>
 					</h1>
 				</motion.div>
+				<h2>Working in progress...</h2>
 			</section>
 		</>
 	);
