@@ -17,7 +17,7 @@ const styles = {
 	li: "m-1 p-1 font-bold border-2 rounded-xl mainCardBorder focus:mainCardBorder borderShadow __border_color __border_hover",
 	li_green: "p-2 font-bold",
 	input:
-		"card_Input text-center text-bold cursor-pointer focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent p-1  hover:shadow-lg transition ease-in-out duration-500 bg-transparent",
+		"card_Input text-center text-bold cursor-pointer focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent rounded-md p-1  hover:shadow-lg transition ease-in-out duration-500 bg-transparent",
 };
 
 /*------------------------------------------
