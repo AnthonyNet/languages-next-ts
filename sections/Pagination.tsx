@@ -14,7 +14,7 @@ const styles = {
     h2: "text-center",
   table: "table-fixed min-w-[50vw] max-w-[90%]",
   thead__tr: "flex justify-around",
-  tbody__td: "w-[50%] border-red-400 border-l-4 text-right",
+  tbody__td: "w-[50%] __border_color  text-right",
 } as const;
 
 function Pagination() {
@@ -66,7 +66,10 @@ function Pagination() {
     }
   }, [myNumb]);
 
-
+  const capitalizeFirst = (word:any) => {
+	const capitalizedWord = word.charAt(0).toUpperCase() + word.slice(1);
+	return capitalizedWord;
+  }
 
   return (
 		<section className={styles.section}>
@@ -87,21 +90,20 @@ function Pagination() {
 					</thead>
 					<tbody>
 						{currentPosts.map((item, index) => {
+							console.log(currentPosts);
+
 							return (
 								<tr
 									key={index}
-									className="border-b-2 border-red-300 flex  flex-nowrap">
+									className="border-b-2 border-dotted __border_color flex  flex-nowrap">
 									{item.sentenceExample ? (
 										<td className="w-[50%] text-left">
-											{item.sentenceExample}
+											{capitalizeFirst(item.sentenceExample)}
 										</td>
 									) : (
-										<td className="w-[50%] text-left">
-											{item.word}
-										</td>
+										<td className="w-[50%] text-left">{capitalizeFirst(item.word)}</td>
 									)}
-									<td className={styles.tbody__td}>{item.czWord}</td>
-
+									<td className={styles.tbody__td}>{capitalizeFirst(item.czWord)}</td>
 								</tr>
 							);
 						})}

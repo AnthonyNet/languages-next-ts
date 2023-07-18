@@ -26,13 +26,13 @@ const styles = {
 		"flex justify-around text-center border-t-2 __border_color",
 	h3: "py-2 md:py-4  text-center border-b  w-auto mx-auto __border_color",
 	button:
-		" rounded bg-green-600  focus:bg-green-800 active:bg-green-800 w-40 text-2xl font-bold __text_shadow hover:scale-75 transition ease-in-out dutation-700  __button_color",
+		"rounded w-40 h-14 text-2xl font-bold hover:scale-75 transition ease-in-out dutation-700  __button_color __text_shadow",
 	image: "hover:rotate-90 transition ease-in-out duration-700",
 	cardBack:
 		"absolute top-0 my-rotate-y-180 backface-hidden overflow-hidden w-full h-full __oxford_card_background",
-	cardBack__div: "h-full text-center flex flex-col items-center text-gray-600 ",
+	cardBack__div: "h-full text-center flex flex-col items-center ",
 	cardBack__answersCover: "w-full h-full flex flex-col justify-center md:p-4",
-	cardBack__btnCover: "w-full flex justify-around   border-t-2 __border_color",
+	cardBack__btnCover: "w-full flex justify-around   border-t-2 __border_color __text_shadow",
 };
 
 const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
@@ -87,7 +87,7 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
 					<button
 						className={styles.button}
 						onClick={() => [setSwitchSide(!switchSide)]}>
-						answer
+						Answer
 					</button>
 
 					<button className={styles.button} onClick={randomWord}>

@@ -14,11 +14,11 @@ function Bottom_Menu({pages, prevPage, nextPage, currentPage, setCurrentPage}:Pr
     const style = {
         display: currentPage < currentPage - 1 ? "none" : "",
       };
-    
+
 
 return(
     <article className="flex flex-row  w-auto  justify-center">
-    <ul className="flex flex-row  items-center justify-center border-4">
+    <ul className="flex flex-row  items-center justify-center border-4 __border_color">
 
       {/* ----------------------
          PREVIOUS PAGE BUTTON
@@ -43,7 +43,7 @@ return(
                 : // : page > currentPage + 4 && currentPage !=1 ? "hidden"
                 page > currentPage + 3 && page > 7
                 ? "hidden"
-                : "sm:w-[50px] sm:h-[50px] p-[2vw] sm:p-4 visible"
+                : "sm:w-[50px] sm:h-[50px] p-[2vw] sm:p-4 visible" + " __nav-item"
             }
             style={style}
             key={index}

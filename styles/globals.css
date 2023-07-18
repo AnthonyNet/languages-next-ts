@@ -36,13 +36,14 @@
 	--color-light: #9c64ba;
 	--color-light2: #6900c5;
 	--color-dark:  #4e0f8c;
+	--color-blue: #0f4c75;
 
 	--font-weight: 850;
 	--shadow: 0px;
-	--text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.57);
+	--text-shadow: 4px 4px 3px rgb(9, 9, 9);
 	--border-radius: 12px;
 	--border-shadow: 1px 10px 15px var(--color-main);
-	--hover-nav-items: var(--color-dark);
+	--hover-nav-items: var(--color-blue);
 
 	/* --gradient: linear-gradient(132deg, rgb(78, 15, 140) 0%, rgb(122, 17, 191) 100%); */
 	--gradient: linear-gradient(132deg, var(--white) 0%, var(--color-main) 100%);
@@ -108,7 +109,7 @@ nav .__nav-item:hover,
 	transition: all 0.5s ease-in-out;
 }
 
-.nav__cover {
+.__nav_cover {
 	background: var(--white);
 	border: 2px solid var(--color-main);
 	color: var(--color-main);
@@ -117,6 +118,11 @@ nav .__nav-item:hover,
 .tooltip:hover .tooltip-item {
 	visibility: visible;
 }
+
+.tooltip-item ul li:hover, .__btn-dark:hover{color: var(--hover-nav-items);}
+
+
+
 
 /* ------------------
 Animations

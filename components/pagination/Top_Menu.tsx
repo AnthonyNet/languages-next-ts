@@ -7,7 +7,7 @@ interface Props {
 
 const styles = {
 	nav: " w-full h-auto mt-[10vh]",
-	ul: "flex flex-row justify-around sm:w-[60%] m-auto flex-wrap border-y-2 border-blue-300",
+	ul: "flex flex-row justify-around sm:w-[60%] m-auto flex-wrap border-y-2 __border_color",
 	li__active: "border-b-4 border-red-600",
 };
 

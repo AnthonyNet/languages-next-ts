@@ -10,15 +10,15 @@ const styles = {
 	article: "justify-around items-start w-full h-full hidden md:flex",
 	homeBtn: "font-bold hover:text-indigo-800 __nav-item",
 	container:
-		"relative inline-block tooltip transition ease-in-out duration-700",
+		"relative inline-block tooltip transition ease-in-out duration-700 text-xl xl:text-3xl",
 	main__a:
 		"px-2 py-1 font-medium transition-all ease-in-out duration-1000 __nav-item", //ulAnimation
 	cover:
-		"flex flex-col p-4 w-60 h-auto rounded-md z-20 absolute right-0 invisible tooltip-item border-2 nav__cover",
+		"flex flex-col p-4 w-60 h-auto rounded-md z-20 absolute right-0 invisible tooltip-item border-2 tooltip-item __nav_cover",
 	ul: "list-disc space-y-2 style-",
-	//ul__li: "flex items-start",
+
 	ul__li:
-		"flex items-start font-bold text-sm  hover:text-white transition duration-700 ease-in-out transform",
+		"flex items-start text-sm font-extrabold  transition duration-700 ease-in-out transform",
 } as const;
 
 	interface menuItems {

@@ -11,12 +11,12 @@ import DarkModeBtn from "./DarkModeBtn";
 const styles = {
 	nav: "flex justify-center items-center w-full  min-h-[10vh] shadow-xl z-[400] px-4 fixed",
 	nav__div:
-		"navDetails w-full h-full flex items-start relative text-2xl __text_shadow",
+		"w-full h-full flex items-start relative md:text-xl xl:text-3xl ",
 	aside:
-		"logo sm:w-1/3 transition ease-in-out duration-1000  pr-2  __nav-item",
-	article: "justify-around items-start w-full h-full hidden md:flex",
+		"logo w-auto sm:w-[35vw] lg:w-1/3 transition ease-in-out duration-1000  pr-2  __nav-item",
+	article: "justify-around items-start w-full h-full hidden md:flex ",
 	container:
-		"relative inline-block tooltip hover:text-white transition ease-in-out duration-700",
+		"relative inline-block tooltip hover:text-white transition ease-in-out duration-700 font-extrabold",
 	main__a:
 		"transition ease-in-out duration-700 px-2 py-1 font-medium transform hover:-translate-y-6 ", //ulAnimation
 	cover:
