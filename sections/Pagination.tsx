@@ -90,7 +90,6 @@ function Pagination() {
 					</thead>
 					<tbody>
 						{currentPosts.map((item, index) => {
-							console.log(currentPosts);
 
 							return (
 								<tr
