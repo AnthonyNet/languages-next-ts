@@ -7,13 +7,15 @@ import { TiThMenu } from "react-icons/ti";
 import Mobile__Nav from "./Mobile__Nav";
 import Nav_Items from "./Nav_Items";
 import DarkModeBtn from "./DarkModeBtn";
+import '../../styles/Navbar.css';
+
 
 const styles = {
 	nav: "flex justify-center items-center w-full  min-h-[10vh] shadow-xl z-[400] px-4 fixed",
 	nav__div:
 		"w-full h-full flex items-start relative md:text-xl xl:text-3xl ",
 	aside:
-		"logo w-auto sm:w-[35vw] lg:w-1/3 transition ease-in-out duration-1000  pr-2  __nav-item",
+		"logo w-auto md:w-[35vw] lg:w-1/3 transition ease-in-out duration-1000 __nav-item",
 	article: "justify-around items-start w-full h-full hidden md:flex ",
 	container:
 		"relative inline-block tooltip hover:text-white transition ease-in-out duration-700 font-extrabold",

@@ -35,7 +35,7 @@ function MainPage() {
 						ease: "easeOut",
 					}}
 					className={styles.card__div}>
-					<h1 className="text-[7vw] md-text[10vw]  2xl:text-[120px] leading-[160px]">
+					<h1 className="text-[10vw] xl:text-[120px] leading-[160px]">
 						Learn <strong>languages</strong>
 					</h1>
 				</motion.div>

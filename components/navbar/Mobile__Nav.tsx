@@ -3,6 +3,7 @@ import Link from "next/link";
 import { CgClose } from "react-icons/cg";
 import Mobile_Items from "./Mobile_Items";
 
+
 const styles = {
 	main__open: "snap-x z-10  fixed left-0 top-0 w-full h-screen bg-black/70",
 	main__close: "z-0",
@@ -41,7 +42,6 @@ function Mobile__Nav({ nav, handleNav }: Mobile) {
 				</div>
 
 				<Mobile_Items handleNav={handleNav} />
-
 			</div>
 		</main>
 	);

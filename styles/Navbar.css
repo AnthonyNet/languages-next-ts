@@ -1,0 +1,52 @@
+ nav .__nav-item:hover,
+.__nav-item:hover {
+	color: var(--hover-nav-items);
+	transform: translateY(-5px);
+	transition: all 0.5s ease-in-out;
+}
+
+.__nav_cover {
+	background: var(--white);
+	border: 2px solid var(--color-main);
+	color: var(--color-main);
+}
+
+.tooltip .tooltip-item{
+	background: var(--black);
+}
+
+.tooltip:hover .tooltip-item {
+	visibility: visible;
+}
+
+.tooltip-item ul li:hover, .__btn-dark:hover{color: var(--hover-nav-items);}
+
+select, option{
+	background: var(--black);
+}
+
+ .border-animation {
+    border: 2px solid transparent; /* Start with a transparent border */
+    border-radius: 10px;
+    position: relative;
+    animation: borderAnimation 4s infinite linear;
+    transition: border-color 0.5s; /* Add transition to create the fluent effect */
+  }
+
+  @keyframes borderAnimation {
+    0% {
+      border-color: transparent transparent transparent transparent; /* Top right bottom left */
+    }
+    25% {
+      border-color: var(--color-main) transparent transparent transparent; /* Top right bottom left */
+    }
+    50% {
+      border-color: var(--color-main) var(--color-main) transparent transparent; /* Top right bottom left */
+    }
+    75% {
+      border-color: var(--color-main) var(--color-main) var(--color-main) transparent; /* Top right bottom left */
+    }
+    100% {
+      border-color: var(--color-main) var(--color-main) var(--color-main) var(--color-main); /* Top right bottom left */
+    }
+  }

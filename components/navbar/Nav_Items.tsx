@@ -3,16 +3,14 @@
 import Link from "next/link";
 import { menuData } from "./dataNav";
 
+
 const styles = {
-	nav: "flex justify-center items-center w-full  min-h-[10vh] shadow-xl z-[400] px-4 fixed __text_shadow",
-	nav__div: "w-full h-full flex items-start   relative text-xl",
-	aside: "logo sm:w-1/3 ",
-	article: "justify-around items-start w-full h-full hidden md:flex",
+	article: "justify-around items-start w-[90%] h-full hidden md:flex",
 	homeBtn: "font-bold hover:text-indigo-800 __nav-item",
 	container:
-		"relative inline-block tooltip transition ease-in-out duration-700 text-xl xl:text-3xl",
+		"relative inline-block tooltip text-xl xl:text-3xl",
 	main__a:
-		"px-2 py-1 font-medium transition-all ease-in-out duration-1000 __nav-item", //ulAnimation
+		"px-2 py-1 font-medium  __nav-item", //ulAnimation
 	cover:
 		"flex flex-col p-4 w-60 h-auto rounded-md z-20 absolute right-0 invisible tooltip-item border-2 tooltip-item __nav_cover",
 	ul: "list-disc space-y-2 style-",

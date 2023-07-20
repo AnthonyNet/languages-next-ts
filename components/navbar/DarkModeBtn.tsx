@@ -2,7 +2,7 @@
 
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
+
 
 function DarkModeBtn(){
   const [mounted, setMounted] = useState(false);
@@ -20,24 +20,27 @@ function DarkModeBtn(){
 
  const currentTheme = theme === "system" ? systemTheme : theme;
 
- const ButtonDark = () => (
-  <BsFillMoonFill
-  className="h-8 w-8 cursor-pointer text-cellow-500 motion-safe:animate-ping-slow  transition ease-in duration-500 __btn-dark"
-  onClick={() => setTheme("dark")}
-/>
- )
+  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>):void => {
+		setTheme(e.target.value);
+	};
 
- const ButtonLight = () => (
-		<BsFillSunFill
-			className="h-8 w-8 cursor-pointer text-cellow-500 motion-safe:animate-spin-slow  transition ease-in duration-500 __btn-dark"
-			onClick={() => setTheme("light")}
-		/>
- );
+  return (
 
+			<select
+				className="border-animation bg-transparent cursor-pointer text-xl xl:text-3xl"
+				title="col"
+				name="colors"
+				id="colors"
+				onChange={handleChange}>
+				<option value="blue">Blue</option>
+				<option value="green">Green</option>
+				<option value="violet">Violet</option>
+				<option value="pink">Pink</option>
+				<option value="yellow">Yellow</option>
+				<option value="light">Light</option>
+			</select>
 
-  return <div>
-{currentTheme === "dark" ? <ButtonLight /> : <ButtonDark />}
-    </div>;
+	);
 };
 
 export default DarkModeBtn;
