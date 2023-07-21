@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
 	body {
 		@apply tracking-wide;
@@ -41,7 +42,7 @@
 
 	--font-weight: 850;
 	--shadow: 0px;
-	--text-shadow: 4px 4px 3px rgb(9, 9, 9);
+	--text-shadow:  4px 4px 3px rgb(0, 0, 0);
 	--border-radius: 12px;
 	--border-shadow: 1px 10px 15px var(--color-main);
 	--hover-nav-items: rgb(255, 255, 255);
@@ -79,8 +80,11 @@
 }
 
 [data-theme="yellow"] {
-	--color-main: #a1f30c;
+	--color-main: #fff70e;
 	--memory-border-active: blue;
+	--text-shadow: 4px 4px 3px rgb(0, 0, 0),
+					0px 0px 3px rgb(0, 0, 0);
+
 }
 [data-theme="light"]{
 	--black: white;

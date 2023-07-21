@@ -11,7 +11,7 @@ function DarkModeBtn(){
   // useEffect only runs on the client, so now we can safely show the UI
   useEffect(() => {
     setMounted(true);
-    setTheme("dark");
+    setTheme("blue");
   }, []); /*Missing dependency */
 
   if (!mounted) {
@@ -27,7 +27,7 @@ function DarkModeBtn(){
   return (
 
 			<select
-				className="border-animation bg-transparent cursor-pointer text-xl xl:text-3xl"
+				className="outline-none border-animation bg-transparent cursor-pointer text-xl xl:text-3xl"
 				title="col"
 				name="colors"
 				id="colors"

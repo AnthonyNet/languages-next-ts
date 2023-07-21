@@ -8,7 +8,7 @@ const CardHint = ({
   pastParticiple2,
 }: Irregular) => {
   return (
-		<ul className="flex justify-between flex-wrap">
+		<ul className="w-full flex justify-around flex-wrap">
 			<li>{base}</li>
 			<li> {pastSimple} </li>
 			{pastSimple2 && <li>{pastSimple2}</li>}

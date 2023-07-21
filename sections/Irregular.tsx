@@ -8,14 +8,15 @@ import CardHint from "../components/card/CardHint";
 
 import Score from "../components/card/Score";
 import { Irregular } from "../interface/";
+import {BsFillArrowRightCircleFill} from 'react-icons/bs'
 
 const styles = {
   section:
     "section_Responsive flex justify-center items-center responsiveSection",
   section_div:
-    "max-w-sm card my-8 xl:my-0 rounded-3xl text-center border-4 border-double __border_color ",
+    "max-w-sm card my-8 xl:my-0 rounded-3xl text-center border-4 border-double __border_color",
   score_div: "py-3 px-6 ",
-  btn_div: " text-gray-600",
+  btn_div: "flex w-full h-auto justify-center items-center p-2",
   h5: "text-3xl dark:bg-black font-medium p-4",
   ul: "flex flex-col justify-around text-center mb-2",
 } as const;
@@ -125,27 +126,28 @@ HIDE HINTS
               );
             })}
           </ul>
-          {/* ---   3   ---- */}
-          <div className={styles.btn_div}>
-            <CardButton onClick={randomWord} text="next word" />
-          </div>
+            <div className={styles.btn_div}>
+              <BsFillArrowRightCircleFill onClick={()=>randomWord()}className="w-[40px] h-[40px] input_Btn shadow-md transition  ease-in-out duration-500 __text_color hover:scale-75 " />
+            </div>
+          
         </div>
 
         <div className={styles.btn_div}>
           {/* TOGGLE HINT !HINT */}
-          <CardButton onClick={() => setHint((hint) => !hint)} text="hint" />
-
-          {/* IF HINT == TRUE SHOW ANSWERS */}
+           <CardButton hint={hint} setHint={setHint} />
+        </div>
+         {/* IF HINT == TRUE SHOW ANSWERS */}
           {hint ? (
-            <CardHint
+           <div className={styles.btn_div}>
+             <CardHint
               base={dataTS[rand].base}
               pastSimple={dataTS[rand].pastSimple}
               pastSimple2={dataTS[rand].pastSimple2}
               pastParticiple={dataTS[rand].pastParticiple}
               pastParticiple2={dataTS[rand].pastParticiple2}
             />
+           </div>
           ) : null}
-        </div>
       </div>
     </section>
   );

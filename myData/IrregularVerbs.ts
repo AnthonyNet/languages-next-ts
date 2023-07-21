@@ -5,7 +5,7 @@
     base: "arise",
     pastSimple: "arose",
     pastParticiple: "arisen",
-    pastParticiple2: "arisen"
+   
 },
 
 {   cz: "probudit",
