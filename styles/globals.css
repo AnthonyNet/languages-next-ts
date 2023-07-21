@@ -117,7 +117,7 @@ body,
 .__text_shadow { text-shadow: var(--text-shadow); }
 .__button_color { background: var(--gradient); }
 .__memory_border_green { border-color: var(--memory-border-active) }
-.__oxford_card_background { background: var(--white); }
+.__oxford_card_background { background: var(--black); }
 strong { font-weight: var(--font-weight); }
 
 /* ------------------

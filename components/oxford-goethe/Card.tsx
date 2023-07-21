@@ -4,7 +4,6 @@ import { Card_Vocabs } from "../../interface/";
 import Image from "next/image";
 
 import { motion } from "framer-motion";
-import Typewriter from "typewriter-effect";
 
 //FLAGS images
 import czFlag from "../../myData/images/cz.png";
