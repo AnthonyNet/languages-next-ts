@@ -52,7 +52,7 @@
 }
 
 /*if browser´s theme is dark */
-
+/*
 @media (prefers-color-scheme: dark) {
 	:root {
 		--white: var(--black);
@@ -61,6 +61,7 @@
 		--hover-nav-items: var(--white);
 	}
 }
+*/
 
 /* Theme button light/dark switch */
 [data-theme="violet"] {
