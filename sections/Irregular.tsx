@@ -8,17 +8,17 @@ import CardHint from "../components/card/CardHint";
 
 import Score from "../components/card/Score";
 import { Irregular } from "../interface/";
-import {BsFillArrowRightCircleFill} from 'react-icons/bs'
+import { RxArrowRight } from "react-icons/rx";
 
 const styles = {
-  section:
-    "section_Responsive flex justify-center items-center responsiveSection",
-  section_div:
-    "max-w-sm card my-8 xl:my-0 rounded-3xl text-center border-4 border-double __border_color",
-  score_div: "py-3 px-6 ",
-  btn_div: "flex w-full h-auto justify-center items-center p-2",
-  h5: "text-3xl dark:bg-black font-medium p-4",
-  ul: "flex flex-col justify-around text-center mb-2",
+	section:
+		"section_Responsive flex justify-center items-center responsiveSection",
+	section_div:
+		"max-w-sm card my-8 xl:my-0 rounded-3xl text-center border-4 border-double __border_color",
+	score_div: "py-3 px-6 ",
+	btn_div: "min-h-[50px]  flex flex-row h-auto justify-center items-center px-4 rounded-full mb-2 font-bold",
+	h5: "text-3xl dark:bg-black font-medium p-4",
+	ul: "flex flex-col justify-around text-center mb-2",
 } as const;
 
 
@@ -86,71 +86,75 @@ HIDE HINTS
   }
 
   return (
-    <section className={styles.section}>
-      <div className={styles.section_div}>
-        <div className={styles.score_div}>
-          Celkové skóre: <span>{totalScore}</span>
-        </div>
-        <div className={styles.score_div}>
-          Momentální skóre: <span>{score > 0 ? score : 0}</span>
-        </div>
+		<section className={styles.section}>
+			<div className={styles.section_div}>
+				<div className={styles.score_div}>
+					Celkové skóre: <span>{totalScore}</span>
+				</div>
+				<div className={styles.score_div}>
+					Momentální skóre: <span>{score > 0 ? score : 0}</span>
+				</div>
 
-        <Score score={stars} />
+				<Score score={stars} />
 
-        <div className="px-6 inputs">
-          <h5 className={styles.h5}>{cz}</h5>
+				<div className="px-6 inputs">
+					<h5 className={styles.h5}>{cz}</h5>
 
-          <ul className={styles.ul}>
+					<ul className={styles.ul}>
+						{propertyValues.map((word, index) => {
+							const array = [
+								"Present Simple",
+								"Past Simple",
+								"Past Participle",
+								"Past Simple 2",
+								"Past Participle 2",
+							];
 
-            {propertyValues.map((word, index) => {
-              const array = [
-                "Present Simple",
-                "Past Simple",
-                "Past Participle",
-                "Past Simple 2",
-                "Past Participle 2",
-              ];
+							return (
+								<Input
+									key={index}
+									word={word}
+									setTotalScore={setTotalScore}
+									setScore={setScore}
+									setStars={setStars}
+									placeholder={array[index]}
+									defaultInput={defaultInput}
+									totalScore={totalScore}
+								/>
+							);
+						})}
+					</ul>
+				</div>
 
-              return (
-                <Input
-                  key={index}
-                  word={word}
-                  setTotalScore={setTotalScore}
-                  setScore={setScore}
-                  setStars={setStars}
-                  placeholder={array[index]}
-                  defaultInput={defaultInput}
-                  totalScore={totalScore}
+				<div className="flex flex-row w-full justify-around">
+					<div className={styles.btn_div +" __background2"}>
+						{/* TOGGLE HINT !HINT */}
+						<CardButton hint={hint} setHint={setHint} />
+					</div>
+					<div className={styles.btn_div + " __background2"}>
+						<RxArrowRight
+							onClick={() => randomWord()}
+							className="w-[40px] h-[40px] transition  ease-in-out duration-500 hover:scale-75 __text_color2"
+						/>
+					</div>
+				</div>
 
-                />
-              );
-            })}
-          </ul>
-            <div className={styles.btn_div}>
-              <BsFillArrowRightCircleFill onClick={()=>randomWord()}className="w-[40px] h-[40px] input_Btn shadow-md transition  ease-in-out duration-500 __text_color hover:scale-75 " />
-            </div>
-          
-        </div>
+					{/* IF HINT == TRUE SHOW ANSWERS */}
+					{hint ? (
+					<div className={styles.btn_div}>
+						<CardHint
+							base={dataTS[rand].base}
+							pastSimple={dataTS[rand].pastSimple}
+							pastSimple2={dataTS[rand].pastSimple2}
+							pastParticiple={dataTS[rand].pastParticiple}
+							pastParticiple2={dataTS[rand].pastParticiple2}
+						/>
+					</div>
+					) : null}
 
-        <div className={styles.btn_div}>
-          {/* TOGGLE HINT !HINT */}
-           <CardButton hint={hint} setHint={setHint} />
-        </div>
-         {/* IF HINT == TRUE SHOW ANSWERS */}
-          {hint ? (
-           <div className={styles.btn_div}>
-             <CardHint
-              base={dataTS[rand].base}
-              pastSimple={dataTS[rand].pastSimple}
-              pastSimple2={dataTS[rand].pastSimple2}
-              pastParticiple={dataTS[rand].pastParticiple}
-              pastParticiple2={dataTS[rand].pastParticiple2}
-            />
-           </div>
-          ) : null}
-      </div>
-    </section>
-  );
+			</div>
+		</section>
+	);
 }
 
 export default IrregularVerbs;

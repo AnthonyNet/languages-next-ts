@@ -21,20 +21,21 @@ const myClass = plugin(function({addUtilities}){
 });
 
 module.exports = {
-  darkMode: ['class', '[data-mode="dark"]'],
-  content: [
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-    "./sections/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {
-      animation: {
-        'spin-slow': 'spin 13s linear infinite',
-        'ping-slow': 'bounce 1s linear infinite',
-      }
-    },
-  },
-  plugins: [myClass],
-}
+	darkMode: ["class", '[data-mode="dark"]'],
+	content: [
+		"./app/**/*.{js,ts,jsx,tsx}",
+		"./pages/**/*.{js,ts,jsx,tsx}",
+		"./components/**/*.{js,ts,jsx,tsx}",
+		"./sections/**/*.{js,ts,jsx,tsx}",
+	],
+	theme: {
+		extend: {
+			animation: {
+				"spin-slow": "spin 13s linear infinite",
+				"ping-slow": "bounce 1s linear infinite",
+				"ping-slower": "bounce 3s linear infinite",
+			},
+		},
+	},
+	plugins: [myClass],
+};

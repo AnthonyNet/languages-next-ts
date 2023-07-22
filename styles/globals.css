@@ -30,7 +30,7 @@
 	--max-width: 1100px;
 	--font-family: "Noto Sans", sans-serif;
 
-	--white: rgb(238, 234, 234);
+	--white: rgb(255, 255, 255);
 	--black: rgb(0, 0, 0);
 
 	--color-main: #0043ff;
@@ -48,8 +48,10 @@
 	--hover-nav-items: rgb(255, 255, 255);
 	--memory-border-active: var(--color-green);
 
-	/* --gradient: linear-gradient(132deg, rgb(78, 15, 140) 0%, rgb(122, 17, 191) 100%); */
 	--gradient: linear-gradient(132deg, var(--white) 0%, var(--color-main) 100%);
+
+	--btn-background: var(--color-main);
+	--btn-text-color: var(--black);
 }
 
 /*if browser´s theme is dark */
@@ -84,11 +86,13 @@
 	--memory-border-active: blue;
 	--text-shadow: 4px 4px 3px rgb(0, 0, 0),
 					0px 0px 3px rgb(0, 0, 0);
-
 }
 [data-theme="light"]{
 	--black: white;
 	--hover-nav-items: black;
+	--btn-background: var(--white);
+	--btn-text-color: var(--color-main);
+
 }
 
 * {
@@ -97,7 +101,9 @@
 	margin: 0;
 	font-family: var(--font-family);
 }
-
+html{
+	scroll-behavior: smooth !important;
+}
 html,
 body {
 	max-width: 100vw;
@@ -112,10 +118,12 @@ body,
 }
 
 .__text_color { color: var(--color-main);}
+.__text_color2 { color: var(--btn-text-color);}
 .__border_color { border-color: var(--color-main); }
 .__border_hover:hover{ box-shadow: var(--border-shadow); }
 .__box_shadow_color { box-shadow: var(--border-shadow);}
 .__background { background: var(--black); }
+.__background2 { background: var(--btn-background); }
 .__gradient { background: var(--gradient); }
 
 .__text_shadow { text-shadow: var(--text-shadow); }

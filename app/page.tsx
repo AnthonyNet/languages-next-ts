@@ -1,27 +1,20 @@
 "use client";
 
-import Table from "../components/mainPage/Table";
 import "../styles/MainPage.css";
 import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
-import useFetch from "../components/fetch/Fetch";
+import CloudDown from '../components/icons/CloudDown';
+import Image from "next/image";
+import Gif from "../myData/images/irregular.gif";
 
 const styles = {
 	section:
-		"responsiveSection flex flex-col justify-center items-center  min-h-[100vh] h-auto sm:h-[90%] pokusX",
+		"responsiveSection flex flex-col justify-center items-center mt-[10vh]  min-h-[100vh] h-auto sm:h-[90%]",
 	card__div:
 		"cursor-pointer __gradient __text_shadow rounded-tl-3xl rounded-br-3xl -skew-x-12 pr-2",
 } as const;
 
-interface Props {
-	apiData: any; //Root | undefined;
-	loading: boolean;
-}
-
 function MainPage() {
-	/* const [data, setMyData] = useState<Root | undefined>();*/
-	const url = "https://api.coindesk.com/v1/bpi/currentprice.json";
-	const { apiData, loading }: Props = useFetch(url);
 
 	return (
 		<>
@@ -39,7 +32,7 @@ function MainPage() {
 						Learn <strong>languages</strong>
 					</h1>
 				</motion.div>
-				<h2>Working in progress...</h2>
+				<h2 className="p-4">Working in progress...</h2>
 				<Typewriter
 					options={{
 						strings: [
@@ -54,7 +47,16 @@ function MainPage() {
 						loop: true,
 					}}
 				/>
+				<div className="w-[100px] h-[100px] mt-8 flex justify-center items-center motion-safe:animate-ping-slower ">
+					<a href="#section-2">
+						<CloudDown />
+					</a>
+				</div>
 			</section>
+			<section id="section-2" className="bg-violet-500 relative">
+				<Image fill={true} src={Gif} style={{ objectFit: "contain" }} alt="gif"></Image>
+			</section>
+			<section id="section-3" className="bg-green-500"></section>
 		</>
 	);
 }

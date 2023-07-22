@@ -1,7 +1,6 @@
 "use client";
 
-import {BsFillArrowRightCircleFill} from 'react-icons/bs'
-import {BsQuestionCircleFill} from 'react-icons/bs'
+import {TbZoomQuestion} from 'react-icons/tb'
 
 interface Button {
   setHint: React.Dispatch<React.SetStateAction<boolean>>;
@@ -9,7 +8,7 @@ interface Button {
 }
 
 const CardButton = ({ setHint, hint }: Button) => {
-  return <BsQuestionCircleFill className="w-[40px] h-[40px] input_Btn shadow-md transition  ease-in-out duration-500 __text_color hover:scale-75 " onClick={() => setHint((hint) => !hint)}/>
+  return <TbZoomQuestion className="w-[40px] h-[40px] transition  ease-in-out duration-500 __text_color2 hover:scale-75 " onClick={() => setHint((hint) => !hint)}/>
 };
 
 export default CardButton;

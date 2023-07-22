@@ -94,7 +94,7 @@ function Pagination() {
 							return (
 								<tr
 									key={index}
-									className="border-b-2 border-dotted __border_color flex  flex-nowrap">
+									className="border-b-2 border-dotted __border_color flex  flex-nowrap cursor-pointer __nav-item">
 									{item.sentenceExample ? (
 										<td className="w-[50%] text-left">
 											{capitalizeFirst(item.sentenceExample)}
