@@ -117,6 +117,10 @@ body,
 	background: var(--black);
 }
 
+.h-90-dvh{
+	height: 90dvh;
+}
+
 .__text_color { color: var(--color-main);}
 .__text_color2 { color: var(--btn-text-color);}
 .__border_color { border-color: var(--color-main); }
