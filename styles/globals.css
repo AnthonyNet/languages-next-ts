@@ -20,9 +20,6 @@
 		@apply cursor-pointer;
 	}
 
-	section {
-		@apply w-full h-screen;
-	}
 }
 
 /* :-( */
@@ -106,7 +103,9 @@ html{
 }
 html,
 body {
-	max-width: 100vw;
+	margin: 0 auto;
+	width: 100vw;
+	max-width: 1280px;
 	overflow-x: hidden;
 	color: var(--color-main);
 }
@@ -117,9 +116,8 @@ body,
 	background: var(--black);
 }
 
-.h-90-dvh{
-	height: 90dvh;
-}
+.h-90-dvh{height: 90dvh;}
+.h-100-dvh, section{height: 100dvh;}
 
 .__text_color { color: var(--color-main);}
 .__text_color2 { color: var(--btn-text-color);}
@@ -136,6 +134,15 @@ body,
 .__oxford_card_background { background: var(--black); }
 strong { font-weight: var(--font-weight); }
 
+.__my_grid{
+	display: grid;
+	 grid-template-columns: repeat(12, 1fr);
+	 grid-template-rows: repeat(12, 1fr);
+}
+.__my_grid div:hover{
+	transform: scale(1.1);
+	transition: all 0.5s ease-in-out;
+}
 /* ------------------
 Animations
 --------------------- */

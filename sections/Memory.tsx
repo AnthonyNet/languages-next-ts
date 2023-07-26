@@ -22,12 +22,12 @@ interface Data {
 }
 
 const styles = {
-	section: "flex flex-col items-center",
+	section: "w-full  flex flex-col items-center justify-center .h-100-dvh",
 	section__div: "w-[200px] flex justify-between p-2 sm:p-4 font-bold mt-[10vh]",
-	article:
-		"w-full sm:w-[95%]  h-[79vh] grid  grid-cols-2 sm:grid-cols-4 grid-rows-8 sm:grid-rows-4 gap-2 sm:gap-4 grid-flow-row p-2",
 	h2: "text-lg sm:text-2xl",
 	navItem: "__nav-item",
+	article_cover: "w-full h-full grid items-center ",
+	article:"w-full  max-h-[800px] min-h-[80vh] grid grid-cols-2 sm:grid-cols-4 grid-rows-8 sm:grid-rows-3 gap-2 sm:gap-4 grid-flow-row p-4 sm:p-2 ",
 };
 
 //write simple function which return result of 1+1
@@ -46,7 +46,7 @@ function Memory() {
   const createData = (english: Data[]) => {
     const RAW = [...english]
       .sort(() => Math.random() - 0.5)
-      .slice(0, 8);
+      .slice(0, 6);
 
     const randomEnglish = RAW.map((item, index) => ({
       select: index,
@@ -71,7 +71,7 @@ function Memory() {
   /* ---------------------------- ----------------------------*/
   useEffect(() => {
     // Restart Game
-    if (restartCounter == 8) {
+    if (restartCounter == 6) {
       setRestartCounter(0);
      // setProps([...props].sort(() => Math.random() - 0.5));
       createData(props);
@@ -135,7 +135,6 @@ function Memory() {
   }
 
 
-
   return (
 		<section className={styles.section}>
 			<div className={styles.section__div}>
@@ -152,18 +151,20 @@ function Memory() {
 			</div>
 			<h2 className={styles.h2}>Score: {score}</h2>
 
-			<article className={styles.article}>
-				{cards.map((item: Item, index: number) => {
-					return (
-						<MemoryCard
-							key={index}
-							id={index}
-							item={item}
-							handleClick={handleClick}
-						/>
-					);
-				})}
-			</article>
+			<div className={styles.article_cover}>
+				<article className={styles.article}>
+					{cards.map((item: Item, index: number) => {
+						return (
+							<MemoryCard
+								key={index}
+								id={index}
+								item={item}
+								handleClick={handleClick}
+							/>
+						);
+					})}
+				</article>
+			</div>
 		</section>
 	);
 }

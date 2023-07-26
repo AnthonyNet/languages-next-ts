@@ -11,7 +11,7 @@ import '../../styles/Navbar.css';
 
 
 const styles = {
-	nav: "flex justify-center items-center w-full  min-h-[10vh] shadow-xl z-[400] px-4 fixed",
+	nav: "flex justify-center items-center w-full  min-h-[10vh] shadow-xl z-[400] px-4 fixed max-w-[1280px]",
 	nav__div:
 		"w-full h-full flex items-start relative md:text-xl xl:text-3xl ",
 	aside:
