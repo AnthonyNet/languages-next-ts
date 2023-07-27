@@ -55,7 +55,7 @@ export default function Section2() {
 						fill={true}
 						className={
 							styles.image +
-							" scale-[115%] scale-x-[120%] pr-1 h-20 hover:scale-[100%]"
+							" scale-[115%] scale-x-[120%] pr-1 h-20 hover:scale-[99%]"
 						}
 					/>
 				</div>
