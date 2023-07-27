@@ -13,10 +13,19 @@
 
 .tooltip .tooltip-item{
 	background: var(--black);
+	opacity: 0;
+}
+.tooltip:hover{
+	transform: translate(0, -5px);
+	transition: all 0.5s ease-in-out;
 }
 
 .tooltip:hover .tooltip-item {
+	margin-top: 5px;
+	opacity: 1;
 	visibility: visible;
+	transition: all 0.5s ease-in-out;
+	transition-delay: 0.2s;
 }
 
 .tooltip-item ul li:hover, .__btn-dark:hover{color: var(--hover-nav-items);}
@@ -50,3 +59,26 @@ select, option{
       border-color: var(--color-main) var(--color-main) var(--color-main) var(--color-main); /* Top right bottom left */
     }
   }
+
+
+ .logo {
+  font-weight: bold;
+  position: relative;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(45deg, var(--color-main), var(--white), var(--color-main));
+  animation: flameAnimation 2s ease-in-out infinite;
+}
+
+@keyframes flameAnimation {
+  0%, 100% {
+    transform: scale(1) translateY(0);
+    filter: brightness(100%);
+  }
+  50% {
+    transform: scale(1.05) translateY(-1px);
+    filter: brightness(130%);
+	background-image: linear-gradient(45deg, rgb(15rgb(92, 85, 78)6, 97), #f93, rgb(24, 12, 158));
+  }
+}

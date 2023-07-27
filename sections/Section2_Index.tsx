@@ -47,14 +47,14 @@ export default function Section2() {
 				<div
 					className={
 						styles.image_cover +
-						" sm:row-span-6 sm:col-span-6 sm:row-start-4 sm:row-end-10 sm:col-start-7 sm:col-end-13 sm:z-30  overflow-hidden "
+						" sm:row-span-6 sm:col-span-6 sm:row-start-4 sm:row-end-10 sm:col-start-7 sm:col-end-13 sm:z-30  overflow-hidden hover:scale-[102%] transition-all duration-500 ease-in-out"
 					}>
 					<Image
 						src={Irregular}
 						alt="irregular-gif"
 						fill={true}
 						className={
-							"border-4 border-double rounded-[30px] border-blue-700  transition-all duration-500 ease-in-out scale-y-[115%] scale-x-[118%] pr-1 h-20 hover:w-[101%]"
+							"border-4 border-double rounded-[30px] border-blue-700  transition-all duration-500 ease-in-out scale-y-[115%] scale-x-[118%] pr-1 h-20"
 						}
 					/>
 				</div>
@@ -85,13 +85,13 @@ export default function Section2() {
 				<div
 					className={
 						styles.image_cover +
-						" row-span-4 row-start-1 row-end-5 col-start-5 col-end-13  sm:rounded-br-[500px] mr-8"
+						" row-span-4 row-start-1 row-end-5 col-start-5 col-end-13  sm:rounded-br-[500px] sm:mr-8"
 					}>
 					<Image
 						src={Search}
 						alt="irregular-gif"
 						fill={true}
-						className={styles.image + " sm:rounded-br-[120px]"}
+						className={styles.image + " sm:rounded-tr-[120px]"}
 					/>
 				</div>
 			</div>

@@ -6,7 +6,7 @@ import Link from "next/link";
 import { TiThMenu } from "react-icons/ti";
 import Mobile__Nav from "./Mobile__Nav";
 import Nav_Items from "./Nav_Items";
-import DarkModeBtn from "./DarkModeBtn";
+import DarkModeBtn from "./Select";
 import '../../styles/Navbar.css';
 
 
@@ -43,8 +43,8 @@ function Navbar() {
 				<aside className={styles.aside}>
 					<Link
 						href="/"
-						className=" rounded-tl-xl rounded-br-xl  pr-2 ">
-						Learn <strong>languages</strong>
+						className="text-3xl md:text-xl xl:text-3xl logo">
+						Learn <strong className="">languages</strong>
 					</Link>
 				</aside>
 				<Nav_Items />

@@ -25,7 +25,7 @@ const styles = {
 		"flex justify-around text-center border-t-2 __border_color",
 	h3: "py-2 md:py-4  text-center border-b  w-auto mx-auto __border_color",
 	button:
-		"rounded w-40 h-14 text-2xl font-extrabold hover:scale-75 transition ease-in-out dutation-700  __button_color  __text_color2",
+		"rounded w-40 h-14 text-2xl font-extrabold scale-90 hover:scale-100 transition-transform ease-in-out delay-100 duration-500  __button_color  __text_color2 opacity-100",
 	hidden: " hidden",
 	image: "hover:rotate-90 transition ease-in-out duration-700",
 	cardBack:
@@ -83,19 +83,22 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
 							<Image className={styles.image} src={enFlag} alt="eng-flag" />
 						)}
 					</button>
-					{switchLanguage && (
-						<button
-							className={styles.button}
-							onClick={() => [setSwitchSide(!switchSide)]}>
-							Answer
-						</button>
-					)}
 
-					{switchLanguage && (
-						<button className={styles.button} onClick={randomWord}>
-							Next word
-						</button>
-					)}
+					<button
+						className={
+							switchSide ? styles.button : styles.button + " opacity-0"
+						}
+						onClick={() => [setSwitchSide(!switchSide)]}>
+						Answer
+					</button>
+
+					<button
+						className={
+							switchSide ? styles.button : styles.button + " opacity-0"
+						}
+						onClick={randomWord}>
+						Next word
+					</button>
 				</div>
 
 				<motion.div className={styles.cardBack}>
@@ -127,13 +130,13 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
 						)}
 
 						<div className={styles.cardBack__btnCover}>
-							{switchLanguage && (
-								<button
-									className={styles.button}
-									onClick={() => [setSwitchSide(!switchSide)]}>
-									Question
-								</button>
-							)}
+							<button
+								className={
+									!switchSide ? styles.button : styles.button + " opacity-0"
+								}
+								onClick={() => [setSwitchSide(!switchSide)]}>
+								Question
+							</button>
 						</div>
 					</div>
 				</motion.div>

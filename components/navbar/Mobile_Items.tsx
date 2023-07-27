@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import DarkModeBtn from "./DarkModeBtn";
+import DarkModeBtn from "./Select";
 import {useState } from 'react';
 import {menuData} from './dataNav';
 import {

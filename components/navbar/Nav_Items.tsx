@@ -7,10 +7,8 @@ import { menuData } from "./dataNav";
 const styles = {
 	article: "justify-around items-start w-[90%] h-full hidden md:flex",
 	homeBtn: "font-bold hover:text-indigo-800 __nav-item",
-	container:
-		"relative inline-block tooltip text-xl xl:text-3xl",
-	main__a:
-		"px-2 py-1 font-medium  __nav-item", //ulAnimation
+	container: "relative inline-block tooltip text-xl xl:text-3xl",
+	main__a: "px-2 py-1 font-medium   __nav-item", //ulAnimation
 	cover:
 		"flex flex-col p-4 w-60 h-auto rounded-md z-20 absolute right-0 invisible tooltip-item border-2 tooltip-item __nav_cover",
 	ul: "list-disc space-y-2 style-",

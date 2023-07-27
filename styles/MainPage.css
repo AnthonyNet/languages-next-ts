@@ -3,11 +3,6 @@
 	 grid-template-columns: repeat(12, 1fr);
 	 grid-template-rows: repeat(12, 1fr);
 }
-/*
-.__my_grid div:hover{
-	transform: scale(1.1);
-	transition: all 0.5s ease-in-out;
-}*/
 
 @media screen and (max-width:639px)
 
@@ -43,7 +38,10 @@
 		margin-bottom: 10px;
 		padding: 0;
 		border-radius: 30px;
+		transition: all 0.3s ease-in-out;
 	}
+
+
 	.__my_grid_item:nth-child(1){
 		height: 55dvh;
 		min-height: 400px
