@@ -1,3 +1,4 @@
+
 import "../styles/MainPage.css";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -13,9 +14,9 @@ const styles = {
 		"h-screen max-w-4xl mx-auto text-center flex flex-col justify-center text- gap-4 px-8 xl:p-0 ",
 	div_right:
 		"w-full h-auto  min-h-[800px] xl:h-[80%] max-w-xl mx-auto rounded-lg shadow-lg py-8 sm:py-0  __my_grid sm:mt-[10vh]",
-	image_cover: "relative bg-black __my_grid_item",
-	image:
-		"border-4 border-double rounded-[30px] border-blue-700 hover:scale-[110%] transition-all duration-500 ease-in-out",
+	image_cover:
+		"relative bg-black __my_grid_item",
+	image: "border-4 border-double rounded-[30px] border-blue-700 hover:scale-[102%] transition-all duration-500 ease-in-out",
 };
 
 export default function Section2() {
@@ -46,13 +47,16 @@ export default function Section2() {
 				<div
 					className={
 						styles.image_cover +
-						" sm:row-span-6 sm:row-start-4 sm:row-end-10 sm:col-start-7 sm:col-end-13 sm:z-30  overflow-hidden"
+						" sm:row-span-6 sm:col-span-6 sm:row-start-4 sm:row-end-10 sm:col-start-7 sm:col-end-13 sm:z-30  overflow-hidden"
 					}>
 					<Image
 						src={Irregular}
 						alt="irregular-gif"
 						fill={true}
-						className={styles.image + " scale-[117%] scale-x-[120%] pr-1 h-20"}
+						className={
+							styles.image +
+							" scale-[115%] scale-x-[120%] pr-1 h-20 hover:scale-[100%]"
+						}
 					/>
 				</div>
 				<div
@@ -70,25 +74,25 @@ export default function Section2() {
 				<div
 					className={
 						styles.image_cover +
-						" row-span-6 row-start-7 row-end-12 col-start-1 col-end-12  z-10"
+						" row-span-5  row-start-7 row-end-13 col-start-1 col-end-12  z-10 sm:mt-[5vh]"
 					}>
 					<Image
 						src={Pagination}
 						alt="pagination-gif"
 						fill={true}
-						className={styles.image + " rounded-[30px]"}
+						className={styles.image + " sm:rounded-bl-[120px]"}
 					/>
 				</div>
 				<div
 					className={
 						styles.image_cover +
-						" row-span-4 row-start-1 row-end-5 col-start-5 col-end-13  sm:rounded-br-[70px]"
+						" row-span-4 row-start-1 row-end-5 col-start-5 col-end-13  sm:rounded-br-[500px] mr-8"
 					}>
 					<Image
 						src={Search}
 						alt="irregular-gif"
 						fill={true}
-						className={styles.image + " rounded-[30px]"}
+						className={styles.image + " sm:rounded-br-[120px]"}
 					/>
 				</div>
 			</div>
