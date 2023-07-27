@@ -26,6 +26,7 @@ const styles = {
 	h3: "py-2 md:py-4  text-center border-b  w-auto mx-auto __border_color",
 	button:
 		"rounded w-40 h-14 text-2xl font-extrabold hover:scale-75 transition ease-in-out dutation-700  __button_color  __text_color2",
+	hidden: " hidden",
 	image: "hover:rotate-90 transition ease-in-out duration-700",
 	cardBack:
 		"absolute top-0 my-rotate-y-180 backface-hidden overflow-hidden w-full h-full __oxford_card_background",
@@ -59,7 +60,6 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
 				className={styles.section__div}
 				animate={{ rotateY: switchSide ? 0 : 180 }}
 				transition={{ duration: 0.5 }}>
-
 				<article className={styles.article}>
 					{switchLanguage ? (
 						sentenceExample ? (
@@ -83,16 +83,19 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
 							<Image className={styles.image} src={enFlag} alt="eng-flag" />
 						)}
 					</button>
+					{switchLanguage && (
+						<button
+							className={styles.button}
+							onClick={() => [setSwitchSide(!switchSide)]}>
+							Answer
+						</button>
+					)}
 
-					<button
-						className={styles.button}
-						onClick={() => [setSwitchSide(!switchSide)]}>
-						Answer
-					</button>
-
-					<button className={styles.button} onClick={randomWord}>
-						Next word
-					</button>
+					{switchLanguage && (
+						<button className={styles.button} onClick={randomWord}>
+							Next word
+						</button>
+					)}
 				</div>
 
 				<motion.div className={styles.cardBack}>
@@ -124,11 +127,13 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
 						)}
 
 						<div className={styles.cardBack__btnCover}>
-							<button
-								className={styles.button}
-								onClick={() => [setSwitchSide(!switchSide)]}>
-								Question
-							</button>
+							{switchLanguage && (
+								<button
+									className={styles.button}
+									onClick={() => [setSwitchSide(!switchSide)]}>
+									Question
+								</button>
+							)}
 						</div>
 					</div>
 				</motion.div>

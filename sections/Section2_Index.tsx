@@ -14,7 +14,7 @@ const styles = {
 		"h-screen max-w-4xl mx-auto text-center flex flex-col justify-center text- gap-4 px-8 xl:p-0 ",
 	div_right:
 		"w-full h-auto  min-h-[800px] xl:min-h-[85vh] xl:h-[80%] max-w-xl mx-auto rounded-lg shadow-lg py-8 sm:py-0  __my_grid sm:mt-[10vh]",
-	image_cover: "relative bg-black __my_grid_item",
+	image_cover: "relative __background __my_grid_item rounded-[30px]",
 	image:
 		"border-4 border-double rounded-[30px] border-blue-700 hover:scale-[102%] transition-all duration-500 ease-in-out",
 };
@@ -47,15 +47,14 @@ export default function Section2() {
 				<div
 					className={
 						styles.image_cover +
-						" sm:row-span-6 sm:col-span-6 sm:row-start-4 sm:row-end-10 sm:col-start-7 sm:col-end-13 sm:z-30  overflow-hidden"
+						" sm:row-span-6 sm:col-span-6 sm:row-start-4 sm:row-end-10 sm:col-start-7 sm:col-end-13 sm:z-30  overflow-hidden "
 					}>
 					<Image
 						src={Irregular}
 						alt="irregular-gif"
 						fill={true}
 						className={
-							styles.image +
-							" scale-[115%] scale-x-[120%] pr-1 h-20 hover:scale-[99%]"
+							"border-4 border-double rounded-[30px] border-blue-700  transition-all duration-500 ease-in-out scale-y-[115%] scale-x-[118%] pr-1 h-20 hover:w-[101%]"
 						}
 					/>
 				</div>
