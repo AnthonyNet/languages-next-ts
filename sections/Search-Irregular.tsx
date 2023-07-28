@@ -6,17 +6,17 @@ import { IrregularVerbs } from "../myData";
 
 const style = {
 	section: "w-full h-auto mt-[10vh]",
-	form: "shadow-md rounded px-8 pt-6 pb-8 mb-4",
+	form: "shadow-md rounded p-4 md:p-8",
 	input:
 		"shadow appearance-none border rounded w-full py-2 px-3 max-w-[300px] __border_color ml-auto",
 	main: "flex flex-col",
 	main__div: "overflow-x-auto sm:-mx-6 lg:-mx-8",
 	main__div__div: "inline-block min-w-full sm:px-6 lg:px-8",
 	main__div__div__div: "overflow-hidden",
-	table: "min-w-full text-center",
+	table: "w-full text-center",
 	thead: "border-b bg-indigo-800/20 __border_color",
-	tr: "border-b-2 __border_color hover:even:bg-indigo-800/40 hover:odd:bg-pink-800/20",
-	th: "text-sm font-medium p-2 sm:p-4",
+	tr: "border-b-2 __border_color hover:even:bg-indigo-800/40 hover:odd:bg-pink-800/20 ",
+	th: "text-sm font-medium py-2  sm:p-4 max-w-[25vw] sm:max-w-auto",
 } as const;
 
 function SearchIrregular() {

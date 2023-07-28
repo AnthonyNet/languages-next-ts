@@ -11,10 +11,13 @@ function DarkModeBtn(){
   // useEffect only runs on the client, so now we can safely show the UI
   useEffect(() => {
     setMounted(true);
-    setTheme("blue");
+    if(theme === "system") {
+	  setTheme("blue");
+	}
   }, []); /*Missing dependency */
 
   if (!mounted) {
+	setTheme("blue");
     return null;
   }
 
