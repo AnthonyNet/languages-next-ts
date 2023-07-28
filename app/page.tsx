@@ -10,7 +10,7 @@ const styles = {
 	section:
 		"responsiveSection grid grid-rows-6  items-center justify-center  h-100-dvh",
 	h1__cover:
-		"max-h-[100px] flex items-center sm:max-h-[500px] row-start-3 row-end-5 cursor-pointer __gradient __text_shadow rounded-tl-3xl rounded-br-3xl -skew-x-12 pr-2",
+		"max-h-[100px] flex items-center sm:max-h-[500px] row-start-3 row-end-5 cursor-pointer __gradient __text_shadow rounded-tl-3xl rounded-br-3xl -skew-x-12 pr-2 __css_height",
 	h1: "text-[10vw] xl:text-[120px] leading-[160px]",
 	bottom__container:
 		"row-start-5 row-end-7 justify-center items-center  text-center",
