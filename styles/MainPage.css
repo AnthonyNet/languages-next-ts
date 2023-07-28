@@ -75,4 +75,8 @@
 .__css_size h2{
 	font-size: 5vh;
 }
+.__css_small_height_index_container{
+	margin-top: 8vh;
+	height: 75vh
+}
 }
