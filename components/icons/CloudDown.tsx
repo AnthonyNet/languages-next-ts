@@ -8,7 +8,7 @@ const CloudDown = () => {
 			viewBox="0 0 24 24"
 			stroke-width="1.5"
 			stroke="currentColor"
-			className="w-20 h-20">
+			className="w-20 h-20 __icon_index">
 			<path
 				stroke-linecap="round"
 				stroke-linejoin="round"

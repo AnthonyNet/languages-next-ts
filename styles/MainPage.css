@@ -52,9 +52,27 @@
 	}
 }
 
+
 @media screen and (max-width:900px) and (orientation: landscape)
 {
 .__css_height{
 	height: 100px;
+}
+}
+
+@media screen and (max-height:374px) and (orientation: landscape)
+{
+.__icon_index{
+	height: 15vh;
+	/*margin-bottom: 15px;*/
+}
+.__css_height{
+	height: 20vh;
+}
+.__css_height h1{
+	font-size: 15vh;
+}
+.__css_size h2{
+	font-size: 5vh;
 }
 }

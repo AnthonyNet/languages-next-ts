@@ -43,7 +43,7 @@ function Navbar() {
 				<aside className={styles.aside}>
 					<Link
 						href="/"
-						className="text-3xl md:text-xl xl:text-3xl logo">
+						className="text-2xl sm:text-3xl md:text-xl xl:text-3xl logo">
 						Learn <strong className="">languages</strong>
 					</Link>
 				</aside>

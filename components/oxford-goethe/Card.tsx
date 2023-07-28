@@ -18,7 +18,7 @@ const styles = {
 	section:
 		"relative w-full h-100-dvh  flex justify-center items-center p-2 sm:p-0 responsiveSection",
 	card__container:
-		"relative w-full h-full mt-10-[vh] max-w-[600px] min-h-[280px] max-h-[280px] md:max-h-[400px]   border-double border-4   rounded-lg  preserve-3d group my-rotate-y-180 duration-1000 flex flex-col  __border_color",
+		"relative w-full h-[50vh] mt-10-[vh] max-w-[600px] min-h-[280px] max-h-[280px] md:max-h-[400px]   border-double border-4   rounded-lg  preserve-3d group my-rotate-y-180 duration-1000 flex flex-col  __border_color",
 	card__btn__container:
 		"flex justify-around w-full h-[70px] items-center text-center border-t-2 __border_color",
 	h3: "py-2 md:py-4  text-center border-b  w-auto mx-auto __border_color",
