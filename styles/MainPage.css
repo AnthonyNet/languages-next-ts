@@ -63,10 +63,11 @@
 @media screen and (max-height:374px) and (orientation: landscape)
 {
 .__icon_index{
+	margin-top: 4px;
 	height: 15vh;
 	/*margin-bottom: 15px;*/
 }
-.__css_height{
+.__css_h1cover_height{
 	height: 20vh;
 }
 .__css_height h1{
@@ -76,7 +77,7 @@
 	font-size: 5vh;
 }
 .__css_small_height_index_container{
-	margin-top: 8vh;
-	height: 75vh
+	margin-top: 10dvh;
+	height: 75dvh;
 }
 }
