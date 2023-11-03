@@ -1,0 +1,6 @@
+@media screen and (max-height:700px) and (orientation: landscape)
+{
+.__irregular_margin{
+	margin-top: 20dvh;
+}
+}

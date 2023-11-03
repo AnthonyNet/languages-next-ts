@@ -1,0 +1,7 @@
+@media screen and (max-height:374px) and (orientation: landscape)
+{
+.__css_small_height_index_container{
+	margin-top: 10dvh;
+	height: 75dvh;
+}
+}

@@ -9,6 +9,7 @@ import enFlag from "../../myData/images/eng.png";
 import Text_Card from "./Text_Card"
 import Card_Back from "./Card_Back";
 import "../../styles/MainPage.css";
+import './Card.css'
 {
 	/*
   This Card component is used in OXford B1, B2, C1 & Göethe

@@ -9,12 +9,12 @@ import CardHint from "../components/card/CardHint";
 import Score from "../components/card/Score";
 import { Irregular } from "../interface/";
 import { RxArrowRight } from "react-icons/rx";
-
+import '../styles/Irregular.css';
 const styles = {
 	section:
-		"section_Responsive flex justify-center items-center responsiveSection",
+		"h-auto min-h-[100vh] section_Responsive flex justify-center items-center responsiveSection __irregular_margin",
 	section_div:
-		"max-w-sm card my-8 xl:my-0 rounded-3xl text-center border-4 border-double __border_color",
+		"max-w-sm card  mx-2 rounded-3xl text-center border-4 border-double __border_color",
 	score_div: "py-3 px-6 ",
 	btn_div: "min-h-[50px]  flex flex-row h-auto justify-center items-center px-4 rounded-full mb-2 font-bold",
 	h5: "text-3xl dark:bg-black font-medium p-4",

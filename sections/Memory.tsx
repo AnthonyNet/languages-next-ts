@@ -22,12 +22,14 @@ interface Data {
 }
 
 const styles = {
-	section: "w-full  flex flex-col items-center justify-center .h-100-dvh",
-	section__div: "w-[200px] flex justify-between p-2 sm:p-4 font-bold mt-[10vh]",
+	section:
+		"w-full  flex flex-col items-center justify-center h-auto md:h-100-dvh mt-[10vh]",
+	section__div: "w-[200px] flex justify-between p-2 sm:p-4 font-bold",
 	h2: "text-lg sm:text-2xl",
 	navItem: "__nav-item",
 	article_cover: "w-full h-full grid items-center ",
-	article:"w-full  max-h-[800px] min-h-[80vh] grid grid-cols-2 sm:grid-cols-4 grid-rows-8 sm:grid-rows-3 gap-2 sm:gap-4 grid-flow-row p-4 sm:p-2 ",
+	article:
+		"w-full  max-h-[800px] min-h-[80vh] grid grid-cols-2 sm:grid-cols-4 grid-rows-8 sm:grid-rows-3 gap-2 sm:gap-4 grid-flow-row p-4 sm:p-2 ",
 };
 
 //write simple function which return result of 1+1
