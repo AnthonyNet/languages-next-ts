@@ -1,9 +1,7 @@
-import Memory from '../../../../sections/Memory';
+import Memory from "@/sections/Memory";
 
 const page = () => {
-  return (
-    <Memory />
-  )
-}
+	return <Memory />;
+};
 
-export default page
+export default page;

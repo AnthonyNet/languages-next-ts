@@ -1,13 +1,13 @@
-import Irregular from '../../interface/Irregular'
+import Irregular from "@/interface/Irregular";
 
 const CardHint = ({
-  base,
-  pastSimple,
-  pastSimple2,
-  pastParticiple,
-  pastParticiple2,
+	base,
+	pastSimple,
+	pastSimple2,
+	pastParticiple,
+	pastParticiple2,
 }: Irregular) => {
-  return (
+	return (
 		<ul className="w-full flex justify-around flex-wrap">
 			<li>{base}</li>
 			<li> {pastSimple} </li>

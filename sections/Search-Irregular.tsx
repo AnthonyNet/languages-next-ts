@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import { IrregularVerbs } from "../myData";
+import { IrregularVerbs } from "@/myData";
 
 const style = {
 	section: "w-full h-auto mt-[10vh]",
@@ -20,90 +20,89 @@ const style = {
 } as const;
 
 function SearchIrregular() {
-  const [search, setSearch] = useState("");
+	const [search, setSearch] = useState("");
 
-  return <section className={style.section}>
-        <form className={style.form}>
-          <div>
-            <input
-              className={style.input}
-              id="search"
-              type="text"
-              placeholder="Hledej slovo"
-              onChange={(e) => setSearch(e.target.value)}
+	return (
+		<section className={style.section}>
+			<form className={style.form}>
+				<div>
+					<input
+						className={style.input}
+						id="search"
+						type="text"
+						placeholder="Hledej slovo"
+						onChange={(e) => setSearch(e.target.value)}
+					/>
+				</div>
+			</form>
 
-            />
-          </div>
-        </form>
-
-        <div className={style.main}>
-          <div className={style.main__div}>
-            <div className={style.main__div__div}>
-              <div className={style.main__div__div__div}>
-                <table className={style.table}>
-                  <thead className={style.thead}>
-                    <tr>
-                      <th scope="col" className={style.th}>
-                        #
-                      </th>
-                      <th scope="col" className={style.th}>
-                        CZ
-                      </th>
-                      <th scope="col" className={style.th}>
-                        ENG
-                      </th>
-                      <th scope="col" className={style.th}>
-                        Past Simple
-                      </th>
-                      <th scope="col" className={style.th}>
-                        Past Perfect
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody className="text-green">
-                    {
-                      /* ----------------------
+			<div className={style.main}>
+				<div className={style.main__div}>
+					<div className={style.main__div__div}>
+						<div className={style.main__div__div__div}>
+							<table className={style.table}>
+								<thead className={style.thead}>
+									<tr>
+										<th scope="col" className={style.th}>
+											#
+										</th>
+										<th scope="col" className={style.th}>
+											CZ
+										</th>
+										<th scope="col" className={style.th}>
+											ENG
+										</th>
+										<th scope="col" className={style.th}>
+											Past Simple
+										</th>
+										<th scope="col" className={style.th}>
+											Past Perfect
+										</th>
+									</tr>
+								</thead>
+								<tbody className="text-green">
+									{
+										/* ----------------------
                       Find all matching words with the same value which has been written into the input
                       ---------------------- */
 
-                      IrregularVerbs.filter((item) => {
-                        return search.toLowerCase() === ""
-                          ? item
-                          : item.cz.toLowerCase().startsWith(search) ||
-                              item.base.toLowerCase().startsWith(search) ||
-                              item.pastSimple
-                                .toLowerCase()
-                                .startsWith(search) ||
-                              item.pastParticiple
-                                .toLowerCase()
-                                .startsWith(search);
-                      }).map((item, index) => (
-                        <tr key={index} className={style.tr}>
-                          <th scope="col" className={style.th}>
-                            {index + 1}
-                          </th>
-                          <th scope="col" className={style.th}>
-                            {item.cz}
-                          </th>
-                          <th scope="col" className={style.th}>
-                            {item.base}
-                          </th>
-                          <th scope="col" className={style.th}>
-                            {item.pastSimple}
-                          </th>
-                          <th scope="col" className={style.th}>
-                            {item.pastParticiple}
-                          </th>
-                        </tr>
-                      ))
-                    }
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-};
+										IrregularVerbs.filter((item) => {
+											return search.toLowerCase() === ""
+												? item
+												: item.cz.toLowerCase().startsWith(search) ||
+														item.base.toLowerCase().startsWith(search) ||
+														item.pastSimple.toLowerCase().startsWith(search) ||
+														item.pastParticiple
+															.toLowerCase()
+															.startsWith(search);
+										}).map((item, index) => (
+											<tr key={index} className={style.tr}>
+												<th scope="col" className={style.th}>
+													{index + 1}
+												</th>
+												<th scope="col" className={style.th}>
+													{item.cz}
+												</th>
+												<th scope="col" className={style.th}>
+													{item.base}
+												</th>
+												<th scope="col" className={style.th}>
+													{item.pastSimple}
+												</th>
+												<th scope="col" className={style.th}>
+													{item.pastParticiple}
+												</th>
+											</tr>
+										))
+									}
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	);
+}
 
 export default SearchIrregular;

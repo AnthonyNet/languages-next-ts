@@ -1,37 +1,43 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
-  },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "myData/Goethe.ts",
-    ".next/types/**/*.ts"
-, "sections/index.ts", "myData/IrregularVerbsTS.ts", "sections/Irregular copy", "sections/Irregular copy", "myData/IrregularVerbs.js", "myData/VerbenData.ts", "myData/OxfordC1.ts", "utils/get_Local_Storage.ts"  ],
-  "exclude": [
-    "node_modules"
-  ]
+	"compilerOptions": {
+		"target": "es5",
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"incremental": true,
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["*"]
+		},
+		"plugins": [
+			{
+				"name": "next"
+			}
+		]
+	},
+	"include": [
+		"next-env.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		"myData/Goethe.ts",
+		".next/types/**/*.ts",
+		"sections/index.ts",
+		"myData/IrregularVerbsTS.ts",
+		"sections/Irregular copy",
+		"sections/Irregular copy",
+		"myData/IrregularVerbs.js",
+		"myData/VerbenData.ts",
+		"myData/OxfordC1.ts",
+		"utils/get_Local_Storage.ts"
+	],
+	"exclude": ["node_modules"]
 }

@@ -1,15 +1,15 @@
 "use client";
 import { useState } from "react";
-import { Card_Vocabs } from "../../interface/";
+import { Card_Vocabs } from "@/interface/";
 import Image from "next/image";
 import { motion } from "framer-motion";
 //FLAGS images
-import czFlag from "../../myData/images/cz.png";
-import enFlag from "../../myData/images/eng.png";
-import Text_Card from "./Text_Card"
+import czFlag from "@/myData/images/cz.png";
+import enFlag from " @/myData/images/eng.png";
+import Text_Card from "./Text_Card";
 import Card_Back from "./Card_Back";
 import "../../styles/MainPage.css";
-import './Card.css'
+import "./Card.css";
 {
 	/*
   This Card component is used in OXford B1, B2, C1 & Göethe
@@ -68,7 +68,7 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
 					</button>
 				)}
 
-				<Text_Card props={{switchLanguage, sentenceExample, word, czWord}}/>
+				<Text_Card props={{ switchLanguage, sentenceExample, word, czWord }} />
 
 				<div className={styles.card__btn__container}>
 					{switchSide && (
@@ -85,7 +85,16 @@ const Card = ({ dataTS }: { dataTS: Card_Vocabs[] }) => {
 						</>
 					)}
 				</div>
-				<Card_Back props={{switchSide, setSwitchSide, switchLanguage,sentenceExample, word, czWord}}/>
+				<Card_Back
+					props={{
+						switchSide,
+						setSwitchSide,
+						switchLanguage,
+						sentenceExample,
+						word,
+						czWord,
+					}}
+				/>
 			</motion.div>
 		</motion.section>
 	);

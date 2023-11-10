@@ -1,17 +1,14 @@
-"use client"
+"use client";
 
+import { IrregularVerbs } from "@/myData";
+import Irregular from "@/sections/Irregular";
 
-
-import { IrregularVerbs } from '../../../../myData'
-import Irregular from '../../../../sections/Irregular';
-
- function page() {
-  return (
-    <div>
-
-     <Irregular dataTS={IrregularVerbs} />
-    </div>
-  )
+function page() {
+	return (
+		<div>
+			<Irregular dataTS={IrregularVerbs} />
+		</div>
+	);
 }
 
-export default page
+export default page;
