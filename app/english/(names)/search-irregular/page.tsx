@@ -1,18 +1,13 @@
-"use client"
+"use client";
 
+import { SearchIrregular } from "@/sections";
 
-import { SearchIrregular } from '../../../../sections'
-
-
-
-function page(){
-
-  return (
-    <div>
-
-      <SearchIrregular />
-    </div>
-  )
+function page() {
+	return (
+		<div>
+			<SearchIrregular />
+		</div>
+	);
 }
 
-export default page
+export default page;

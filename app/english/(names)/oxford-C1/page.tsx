@@ -1,20 +1,14 @@
-"use client"
+"use client";
 
+import { OxfordC1 } from "@/myData";
+import Card from "@/components/oxford-goethe/Card";
 
-
-import { OxfordC1 } from '../../../../myData'
-import Card from '../../../../components/oxford-goethe/Card'
-
-
-
-function page(){
-
-  return (
-    <div>
-
-      <Card dataTS={OxfordC1}/>
-    </div>
-  )
+function page() {
+	return (
+		<div>
+			<Card dataTS={OxfordC1} />
+		</div>
+	);
 }
 
-export default page
+export default page;

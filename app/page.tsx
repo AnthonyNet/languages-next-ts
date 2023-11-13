@@ -3,8 +3,8 @@
 import "../styles/MainPage.css";
 import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
-import CloudDown from "../components/icons/CloudDown";
-import Section2 from "../sections/Section2_Index";
+import CloudDown from "@/components/icons/CloudDown";
+import Section2 from "@/sections/Section2_Index";
 import Flying_objects from "@/components/home/Flying-objects";
 
 function MainPage() {
