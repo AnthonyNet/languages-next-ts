@@ -1,23 +1,21 @@
-import {useState, useEffect} from 'react'
-import {Root} from "../mainPage/interface"
+import { useState, useEffect } from "react";
 
+const Fetch = (url: any) => {
+	const [loading, setLoading] = useState<boolean>(false);
+	const [apiData, setApiData] = useState({});
 
-const Fetch = (url:any) => {
-    const [loading, setLoading] = useState<boolean>(false);
-    const [apiData, setApiData] = useState({});
+	const getData = async () => {
+		const response = await fetch(url);
+		const data = await response.json();
+		setApiData(data);
+		setLoading(true);
+	};
 
-    const getData = async () => {
-        const response = await fetch(url);
-        const data = await response.json();
-        setApiData(data);
-        setLoading(true);
-    }
+	useEffect(() => {
+		getData();
+	});
 
-    useEffect(() => {
-        getData();
-    });
+	return { apiData, loading };
+};
 
-  return {apiData, loading}
-}
-
-export default Fetch
+export default Fetch;

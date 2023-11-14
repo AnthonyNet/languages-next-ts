@@ -1,16 +1,14 @@
 "use client";
 
-import { useState, useEffect} from "react";
-
-
+import { useState, useEffect } from "react";
 interface Props {
-  word: string;
-  setTotalScore: React.Dispatch<React.SetStateAction<number>>;
-  setScore: React.Dispatch<React.SetStateAction<number>>;
-  setStars: React.Dispatch<React.SetStateAction<number>>;
-  placeholder: string;
-  defaultInput: boolean;
-  totalScore: number;
+	word: string;
+	setTotalScore: React.Dispatch<React.SetStateAction<number>>;
+	setScore: React.Dispatch<React.SetStateAction<number>>;
+	setStars: React.Dispatch<React.SetStateAction<number>>;
+	placeholder: string;
+	defaultInput: boolean;
+	totalScore: number;
 }
 
 const styles = {
@@ -25,83 +23,78 @@ const styles = {
 ------------------------------------------*/
 
 const Input = ({
-  word,
-  setTotalScore,
-  setScore,
-  setStars,
-  placeholder,
-  defaultInput,
-  totalScore,
+	word,
+	setTotalScore,
+	setScore,
+	setStars,
+	placeholder,
+	defaultInput,
+	totalScore,
 }: Props) => {
-  const [input, setInput] = useState<string>("");
-  const [checkMistake, setCheckMistake] = useState("");
-  const [checkStyles, setCheckStyles] = useState("");
+	const [input, setInput] = useState<string>("");
+	const [checkMistake, setCheckMistake] = useState("");
+	const [checkStyles, setCheckStyles] = useState("");
 
+	//Save Input value into INPUT variable
+	//Set read only for Input
+	const handleChange: React.ChangeEventHandler<HTMLInputElement> = (e) => {
+		setInput(e.target.value);
 
-  //Save Input value into INPUT variable
-  //Set read only for Input
-  const handleChange:React.ChangeEventHandler<HTMLInputElement> = (e) => {
-    setInput(e.target.value);
+		if (word === e.target.value) {
+			e.target.readOnly = true;
+		}
+	};
 
-    if(word===e.target.value){
-      e.target.readOnly = true;
-    }
-  };
+	// Watch INPUT variable for changes
+	useEffect(() => {
+		runIT();
+	}, [input]);
 
-  // Watch INPUT variable for changes
-  useEffect(() => {
-    runIT();
-  }, [input]);
+	const runIT = () => {
+		if (word === input) {
+			// True === green border
+			setCheckStyles("border-green-600 border-inset");
 
+			//Props - SCORE + STARS
+			setTotalScore((count: number) => count + 1);
+			setScore((count: number) => count + 1);
+			setStars((count: number) => count + 1);
 
-  const runIT = () => {
-    if (word === input) {
-      // True === green border
-      setCheckStyles("border-green-600 border-inset");
+			const number = totalScore + 1;
+			localStorage.setItem("totalScore", JSON.stringify(number));
+		}
+		//word --> exact word
+		if (word.startsWith(input)) {
+			// True === GREEN TEXT
+			setCheckMistake("text-green-500");
+		} else {
+			setCheckMistake("text-red-500");
+		}
+	};
 
-      //Props - SCORE + STARS
-      setTotalScore((count: number) => count + 1);
-      setScore((count: number) => count + 1);
-      setStars((count: number) => count + 1);
-
-
-      const number = totalScore + 1;
-      localStorage.setItem("totalScore", JSON.stringify(number));
-    }
-//word --> exact word
-    if (word.startsWith(input)) {
-      // True === GREEN TEXT
-      setCheckMistake("text-green-500");
-    } else {
-      setCheckMistake("text-red-500");
-    }
-  };
-
-/*------------------------------------------
+	/*------------------------------------------
 WATCH defaultInput for changes TRUE/FALSE
 setCheckStyles TRUE / FALSE
 setReadOnly TRUE / FALSE
 setInput => CLEAR VALUE IN INPUT
 ------------------------------------------*/
 
-  useEffect(() => {
-    setCheckStyles('');
-    setInput("");
-  }, [defaultInput]);
+	useEffect(() => {
+		setCheckStyles("");
+		setInput("");
+	}, [defaultInput]);
 
-
-  return (
-    <li className={styles.li + " " +  checkStyles}>
-      <input
-        type="text"
-        value={input}
-        className={styles.input + " " + checkMistake}
-        onChange={handleChange}
-        placeholder={placeholder}
-
-      />
-    </li>
-  );
+	return (
+		<li className={styles.li + " " + checkStyles}>
+			<input
+				type="text"
+				value={input}
+				className={styles.input + " " + checkMistake}
+				onChange={handleChange}
+				placeholder={placeholder}
+			/>
+		</li>
+	);
 };
 
 export default Input;
