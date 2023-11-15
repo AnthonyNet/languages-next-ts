@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+
 interface Props {
 	word: string;
 	setTotalScore: React.Dispatch<React.SetStateAction<number>>;
