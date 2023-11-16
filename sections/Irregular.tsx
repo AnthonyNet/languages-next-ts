@@ -2,7 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { Suspense } from "react";
-import { InputSkeleton } from "@/app/ui/skeletons";
+import {
+	IrregularInputsSkeleton,
+	IrregularButtonsSkeleton,
+} from "@/app/ui/skeletons";
 
 import Input from "../components/card/Card_Input";
 import CardButton from "../components/card/CardButton";
@@ -97,7 +100,7 @@ HIDE HINTS
 				<Score score={stars} />
 
 				<div className="px-6 inputs">
-					<Suspense fallback={<InputSkeleton />}>
+					<Suspense fallback={<IrregularInputsSkeleton />}>
 						<h5 className={styles.h5}>{cz}</h5>
 
 						<ul className={styles.ul}>
@@ -128,16 +131,17 @@ HIDE HINTS
 				</div>
 
 				<div className="flex flex-row w-full justify-around">
-					<div className={styles.btn_div + " __background2"}>
-						{/* TOGGLE HINT !HINT */}
-						<CardButton hint={hint} setHint={setHint} />
-					</div>
-					<div className={styles.btn_div + " __background2"}>
-						<RxArrowRight
-							onClick={() => randomWord()}
-							className="w-[40px] h-[40px] transition  ease-in-out duration-500 hover:scale-75 __text_color2"
-						/>
-					</div>
+					<Suspense fallback={<IrregularButtonsSkeleton />}>
+						<div className={styles.btn_div + " __background2"}>
+							<CardButton hint={hint} setHint={setHint} />
+						</div>
+						<div className={styles.btn_div + " __background2"}>
+							<RxArrowRight
+								onClick={() => randomWord()}
+								className="w-[40px] h-[40px] transition  ease-in-out duration-500 hover:scale-75 __text_color2"
+							/>
+						</div>
+					</Suspense>
 				</div>
 
 				{/* IF HINT == TRUE SHOW ANSWERS */}
